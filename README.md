@@ -1,6 +1,6 @@
 # A Core Theory of Action for Bounded Agents
 
-*(Precision-Tightened Concise Form)*
+*(Precision-Tightened Concise Form — Revised)*
 
 This whitepaper presents a foundational conceptual framework. Formalization, empirical validation, and implementation details are intentionally deferred.
 
@@ -15,7 +15,7 @@ Bounded agents must act in environments that are:
 * costly or unsafe to explore,
 * and sometimes adversarial.
 
-Repeated trial-and-error is often infeasible because errors can be irreversible, compounding, or fatal. Many failures are predictable in hindsight yet still recur across biological, artificial, and institutional systems.
+Repeated trial-and-error is often infeasible because errors can be irreversible, compounding, or fatal **at the level of the agent’s local trajectory**. Many failures are predictable in hindsight yet recur across biological, artificial, and institutional systems.
 
 **The central question is therefore:**
 
@@ -25,19 +25,21 @@ Repeated trial-and-error is often infeasible because errors can be irreversible,
 
 ## 2. The Irreducible Fact
 
-**Action requires irreversible information loss.**
+**Action requires irreversible information loss along the agent’s local trajectory.**
 
 Any pipeline from
 *world → perception → representation → model → action*
-necessarily maps many possible world states to fewer internal distinctions and ultimately to a single act. This mapping is many-to-one and therefore non-invertible.
+necessarily maps many possible world states to fewer internal distinctions and ultimately to a single act. This mapping is many-to-one and therefore non-invertible **for the acting agent at the time of action**.
 
 This loss is:
 
 * unavoidable (structural, not merely practical),
 * upstream of action,
-* and irrecoverable without explicit redesign of representations or constraints.
+* and irrecoverable *within the current representational regime* without explicit redesign.
 
 Even with ideal computation and sensing, action collapses distinctions. Therefore, the agent does not merely choose actions—it commits to blindness by eliminating alternatives from future consideration.
+
+Collective systems may preserve discarded distinctions through redundancy, diversity, or external memory, but no individual action escapes local irreversibility.
 
 ---
 
@@ -47,7 +49,7 @@ Given irreversible information loss, the primary design problem is not action se
 
 > **Which distinctions can be safely discarded while preserving the agent’s viability over its operating horizon?**
 
-*Viability* here refers strictly to maintaining the minimal preconditions for continued action, learning, and redesign. It does **not** imply optimality, growth, dominance, or goal completion.
+*Viability* refers strictly to maintaining the minimal preconditions for continued action, learning, coordination, and redesign **at the relevant timescale and agent boundary**. It does **not** imply optimality, growth, dominance, or goal completion.
 
 Intelligence is therefore reframed as a problem of **representation and constraint design**, not downstream optimization.
 
@@ -69,7 +71,7 @@ This predicts a characteristic tradeoff:
 * fewer downstream decisions,
 * bounded variance under noise,
 * lower long-term regret within the assumed regime,
-* but increased brittleness under distributional or causal drift if redesign is delayed.
+* increased brittleness under distributional or causal drift if redesign is delayed.
 
 ---
 
@@ -89,7 +91,8 @@ Unsafe compression arises when:
 
 * causal structure is misunderstood or misidentified,
 * invariants are assumed prematurely,
-* or redesign signals are suppressed, ignored, or structurally inaccessible.
+* redesign signals are suppressed, ignored, or structurally inaccessible,
+* or compression authority is exercised without accountability for downstream brittleness.
 
 ---
 
@@ -104,12 +107,20 @@ Because causal knowledge evolves, intelligent systems necessarily operate in dis
 * Delay irreversible compression.
 * Accept inefficiency to infer causal structure.
 
+Exploration is costly and cannot be sustained indefinitely, but premature termination is a dominant failure mode.
+
+---
+
 ### Phase 2: Compression
 
 * Identify relatively stable causal structure.
 * Deliberately remove degrees of freedom.
 * Encode constraints explicitly.
 * Make information loss inspectable and revisable.
+
+Compression decisions are epistemic commitments with long-term consequences.
+
+---
 
 ### Phase 3: Exploitation
 
@@ -118,6 +129,10 @@ Because causal knowledge evolves, intelligent systems necessarily operate in dis
 * Gain diminishing returns from experience.
 * Rely on prior representational commitments.
 
+Efficiency increases while adaptability declines.
+
+---
+
 ### Phase 4: Redesign
 
 Triggered when observed errors cannot be decorrelated or reduced by parameter adjustment within the current representational frame.
@@ -125,9 +140,15 @@ Triggered when observed errors cannot be decorrelated or reduced by parameter ad
 * Reintroduce previously discarded distinctions.
 * Update representations, constraints, and models.
 
+Redesign is itself costly, disruptive, and lossy. It cannot fully recover discarded distinctions, only reconstitute approximations under new abstractions.
+
+---
+
 Phase boundaries are not directly observable. They are inferred under compression, and delayed or missed transitions are expected failure modes, not anomalies.
 
 Failure to respect phase boundaries—particularly prolonged exploitation without redesign—is a primary cause of system-level collapse.
+
+Authority over when redesign is permitted or blocked is therefore a critical determinant of long-term viability.
 
 ---
 
@@ -141,7 +162,7 @@ From the above:
 * Performance can improve even as adaptability declines.
 * Confidence is not evidence of safety.
 * Optimization is meaningful only within a fixed representational regime and cannot repair errors introduced by inappropriate compression.
-* Redesign capacity is as important as optimization quality.
+* Redesign capacity and redesign authority are as important as optimization quality.
 
 ---
 
@@ -165,13 +186,14 @@ There is no final model—only phase-appropriate compression.
 
 Although the framework does not prescribe goals, it implies that:
 
-> Every compression decision encodes values by selecting which distinctions are allowed to matter.
+> Every compression decision encodes values by selecting which distinctions are allowed to matter, over which timescales, and for whom.
 
-Value alignment and misalignment arise descriptively, not normatively, from:
+Value alignment and misalignment arise descriptively—not normatively—from:
 
 * what was discarded,
 * when it was discarded,
-* and who had authority to decide.
+* whose risks were tolerated,
+* and who held authority to decide and to redesign.
 
 Governance must therefore attend to epistemic commitments and redesign authority, not only observable outcomes or stated objectives.
 
@@ -179,7 +201,7 @@ Governance must therefore attend to epistemic commitments and redesign authority
 
 ## 10. Core Synthesis
 
-**Intelligent action is the deliberate, phase-appropriate destruction of information—chosen so that future decisions remain cheap, predictable, and viable—until redesign becomes necessary due to error patterns inconsistent with the assumed causal invariants.**
+**Intelligent action is the deliberate, phase-appropriate destruction of information—chosen so that future decisions remain cheap, predictable, and viable—until error patterns inconsistent with assumed causal invariants force redesign under loss.**
 
 This framework explains:
 
@@ -217,7 +239,7 @@ This framework relies only on unavoidable facts:
 
 * resources are bounded,
 * observations are partial,
-* action is irreversible,
+* action is locally irreversible,
 * representation loss is unavoidable,
 * commitments shape future blindness,
 * environments change.
@@ -234,4 +256,3 @@ You are free to share and adapt this material for any purpose, including commerc
 
 License text:
 [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
-
