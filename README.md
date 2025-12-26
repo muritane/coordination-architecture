@@ -2,8 +2,6 @@
 
 *(Precision-Tightened Concise Form — Revised)*
 
-This whitepaper presents a foundational conceptual framework. Formalization, empirical validation, and implementation details are intentionally deferred.
-
 ---
 
 ## 1. The Problem
@@ -15,43 +13,45 @@ Bounded agents must act in environments that are:
 * costly or unsafe to explore,
 * and sometimes adversarial.
 
-Repeated trial-and-error is often infeasible because errors can be irreversible, compounding, or fatal **at the level of the agent’s local trajectory**. Many failures are predictable in hindsight yet recur across biological, artificial, and institutional systems.
+Repeated trial-and-error is often infeasible because errors can be irreversible, compounding, or fatal **along the agent’s local trajectory**, even when they are predictable in hindsight. As a result, many failures recur across biological, artificial, and institutional systems despite accumulated experience and apparent sophistication.
 
 **The central question is therefore:**
 
-> How can a bounded agent act reliably over time without repeatedly paying for the same mistakes?
+> How can a bounded agent act reliably over time without repeatedly paying for the same mistakes, when mistakes cannot always be safely explored or undone?
 
 ---
 
 ## 2. The Irreducible Fact
 
-**Action requires irreversible information loss along the agent’s local trajectory.**
+**Action entails irreversible information loss along the agent’s local trajectory.**
 
 Any pipeline from
 *world → perception → representation → model → action*
-necessarily maps many possible world states to fewer internal distinctions and ultimately to a single act. This mapping is many-to-one and therefore non-invertible **for the acting agent at the time of action**.
+necessarily maps many possible world states to fewer internal distinctions and ultimately to a single act. This mapping is many-to-one and therefore non-invertible **for the acting agent at the time the action is taken**.
 
-This loss is:
+This irreversibility is:
 
-* unavoidable (structural, not merely practical),
-* upstream of action,
-* and irrecoverable *within the current representational regime* without explicit redesign.
+* structural rather than merely practical,
+* upstream of downstream optimization,
+* and unrecoverable within the agent’s current representational regime without explicit redesign.
 
-Even with ideal computation and sensing, action collapses distinctions. Therefore, the agent does not merely choose actions—it commits to blindness by eliminating alternatives from future consideration.
+Even with ideal computation, perfect recall, and arbitrarily rich sensors, action collapses distinctions by committing to one branch of a world that could have unfolded otherwise. Logs, simulations, or external records may allow retrospective analysis, but they do not restore the unrealized alternatives to the agent’s actual trajectory.
 
-Collective systems may preserve discarded distinctions through redundancy, diversity, or external memory, but no individual action escapes local irreversibility.
+Collective or distributed systems may preserve discarded distinctions through redundancy, diversity, or external memory. However, **no individual action escapes local irreversibility**, and all agents act locally.
+
+Action therefore does not merely select outcomes; it commits the agent to a future in which certain distinctions are no longer actionable.
 
 ---
 
 ## 3. Reframing the Design Problem
 
-Given irreversible information loss, the primary design problem is not action selection, but:
+Given unavoidable local irreversibility, the primary design problem for an intelligent agent is not action selection per se, but:
 
 > **Which distinctions can be safely discarded while preserving the agent’s viability over its operating horizon?**
 
-*Viability* refers strictly to maintaining the minimal preconditions for continued action, learning, coordination, and redesign **at the relevant timescale and agent boundary**. It does **not** imply optimality, growth, dominance, or goal completion.
+*Viability* refers strictly to maintaining the minimal preconditions for continued action, learning, coordination, and redesign **at the relevant timescale and agent boundary**. It does **not** imply optimality, efficiency, growth, dominance, or goal completion.
 
-Intelligence is therefore reframed as a problem of **representation and constraint design**, not downstream optimization.
+Intelligence is therefore reframed as a problem of **representation and constraint design**, with optimization understood as a downstream activity that operates only within an already-committed representational regime.
 
 ---
 
@@ -61,17 +61,19 @@ Intelligence is therefore reframed as a problem of **representation and constrai
 
 More precisely:
 
-> A constraint commits the agent to treating distinct world states as behaviorally identical across a specified class of decisions and timescales.
+> A constraint commits the agent to treating distinct world states as behaviorally identical across a specified class of decisions, timescales, and operating conditions.
 
-Equivalently, constraint design is the deliberate destruction of information, chosen so that future decisions remain cheap, stable, and viable within an assumed regime.
+Constraint design is thus the deliberate destruction of information, chosen so that future decisions remain cheap, stable, and viable under assumed causal invariants.
 
-This predicts a characteristic tradeoff:
+This implies a characteristic tradeoff:
 
 * higher upfront modeling and inference cost,
-* fewer downstream decisions,
-* bounded variance under noise,
-* lower long-term regret within the assumed regime,
-* increased brittleness under distributional or causal drift if redesign is delayed.
+* fewer downstream decision points,
+* reduced variance under noise,
+* lower expected regret *within the assumed regime*,
+* increased brittleness under distributional or causal drift if redesign is delayed or blocked.
+
+Constraints do not eliminate uncertainty; they bound which uncertainties are allowed to matter.
 
 ---
 
@@ -79,35 +81,35 @@ This predicts a characteristic tradeoff:
 
 Information destruction is provisionally safe when the discarded distinctions:
 
-* do not participate in causal pathways relevant to continued viability or goals,
+* do not participate in causal pathways relevant to continued viability or stated objectives,
 * do not shift outcome distributions beyond tolerated risk bounds,
-* and remain invariant across the agent’s expected operating regime.
+* and remain approximately invariant across the agent’s expected operating regime and time horizon.
 
-Safety is conditional, regime-dependent, time-bounded, and probabilistic—never absolute.
+Safety is therefore conditional, probabilistic, and time-bounded—never absolute.
 
-All safety judgments are counterfactual and fallible: they depend on causal relevance the agent cannot fully observe. No agent can certify safety *ex ante*; it can only bound expected regret under assumed invariants.
+All safety judgments are counterfactual and fallible. They depend on causal relevance that the agent cannot fully observe at the time compression decisions are made. No agent can certify safety *ex ante*; it can only bound expected regret under assumed invariants.
 
 Unsafe compression arises when:
 
 * causal structure is misunderstood or misidentified,
-* invariants are assumed prematurely,
+* invariants are assumed prematurely or extrapolated too far,
 * redesign signals are suppressed, ignored, or structurally inaccessible,
-* or compression authority is exercised without accountability for downstream brittleness.
+* or compression authority is exercised without accountability for downstream brittleness and loss.
 
 ---
 
 ## 6. Phase Structure of Intelligent Systems
 
-Because causal knowledge evolves, intelligent systems necessarily operate in distinct phases.
+Because causal knowledge evolves and environments change, intelligent systems necessarily operate in distinct phases characterized by different relationships to information loss.
 
 ### Phase 1: Exploration
 
-* Preserve information.
-* Maximize optionality.
-* Delay irreversible compression.
+* Preserve degrees of freedom.
+* Maintain optionality.
+* Delay irreversible compression where feasible.
 * Accept inefficiency to infer causal structure.
 
-Exploration is costly and cannot be sustained indefinitely, but premature termination is a dominant failure mode.
+Exploration never literally preserves all information—compression is unavoidable—but it minimizes *commitment* to specific equivalence classes. Exploration is costly and cannot be sustained indefinitely, yet premature termination is a dominant failure mode.
 
 ---
 
@@ -118,7 +120,7 @@ Exploration is costly and cannot be sustained indefinitely, but premature termin
 * Encode constraints explicitly.
 * Make information loss inspectable and revisable.
 
-Compression decisions are epistemic commitments with long-term consequences.
+Compression decisions are epistemic commitments with long-term consequences. They define which distinctions are allowed to matter and which are rendered invisible to downstream decision-making.
 
 ---
 
@@ -126,29 +128,27 @@ Compression decisions are epistemic commitments with long-term consequences.
 
 * Act cheaply and repeatably.
 * Bound variance.
-* Gain diminishing returns from experience.
+* Achieve diminishing returns from experience.
 * Rely on prior representational commitments.
 
-Efficiency increases while adaptability declines.
+Efficiency increases while adaptability declines. Performance may continue to improve even as the system becomes increasingly brittle to unmodeled change.
 
 ---
 
 ### Phase 4: Redesign
 
-Triggered when observed errors cannot be decorrelated or reduced by parameter adjustment within the current representational frame.
+Triggered when observed errors cannot be decorrelated, bounded, or corrected within the current representational frame.
 
-* Reintroduce previously discarded distinctions.
+* Reintroduce previously discarded distinctions where possible.
 * Update representations, constraints, and models.
 
-Redesign is itself costly, disruptive, and lossy. It cannot be assumed to recover discarded distinctions; at best it reconstitutes approximations under new abstractions.
+Redesign is itself costly, disruptive, and lossy. It cannot be assumed to recover discarded information; at best, it reconstructs approximations under new abstractions.
 
 ---
 
-Phase boundaries are not directly observable. They are inferred under compression, and delayed or missed transitions are expected failure modes, not anomalies.
+Phase boundaries are not directly observable. They are inferred under compression, and delayed or missed transitions are expected failure modes rather than anomalies.
 
-Failure to respect phase boundaries—particularly prolonged exploitation without redesign—is a primary cause of system-level collapse.
-
-Authority over when redesign is permitted or blocked is therefore a critical determinant of long-term viability.
+Failure to respect phase boundaries—particularly prolonged exploitation without redesign—is a primary cause of system-level collapse. Authority over when redesign is permitted, delayed, or blocked is therefore a critical determinant of long-term viability.
 
 ---
 
@@ -156,37 +156,35 @@ Authority over when redesign is permitted or blocked is therefore a critical det
 
 From the above:
 
-* Causal modeling precedes efficient action.
-* Learning structure matters more than accumulating experience.
-* Decisions become cheap because alternatives were eliminated upstream.
+* Causal structure learning precedes efficient action.
+* Representation choice dominates downstream optimization.
+* Decisions are cheap because alternatives were eliminated upstream.
 * Performance can improve even as adaptability declines.
 * Confidence is not evidence of safety.
-* Optimization is meaningful only within a fixed representational regime and cannot repair errors introduced by inappropriate compression.
+* Optimization is meaningful only within a fixed representational regime.
 * Redesign capacity and redesign authority are as important as optimization quality.
 
 ---
 
 ## 8. Models Are Also Subject to the Same Constraints
 
-Causal models are themselves compressed representations.
+Causal models are themselves compressed representations and therefore inherit the same limitations.
 
-Therefore:
+As a result:
 
 * models age,
 * models become brittle,
-* and model redesign obeys the same phase logic as policy redesign.
+* and model redesign follows the same phase logic as policy redesign.
 
-Model redesign is itself an action subject to irreversible abstraction. No redesign procedure escapes the same constraints it attempts to correct.
-
-There is no final model—only phase-appropriate compression.
+Model redesign is itself an action subject to irreversible abstraction. No redesign procedure escapes the same constraints it attempts to correct. There is no final model—only phase-appropriate compression under bounded resources.
 
 ---
 
 ## 9. Where Values Inevitably Enter
 
-Although the framework does not prescribe goals, it implies that:
+Although this framework does not prescribe goals or utilities, it implies that:
 
-> Every compression decision encodes values by selecting which distinctions are allowed to matter, over which timescales, and for whom.
+> Every compression decision encodes values by determining which distinctions are allowed to matter, over which timescales, and for whom.
 
 Value alignment and misalignment arise descriptively—not normatively—from:
 
@@ -195,13 +193,13 @@ Value alignment and misalignment arise descriptively—not normatively—from:
 * whose risks were tolerated,
 * and who held authority to decide and to redesign.
 
-Governance must therefore attend to epistemic commitments and redesign authority, not only observable outcomes or stated objectives.
+Governance must therefore attend to epistemic commitments and redesign authority, not solely to stated objectives or observable outcomes.
 
 ---
 
 ## 10. Core Synthesis
 
-**Intelligent action is the deliberate, phase-appropriate destruction of information—chosen so that future decisions remain cheap, predictable, and viable—until error patterns inconsistent with assumed causal invariants force redesign under loss.**
+**Intelligent action is the phase-appropriate, deliberate destruction of information—chosen so that future decisions remain cheap, predictable, and viable—until error patterns inconsistent with assumed causal invariants force redesign under loss.**
 
 This framework explains:
 
