@@ -231,6 +231,10 @@ This framework explains:
 
 ---
 
+## Scaffold Preservation Principle
+
+Any agent that compresses interfaces faster than it preserves redesign-expressive scaffolds will eventually lose the ability to revise itself, regardless of accumulated experience.
+
 ## Scope
 
 This theory applies to biological, artificial, institutional, and hybrid agents wherever action requires exact execution under irreversible abstraction, bounded interfaces, and physical time.
