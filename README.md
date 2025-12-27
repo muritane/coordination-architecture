@@ -1,6 +1,6 @@
 # A Core Theory of Action for Bounded Agents
 
-*(Exact-Authorization Revision — Executable Boundary Form)*
+*(Exact-Authorization Revision — Executable Boundary Form, Clarified)*
 
 ---
 
@@ -72,7 +72,11 @@ Given unavoidable local irreversibility, the primary design problem is not actio
 * continued action,
 * learning and coordination,
 * and redesign authority
-  **at the agent’s boundary and timescale**.
+
+**at the agent’s boundary and timescale.**
+
+This framework does **not** determine which goals or values an agent should pursue.
+Instead, it specifies **where and how value commitments must be made explicit**, enforced, and revisable under bounded resources and irreversible loss.
 
 Intelligence is therefore reframed as a problem of:
 
@@ -90,7 +94,10 @@ with optimization operating strictly *inside* authorized regions.
 
 More precisely:
 
-> A whitelist is an executable authorization that treats all non-specified transitions as inadmissible by default, while collapsing permitted states into equivalence classes for efficient control.
+> A whitelist is an executable authorization schema that treats all non-specified transitions as inadmissible by default, while collapsing permitted states into equivalence classes for efficient control.
+
+Whitelists do **not** require enumerating all atomic actions.
+They operate at **chosen abstraction levels**, authorizing families of transitions parametrically under explicit scope boundaries.
 
 Whitelist design is thus:
 
@@ -113,27 +120,30 @@ Exact systems fail not because they are imprecise, but because:
 * or redesign authority is fragmented or undefined.
 
 Adversarial success almost never comes from violating explicit rules.
-It comes from **entering regions where authorization was never specified**, monitored, or revisable.
+It comes from **entering regions where authorization was never specified, monitored, or revisable.**
 
 Any boundary region that cannot trigger redesign is already outside the agent’s sovereignty.
 
 ---
 
-## 7. Safe Information Loss and Safe Authorization
+## 7. Safe Information Loss and Conditional Safety
 
-Information destruction and action authorization are provisionally safe when discarded distinctions or disallowed transitions:
+Information destruction and action authorization are provisionally safe only when discarded distinctions or disallowed transitions:
 
 * do not participate in causal pathways critical to viability,
 * do not silently consume future agency, resources, or identity,
 * remain invariant over the expected operating regime and horizon.
 
-Safety is:
+Safety is therefore:
 
-* conditional,
-* probabilistic,
-* time-bounded.
+* conditional on maintained authorization boundaries,
+* probabilistic rather than absolute,
+* and time-bounded.
 
-No agent can certify safety *ex ante*. It can only define **explicitly authorized regions**, enforce them mechanically, and monitor for violations that trigger redesign.
+No agent can certify safety *ex ante*.
+It can only define **explicitly authorized regions**, enforce them mechanically, and monitor for violations that trigger redesign.
+
+When redesign authority is lost or delayed, safety claims collapse.
 
 ---
 
@@ -204,7 +214,7 @@ Although this framework does not prescribe goals, it implies:
 
 > Every authorization decision encodes values by determining which transitions are permitted, for how long, and under whose authority.
 
-Legitimate governance requires:
+Legitimate governance therefore requires:
 
 * public access to authorization rules,
 * explicit scope boundaries,
@@ -233,6 +243,8 @@ This explains:
 
 This framework applies to biological, artificial, institutional, and hybrid agents wherever action requires **exact execution under irreversible abstraction and bounded resources**.
 
+It is a boundary logic, not a learning algorithm, optimization method, or moral theory.
+
 ---
 
 ## What Is Intentionally Deferred to Appendices
@@ -244,7 +256,7 @@ The following are valuable but non-core and should live outside the core paper:
 * formal diagnostic metrics,
 * compression registers and governance mechanisms,
 * institutional and political failure modes,
-* explicit critiques of over-formal optimization. 
+* explicit critiques of over-formal optimization.
 
 Including these would risk over-closure, premature generality, and reduced accessibility.
 
