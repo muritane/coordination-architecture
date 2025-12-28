@@ -1,6 +1,6 @@
 # A Core Theory of Action for Bounded Agents
 
-*(Interface, Reachability, and Continuity–Constrained Revision)*
+*(Interface, Reachability, Continuity, and Population–Constrained Revision)*
 
 ---
 
@@ -16,15 +16,15 @@ Bounded agents must act in environments that are:
 
 Many failures are **irreversible along the agent’s local trajectory**. Errors cannot always be explored, undone, amortized, or delegated. Crucially, agents often cannot even *express* alternative actions or redesigns because the required representational or execution interfaces are unavailable.
 
-Despite accumulated experience, failures recur across biological, artificial, and institutional systems.
+At the same time, agents rarely exist in isolation. They are embedded in **populations, institutions, and lineages** that can absorb losses, preserve external memory, and experiment through replacement rather than continuity.
 
 **The central question is therefore:**
 
-> How can a bounded agent act and redesign itself over time when action is locally irreversible, execution is delayed, interfaces are limited, and redesign itself must proceed through physically executable intermediate states?
+> How can bounded agents act and redesign themselves over time when action is locally irreversible, execution is delayed, interfaces are limited, redesign must proceed through physically executable intermediate states, *and some forms of correction are possible only at population or institutional scales*?
 
 ---
 
-## 2. The Irreducible Facts
+## 2. Irreducible Constraints
 
 ### 2.1 Local Irreversibility of Action
 
@@ -36,6 +36,8 @@ is many-to-one and locally non-invertible. Executing an action commits the agent
 
 Exact execution does not remove this loss; it stabilizes it.
 
+Local irreversibility applies to individual agents and individual executions, regardless of population-level redundancy.
+
 ---
 
 ### 2.2 Executable Continuity Constraint
@@ -46,7 +48,7 @@ All agents are subject to a **continuity constraint**:
 
 Signals propagate at finite speed. Computation, coordination, learning, communication, and physical movement all require nonzero time and energy. Increasing intention, will, or preference cannot eliminate latency.
 
-Apparent cognitive or institutional “jumps” are threshold effects in observability, not discontinuities in execution.
+Population-level correction mechanisms (replacement, selection, institutional reform) do not violate this constraint; they operate by **abandoning continuity at the agent level**.
 
 ---
 
@@ -63,7 +65,7 @@ An agent cannot:
 * communicate while rejecting the underlying protocol,
 * redesign itself using representations it cannot execute.
 
-Redesign cannot originate ex nihilo. It must be scaffolded through existing interfaces.
+Interfaces may be physically real yet **not agent-identifiable in time**, due to latency, abstraction, or representational limits. Physical measurability in principle does not imply executable identifiability under bounded resources.
 
 ---
 
@@ -75,7 +77,8 @@ Agency is exercised not over abstract action sets, but over **interfaces**:
 
 * execution interfaces (muscle, actuators, CPUs),
 * representational interfaces (languages, symbols, models),
-* coordination interfaces (protocols, laws, procedures).
+* coordination interfaces (protocols, laws, procedures),
+* observational interfaces (sensors, instruments, measurement pipelines).
 
 An interface defines:
 
@@ -102,19 +105,50 @@ Exactness guarantees syntactic validity only. Semantic correctness is never guar
 
 ---
 
-## 4. Viability as Executability Over Time
+## 4. Viability Across Scales
 
-### 4.1 Tightened Definition of Viability
+### 4.1 Agent-Local Viability
 
-Viability is not goal satisfaction or optimality.
+At the agent level:
 
 > **A system is viable over a horizon H if and only if its critical execution, authorization, feedback, and redesign interfaces remain executable within their physical time, energy, and precision bounds throughout H.**
 
-Loss of any critical interface collapses viability, regardless of intent or preference.
+Loss of any critical interface collapses agent-local viability, regardless of intent or preference.
 
 ---
 
-### 4.2 Time-Bounded Feedback
+### 4.2 Population and Institutional Viability
+
+At larger scales, systems may preserve function despite individual failure through:
+
+* redundancy,
+* replacement of agents,
+* externalized memory (records, models, tools),
+* statistical selection over populations.
+
+These mechanisms **do not preserve agent-local continuity**. They trade individual viability for population-level persistence.
+
+Agent-local redesign and population-level correction are distinct mechanisms with different failure modes and ethical implications.
+
+---
+
+### 4.3 Criticality and Discoverability
+
+Interfaces are deemed *critical* when their loss collapses viability.
+
+However, criticality is often:
+
+* discovered only ex post,
+* identifiable only at population scale,
+* or inferable only through irreversible loss.
+
+Thus, agents may rationally preserve non-critical interfaces while compressing critical ones, until failure reveals the mistake.
+
+---
+
+## 5. Feedback, Latency, and Causality
+
+### 5.1 Time-Bounded Feedback
 
 Feedback loops are viable only if they close within their physical decay windows:
 
@@ -126,23 +160,13 @@ Delayed feedback is not weaker feedback; beyond a threshold, it is causally irre
 
 ---
 
-## 5. Waiting, Latency, and Acausality
+### 5.2 Waiting and Institutional Delay
 
-### 5.1 Waiting as an Action
-
-Waiting is a real action, but of a specific kind:
+Waiting is a real action:
 
 > Waiting is a temporal commitment that preserves interface eligibility while deferring control, without initiating a new causal chain.
 
-Waiting expends time and opportunity cost but does not influence outcomes unless accompanied by intervention.
-
----
-
-### 5.2 Institutional Delay as Latency Constraint
-
 Institutional processes are serialized, multi-agent execution pipelines with bounded throughput. Their delays are structural latency constraints, not resistance or intention.
-
-No amount of will can reduce latency below institutional minima.
 
 ---
 
@@ -150,11 +174,11 @@ No amount of will can reduce latency below institutional minima.
 
 > Any model that assumes influence without a continuous, executable chain of interactions is acausal.
 
-Assuming that waiting alone causes outcomes is invalid. Influence requires signal transmission, interpretation, processing, and response.
+Population-level effects emerge from aggregated local interactions, not from influence without transmission.
 
 ---
 
-## 6. Interfaces, Precision, and Semantic Drift
+## 6. Precision, Semantic Drift, and Replacement
 
 Interfaces guarantee local correctness only. Under bounded precision:
 
@@ -162,11 +186,13 @@ Interfaces guarantee local correctness only. Under bounded precision:
 * abstractions drift semantically,
 * failures appear globally while execution remains locally valid.
 
-Most catastrophic failures are not interface violations, but faithful executions beyond an interface’s semantic radius.
+Semantic drift may be tolerable locally yet catastrophic at scale. When redesign latency exceeds drift accumulation, correction occurs not through redesign but through **replacement of agents or interfaces**.
+
+Technological evolution (e.g., changes in instruction sets or measurement standards) often proceeds by extinction and substitution rather than continuity-preserving upgrade.
 
 ---
 
-## 7. Phase Structure of Interface-Constrained Agents
+## 7. Phase Structure of Interface-Constrained Systems
 
 ### Phase 1: Scaffolded Exploration
 
@@ -186,19 +212,22 @@ Most catastrophic failures are not interface violations, but faithful executions
 * Accept reduced adaptability.
 * Monitor for semantic drift and latency overruns.
 
-### Phase 4: Redesign
+### Phase 4: Redesign or Replacement
 
 Triggered when:
 
 * errors cluster,
 * interfaces no longer close feedback loops,
-* or redesign latency exceeds viability bounds.
+* redesign latency exceeds viability bounds.
 
-Redesign reintroduces distinctions and revises interfaces using existing scaffolds.
+Outcomes:
+
+* **Redesign** if executable continuity is preserved.
+* **Replacement** if correction requires abandoning continuity.
 
 ---
 
-## 8. Governance and Coordination
+## 8. Governance, Coordination, and Loss Allocation
 
 All interfaces encode values by determining:
 
@@ -211,33 +240,40 @@ Legitimate governance requires:
 * public access to interface specifications,
 * explicit versioning and scope,
 * symmetric exposure to irreversible risk,
-* preserved redesign authority.
+* clarity about whether failure is borne by agents or populations.
 
-Governance failures are interface failures.
+Governance failures are interface failures, often masked by population-level buffering.
 
 ---
 
 ## 9. Core Synthesis
 
-> **Intelligent action is the phase-appropriate execution and revision of versioned interfaces, under continuity and reachability constraints, chosen so that critical feedback and redesign interfaces remain executable despite irreversible abstraction and bounded resources.**
+> **Intelligent action is the phase-appropriate execution, revision, or replacement of versioned interfaces, under continuity, reachability, and population constraints, chosen so that critical feedback and redesign processes remain executable at the relevant scale.**
 
 This framework explains:
 
 * why abstraction is unavoidable,
 * why exactness enables scale yet accelerates failure,
 * why efficiency creates brittleness,
-* why exit and redesign are hard,
-* and why authority over interfaces determines long-term survival.
+* why exit and redesign are hard locally but common globally,
+* and why authority over interfaces determines who absorbs irreversible loss.
 
 ---
 
 ## Scaffold Preservation Principle
 
-Any agent that compresses interfaces faster than it preserves redesign-expressive scaffolds will eventually lose the ability to revise itself, regardless of accumulated experience.
+Any system that compresses interfaces faster than it preserves either:
+
+* agent-local redesign capacity, or
+* population-level replacement capacity,
+
+will eventually lose the ability to adapt.
+
+---
 
 ## Scope
 
-This theory applies to biological, artificial, institutional, and hybrid agents wherever action requires exact execution under irreversible abstraction, bounded interfaces, and physical time.
+This theory applies to biological, artificial, institutional, and hybrid systems wherever action requires exact execution under irreversible abstraction, bounded interfaces, finite time, and selective replacement.
 
 It is a boundary logic, not a learning algorithm, optimization method, or moral theory.
 
