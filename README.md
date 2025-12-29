@@ -329,6 +329,103 @@ This framework explains:
 
 ---
 
+## 11. Continuity Externalization and Loss Allocation
+
+### 11.1 Continuity Is Conserved, Not Localized
+
+Agent-local continuity is not self-sufficient. Across time horizons exceeding individual lifetimes, continuity is preserved through **externalized interfaces**, including:
+
+* shared representations (language, calendars, records),
+* institutional memory (science, law, medicine),
+* material infrastructure (tools, energy systems, supply chains),
+* population-level persistence mechanisms.
+
+Individual agents remain viable over extended horizons precisely because continuity is **distributed across populations and artifacts**, rather than preserved locally.
+
+Conversely, population- and infrastructure-level continuity depends on the replaceability of individual agents. Continuity therefore flows *bidirectionally* across scales.
+
+---
+
+### 11.2 Irreversible Loss and Allocation Under Failure
+
+Under irreversible action and bounded redesign, **loss cannot be eliminated**, only allocated.
+
+Whenever redesign latency exceeds error accumulation, irreversible loss must be absorbed by some combination of:
+
+* individual agents,
+* populations,
+* infrastructures,
+* or replaceable substrates.
+
+This allocation is not optional. It is structurally enforced by irreversibility and bounded interfaces.
+
+---
+
+### 11.3 Dynamic Loss Triage
+
+Loss allocation is **contextual and dynamic**, not hierarchical or intrinsic.
+
+Under normal operation:
+
+* continuity is mutually reinforcing across agents, populations, and infrastructure.
+
+Under failure:
+
+* continuity is **triaged**, routing irreversible loss toward components with higher replaceability or faster recovery.
+
+This triage is determined by:
+
+* available interfaces,
+* redesign latency,
+* replaceability profiles,
+* coupling between failure modes.
+
+The direction of loss allocation may change over time as interfaces evolve.
+
+---
+
+### 11.4 Interfaces Encode Loss Routing
+
+Interfaces do not merely enable action; they **encode how irreversible loss propagates** when action fails.
+
+Examples include:
+
+* medical research infrastructures that absorb experimental risk to preserve population health,
+* calendars and shared temporal references that preserve coordination across generations,
+* institutional procedures that buffer individual failure through redundancy,
+* mechanical and synthetic agents designed for high replaceability.
+
+Interface governance therefore implicitly specifies:
+
+* which agents absorb loss first,
+* which forms of continuity are preserved,
+* and which failures are deferred, externalized, or concentrated.
+
+---
+
+### 11.5 Continuity Expansion and Decoupling
+
+Long-term system viability depends on expanding the space of reachable continuity-preserving configurations by:
+
+* externalizing memory and capability,
+* reducing correlated failure surfaces,
+* increasing substrate replaceability,
+* and extending continuity beyond single environments or agent classes.
+
+Such expansion does not eliminate constraints, but **reshapes loss allocation**, reducing existential coupling and increasing redesign reachability.
+
+---
+
+### 11.6 Synthesis
+
+> Continuity in multi-agent systems is conserved through externalization across agents, populations, and infrastructures.
+> Under irreversible failure and bounded redesign, loss must be dynamically allocated.
+> Interfaces determine how loss propagates and where continuity is preserved.
+
+This completes the framework’s account of viability across scales without introducing optimization criteria, moral hierarchy, or policy prescriptions.
+
+---
+
 ## Scaffold Preservation Principle
 
 > **Any system that compresses interfaces faster than it preserves either agent-local redesign capacity or population-level replacement capacity will eventually lose the ability to adapt.**
