@@ -1,383 +1,219 @@
-# A Core Theory of Viability Under Bounded Cognition and Action
+# A Structural Framework for Viability Under Bounded Cognition and Action
 
-*(Irreversibility, Interfaces, Continuity, Loss Allocation, and Topological Articulation)*
+## Abstract
 
----
-
-## 0. Scope
-
-This document specifies a **minimal and maximal structural theory** of cognition and action for bounded agents operating under irreversible constraints.
-
-It is not:
-
-* a learning theory,
-* an optimization framework,
-* a theory of rationality,
-* or a normative or political doctrine.
-
-It describes **necessary and sufficient structural constraints** on what action, redesign, articulation, and persistence can be for agents embedded in physical, temporal, and representational systems.
-
-The theory is **agent-first**. Population- and institutional-scale phenomena are treated only insofar as they are required to preserve viability beyond agent-local limits.
-
-The theory is **self-bounded**: it articulates only what a bounded agent can articulate without violating its own continuity and interface constraints.
+This document proposes a **structural framework** for reasoning about the viability of bounded agents operating under irreversible action, finite feedback, and interface-constrained redesign. Rather than offering a complete or sufficient theory, the framework aims to **organize recurring constraints** observed across biological, artificial, and institutional systems into a common vocabulary. The emphasis is on identifying **structural limits** on action, correction, and persistence, and on clarifying where continuity must be externalized and loss absorbed when agent-local correction is infeasible.
 
 ---
 
-## 1. Core Problem
+## 1. Scope and Non-Claims
 
-Bounded agents act under the following conditions:
+This framework is intended as:
 
-* partial observability,
-* finite precision,
-* delayed and lossy feedback,
-* irreversible commitments,
-* limited representational and execution interfaces.
+- a conceptual synthesis of constraints on bounded agents,
+- a vocabulary for discussing irreversibility, interfaces, and loss,
+- a basis for future formalization or domain-specific instantiation.
 
-Some failures:
+It is **not**:
+- a learning theory,
+- an optimization framework,
+- a complete theory of rationality,
+- a predictive model of behavior,
+- or a normative prescription.
 
-* cannot be explored safely,
-* cannot be undone,
-* cannot be amortized locally,
-* cannot be corrected without abandoning agent-level continuity.
-
-At the same time, correction and persistence are observed at larger scales via:
-
-* replacement,
-* redundancy,
-* externalized memory,
-* statistical selection.
-
-The core problem is therefore:
-
-> Under what structural constraints can bounded agents remain viable when action is locally irreversible, redesign is interface-limited, articulation is bounded, and some forms of correction require abandoning continuity?
+No claims of necessity, sufficiency, or completeness are made beyond the stated assumptions.
 
 ---
 
-## 2. Irreducible Constraints
+## 2. Assumptions
 
-### 2.1 Local Irreversibility of Action
+We assume agents embedded in physical or institutional environments characterized by:
 
-Any realized action commits the agent to a single trajectory while eliminating alternative futures.
+1. **Bounded cognition**
+   - finite representational capacity,
+   - finite precision,
+   - finite attention and computation.
 
-This irreversibility arises from:
+2. **Irreversible action**
+   - realized actions eliminate alternative futures,
+   - some failures cannot be undone locally.
 
-* many-to-one perception and representation,
-* finite execution precision,
-* physical causality.
+3. **Finite feedback**
+   - feedback is delayed, noisy, and lossy,
+   - correction may arrive after irreversible commitments.
 
-Irreversibility applies:
+4. **Interface-constrained action**
+   - agents can act, communicate, and redesign only through available interfaces.
 
-* locally along realized trajectories,
-* regardless of intelligence or correctness,
-* independently of population-level buffering.
-
-Increased precision stabilizes irreversible commitments; it does not remove them.
-
----
-
-### 2.2 Executable Continuity Constraint
-
-An agent can reach a future state **if and only if** there exists a causally continuous sequence of physically realizable intermediate states connecting present and future.
-
-All processes—computation, communication, coordination, learning, movement—require:
-
-* nonzero time,
-* nonzero energy,
-* finite bandwidth.
-
-No increase in intent, preference, or reasoning power eliminates latency.
-
-Population-level mechanisms preserve function by **breaking agent-level continuity**, not by violating this constraint.
+These assumptions are not universal; relaxing them may invalidate parts of the framework.
 
 ---
 
-### 2.3 Interface Reachability Constraint
+## 3. Core Structural Constraints
 
-An action, redesign, or articulation is possible **only if** it is expressible and executable using interfaces the agent already possesses.
+### 3.1 Irreversibility of Action
 
-An agent cannot:
+For bounded agents, action is path-dependent:
+- perception and representation are many-to-one,
+- execution has finite precision,
+- physical and institutional causality is non-invertible.
 
-* act in an unparseable language,
-* compute on a non-existent instruction set,
-* coordinate outside a rejected protocol,
-* redesign itself using representations it cannot execute.
-
-Physical realizability in principle does not imply executable reachability under bounded time, precision, and attention.
-
-Interfaces may exist but be unreachable due to:
-
-* latency,
-* abstraction depth,
-* representational mismatch,
-* resource constraints.
+Irreversibility applies locally along realized trajectories, independent of agent intelligence or intent.
 
 ---
 
-## 3. Interfaces
+### 3.2 Executable Continuity
 
-### 3.1 Definition
+An agent can transition between states only if there exists a **causally continuous sequence of realizable intermediate states**, subject to time, energy, and bandwidth constraints.
+
+Latency cannot be eliminated by increased reasoning power alone.
+
+---
+
+### 3.3 Interface Reachability
+
+An action or redesign is executable only if:
+- it can be expressed using the agent’s current interfaces,
+- and those interfaces are reachable within resource constraints.
+
+Physical realizability in principle does not guarantee executable reachability for a given agent.
+
+---
+
+## 4. Interfaces
+
+### 4.1 Definition
 
 An interface specifies:
+- admissible inputs and outputs,
+- sequencing and timing constraints,
+- error tolerance,
+- scope and version constraints.
 
-* admissible inputs and outputs,
-* sequencing and timing constraints,
-* error tolerance,
-* versioned validity conditions.
-
-Interfaces include:
-
-* execution interfaces,
-* representational interfaces,
-* coordination interfaces,
-* observational interfaces.
-
-Rejecting an interface eliminates the action space it defines.
+Interfaces include execution, observation, representation, and coordination mechanisms.
 
 ---
 
-### 3.2 Authorization
+### 4.2 Authorization vs Correctness
 
-Authorization is **interface conformance**, not semantic correctness.
-
-An action is authorized if it conforms to:
-
-* the current interface specification,
-* the correct version,
-* declared scope and timing.
-
-Authorization guarantees syntactic admissibility only.
-Global correctness is not implied and is generally undecidable under bounded conditions.
+Interface authorization concerns **syntactic conformance**, not semantic correctness.
+Actions may be authorized yet globally incorrect or harmful.
 
 ---
 
-## 4. Cognition
+## 5. Cognition (Structural View)
 
-Cognition is not defined in terms of belief, preference, or optimization.
+Cognition is treated structurally as the maintenance and revision of **executable representations** that keep viability-preserving actions reachable under uncertainty.
 
-> Cognition is the maintenance, compression, and revision of executable interfaces such that viability-preserving feedback, articulation, and redesign remain reachable.
-
-Abstraction is unavoidable.
-Every abstraction trades:
-
-* flexibility for efficiency,
-* adaptability for scale,
-* optionality for stability,
-* causal resolution for executability.
+Abstraction is unavoidable and trades:
+- flexibility for efficiency,
+- adaptability for scale,
+- optionality for stability.
 
 ---
 
-## 5. Viability
+## 6. Viability
 
-### 5.1 Agent-Local Viability
+### 6.1 Agent-Local Viability
 
-An agent is viable over horizon **H** if and only if all **critical interfaces** required for:
+An agent is viable over a horizon *H* if critical interfaces required for:
+- execution,
+- feedback,
+- coordination,
+- redesign,
+remain executable throughout *H*.
 
-* execution,
-* authorization,
-* feedback,
-* redesign,
-* articulation
-
-remain executable within physical bounds throughout **H**.
-
-Loss of any critical interface collapses agent-local viability, independent of intent or correctness.
+Loss of a critical interface collapses agent-local viability, regardless of intent.
 
 ---
 
-### 5.2 Criticality and Discoverability
+### 6.2 Criticality and Discoverability
 
 Interface criticality is often:
+- context-dependent,
+- revealed only after failure,
+- difficult to identify under bounded foresight.
 
-* context-dependent,
-* revealed only ex post,
-* identifiable only through irreversible failure.
-
-Agents may compress or discard interfaces that later prove critical.
-Such errors are structurally unavoidable under bounded foresight.
+Such misidentification is structurally unavoidable.
 
 ---
 
-## 6. Feedback and Time
+## 7. Feedback and Time
 
-### 6.1 Time-Bounded Feedback
+Feedback loops are viable only if they close before:
+- irreversible commitments dominate outcomes,
+- resource dissipation exceeds correction capacity,
+- representational drift overwhelms redesign reachability.
 
-A feedback loop is viable only if it closes before:
-
-* irreversible commitments dominate outcomes,
-* resources dissipate,
-* representational drift exceeds correction capacity.
-
-Beyond a threshold delay, feedback is causally irrelevant.
+Waiting is itself an action that preserves current interfaces while consuming time.
 
 ---
 
-### 6.2 Waiting
+## 8. Representational Meaning (Operational)
 
-Waiting is an action that:
+Representations are treated as meaningful **relative to an agent and a scale** if they:
+- reduce action-relevant uncertainty,
+- support interface-constrained redesign,
+- preserve or expand reachable viable actions.
 
-* preserves eligibility under existing interfaces,
-* defers initiation of new causal chains.
-
-Waiting consumes time and may increase exposure to external drift.
-It is not neutral with respect to viability.
-
----
-
-## 7. Meaning
-
-Meaning is not intrinsic to representations.
-
-> A representation is meaningful if and only if it preserves or expands the set of reachable, viability-preserving actions under uncertainty.
-
-Representations gain meaning by:
-
-* reducing action-relevant uncertainty,
-* compressing regularities into executable latents,
-* supporting interface-constrained redesign.
-
-When representational drift exceeds redesign reachability, correction occurs through replacement rather than continuity-preserving revision.
+Meaning is therefore not intrinsic and may differ across scales or horizons.
 
 ---
 
-## 8. Continuity Externalization
+## 9. Continuity Externalization and Loss
 
-### 8.1 Conservation of Continuity
+### 9.1 Externalization of Continuity
 
-Continuity is conserved across scales, not localized.
+Long-horizon persistence often requires externalization via:
+- shared representations,
+- tools and infrastructure,
+- population-level replacement mechanisms.
 
-Agent-local continuity over extended horizons is possible only through externalized interfaces, including:
-
-* shared representations,
-* external memory,
-* tools and infrastructure,
-* population-level persistence mechanisms.
-
-Conversely, population-level continuity depends on the replaceability of individual agents.
-
-Continuity therefore flows across agents, populations, and artifacts.
+Population-level continuity frequently depends on agent replaceability.
 
 ---
 
-### 8.2 Loss Allocation
+### 9.2 Loss Allocation
 
-Under irreversible action and bounded redesign, **loss is unavoidable**.
+Under irreversible action and bounded redesign, loss is unavoidable.
+Loss is redistributed across agents, populations, and artifacts according to:
+- replaceability,
+- recovery speed,
+- coupling to preserved continuity.
 
-Loss must be absorbed by some combination of:
-
-* agents,
-* populations,
-* infrastructures,
-* or replaceable substrates.
-
-Loss is not eliminated, only routed.
+Interfaces determine how loss propagates.
 
 ---
 
-### 8.3 Dynamic Loss Routing
+## 10. Structural (Topological) Reasoning
 
-When redesign latency exceeds error accumulation, loss is dynamically allocated toward components with:
+Under bounded articulation, agents often cannot retain metric detail.
+What remains robust under abstraction includes:
+- reachability relations,
+- connectivity and disconnection,
+- bottlenecks and redundancy,
+- failure cuts.
 
-* higher replaceability,
-* faster recovery,
-* lower coupling to preserved continuity.
-
-The direction of loss routing depends on:
-
-* available interfaces,
-* redesign reachability,
-* coupling between failure modes.
+This framework treats such **structural relations** as primary objects of reasoning.
+Formal topological invariants are not specified here and remain open for future work.
 
 ---
 
-### 8.4 Interfaces as Loss Routers
+## 11. Open Problems and Directions
 
-Interfaces encode how irreversible loss propagates under failure by determining:
+This framework leaves unresolved:
+- formal definitions of viability orderings,
+- independence and redundancy among constraints,
+- comparative predictions relative to control theory or resilience engineering,
+- identification of invariant structures under interface redesign.
 
-* admissible transitions,
-* authority over execution,
-* coupling between components.
-
-Thus, interfaces determine where continuity is preserved and where loss concentrates.
-
----
-
-## 9. Topological Articulation (Maximum Viability)
-
-### 9.1 Articulation Ceiling
-
-A bounded agent cannot articulate full causal structure, metric detail, or complete state descriptions.
-
-What remains articulable under irreversible action, bounded feedback, and interface constraints is **topological structure**:
-
-* connectivity,
-* reachability,
-* continuity and disconnection,
-* bottlenecks and cuts,
-* redundancy and fragility.
-
-Topology is the maximal invariant structure that survives abstraction, loss, and redesign under bounded cognition.
+These are explicitly deferred.
 
 ---
 
-### 9.2 Topology as Executable Causality
+## 12. Conclusion
 
-Topological descriptions encode causality after precision has been stripped away by bounded articulation.
-
-They answer:
-
-* what can reach what,
-* what failures disconnect viability,
-* where loss must flow,
-* which interfaces are load-bearing.
-
-Topology is not optional abstraction; it is **causality that remains executable**.
-
----
-
-### 9.3 Maximum Viability Envelope
-
-A bounded agent achieves **maximum articulable viability** when it:
-
-* preserves the largest reachable envelope of executable interfaces,
-* maximizes temporal slack before irreversible commitment,
-* externalizes continuity without identity-erasing replacement,
-* shapes interface topology to route loss toward replaceable components,
-* reasons structurally rather than metrically where precision is inarticulable.
-
-This maximum is a **topology of survivable structure**, not a guarantee of persistence.
-
----
-
-## 10. Core Synthesis
-
-Bounded cognition and action are constrained by:
-
-* irreversible commitment,
-* executable continuity,
-* interface reachability,
-* finite feedback latency,
-* bounded articulation.
-
-Minimum viability requires preserving critical interfaces.
-Maximum viability consists in preserving and shaping the **topological structure** within which those interfaces remain reachable across time.
-
-When this is not possible locally, continuity is externalized and loss is allocated elsewhere.
-
-No optimization, equilibrium, omniscience, or normative criterion is required to derive these constraints.
-
----
-
-## Scope of Applicability
-
-This theory applies wherever:
-
-* action is irreversible,
-* interfaces are exact,
-* redesign is bounded,
-* articulation is limited,
-* and persistence exceeds individual trajectories.
-
-It applies to biological, artificial, institutional, and hybrid systems.
+This document presents a **structural framework** for reasoning about bounded agents under irreversibility, finite feedback, and interface constraints. It aims to unify known limitations into a coherent vocabulary, not to replace existing theories. Its value lies in organizing constraints and clarifying where continuity must be externalized and loss absorbed when agent-local correction is infeasible.
 
 ---
 
