@@ -1,417 +1,254 @@
-# A Structural Theory Sketch of Viability, Collapse, and Topological Invariants  
-*Non-Redundancy Under Bounded Cognition, Irreversibility, and Interface Constraints*
+# A Structural Theory Sketch of Viability Under Irreversibility  
+## Non-Redundancy as Preserved Upstream Optionality
 
 ---
 
 ## Abstract
 
-This document presents a **structural theory sketch of viability** for bounded agents operating under irreversible dynamics, finite feedback, and interface-constrained action, observation, coordination, and redesign.
+This document presents a **structural theory sketch of viability** for systems operating under bounded cognition, irreversible dynamics, and interface-constrained interaction.
 
-The central claim is deliberately narrow:
+The central claim is **conditional and architectural**:
 
-> **Under bounded cognition and irreversible dynamics, long-horizon viability is governed not by optimality, intelligence, or semantics, but by the preservation of non-redundant reachability relations across interfaces.**
+> **For systems that aim to remain upstream—i.e., maximally open to unknown future interfaces and tasks—unallocated state capacity and interface slack are non-redundant. Once irreversibly allocated or collapsed, this optionality cannot be recovered.**
 
-When abstraction, approximation, and collapse are unavoidable, most descriptive, metric, probabilistic, and semantic detail is necessarily discarded. What remains invariant under repeated collapse are **topological properties of reachability**: connectivity, disconnection, bottlenecks, redundancy, and minimal cut sets.
+The framework does **not** identify which future distinctions will be required. Instead, it characterizes **what must be preserved for unknown distinctions to remain representable at all**.
 
-This document does **not** propose a predictive model, learning algorithm, or optimization framework. Instead, it identifies **structural non-redundancies**—distinctions that cannot be discarded without destroying future actionability—across biological, computational, institutional, and linguistic systems.
+The sketch focuses on:
+- irreversible allocation of state and memory,
+- interface fixation and coupling,
+- loss of allocatable degrees of freedom,
+- and the resulting foreclosure of future reachability.
 
-The sketch integrates:
-- irreversible collapse and loss allocation,
-- interface reachability and redesign limits,
-- conditional state expansion and mandatory retraction,
-- externalized memory and persistence,
-- descriptive versus routing representations,
-- origin markers as references for pre-collapse optionality,
-- and fast safety loops as structurally mandatory components.
-
-The framework is intentionally incomplete and open-ended. Its purpose is to clarify what must be preserved for viability under constraint, and to provide a structural skeleton on which domain-specific theories, formalisms, and empirical work may be built.
+This work does not propose algorithms, predictions, or optimal designs.  
+It provides a **structural lens** for reasoning about architectural viability under uncertainty.
 
 ---
 
-## 0. Core Claim and Status of This Document
+## 0. Scope and Status
 
-This document advances a **single core structural claim**:
+This document is a **theory sketch** in a strict sense:
 
-> **Given bounded cognition, irreversible dynamics, and interface-constrained interaction, certain distinctions are non-redundant: once lost, no increase in intelligence, computation, or semantic richness can recover future reachability.**
+- It identifies **necessary architectural constraints**, not sufficient designs.
+- It characterizes **irreversible failure modes**, not success guarantees.
+- It applies only **conditional on stated goals** (e.g., remaining upstream).
 
-All other claims in this document elaborate consequences of this non-redundancy.
-
-### 0.1 What “Theory Sketch” Means Here
-
-This work is a *theory sketch* in the following precise sense:
-
-- It identifies **invariants** rather than full dynamics.
-- It establishes **necessity claims**, not sufficiency claims.
-- It characterizes **failure modes**, not success guarantees.
-- It constrains possible architectures without prescribing implementations.
-
-No claims are made that the framework is:
-- complete,
-- uniquely correct,
-- formally minimal,
-- or empirically exhaustive.
-
-The sketch is intended to remain open to:
-- further formalization (e.g., graph-theoretic, control-theoretic, or categorical),
-- empirical instantiation in specific domains,
-- revision as new constraints, counterexamples, or boundary cases are identified.
-
-### 0.2 What Is Not Claimed
-
-In particular, this document does **not** claim that:
-
-- preserving these invariants is sufficient for success,
-- viable systems are optimal, intelligent, or robust by default,
-- all failures are predictable in advance,
-- or that semantic meaning plays an intrinsic or irreducible role.
-
-The claim is strictly **negative and structural**:
-
-> **Certain losses cannot be compensated for downstream, and systems that survive over long horizons are forced to preserve the corresponding structures.**
+It does **not** claim:
+- completeness,
+- uniqueness,
+- optimality,
+- or foreknowledge of future tasks.
 
 ---
 
-## 1. Scope and Non-Claims
+## 1. Core Assumptions
 
-This theory sketch is intended as:
+We consider systems with the following properties:
 
-- a structural account of non-redundancy under irreversibility,
-- a framework for identifying viability-critical distinctions,
-- a unifying lens across biological, computational, institutional, and linguistic systems.
+### 1.1 Bounded State Capacity
+- finite memory,
+- finite address space,
+- finite representational degrees of freedom.
 
-It is **not**:
-- a learning theory,
-- a theory of rationality or intelligence,
-- an optimization framework,
-- a semantic or phenomenological account of meaning,
-- or a predictive behavioral model.
+### 1.2 Irreversible Allocation
+- state variables, schemas, and interfaces can be permanently assigned,
+- reassignment is costly, lossy, or globally disruptive.
 
-No claims of optimality, sufficiency, or normative correctness are made.
+### 1.3 Interface-Constrained Interaction
+- action, observation, coordination, and redesign occur only via defined interfaces,
+- interfaces impose latency, bandwidth, precision, and coupling constraints.
 
----
-
-## 2. Core Assumptions
-
-We consider agents embedded in environments characterized by:
-
-### 2.1 Bounded Cognition
-- finite representational capacity,
-- finite precision,
-- finite attention and computation.
-
-### 2.2 Irreversible Dynamics
-- actions eliminate alternative futures,
-- some failures are locally unrecoverable,
-- time and causality are non-invertible.
-
-### 2.3 Finite and Delayed Feedback
-- feedback is noisy, partial, and delayed,
-- corrective signals may arrive after commitments dominate outcomes.
-
-### 2.4 Interface-Constrained Action and Redesign
-- agents act, sense, coordinate, and modify themselves only via available interfaces,
-- interfaces impose latency, bandwidth, precision, and authorization constraints.
-
-Relaxing these assumptions invalidates parts of the framework.
+Relaxing these assumptions invalidates the framework.
 
 ---
 
-## 3. Irreversibility and Collapse
+## 2. Upstream Orientation
 
-### 3.1 Collapse as Many-to-One Mapping
+### 2.1 Meaning of “Upstream”
 
-Under bounded cognition, perception, representation, and execution are inherently many-to-one:
+A system is **upstream** to the extent that it:
+- has not yet committed state to specific tasks,
+- preserves degrees of freedom for future interfaces,
+- avoids premature schema closure.
 
-- distinctions are merged,
-- alternatives are discarded,
-- precision is traded for speed and feasibility.
-
-Once a collapse occurs:
-- eliminated distinctions cannot be reconstructed locally,
-- downstream equivalence does not imply upstream equivalence.
-
-Collapse is structural, not epistemic.
+Upstream is **not** a location in time or space, but a position relative to irreversible commitments.
 
 ---
 
-### 3.2 Executable Continuity
+### 2.2 Why Upstream Orientation Matters
 
-A transition between states is possible only if there exists a **causally continuous sequence of realizable intermediate states**, subject to:
+Systems designed to:
+- operate long horizons,
+- adapt to unknown tasks,
+- integrate future participants,
 
-- time constraints,
-- energy constraints,
-- interface constraints.
-
-Increased reasoning power cannot bypass latency or undo collapse.
-
----
-
-## 4. Interfaces and Reachability
-
-### 4.1 Interfaces
-
-An interface specifies:
-- admissible inputs and outputs,
-- sequencing and timing constraints,
-- precision and error tolerance,
-- scope, versioning, and authorization.
-
-Interfaces include execution, perception, memory, communication, coordination, and redesign mechanisms.
+must preserve **allocatable capacity**, not specific semantics.
 
 ---
 
-### 4.2 Authorization Versus Correctness
+## 3. Collapse as Irreversible Allocation
 
-Interface authorization enforces **syntactic conformance**, not semantic correctness.
+### 3.1 Collapse Is Not Mere Abstraction
 
-An action may be authorized yet globally unsafe or catastrophic.
+In this framework, *collapse* refers to:
 
-Loss of a critical interface collapses viability regardless of intent, intelligence, or correctness of belief.
+> **Irreversible allocation of degrees of freedom**, not just lossy representation.
 
----
+Examples:
+- fixing a database schema without migration paths,
+- exhausting address or identifier space,
+- hard-coding protocol fields,
+- binding discovery, coordination, and execution to a single failure domain.
 
-## 5. Conditional State Expansion and Retraction
-
-Agents do not operate over a fixed state space.
-
-### 5.1 Conditional Expansion
-
-Agents temporarily expand internal degrees of freedom to:
-- hold unresolved distinctions,
-- simulate alternatives,
-- coordinate or compute.
-
-Expansion is:
-- costly,
-- fragile,
-- conditional on future retraction.
+Once allocated, these degrees of freedom are no longer available for new interfaces.
 
 ---
 
-### 5.2 Retraction and Collapse
+### 3.2 Fixed Capacity Implies Fixed Future
 
-Expanded state must be safely retracted before:
-- irreversible commitments dominate outcomes,
-- interfaces fail,
-- resource dissipation overwhelms correction.
+If a system’s state capacity is fully allocated:
 
-Failure to retract reallocates loss to external systems or terminates viability.
+- no new independent variables can be introduced,
+- new tasks must overwrite or alias existing state,
+- fundamentally new interfaces become impossible.
 
-Conditional expansion and retraction are **structurally mandatory**, not optional design patterns.
-
----
-
-## 6. External Memory and Persistence
-
-Specific artifacts, agents, or implementations are replaceable.
-
-What persists is:
-- externalized memory,
-- interface contracts,
-- conversion pathways between representations.
-
-Storage hierarchies (cache → RAM → disk → cloud → redundancy) emerge because:
-- read/write costs can be minimized locally but not eliminated globally,
-- persistence migrates to slower, more redundant, more replaceable substrates.
-
-Write authority is constrained to prevent catastrophic mutation under irreversibility.
+The system may continue operating, but **only within a bounded future**.
 
 ---
 
-## 7. Descriptive Versus Routing Representations
+## 4. Non-Redundancy Reframed
 
-### 7.1 Descriptive Representations
+### 4.1 What Is Non-Redundant (and What Is Not)
 
-Purpose:
-- summarize,
-- coordinate,
-- compress,
-- enable reasoning.
+Non-redundancy does **not** apply to:
+- specific variables (e.g., rotation, speed),
+- particular semantics,
+- task-specific distinctions.
 
-Properties:
-- lossy,
-- synonym-tolerant,
-- context-repairable,
-- robust under noise.
+Non-redundancy applies to:
 
-Examples include natural language, narratives, diagnoses, heuristics, and perceptual categories.
+> **Unallocated state capacity and interface slack for systems that aim to remain upstream.**
 
-They degrade gracefully.
+This is an architectural property, not a semantic one.
 
 ---
 
-### 7.2 Routing Representations
+### 4.2 Conditional Nature of Non-Redundancy
 
-Purpose:
-- connect,
-- authorize,
-- reach,
-- execute.
+Non-redundancy is **goal-relative**.
 
-Properties:
-- exact,
-- brittle,
-- non-redundant,
-- interface-bound.
+If a system’s goal includes:
+- future adaptability,
+- unknown tasks,
+- interface evolution,
 
-Examples include identifiers, addresses, API endpoints, binding sites, and physical conduits.
+then preserving allocatable capacity is non-redundant.
 
-They fail catastrophically when incorrect.
-
-This distinction is **structural**, not semantic.
+If the system’s goal is fixed and narrow, such capacity may be redundant.
 
 ---
 
-## 8. Topological Invariants of Viability
+## 5. Memory as the Canonical Example
 
-Under repeated abstraction and collapse, what remains invariant are:
+Memory illustrates the core claim cleanly:
 
-- reachability relations,
-- connectivity and disconnection,
-- existence of paths,
-- bottlenecks and redundancy,
-- minimal cut sets.
+- Fixed memory ⇒ fixed state space.
+- Fixed state space ⇒ no new independent variables.
+- No new variables ⇒ no new interfaces.
 
-These are **topological properties**.
+Therefore:
 
-Metric detail, probability, and semantic richness are discarded first; topology survives longest.
+> **Architectures that must adapt require spare memory and representational slack.**
 
----
-
-### 8.1 Topological Sensitivity
-
-Some representations are sensitive not to magnitude but to **connectivity**.
-
-Small errors can cause discrete failure when they sever paths.
-
-Catastrophic failure is typically a **topological cut**, not a gradual degradation.
+This applies equally to:
+- memory,
+- bandwidth,
+- identifier space,
+- schema extensibility.
 
 ---
 
-## 9. Origin Markers and Directionality
+## 6. Interfaces and Coupling
 
-### 9.1 Origin as Pre-Collapse Reference
+### 6.1 The Real Failure Mode
 
-An origin is not an absolute source, but a marker of **where fewer irreversible collapses have occurred**.
+Architectural failure at scale is typically caused by:
+- **mandatory coupling**, not centralization per se.
 
-It identifies:
-- where optionality still existed,
-- which distinctions were eliminated upstream.
-
-Downstream equivalence does not imply upstream equivalence.
-
----
-
-### 9.2 Origin as Direction, Not Location
-
-Origin defines a direction in process space:
-- upstream: generation, variation, optionality,
-- downstream: execution, commitment, interface closure.
-
-Measuring only downstream outputs cannot recover upstream loss.
+A component becomes structurally dangerous when:
+- it is required for steady-state operation,
+- it shares a failure domain with unrelated functions,
+- it cannot be bypassed or replicated.
 
 ---
 
-## 10. Orientation Under Irreversibility (A*-Like Analogy)
+### 6.2 Example: Central Coordination
 
-The origin marker plays a role analogous to a heuristic in A* search:
+Central coordination is not forbidden.
 
-- not estimating distance to a goal,
-- but estimating distance from irreversible collapse.
-
-It provides:
-- orientation under bounded resources,
-- protection against false recoverability,
-- a monotonic reference for what cannot be undone.
-
-This is not optimization; it is **viability-preserving orientation**.
+What is forbidden for upstream systems is:
+- irreversible coupling of coordination to execution,
+- lack of allocatable capacity for alternative interaction paths.
 
 ---
 
-## 11. Fast Safety Loops
+## 7. Reachability and Future Foreclosure
 
-Feedback loops are viable only if they close before:
-- irreversible damage dominates outcomes,
-- resource loss exceeds correction capacity.
+### 7.1 What Is Lost When Collapse Occurs
 
-When deliberation is too slow, **fast safety loops are mandatory**.
+When allocatable capacity is consumed:
 
-They:
-- operate on minimal state,
-- collapse ambiguity early,
-- prioritize interface preservation,
-- sacrifice nuance for survival.
+- certain future interfaces become unreachable,
+- not because they are illogical or unphysical,
+- but because the architecture cannot host them.
 
-They exist by necessity, not convention.
+This loss is irreversible without global redesign.
 
 ---
 
-## 12. Viability
+### 7.2 No Knowledge of the Future Required
 
-### 12.1 Agent-Local Viability
+The framework does **not** require knowing future tasks.
 
-An agent is viable over horizon *H* if all critical interfaces required for:
-- execution,
-- feedback,
-- coordination,
-- redesign,
-
-remain reachable throughout *H*.
-
-Viability is horizon-relative and admits partial orderings.
+It requires only recognizing that:
+- unknown tasks may require new distinctions,
+- and those distinctions require free state capacity.
 
 ---
 
-### 12.2 Criticality and Discoverability
+## 8. Limits of the Framework
 
-Interface criticality is:
-- context-dependent,
-- often revealed only post-failure,
-- structurally difficult to identify under bounded foresight.
+This sketch does **not**:
+- predict which future tasks matter,
+- identify optimal allocation strategies,
+- prevent all failure.
 
-Misidentification is unavoidable.
+It provides a **necessary constraint** only:
 
----
-
-## 13. Meaning Without Mystery
-
-Meaning is not intrinsic to symbols.
-
-Meaning is:
-
-> **the preservation of distinctions necessary to maintain future reachability across interfaces.**
-
-This reframes:
-- synonymy as robustness,
-- abstraction as controlled loss,
-- precision as interface-dependent.
-
-No metaphysical residue remains—only constraints.
+> **If a system must remain upstream, it must preserve allocatable degrees of freedom.**
 
 ---
 
-## 14. What This Theory Sketch Provides
+## 9. Final Formulation
 
-This theory sketch does not explain everything.
+The strongest defensible claim of this framework is:
 
-It explains:
-- why certain distinctions cannot be discarded,
-- why architectures recur across domains,
-- why some errors are fatal and others recoverable,
-- why loss is unavoidable and structurally allocated.
+> **For systems that aim to remain upstream under irreversibility, unallocated state capacity and interface slack are non-redundant. Irreversible allocation forecloses future reachability, regardless of intelligence or intent.**
 
-It provides a **structural skeleton** on which domain-specific theories can be constructed.
+Nothing stronger is claimed.
 
 ---
 
-## 15. Conclusion
+## 10. Conclusion
 
-Under bounded cognition and irreversible dynamics, viability depends on preserving **topological invariants of reachability**.
+Viability under irreversibility is not governed by intelligence, semantics, or optimization.
 
-Artifacts, agents, meanings, and metrics are replaceable.  
-Interfaces, paths, and connectivity are not.
+It is governed by:
+- what has been irreversibly allocated,
+- what capacity remains free,
+- and which futures the architecture can still host.
 
-This theory sketch makes explicit what survives collapse, clarifies non-redundancy under constraint, and replaces vague notions of meaning and intelligence with structurally grounded necessity.
+Systems that collapse their allocatable degrees of freedom too early do not merely risk failure —  
+they **structurally bound their future**.
 
 ---
 
