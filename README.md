@@ -22,16 +22,16 @@ The document is written so that the argument can be **re-derived from first prin
 This document does **not** claim:
 
 - a new conservation law in the Noether / physics sense,
-- optimal architectures,
-- universal goals,
+- optimal architectures or design prescriptions,
+- universal goals or value judgments,
 - inevitability of specific failures,
-- completeness or finality.
+- completeness, finality, or exclusivity.
 
 It does **not** argue that flexibility is always better than efficiency.
 
 It argues only that:
 
-> **irreversible allocation of finite representational capacity imposes structural limits that no amount of intelligence, learning, or computation can overcome.**
+> **irreversible allocation of finite representational capacity imposes structural limits that no amount of intelligence, learning, optimization, or computation can overcome.**
 
 ---
 
@@ -51,7 +51,7 @@ This includes (conditionally):
 - biological cognition,
 - organizations and institutions,
 
-to the extent that they satisfy the assumptions below.
+to the extent—and only to the extent—that they satisfy the assumptions below.
 
 ---
 
@@ -64,7 +64,7 @@ If any assumption does not hold, the framework does not apply.
 
 ### 1. Bounded Representational Capacity
 
-Any real system has finite capacity.
+Any real system has finite representational capacity.
 
 This includes limits on:
 - memory,
@@ -74,8 +74,10 @@ This includes limits on:
 - precision,
 - addressable parameters.
 
-This is not an implementation flaw.  
-It is a property of physical, computational, and organizational systems.
+This is not an implementation flaw or engineering accident.  
+It is a property of physical, computational, and organizational systems operating under resource constraints.
+
+Capacity may be large relative to a task, but it is never infinite relative to all possible distinctions.
 
 ---
 
@@ -83,26 +85,27 @@ It is a property of physical, computational, and organizational systems.
 
 Some uses of representational capacity cannot be freely undone.
 
-Examples:
+Examples include:
 - fixed hardware layouts,
 - lossy compression,
 - rigid schemas or protocols,
 - early developmental specialization,
-- tightly coupled organizational processes.
+- tightly coupled organizational processes,
+- entrenched interfaces or APIs.
 
 “Irreversible” here does **not** mean logically impossible to change.
 
 It means:
 
-> reversal requires global redesign, prohibitive coordination, or loss elsewhere.
+> reversal requires global redesign, prohibitive coordination, external intervention, or loss elsewhere in the system.
 
-Irreversibility is defined **relative to the system’s own feasible resources**, not to theoretical possibility.
+Irreversibility is defined **relative to the system’s own feasible resources**, not to theoretical or idealized possibility.
 
 ---
 
 ### 3. Interaction Is Interface-Constrained
 
-All action, learning, and redesign occur through interfaces.
+All action, learning, adaptation, and redesign occur through interfaces.
 
 Interfaces impose:
 - limited bandwidth,
@@ -111,7 +114,8 @@ Interfaces impose:
 - restricted extensibility,
 - partial observability.
 
-No system can directly rewrite itself without passing through such constraints.
+No system can directly rewrite itself “from outside itself.”  
+Self-modification, meta-learning, and architectural change are themselves mediated processes that consume representational capacity and operate under interface constraints.
 
 ---
 
@@ -124,10 +128,10 @@ No system can directly rewrite itself without passing through such constraints.
 Reachability is:
 - architectural, not semantic,
 - structural, not behavioral,
-- defined by what the system *can represent*, not by what it wants or tries to do.
+- defined by what the system *can represent*, not by what it wants, values, or attempts to optimize.
 
 Optimization, intelligence, and learning operate **within** reachability.  
-They do not define it.
+They do not define or expand it.
 
 ---
 
@@ -135,16 +139,16 @@ They do not define it.
 
 A **degree of freedom (DOF)** is an independent axis along which a system can represent variation.
 
-Examples:
+Examples include:
 - bits in memory,
 - dimensions in an embedding,
 - independent parameters,
 - routing paths,
 - coordination channels,
-- roles in an organization.
+- roles or positions in an organization.
 
 Only **addressable degrees of freedom** matter.  
-Latent or inaccessible DOF that cannot be acted upon through interfaces are structurally equivalent to nonexistence.
+Latent, inaccessible, or non-manipulable DOF that cannot be acted upon through interfaces are structurally equivalent to nonexistence.
 
 Degrees of freedom are the allocatable resource that determines what distinctions can exist.
 
@@ -157,7 +161,7 @@ A **distinction** exists if and only if:
 - two states can be mapped to different equivalence classes
 - under the system’s available representation and computation.
 
-Labels, semantics, and interpretations are irrelevant.  
+Labels, semantics, interpretations, and intentions are irrelevant.  
 Only **distinguishability under the architecture** matters.
 
 ---
@@ -169,7 +173,9 @@ When multiple states are forced to map to the same equivalence class and this ma
 Once collapsed:
 - the distinction is no longer representable,
 - the distinction is no longer reachable,
-- no later process can recover it exactly.
+- no later internal process can recover it exactly.
+
+Approximation, abstraction, or probabilistic inference may substitute for the lost distinction, but they do not restore it.
 
 ---
 
@@ -183,10 +189,10 @@ If a distinction is not representable in the available state space:
 - no amount of intelligence can compensate.
 
 This follows directly from:
-- finite capacity, and
+- finite representational capacity, and
 - irreversible many-to-one mappings.
 
-This is not a claim about specific algorithms.  
+This is not a claim about specific algorithms, models, or training regimes.  
 It is a structural constraint.
 
 ---
@@ -197,11 +203,11 @@ It is a structural constraint.
 
 Early allocation commits degrees of freedom sooner.
 
-Examples:
+Examples include:
 - fixed-width representations,
 - rigid schemas,
 - non-extensible protocols,
-- early specialization.
+- early specialization in learning or organization.
 
 Properties:
 - predictable,
@@ -217,11 +223,11 @@ Structural cost:
 
 Deferred allocation postpones commitment.
 
-Examples:
+Examples include:
 - variable-length representations,
 - embeddings instead of explicit symbols,
 - late binding,
-- exploratory learning phases.
+- exploratory or self-organizing phases.
 
 Properties:
 - flexible,
@@ -234,7 +240,7 @@ Structural cost:
 - delayed (not eliminated) collapse.
 
 Deferred allocation does not avoid limits.  
-It **moves them outward**.
+It **moves them outward** in time or complexity.
 
 ---
 
@@ -251,8 +257,24 @@ New capabilities arise through:
 - reuse,
 - approximation,
 - layering,
+- compression trade-offs,
 
-not through full structural recovery.
+not through full structural recovery of lost distinctions.
+
+---
+
+## Scaling and Retrofitting (Explicit Boundary)
+
+Adding capacity later—through scaling, retrofitting, or extension—is itself an allocation decision.
+
+Such changes:
+- consume coordination bandwidth,
+- introduce new interfaces,
+- incur migration and compatibility costs,
+- remain subject to irreversibility at a higher level.
+
+Scaling can expand reachability **only to the extent that interfaces and coordination permit**.  
+It does not retroactively recover distinctions that were never preserved.
 
 ---
 
@@ -262,7 +284,7 @@ not through full structural recovery.
 
 Intelligence, optimization, semantics, and training **cannot extend this set**.
 
-This is a **necessary structural condition**, not a claim of sufficiency or optimality.
+This is a **necessary structural condition**, not a claim of sufficiency, optimality, or inevitability.
 
 ---
 
@@ -311,7 +333,7 @@ If adaptability does not matter, these implications may be irrelevant.
 
 ## Summary
 
-Systems do not fail only because of bad decisions or insufficient intelligence.
+Systems do not fail only because of bad decisions, misaligned incentives, or insufficient intelligence.
 
 They also fail because:
 - representational capacity was exhausted,
@@ -329,6 +351,7 @@ This is a working note.
 It is intended to:
 - clarify thinking,
 - surface hidden constraints,
+- support re-derivation from first principles,
 - and remain open to correction.
 
 Claims are made only where the structure requires them.
