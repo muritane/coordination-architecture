@@ -1,31 +1,37 @@
-# The Executability Constraint
-## Why Only Executed Representations Are Structurally Accountable
+# The Executability Constraint  
+## Structural Accountability, Consequence Topology, and Horizon-Constrained Viability
 
 ---
 
 ## What This Document Is
 
-This document defines and formalizes the executability constraint.
+This document defines and formalizes the **executability constraint** and its implications for **structural accountability** in constrained systems.
 
-It treats executability as a **boundary condition on structural accountability** for representations that seek to guide action, persist over time, or survive contact with reality.
+It presents a **descriptive and diagnostic framework** for understanding when and how representations, once executed, become exposed to:
 
-The focus is not on truth, ethics, coherence, persuasion, or intent, but on **accountability under execution** within constrained systems.
+- enforced invariants,
+- finite capacity,
+- irreversible state transitions,
+- horizon-bounded viability.
+
+The framework treats consequences as **runtime effects** of execution—not as moral feedback, social judgment, or interpretive response.
 
 ---
 
 ## What This Document Is Not
 
-This document does not:
+This document does **not**:
 
 - evaluate moral correctness,
-- assess narrative coherence,
 - adjudicate ideological disputes,
+- assign blame or responsibility,
 - claim predictive certainty,
+- prescribe optimal strategies,
 - privilege technical systems over human ones.
 
-It does not argue that non-executable systems are false, useless, or illegitimate.
+It does not argue that non-executable systems are false, illegitimate, or meaningless.
 
-It argues that **they are structurally unconstrained unless and until they commit to execution**.
+It argues only that **they are structurally unconstrained unless and until they execute**.
 
 ---
 
@@ -33,33 +39,32 @@ It argues that **they are structurally unconstrained unless and until they commi
 
 The executability constraint is **not universal**.
 
-It applies **only** to representations that aspire to one or more of the following:
+It applies only to representations that aspire to one or more of the following:
 
 - sustained action,
 - coordination across time,
 - persistence under disturbance,
 - survival within enforced constraints.
 
-Representations that do not seek persistence or actionability—such as expressive, interpretive, speculative, symbolic, or meaning-oriented systems—may remain non-executable without defect.
+Representations that do not seek persistence—expressive, symbolic, speculative, interpretive, or meaning-oriented systems—may remain non-executable without defect.
 
-Executability is not a requirement for meaning.
-
+Executability is **not a requirement for meaning**.  
 It is a requirement for **running**.
 
 ---
 
 ## Core Claim
 
-A representation becomes structurally accountable **only when it is executed** through constrained systems over time.
+A representation becomes **structurally accountable** only when it is **executed** through a constrained system over a specified horizon.
 
-Until execution occurs, representations remain:
+Prior to execution, representations are:
 
 - costless,
-- bufferless,
 - invariant-free,
-- horizon-unbound.
+- buffer-unbound,
+- horizon-indeterminate.
 
-Executability is the point at which reality asserts itself **for representations that choose to run**.
+Execution is the point at which **system topology replaces interpretation**.
 
 ---
 
@@ -67,7 +72,7 @@ Executability is the point at which reality asserts itself **for representations
 
 ### Representation
 
-Any model, belief, theory, narrative, plan, or description that purports to explain, guide, justify, or coordinate action.
+Any model, belief, plan, theory, narrative, or description that purports to explain, justify, guide, or coordinate action.
 
 ### Executable System
 
@@ -79,11 +84,11 @@ A system in which invocations:
 - encounter enforced invariants,
 - unfold irreversibly over time.
 
-Executable systems include technical systems, institutions, markets, organisms, legal regimes, and organizations.
+Executable systems include technical systems, institutions, markets, legal regimes, organizations, and organisms.
 
 ### Execution
 
-Execution is the actualization of a representation as a sequence of state transitions governed by system topology and constraints.
+Execution is the **actualization of a representation** as a sequence of state transitions governed by system topology and constraints.
 
 Execution is indifferent to:
 
@@ -92,7 +97,22 @@ Execution is indifferent to:
 - justification,
 - interpretation.
 
-A representation does not execute partially **within a given system and horizon**—only fully or not at all.
+Within a fixed system *S* and horizon *H*, execution is **discrete**:  
+a representation either commits or does not commit.
+
+---
+
+## Structural Accountability
+
+Structural accountability means **exposure to non-negotiable consequences** produced by execution.
+
+A representation is structurally accountable if and only if:
+
+- its execution injects disturbance into constrained systems,
+- that disturbance encounters enforced invariants,
+- failure or degradation becomes legible within a horizon.
+
+Accountability here is **systemic**, not moral or interpersonal.
 
 ---
 
@@ -101,23 +121,23 @@ A representation does not execute partially **within a given system and horizon*
 For a representation to be **diagnostic or action-guiding with respect to persistence**, it must:
 
 - commit to execution through constrained systems,
-- accept the consequences of that execution.
+- accept the consequences produced by that execution.
 
-Absent such commitment, representations remain structurally untested.
+Absent such commitment, representations remain **structurally untested**.
 
 ---
 
 ## The Executability Boundary
 
-Executability marks a boundary in the reasoning stack:
+Executability defines a boundary in the reasoning stack:
 
 **Above the boundary**
 - semantics,
 - meaning,
 - values,
-- interpretation,
 - narrative,
-- ideology.
+- ideology,
+- justification.
 
 **At the boundary**
 - compilation,
@@ -129,115 +149,277 @@ Executability marks a boundary in the reasoning stack:
 **Below the boundary**
 - invariants,
 - capacity limits,
+- buffering,
 - latency,
 - irreversibility,
 - failure.
 
-Crossing this boundary converts explanation into exposure.
+Crossing the boundary converts explanation into exposure.
 
 ---
 
-## Why Executability Changes Everything
+## Execution, Partiality, and Horizon Slicing
 
-### 1. Constraints Become Non-Negotiable
+Execution does not occur partially **within a fixed system and horizon**.
 
-Under execution:
+What appear as partial executions—simulations, pilots, rehearsals, proofs of concept—are executions of **related but distinct representations**, operating under:
 
-- resources are finite,
-- time advances irreversibly,
-- capacity saturates,
-- safety margins enforce.
+- altered systems,
+- reduced invariant enforcement,
+- truncated horizons.
 
-Interpretation can no longer substitute for structure.
+Gradual exposure arises not from partial execution, but from:
 
-### 2. Complexity Becomes Costly
+- horizon slicing,
+- system substitution,
+- staged commitment across interfaces.
 
-Non-executable representations may grow arbitrarily complex.
+Structural accountability begins only where execution is **irretractable in the target system over the target horizon**.
 
-Executable systems pay for complexity via:
+---
 
-- coordination overhead,
-- latency inflation,
-- fragility,
-- tail risk,
-- failure surface expansion.
+## Consequence Topology
 
-Execution prices abstraction.
+**Consequence topology** describes how disturbance introduced by execution propagates through a system.
 
-### 3. Buffers Must Exist and Be Owned
+It includes:
 
-Executable systems require buffers:
+- interfaces traversed,
+- intermediaries involved,
+- buffers encountered,
+- feedback paths available,
+- invariants enforced.
+
+Topology—not intent—determines:
+
+- latency,
+- observability,
+- amplification,
+- attribution error.
+
+---
+
+## Conservation at the System Level (Analogical)
+
+Execution injects **disturbance**.
+
+At the level relevant to persistence:
+
+- disturbance does not disappear,
+- it cannot be erased by reinterpretation,
+- it cannot be nullified by denial.
+
+It can be delayed, buffered, transformed, or displaced.
+
+This is an **operational analogy**, not a physical law:
+
+> Disturbance deferred at one layer reappears as constraint, cost, or risk at another.
+
+---
+
+## Key Topological Dimensions
+
+### Path Length (Latency)
+
+Longer paths:
+
+- reduce salience,
+- increase discounting,
+- permit narrative substitution.
+
+Latency alters perception, not execution.
+
+---
+
+### Fan-Out (Distribution)
+
+High fan-out:
+
+- dilutes perceived responsibility,
+- increases aggregate system cost,
+- complicates diagnosis and correction.
+
+---
+
+### Buffers
+
+Buffers include:
 
 - queues,
 - slack,
+- redundancy,
 - reserves,
-- redundancy.
+- inventory,
+- other agents’ time or labor.
 
 Buffers:
 
 - store disturbance,
 - delay consequences,
-- never eliminate cost.
+- transform expression.
 
-Every buffer has an owner.
-
-Non-executable systems permit buffering without ownership.
-
-### 4. Horizons Are Forced
-
-Execution unfolds over time.
-
-Every executable representation implicitly selects a horizon over which viability is tested.
-
-Without a horizon, no persistence claim is complete.
+They do not eliminate cost.
 
 ---
 
-## On Simulation, Pilots, and Partiality
+### Observability
 
-Execution admits no partiality **within a fixed system and horizon**.
+Some effects are immediate and legible.  
+Others are delayed, statistical, or visible only under aggregation or stress.
 
-At the lowest level of system reality:
-
-- a transaction commits or aborts,
-- a control surface actuates or does not,
-- a legal power is exercised or withheld.
-
-What are often described as partial executions—simulations, pilots, dry runs, proofs of concept, rehearsals—are **executions of related but distinct representations**, operating under altered systems or horizons.
-
-They may approximate or bound behavior, but they do not incur:
-
-- the same invariant enforcement,
-- the same resource exposure,
-- the same irreversibility,
-- the same horizon commitment.
-
-Structural accountability begins only where execution is no longer retractable **in the target system**.
+Low observability enables interpretive narratives to persist until invariants assert themselves.
 
 ---
 
-## Non-Executable Systems
+### Irreversibility Gradients
 
-### Characteristics
+Not all consequences are binary.
 
-Non-executable systems typically exhibit:
+Some effects:
 
-- interpretive flexibility,
-- absence of enforced invariants,
-- immunity to definitive runtime failure,
-- indefinite horizon deferral.
+- shrink option space,
+- degrade controllability,
+- accumulate debt,
+- reduce future adaptability.
 
-They may be coherent, persuasive, or meaningful, but remain structurally unconstrained.
+Irreversible effects dominate long-horizon outcomes.
 
-### Examples
+---
 
-- conspiracy theories,
-- totalizing philosophical frameworks,
-- unfalsifiable ideologies,
-- identity-anchored narratives,
-- purely descriptive social theories.
+## Action, Non-Action, and Defaults
 
-These systems explain, justify, or motivate—but they do not run.
+An action is any invocation that causes a system transition.
+
+This includes:
+
+- explicit acts,
+- defaults,
+- omissions,
+- timeouts,
+- silence.
+
+Where a system defines default behavior, **inaction executes that default**.
+
+Intent is not required for execution.
+
+---
+
+## Agency and Execution Surfaces
+
+Agency varies by **decision dimensionality**, not by execution relevance.
+
+- **Decision space**: available choices.
+- **Execution space**: transitions the system enforces.
+
+An **execution surface** is any locus where:
+
+- invocation occurs,
+- invariants are enforced,
+- disturbance is injected,
+
+regardless of the agent’s degree of choice.
+
+Systems execute through surfaces, not through intent.
+
+---
+
+## Buffer Ownership and Debt
+
+Every buffer has an owner who bears:
+
+- storage cost,
+- maintenance cost,
+- opportunity cost,
+- risk exposure.
+
+Ownership may be explicit or implicit.
+
+Unowned buffers accumulate **buffer debt**, which surfaces under stress.
+
+Over-buffering is not free.
+
+---
+
+## Risk Emergence
+
+Risk does not reside in representations.
+
+Risk emerges when representations are **executed through constraints**.
+
+Risk signals include:
+
+- rising variance,
+- queue growth,
+- latency inflation,
+- correction overhead,
+- loss of controllability margins.
+
+---
+
+## Correction Is Not Free
+
+Retries, redundancy, failover, and averaging defer failure locally.
+
+At the system level, they convert disturbance into:
+
+- complexity,
+- coordination cost,
+- resource overhead,
+- tail risk.
+
+Correction redistributes cost; it does not eliminate it.
+
+---
+
+## Horizon as a First-Class Constraint
+
+A **horizon** defines the time span over which viability is evaluated.
+
+Without a specified horizon, persistence claims are incomplete.
+
+Horizons vary by system:
+
+- milliseconds (control),
+- days (operations),
+- years (infrastructure),
+- decades (institutions).
+
+---
+
+## Horizon-Constrained Viability
+
+Given:
+
+- a representation *R*,
+- a system *S*,
+- a horizon *H*,
+
+*R* is viable if its execution does **not violate invariants required to persist over *H***.
+
+Exact prediction is unnecessary; **bounding invariant pressure is sufficient**.
+
+---
+
+## Accumulation and Dominance
+
+Over time:
+
+- disturbances accumulate,
+- buffers saturate,
+- correction overhead grows,
+- irreversibility dominates.
+
+Latent degradation outcompetes visible noise.
+
+---
+
+## Power as Topological Asymmetry
+
+Power is not exemption from execution.
+
+Power is the capacity to **reassign disturbance and buffer ownership across nodes and horizons**.
+
+No disturbance disappears; it is displaced to nodes less able to resist or signal it.
 
 ---
 
@@ -249,7 +431,6 @@ They fail only via:
 
 - loss of belief,
 - reputational decay,
-- cultural displacement,
 - narrative replacement.
 
 These are not runtime failures.
@@ -260,57 +441,11 @@ These are not runtime failures.
 
 Executability does not guarantee correctness.
 
-It guarantees contact.
+It guarantees **contact**.
 
-A wrong executable representation will fail faster and more legibly than a flawless non-executable one.
+A wrong executable representation fails faster and more legibly than a flawless non-executable one.
 
-Executability is therefore a **diagnostic amplifier**, not a truth oracle.
-
----
-
-## Defaults, Omissions, and Silent Execution
-
-Execution does not require explicit action.
-
-Whenever a system defines default behavior:
-
-- inaction executes defaults,
-- delay executes timeouts,
-- silence executes fallbacks.
-
-Intent is not a prerequisite for execution.
-
----
-
-## Invariants and Enforcement
-
-Executable systems enforce invariants such as:
-
-- solvency,
-- safety margins,
-- legality,
-- maintainability,
-- controllability,
-- trust.
-
-Invariant violation is how executable systems express failure.
-
-Narrative systems lack invariant enforcement.
-
----
-
-## Irreversibility and Option Loss
-
-Execution introduces irreversibility:
-
-- depleted resources,
-- degraded trust,
-- accumulated debt,
-- narrowed option space.
-
-Irreversibility dominates long-horizon outcomes.
-
-Non-executable systems remain reversible indefinitely.
+Executability is a diagnostic amplifier, not a truth oracle.
 
 ---
 
@@ -318,81 +453,28 @@ Non-executable systems remain reversible indefinitely.
 
 This framework is itself a representation.
 
-It does not execute.
-It owns no buffers.
-It commits to no horizon.
+It does not execute.  
+It owns no buffers.  
+It commits to no horizon.  
 It incurs no enforced invariants.
 
 Accordingly, it is classified as a **non-executable diagnostic representation**.
 
-It does not claim structural accountability.
-It claims conditional relevance: applicability only when execution is desired or invoked.
-
-No representation may apply the executability constraint while implicitly exempting itself from classification.
+It claims no structural accountability—only conditional relevance where execution is invoked.
 
 ---
 
-## Formalizing Executability
-
-Executability is not an intrinsic property of representations.
-
-It is a relation.
-
-Let **E(R, S, H)** denote the execution of representation *R* within system *S* over horizon *H*.
-
-Execution is characterized by:
-
-- enforced invariants in *S*,
-- irreversible state transitions,
-- finite resource exposure,
-- legible failure within *H*.
-
-### Properties
-
-- **E is not idempotent**: repeated execution accumulates irreversibility.
-- **E is context-sensitive**: a representation may be executable in one system and not in another.
-- **E is non-transitive**: diagnostics of executable systems do not become executable by reference.
-
-Executability applies only at the point of commitment and invocation.
-
----
-
-## Relationship to Truth, Ethics, and Meaning
-
-Executability is orthogonal to:
-
-- truth,
-- morality,
-- justice,
-- meaning.
-
-A system may be:
-
-- executable and unjust,
-- executable and false,
-- non-executable and meaningful,
-- non-executable and ethically valuable.
-
-The constraint applies only to **structural accountability under persistence**.
-
----
-
-## Status of This Framework
+## Status
 
 This document provides:
 
 - a boundary concept,
-- a diagnostic filter,
-- a cross-domain lens.
+- a structural lens,
+- a diagnostic filter.
 
-It does not replace:
+It does not replace ethics, philosophy, or domain-specific models.
 
-- ethics,
-- philosophy,
-- domain-specific models,
-- empirical validation.
-
-It clarifies when those tools must yield to execution.
+It clarifies **when those tools must yield to execution**.
 
 ---
 
@@ -400,10 +482,10 @@ It clarifies when those tools must yield to execution.
 
 Representations are free until they run.
 
-Execution consumes capacity.
-Capacity enforces invariants.
+Execution consumes capacity.  
+Capacity enforces invariants.  
 Invariants do not negotiate.
 
-Only what executes becomes accountable.
-
+Only what executes becomes accountable.  
 Everything else remains optional—by choice.
+
