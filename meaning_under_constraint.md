@@ -8,29 +8,22 @@
 
 This document describes **meaning** as an *emergent, system-level property* that arises only under **coordination and execution constraints**.
 
-The framework is **explicitly isomorphic to execution models in computing and systems engineering**.  
+The framework is **explicitly architectural and operational**, and isomorphic to execution models in computing and systems engineering.
 The same structural principles that govern:
 
 * distributed systems,
 * protocol design,
 * operational semantics,
 * fault tolerance,
-* and coordination under partial failure
+* coordination under partial failure,
 
-are treated here as the conditions under which meaning becomes **shared, inspectable, and real**.
+are treated here as the conditions under which meaning becomes **shared, inspectable, executable, and failure-bearing**.
 
-Meaning is treated not as:
+Meaning is treated **neither as a mental phenomenon nor as an interpretive achievement**, but as a **structural residue**:
+what remains after internal, continuous state is forced through **discrete interfaces that must terminate, admit substitution, and support failure semantics**.
 
-* subjective experience,
-* semantic richness,
-* interpretive depth,
-* moral intention,
-* psychological state,
-* or inferred intent,
-
-but as a **structural residue**: what remains after internal, continuous state is forced through **discrete interfaces that must execute, terminate, and admit failure**.
-
-The perspective is **architectural and operational**, not philosophical, rhetorical, or normative.
+This document is **not philosophical, rhetorical, psychological, or normative**.
+It is a classification of **when internal state becomes a system artifact**.
 
 ---
 
@@ -39,13 +32,17 @@ The perspective is **architectural and operational**, not philosophical, rhetori
 This document does **not** attempt to:
 
 * define meaning in the abstract,
-* explain consciousness or phenomenology,
+* explain consciousness, phenomenology, or experience,
 * reduce private experience to structure,
-* evaluate truth, value, or correctness,
-* argue for a preferred theory of meaning,
-* or replace linguistics, semiotics, or philosophy of mind.
+* evaluate truth, value, sincerity, or correctness,
+* argue for a preferred semantic theory,
+* replace linguistics, semiotics, or philosophy of mind.
 
-It is concerned only with **when internal state exits an agent and becomes a shared, inspectable, failure-bearing system artifact**.
+It is concerned **only** with the following boundary:
+
+> When internal state exits an agent and becomes a **shared, inspectable, externally executable artifact subject to coordination constraints and failure cost**.
+
+Nothing outside that boundary is addressed.
 
 ---
 
@@ -53,20 +50,20 @@ It is concerned only with **when internal state exits an agent and becomes a sha
 
 Meaning becomes **shared** only when it is forced through the same constraints that govern **coordination and execution**.
 
-Private meaning may exist without constraint.  
+Private meaning may exist without constraint.
 Shared meaning cannot.
 
-Until a representation survives:
+Until a representation is:
 
-* agent substitution,
-* bounded resources,
-* partial observability,
-* irreversible execution,
-* and non-trivial failure cost,
+* externally addressable,
+* substitutable across agents,
+* bounded by resources,
+* admitted into a protocol,
+* and capable of failing non-trivially,
 
 it remains **internal state**, not a system-level artifact.
 
-This transition is not semantic.  
+This transition is **not semantic**.
 It is **architectural**.
 
 ---
@@ -87,15 +84,15 @@ Internal meaning:
 
 * is continuous and high-dimensional,
 * is unconstrained by execution,
-* is not externally inspectable,
+* is not externally addressable,
 * incurs no coordination cost,
 * cannot fail structurally,
-* has no external handle or address.
+* has no enforcement surface.
 
-Internal meaning is **real for the agent**.  
+Internal meaning is **real for the agent**.
 It is **non-addressable by systems**.
 
-This is a scope boundary, not an ontological claim.
+This is a **scope boundary**, not an ontological judgment.
 
 ---
 
@@ -104,30 +101,31 @@ This is a scope boundary, not an ontological claim.
 Shared meaning is meaning that:
 
 * is expressed through an external representation,
+* becomes externally addressable,
 * enters a shared medium or protocol,
 * is discretized by interfaces,
-* becomes subject to enforcement,
-* can succeed or fail in coordination.
+* is subject to enforcement,
+* can succeed or fail under coordination.
 
-Shared meaning must survive **execution by agents other than the originator**.
+Shared meaning must be **executable by substituted agents** without appeal to origin-specific intent, private context, or discretionary reinterpretation.
 
-Meaning that cannot fail cannot coordinate.  
-Meaning that can only be preserved by reinterpretation has already failed as an executable artifact.
+> Meaning that cannot fail cannot coordinate.
+> Meaning that survives only by reinterpretation has already failed as an executable artifact.
 
 ---
 
 ## Preconditions for Shared Meaning
 
-Meaning becomes shared only when **all** of the following hold.
+Meaning becomes shared **only if all of the following hold**.
 
-These are not philosophical requirements.  
+These are not philosophical requirements.
 They are **execution constraints**.
 
 ---
 
 ### 1. Multiple Independent Agents
 
-Shared meaning requires at least two distinct agents.
+Shared meaning requires at least two **independent agents**.
 
 An agent may be:
 
@@ -137,20 +135,20 @@ An agent may be:
 * an institution,
 * a device.
 
-If a representation cannot be executed by a substituted agent without appeal to origin-specific context or intent, it remains private.
+If a representation cannot be executed by a substituted agent without privileged access to the originator’s internal state, it remains internal.
 
-**Agent substitution is the first test of shared meaning.**
+**Agent substitution is the first and non-negotiable test of shared meaning.**
 
 ---
 
 ### 2. Shared or Coupled State
 
-Agents must interact through:
+Agents must interact through a defined surface:
 
-* a common medium,
+* a medium,
 * a protocol,
 * a shared artifact,
-* a transaction surface.
+* a transaction boundary.
 
 Examples include:
 
@@ -161,30 +159,32 @@ Examples include:
 * contracts,
 * broadcasts.
 
-Meaning emerges **in interaction through defined surfaces**, not in isolation.
+Meaning does not emerge in isolation.
+It emerges **only through interaction across defined surfaces**.
 
-Different interaction topologies (synchronous vs asynchronous, symmetric vs asymmetric) produce distinct **failure surfaces**, not different kinds of meaning.
+Different interaction topologies do not produce different kinds of meaning.
+They produce **different failure surfaces**.
 
 ---
 
 ### 3. Partial Observability
 
-Shared meaning is never fully symmetric.
+Shared meaning is **never fully symmetric**.
 
 Agents differ in:
 
 * access to state,
 * execution context,
-* privilege level,
 * timing,
+* privileges,
 * local invariants.
 
-Examples:
+Examples include:
 
 * author vs reader,
 * sender vs receiver,
-* admin vs user,
-* producer vs consumer.
+* producer vs consumer,
+* administrator vs user.
 
 Meaning must tolerate **asymmetric access to state**.
 
@@ -205,14 +205,14 @@ Shared meaning consumes real resources:
 
 A representation that requires:
 
-* unlimited patience,
 * infinite context,
+* unlimited patience,
 * perfect recall,
 * or unbounded interpretation,
 
 cannot function as shared meaning.
 
-**Compression is not loss of meaning.**  
+**Compression is not loss of meaning.**
 It is the **price of survivability under constraint**.
 
 ---
@@ -221,17 +221,17 @@ It is the **price of survivability under constraint**.
 
 Shared meaning commits to execution.
 
-Once expressed:
+Once expressed, it may be:
 
-* it may be logged,
+* logged,
 * copied,
 * forwarded,
 * cached,
 * acted upon,
 * or trigger irreversible state change.
 
-Undo buffers, retries, and rollbacks are **explicitly defined recovery mechanisms**.  
-They do not eliminate irreversibility; they localize it.
+Rollback, retry, and undo mechanisms are **explicit recovery protocols**.
+They do not eliminate irreversibility; they **localize and bound it**.
 
 Meaning that depends on discretionary retraction or reinterpretation is structurally fragile.
 
@@ -241,31 +241,27 @@ Meaning that depends on discretionary retraction or reinterpretation is structur
 
 Shared meaning can fail in ways that matter.
 
-Failures include:
+Failure includes:
 
 * misexecution,
 * protocol violation,
 * incompatible interpretation,
 * unintended action,
-* state corruption.
+* state divergence.
 
 Failure cost is defined by:
 
-* scope (local vs global),
 * blast radius,
 * reversibility,
 * detectability,
-* who bears the cost,
-* and whether failure is terminal.
+* enforcement timing,
+* and who bears the cost.
 
-Failure may result in:
+Meaning becomes *real* when failure:
 
-* lost work,
-* coordination breakdown,
-* system halt,
-* irreversible state divergence.
-
-Meaning becomes *real* when failure is no longer harmless and cannot be silently externalized.
+* cannot be silently externalized,
+* cannot be ignored without consequence,
+* and is attributable within the system.
 
 ---
 
@@ -275,20 +271,36 @@ Once externalized, meaning behaves like any other executable artifact.
 
 Examples:
 
-* An empty file is meaningful because it is openable, shareable, and inspectable as state.
+* An empty file is meaningful because it is addressable, openable, and inspectable.
 * A file with unknown encoding is meaningless regardless of originator intent.
 * Permissions define which meanings are executable.
 * Read access is an action; denial is also execution.
 
-No amount of goodwill can decode an unknown format.
+**Structural legibility is required.**
+Intent does not override format.
 
-**Meaning requires structural legibility, not inferred intent.**
+---
+
+## Executability vs Execution
+
+Execution is **not required** for meaning to be shared.
+
+Shared meaning requires **executability under a protocol**, not historical execution.
+
+A representation qualifies as shared meaning once it:
+
+* is externally addressable,
+* is structurally legible,
+* is admitted into a protocol,
+* and would incur failure cost *if executed*.
+
+Executability is a **property of the surrounding system**, not of whether execution is exercised.
 
 ---
 
 ## Interfaces as Decidability Boundaries
 
-Interfaces do not preserve meaning.  
+Interfaces do not preserve meaning.
 They **cut** it.
 
 An interface:
@@ -298,8 +310,7 @@ An interface:
 * enforces binary decisions,
 * terminates interpretation.
 
-This lossiness is not accidental.  
-It is **required for execution**.
+This lossiness is **required**, not accidental.
 
 Without enforced cutoffs:
 
@@ -323,47 +334,50 @@ A protocol defines:
 * failure semantics,
 * recovery paths.
 
-Outside a protocol, meaning is not misunderstood.  
+Outside a protocol, meaning is not misunderstood.
 It is **undefined**.
 
-Intent does not override protocol.  
+Intent does not override protocol.
 Meaning does not survive protocol violation.
 
 ---
 
 ## Executable Artifacts as a Common Class
 
-Natural language, code, contracts, standards, APIs, and institutional forms are instances of the same abstract class:
+Natural language, code, contracts, standards, APIs, and institutional forms belong to the same abstract class:
 
-**Externally executable representations subject to coordination constraints.**
+**Externally addressable representations subject to coordination constraints.**
 
 They differ not in kind, but in:
 
-* strictness of typing,
-* timing of failure,
+* typing strictness,
+* enforcement timing,
+* failure detectability,
 * recovery mechanisms,
-* blast radius of error,
-* degree of failure externalization.
+* blast radius of error.
 
-This is structural conformance, not semantic inheritance.
+Natural language is maximally expressive but weakly enforced.
+It resembles a dynamically typed system with late failure detection.
+
+Legal and technical sublanguages impose **local typing and enforcement**, not different semantics.
 
 ---
 
 ## Failure Deferral and Externalization
 
-Systems may preserve apparent meaning by deferring failure rather than preventing it.
+Systems may preserve apparent meaning by **deferring failure** rather than preventing it.
 
 Examples include:
 
 * dynamic typing,
-* arbitrary-precision arithmetic,
 * implicit coercions,
-* human-in-the-loop escalation.
+* human-in-the-loop escalation,
+* post hoc interpretation.
 
-Failure deferral expands the admissible state space but increases:
+Failure deferral expands admissible states but increases:
 
 * hidden constraints,
-* late-stage collapse,
+* delayed collapse,
 * system-level failure cost.
 
 Meaning survives longer by **externalizing failure**, not by becoming more precise.
@@ -372,7 +386,7 @@ Meaning survives longer by **externalizing failure**, not by becoming more preci
 
 ## Recovery vs Re-Coordination
 
-Systems may include **explicit recovery mechanisms**, such as:
+Recovery mechanisms include:
 
 * error correction,
 * retransmission,
@@ -380,15 +394,15 @@ Systems may include **explicit recovery mechanisms**, such as:
 * redundancy,
 * exception handling.
 
-These are **structural recovery paths**, fully specified by the protocol.
+These are **explicitly specified** by the protocol.
 
 When coordination continues only by:
 
-* inferring what was meant,
+* inferring intent,
 * renegotiating expectations,
 * appealing to context outside the protocol,
 
-then the original shared meaning has failed.
+the original shared meaning has failed.
 
 A **new coordination protocol** has begun.
 
@@ -396,10 +410,9 @@ A **new coordination protocol** has begun.
 
 ## Transitivity and False Shared Meaning
 
-Transitivity is not a heuristic.  
-It is an **invariant**.
+Transitivity is an **invariant**, not a conversational assumption.
 
-Transitivity may be assumed only when:
+It holds only when:
 
 * the domain is closed,
 * the rule is explicit,
@@ -410,28 +423,30 @@ When transitivity is assumed without enforcement, the result is **false shared m
 
 * coordination appears to exist,
 * expectations align temporarily,
-* failure is deferred rather than eliminated.
+* failure is deferred.
 
 Such meaning does not survive execution.
 
 ---
 
-## Privilege Layers and Failure Ownership
+## Invariants and Architectural Privilege
 
 Meaning is **layer-relative**.
 
-Higher privilege layers:
+Higher layers are those at which **invariants are enforced**, not imagined.
 
-* define invariants,
-* specify failure conditions,
-* decide where failure cost is paid.
+Invariants:
 
-Lower layers operate strictly within imposed constraints.
+* exist prior to execution,
+* do not require belief or interpretation,
+* operate by preventing illegal states.
 
-This is not moral hierarchy.  
-It is architectural necessity.
+Lower layers execute strictly within imposed constraints.
 
-Power maps to the ability to **externalize failure**.
+This is not moral hierarchy.
+It is **architectural necessity**.
+
+Power corresponds to the ability to **anchor enforcement and externalize failure**, not to intent or legitimacy.
 
 ---
 
@@ -439,18 +454,16 @@ Power maps to the ability to **externalize failure**.
 
 Synchronous coordination:
 
-* requires co-presence,
 * allows immediate correction,
 * collapses under scale.
 
 Asynchronous coordination:
 
 * tolerates delay,
-* relies on buffering,
 * increases ambiguity,
 * demands stricter artifacts.
 
-These are not communication styles.  
+These are not communication styles.
 They are **coordination regimes with distinct failure surfaces**.
 
 ---
@@ -461,11 +474,18 @@ They are **coordination regimes with distinct failure surfaces**.
 * Alignment without enforcement produces false shared meaning.
 * Human-in-the-loop is a recovery protocol, not understanding.
 * Organizational dysfunction often reflects misplaced failure cost.
-* Stricter interfaces are the price of portability and substitutability.
+* Strict interfaces are the price of substitutability and portability.
 
 ---
 
 ## Meaning Under Constraint
+
+The distinction is categorical:
+
+* **Internal meaning** is non-addressable.
+* **Shared meaning** is addressable and executable.
+
+Variability exists only in the **failure semantics of shared meaning**, not in the boundary itself.
 
 Meaning that survives coordination constraints becomes:
 
@@ -477,7 +497,7 @@ Meaning that survives coordination constraints becomes:
 
 Meaning that does not remains internal.
 
-This is not a value judgment.  
+This is not a value judgment.
 It is a classification.
 
 ---
@@ -486,9 +506,9 @@ It is a classification.
 
 This document is intentionally incomplete.
 
-It does not resolve questions of truth, value, or experience.
+It does not address truth, value, or experience.
 
-It specifies **the minimal conditions under which meaning becomes a system property rather than private state**.
+It specifies **the minimal architectural conditions under which meaning becomes a system property rather than private state**.
 
 ---
 
@@ -498,11 +518,11 @@ Meaning does not become real when it is sincere.
 
 It becomes real when it is:
 
-* shared,
+* addressable,
 * constrained,
 * discretized,
 * executable,
 * and capable of failing.
 
-Everything else remains internal—  
+Everything else remains internal—
 not by accident, but by design.
