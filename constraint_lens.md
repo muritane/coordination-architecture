@@ -6,16 +6,16 @@
 
 ## Status and Intent
 
-This document defines a **constraint lens**, not a complete theory, model, or prescription.
+This document defines a **constraint lens**, not a theory, model, or prescription.
 
 It specifies **structural constraints that any system capable of sustained action must satisfy**, independent of goals, values, architecture, or domain.
 
-The intent of the lens is to:
+The lens is intended to:
 
 * make implicit evaluative and epistemic commitments explicit,
 * expose where failure must occur when assumptions are violated,
-* clarify why certain classes of error recur across domains,
-* and enable later diagnosis of brittleness, overreach, or false generalization.
+* explain why certain error classes recur across domains,
+* support later diagnosis of brittleness, overreach, and false generalization.
 
 The lens is deliberately written to be **easy to stress, falsify, or partially discard**.
 
@@ -23,7 +23,7 @@ The lens is deliberately written to be **easy to stress, falsify, or partially d
 
 ## 1. Scope
 
-This constraint lens applies to:
+This lens applies to:
 
 * biological agents,
 * artificial agents,
@@ -35,13 +35,13 @@ whenever all of the following hold:
 * action is required,
 * resources are bounded,
 * environments are partially observable,
-* and persistence over time matters.
+* persistence over time matters.
 
 It does **not** apply to:
 
 * purely interpretive or expressive systems,
 * representations that do not aspire to guide action,
-* domains where persistence, coordination, or viability are irrelevant.
+* domains where viability, coordination, or persistence are irrelevant.
 
 Executability is not a requirement for meaning.
 It is a requirement for **running**.
@@ -50,24 +50,25 @@ It is a requirement for **running**.
 
 ## 2. Foundational Constraints (Assumed, Not Derived)
 
-The lens relies only on the following irreducible structural constraints:
+The lens relies only on the following irreducible constraints:
 
 1. **Bounded resources**
-   Computation, time, energy, attention, material capacity, and coordination bandwidth are finite.
+   Time, energy, computation, attention, material capacity, and coordination bandwidth are finite.
 
 2. **Partial observability**
-   Systems never have full access to the relevant state variables governing outcomes.
+   Systems never have full access to the state variables governing outcomes.
 
 3. **Noise and non-stationarity**
-   Causal relationships drift, degrade, or shift regime over time.
+   Causal relationships drift, degrade, or shift regime.
 
 4. **Irreversibility of action**
-   Executed actions cause state transitions that cannot, in general, be undone.
+   Executed actions induce state transitions that cannot generally be undone.
 
 5. **Irreversible abstraction**
    Any pipeline from world → perception → representation → action collapses distinctions in a non-invertible way.
 
-These constraints are structural, not normative. No increase in intelligence, optimization power, or coordination removes them.
+These constraints are structural, not normative.
+No increase in intelligence, optimization, or coordination removes them.
 
 ---
 
@@ -79,15 +80,16 @@ This mapping is:
 
 * many-to-one,
 * non-invertible,
-* and upstream of execution.
+* upstream of execution.
 
 Therefore:
 
 * information loss is unavoidable,
 * information loss occurs *before* action,
-* and information loss commits the system to future blindness.
+* information loss commits the system to future blindness.
 
-An agent does not merely choose an action. It commits to eliminating alternatives from future consideration.
+An agent does not merely choose an action.
+It commits to eliminating alternatives from future consideration.
 
 ---
 
@@ -97,7 +99,7 @@ Given irreversible abstraction, the central design problem is not:
 
 > Which action is optimal?
 
-but instead:
+but:
 
 > **Which distinctions can be safely discarded while preserving viability over a specified horizon?**
 
@@ -111,7 +113,7 @@ This reframes intelligence, competence, and coordination as problems of **repres
 
 * continued execution,
 * continued learning,
-* and potential redesign.
+* potential redesign.
 
 Viability does **not** imply:
 
@@ -119,9 +121,9 @@ Viability does **not** imply:
 * growth,
 * dominance,
 * optimality,
-* or moral correctness.
+* moral correctness.
 
-It is a structural notion: the system has not yet eliminated its own capacity to act meaningfully within a horizon.
+It is a structural condition: the system has not yet eliminated its own capacity to act meaningfully within a horizon.
 
 ---
 
@@ -141,9 +143,9 @@ Constraint design is therefore the **intentional destruction of information** so
 * variance is bounded under noise,
 * coordination becomes stable.
 
-This produces a characteristic tradeoff:
+This induces a characteristic tradeoff:
 
-* higher upfront modeling and inference cost,
+* higher upfront inference and modeling cost,
 * fewer downstream decisions,
 * reduced variance within the assumed regime,
 * increased brittleness under regime or causal drift.
@@ -164,11 +166,12 @@ Safety is:
 * regime-dependent,
 * horizon-bounded,
 * probabilistic,
-* and always fallible.
+* always fallible.
 
-No system can certify safety ex ante. It can only **bound expected regret under assumed invariants**.
+No system can certify safety ex ante.
+It can only **bound expected regret under assumed invariants**.
 
-Crucially, safety judgments are themselves **compressed representations** and inherit the same failure modes as any abstraction.
+Safety judgments are themselves **compressed representations** and inherit the same failure modes as any abstraction.
 
 Unsafe compression arises when:
 
@@ -209,7 +212,9 @@ Because causal knowledge evolves under constraint, systems necessarily operate i
 * Reintroduce previously discarded distinctions.
 * Update representations, constraints, and interfaces.
 
-Phase boundaries are not directly observable. They are inferred under compression. Missed or delayed transitions are expected failure modes.
+Phase boundaries are not directly observable.
+They are inferred under compression.
+Missed or delayed transitions are expected failure modes.
 
 ---
 
@@ -222,9 +227,10 @@ It competes with exploitation for:
 * attention,
 * resources,
 * authority,
-* and coordination bandwidth.
+* coordination bandwidth.
 
-Redesign signals are filtered by the very abstractions that may require redesign. Power asymmetries can suppress or displace them.
+Redesign signals are filtered by the very abstractions that may require redesign.
+Power asymmetries can suppress or displace them.
 
 Systems fail not only by choosing poor abstractions, but by **losing the capacity to revise them**.
 
@@ -250,7 +256,7 @@ A system in which invocations:
 
 ### Execution
 
-Execution is the **actualization of a representation** as a sequence of state transitions governed by system topology and constraints.
+The actualization of a representation as a sequence of state transitions governed by system topology and constraints.
 
 Execution is indifferent to:
 
@@ -259,7 +265,8 @@ Execution is indifferent to:
 * justification,
 * interpretation.
 
-Within a fixed system *S* and horizon *H*, execution is **discrete**: a representation either commits or does not commit.
+Within a fixed system *S* and horizon *H*, execution is **discrete**:
+a representation either commits or does not commit.
 
 ---
 
@@ -321,7 +328,7 @@ What appear as partial executions—simulations, pilots, rehearsals—are execut
 * relaxed invariants,
 * truncated horizons.
 
-Gradual exposure arises not from partial execution, but from:
+Gradual exposure arises from:
 
 * horizon slicing,
 * system substitution,
@@ -333,7 +340,7 @@ Structural accountability begins only where execution is **irretractable in the 
 
 ## 14. Consequence Topology
 
-**Consequence topology** describes how disturbance introduced by execution propagates through a system.
+**Consequence topology** describes how disturbance introduced by execution propagates.
 
 It includes:
 
@@ -379,7 +386,8 @@ Long-horizon outcomes are dominated by irreversible effects.
 
 ## 16. Risk, Accumulation, and Power
 
-Risk does not reside in representations. It emerges when representations are **executed through constraints**.
+Risk does not reside in representations.
+It emerges when representations are **executed through constraints**.
 
 Risk signals include:
 
@@ -389,9 +397,11 @@ Risk signals include:
 * correction overhead,
 * loss of controllability margins.
 
-Power is not exemption from execution. Power is the capacity to **reassign disturbance and buffer ownership across nodes and horizons**.
+Power is not exemption from execution.
+Power is the capacity to **reassign disturbance and buffer ownership across nodes and horizons**.
 
-No disturbance disappears; it is displaced.
+No disturbance disappears.
+It is displaced.
 
 ---
 
@@ -414,7 +424,7 @@ There is no final model—only phase-appropriate compression.
 Although the lens is not normative:
 
 * every compression decision encodes values,
-* values enter through what distinctions are discarded,
+* values enter through which distinctions are discarded,
 * authority over redesign determines which values persist.
 
 Value alignment and misalignment arise descriptively from epistemic commitments, not stated objectives alone.
@@ -442,7 +452,7 @@ It owns no buffers.
 It commits to no horizon.
 It incurs no enforced invariants.
 
-Accordingly, it is classified as a **non-executable diagnostic representation**.
+Accordingly, it is a **non-executable diagnostic representation**.
 
 Its relevance arises only when applied to executable systems.
 
