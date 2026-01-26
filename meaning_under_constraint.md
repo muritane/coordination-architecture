@@ -14,11 +14,12 @@ It treats meaning not as:
 * semantic richness,
 * interpretive depth,
 * moral intention,
-* or psychological state,
+* psychological state,
+* or inferred intent,
 
-but as a **structural residue**: what remains after internal, continuous intent is forced through **discrete interfaces that must execute and terminate**.
+but as a **structural residue**: what remains after internal, continuous state is forced through **discrete interfaces that must execute, terminate, and admit failure**.
 
-The perspective is **architectural and operational**, not philosophical or normative.
+The perspective is **architectural and operational**, not philosophical, rhetorical, or normative.
 
 ---
 
@@ -30,15 +31,16 @@ This document does **not** attempt to:
 * explain consciousness or phenomenology,
 * reduce private experience to structure,
 * evaluate truth, value, or correctness,
-* replace linguistics, semiotics, or philosophy of mind.
+* argue for a preferred theory of meaning,
+* or replace linguistics, semiotics, or philosophy of mind.
 
-It is concerned only with **when meaning exits private state and becomes a shared, inspectable, and failure-bearing system artifact**.
+It is concerned only with **when internal state exits an agent and becomes a shared, inspectable, failure-bearing system artifact**.
 
 ---
 
 ## Core Claim
 
-Meaning becomes **shared** only when it is forced through the same constraints that govern coordination and execution.
+Meaning becomes **shared** only when it is forced through the same constraints that govern **coordination and execution**.
 
 Private meaning may exist without constraint.
 Shared meaning cannot.
@@ -74,12 +76,12 @@ Internal meaning:
 
 * is continuous and high-dimensional,
 * is unconstrained by execution,
-* is not inspectable by others,
+* is not externally inspectable,
 * incurs no coordination cost,
 * cannot fail structurally.
 
 Internal meaning may be rich, subtle, or profound.
-It is **undecidable** by systems.
+It is **undecidable by systems**.
 
 ---
 
@@ -87,15 +89,16 @@ It is **undecidable** by systems.
 
 Shared meaning is meaning that:
 
-* is expressed through a representation,
+* is expressed through an external representation,
 * enters a shared medium or protocol,
 * is discretized by interfaces,
 * becomes subject to enforcement,
 * can succeed or fail in coordination.
 
-Shared meaning must survive **contact with reality outside the originating agent**.
+Shared meaning must survive **execution by agents other than the originator**.
 
 Meaning that cannot fail cannot coordinate.
+Meaning that can only be preserved by reinterpretation has already failed as an executable artifact.
 
 ---
 
@@ -120,7 +123,7 @@ An agent may be:
 * an institution,
 * a device.
 
-If a representation cannot be taken up by another agent without special pleading, it remains private.
+If a representation cannot be executed by a substituted agent without appeal to origin-specific context or intent, it remains private.
 
 **Agent substitution is the first test of shared meaning.**
 
@@ -141,13 +144,12 @@ Examples include:
 * documents,
 * files,
 * APIs,
-* lectures,
-* broadcasts,
-* contracts.
+* contracts,
+* broadcasts.
 
-Meaning emerges **in interaction**, not in isolation.
+Meaning emerges **in interaction through defined surfaces**, not in isolation.
 
-Different interaction topologies (synchronous vs asynchronous, symmetric vs asymmetric) produce distinct meaning failure modes.
+Different interaction topologies (synchronous vs asynchronous, symmetric vs asymmetric) produce distinct **failure modes**, not different kinds of meaning.
 
 ---
 
@@ -157,20 +159,21 @@ Shared meaning is never fully symmetric.
 
 Agents differ in:
 
-* access to context,
-* internal state,
-* intent,
-* attention,
-* interpretation.
+* access to state,
+* execution context,
+* privilege level,
+* timing,
+* local invariants.
 
 Examples:
 
-* presenter view vs audience slides,
 * author vs reader,
 * sender vs receiver,
-* admin vs user.
+* admin vs user,
+* producer vs consumer.
 
 Meaning must tolerate **asymmetric access to state**.
+
 Any account of meaning that assumes full mutual observability is **non-executable**.
 
 ---
@@ -191,6 +194,7 @@ A representation that requires:
 * unlimited patience,
 * infinite context,
 * perfect recall,
+* or unbounded interpretation,
 
 cannot function as shared meaning.
 
@@ -208,12 +212,14 @@ Once expressed:
 * it may be logged,
 * copied,
 * forwarded,
+* cached,
 * acted upon,
-* misused.
+* or trigger irreversible state change.
 
-Undo buffers, grace periods, and recall windows are architectural devices to *soften* irreversibility—not eliminate it.
+Undo buffers, retries, and rollbacks are **explicitly defined recovery mechanisms**.
+They do not eliminate irreversibility; they localize it.
 
-Meaning that depends on costless retraction is structurally fragile.
+Meaning that depends on discretionary retraction or reinterpretation is structurally fragile.
 
 ---
 
@@ -223,18 +229,18 @@ Shared meaning can fail in ways that matter.
 
 Failures include:
 
-* misunderstanding,
-* misuse,
-* misinterpretation,
+* misexecution,
 * protocol violation,
-* unintended execution.
+* incompatible interpretation,
+* unintended action,
+* state corruption.
 
 Failure may result in:
 
 * lost work,
-* system crashes,
 * coordination breakdown,
-* irreversible state change.
+* system halt,
+* irreversible state divergence.
 
 Meaning becomes *real* when failure is no longer harmless.
 
@@ -246,14 +252,14 @@ Once externalized, meaning behaves like any other executable artifact.
 
 Examples:
 
-* An empty file is meaningful because it is openable, shareable, and interpretable as state.
-* A file with unknown encoding is meaningless regardless of intent.
+* An empty file is meaningful because it is openable, shareable, and inspectable as state.
+* A file with unknown encoding is meaningless regardless of originator intent.
 * Permissions define which meanings are executable.
 * Read access is an action; denial is also execution.
 
 No amount of goodwill can decode an unknown format.
 
-**Meaning requires structural legibility, not shared belief.**
+**Meaning requires structural legibility, not inferred intent.**
 
 ---
 
@@ -264,7 +270,7 @@ They **cut** it.
 
 An interface:
 
-* discretizes a continuous world,
+* discretizes a continuous space,
 * defines legal states,
 * enforces binary decisions,
 * terminates interpretation.
@@ -278,24 +284,51 @@ Without enforced cutoffs:
 * responsibility could not be assigned,
 * execution would defer indefinitely.
 
-This is the coordination analogue of the halting problem:
-**continuous interpretation is undecidable under execution**.
+Continuous interpretation under execution is **undecidable**.
 
 ---
 
 ## Protocols, Standards, and Encodings
 
-Standards are **coordination preconditions for meaning**.
+Protocols and standards are **coordination preconditions for meaning**.
 
 They define:
 
 * what can be expressed,
-* how it can be interpreted,
+* how it is interpreted,
 * which failures are detectable,
-* where execution halts.
+* where execution halts,
+* how recovery is performed.
 
 Intent does not override protocol.
 Meaning does not survive protocol violation.
+
+---
+
+## Structural Recovery vs Extra-Protocol Inference
+
+Systems may include **explicit recovery mechanisms**, such as:
+
+* error correction,
+* retransmission,
+* rollback,
+* redundancy.
+
+These are **structural recovery paths**, fully specified by the protocol.
+
+They do not infer intent.
+They do not reinterpret meaning.
+They do not negotiate outcomes.
+
+When coordination continues only by:
+
+* inferring what was meant,
+* renegotiating expectations,
+* appealing to context outside the protocol,
+
+the original shared meaning has failed.
+
+A new coordination episode has begun.
 
 ---
 
@@ -315,7 +348,7 @@ When transitivity is *assumed* without enforcement, the result is **false shared
 
 * coordination appears to exist,
 * expectations align temporarily,
-* failure is absorbed socially rather than structurally.
+* failure is deferred rather than eliminated.
 
 Such meaning does not survive execution.
 
@@ -328,29 +361,30 @@ Meaning is **layer-relative**.
 Higher privilege layers:
 
 * define invariants,
-* decide which failures propagate,
-* determine what counts as execution.
+* specify failure conditions,
+* determine which executions count.
 
-Lower layers must operate within imposed constraints.
+Lower layers operate strictly within imposed constraints.
 
 This is not moral hierarchy.
 It is architectural necessity.
 
 ---
 
-## Synchrony, Asynchrony, and Meaning
+## Synchrony, Asynchrony, and Coordination Regimes
 
 Synchronous coordination:
 
 * requires co-presence,
-* allows negotiation,
+* allows immediate correction,
 * collapses under scale.
 
 Asynchronous coordination:
 
 * tolerates delay,
 * relies on buffering,
-* increases ambiguity.
+* increases ambiguity,
+* demands stricter artifacts.
 
 These are not communication styles.
 They are **coordination regimes with distinct failure surfaces**.
@@ -359,15 +393,15 @@ They are **coordination regimes with distinct failure surfaces**.
 
 ## Meaning Does Not Precede Coordination
 
-Meaning does not fail because people misunderstand.
+Meaning does not fail because agents misunderstand.
 
 It fails because:
 
 * boundaries are implicit,
-* protocols are missing,
+* protocols are incomplete,
 * constraints are hidden,
-* resources are exhausted,
-* execution paths are unclear.
+* execution paths are underspecified,
+* failure modes are unpriced.
 
 **Coordination architecture determines which meanings can exist at all.**
 
@@ -383,7 +417,7 @@ Meaning that survives coordination constraints becomes:
 * decidable,
 * failure-detectable.
 
-Meaning that does not remains private.
+Meaning that does not remains internal.
 
 This is not a value judgment.
 It is a classification.
@@ -395,13 +429,8 @@ It is a classification.
 This document is intentionally incomplete.
 
 It does not resolve questions of truth, value, or experience.
-It explains **when meaning becomes a system property rather than a private state**.
 
-Its usefulness depends on:
-
-* exposure to execution,
-* willingness to price failure,
-* resistance to interpretive deferral.
+It specifies **the minimal conditions under which meaning becomes a system property rather than private state**.
 
 ---
 
@@ -417,4 +446,5 @@ It becomes real when it is:
 * executable,
 * and capable of failing.
 
-Everything else remains internal—by design or by choice.
+Everything else remains internal—
+not by accident, but by design.
