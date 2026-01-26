@@ -8,7 +8,7 @@
 
 This document describes **meaning** as an *emergent, system-level property* that arises only under **coordination and execution constraints**.
 
-It treats meaning not as:
+Meaning is treated not as:
 
 * subjective experience,
 * semantic richness,
@@ -62,7 +62,7 @@ It is **architectural**.
 
 ## Internal State vs Shared Meaning
 
-### Internal Meaning
+### Internal Meaning (Non-Addressable State)
 
 Internal meaning includes:
 
@@ -78,14 +78,17 @@ Internal meaning:
 * is unconstrained by execution,
 * is not externally inspectable,
 * incurs no coordination cost,
-* cannot fail structurally.
+* cannot fail structurally,
+* has no external handle or address.
 
-Internal meaning may be rich, subtle, or profound.
-It is **undecidable by systems**.
+Internal meaning is **real for the agent**.
+It is **non-addressable by systems**.
+
+This is a scope boundary, not an ontological claim.
 
 ---
 
-### Shared Meaning
+### Shared Meaning (Executable Artifact)
 
 Shared meaning is meaning that:
 
@@ -149,7 +152,7 @@ Examples include:
 
 Meaning emerges **in interaction through defined surfaces**, not in isolation.
 
-Different interaction topologies (synchronous vs asynchronous, symmetric vs asymmetric) produce distinct **failure modes**, not different kinds of meaning.
+Different interaction topologies (synchronous vs asynchronous, symmetric vs asymmetric) produce distinct **failure surfaces**, not different kinds of meaning.
 
 ---
 
@@ -235,6 +238,15 @@ Failures include:
 * unintended action,
 * state corruption.
 
+Failure cost is defined by:
+
+* scope (local vs global),
+* blast radius,
+* reversibility,
+* detectability,
+* who bears the cost,
+* and whether failure is terminal.
+
 Failure may result in:
 
 * lost work,
@@ -242,7 +254,7 @@ Failure may result in:
 * system halt,
 * irreversible state divergence.
 
-Meaning becomes *real* when failure is no longer harmless.
+Meaning becomes *real* when failure is no longer harmless and cannot be silently externalized.
 
 ---
 
@@ -288,37 +300,76 @@ Continuous interpretation under execution is **undecidable**.
 
 ---
 
-## Protocols, Standards, and Encodings
+## Protocol-Relative Meaning
 
-Protocols and standards are **coordination preconditions for meaning**.
+Meaning is **protocol-relative**.
 
-They define:
+A protocol defines:
 
-* what can be expressed,
-* how it is interpreted,
-* which failures are detectable,
-* where execution halts,
-* how recovery is performed.
+* admissible states,
+* legal transitions,
+* enforcement rules,
+* failure semantics,
+* recovery paths.
+
+Outside a protocol, meaning is not misunderstood.
+It is **undefined**.
 
 Intent does not override protocol.
 Meaning does not survive protocol violation.
 
 ---
 
-## Structural Recovery vs Extra-Protocol Inference
+## Executable Artifacts as a Common Class
+
+Natural language, code, contracts, standards, APIs, and institutional forms are instances of the same abstract class:
+
+**Externally executable representations subject to coordination constraints.**
+
+They differ not in kind, but in:
+
+* strictness of typing,
+* timing of failure,
+* recovery mechanisms,
+* blast radius of error,
+* degree of failure externalization.
+
+This is structural conformance, not semantic inheritance.
+
+---
+
+## Failure Deferral and Externalization
+
+Systems may preserve apparent meaning by deferring failure rather than preventing it.
+
+Examples include:
+
+* dynamic typing,
+* arbitrary-precision arithmetic,
+* implicit coercions,
+* human-in-the-loop escalation.
+
+Failure deferral expands the admissible state space but increases:
+
+* hidden constraints,
+* late-stage collapse,
+* system-level failure cost.
+
+Meaning survives longer by **externalizing failure**, not by becoming more precise.
+
+---
+
+## Recovery vs Re-Coordination
 
 Systems may include **explicit recovery mechanisms**, such as:
 
 * error correction,
 * retransmission,
 * rollback,
-* redundancy.
+* redundancy,
+* exception handling.
 
 These are **structural recovery paths**, fully specified by the protocol.
-
-They do not infer intent.
-They do not reinterpret meaning.
-They do not negotiate outcomes.
 
 When coordination continues only by:
 
@@ -326,9 +377,9 @@ When coordination continues only by:
 * renegotiating expectations,
 * appealing to context outside the protocol,
 
-the original shared meaning has failed.
+then the original shared meaning has failed.
 
-A new coordination episode has begun.
+A **new coordination protocol** has begun.
 
 ---
 
@@ -337,14 +388,14 @@ A new coordination episode has begun.
 Transitivity is not a heuristic.
 It is an **invariant**.
 
-Transitivity may be assumed **only** when:
+Transitivity may be assumed only when:
 
 * the domain is closed,
-* the rule is explicitly defined,
+* the rule is explicit,
 * enforcement is global,
 * violations are impossible or fatal.
 
-When transitivity is *assumed* without enforcement, the result is **false shared meaning**:
+When transitivity is assumed without enforcement, the result is **false shared meaning**:
 
 * coordination appears to exist,
 * expectations align temporarily,
@@ -354,7 +405,7 @@ Such meaning does not survive execution.
 
 ---
 
-## Privilege Layers and Meaning
+## Privilege Layers and Failure Ownership
 
 Meaning is **layer-relative**.
 
@@ -362,12 +413,14 @@ Higher privilege layers:
 
 * define invariants,
 * specify failure conditions,
-* determine which executions count.
+* decide where failure cost is paid.
 
 Lower layers operate strictly within imposed constraints.
 
 This is not moral hierarchy.
 It is architectural necessity.
+
+Power maps to the ability to **externalize failure**.
 
 ---
 
@@ -391,19 +444,13 @@ They are **coordination regimes with distinct failure surfaces**.
 
 ---
 
-## Meaning Does Not Precede Coordination
+## Implications (Diagnostic, Not Normative)
 
-Meaning does not fail because agents misunderstand.
-
-It fails because:
-
-* boundaries are implicit,
-* protocols are incomplete,
-* constraints are hidden,
-* execution paths are underspecified,
-* failure modes are unpriced.
-
-**Coordination architecture determines which meanings can exist at all.**
+* Scaling coordination destroys implicit meaning.
+* Alignment without enforcement produces false shared meaning.
+* Human-in-the-loop is a recovery protocol, not understanding.
+* Organizational dysfunction often reflects misplaced failure cost.
+* Stricter interfaces are the price of portability and substitutability.
 
 ---
 
