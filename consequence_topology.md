@@ -4,39 +4,40 @@
 
 ---
 
-## What This Document Is
+## Status and Intent
 
 This document presents a **structural accounting perspective on consequences in executable systems**.
 
 It treats consequences not as:
 
-- moral feedback,
-- interpersonal retaliation,
-- psychological punishment,
-- or social judgment,
+* moral feedback,
+* interpersonal retaliation,
+* psychological punishment,
+* or social judgment,
 
 but as **runtime effects produced when actions are executed through constrained systems**.
 
-Actions are understood as **interface invocations**—explicit or implicit—whose effects propagate according to system topology, buffering, and time.
+Actions are treated as **interface invocations**—explicit or implicit—whose effects propagate according to system topology, buffering, and time.
 
-The focus is **descriptive and diagnostic**, not normative.
+The perspective is **descriptive and diagnostic**, not normative.
 
 ---
 
 ## Core Premise: Execution Precedes Interpretation
 
-This document assumes that **actions are executable**.
+This document assumes that **actions execute**.
 
 Specifically:
 
-- an action commits to an execution path,
-- execution proceeds through interfaces and intermediaries,
-- execution consumes finite capacity,
-- execution is constrained by invariants not negotiated by intent, belief, or narrative.
+* an action commits to an execution path,
+* execution traverses interfaces and intermediaries,
+* execution consumes finite capacity,
+* execution is constrained by invariants not negotiated by intent, belief, or narrative.
 
 Ignorance of downstream topology does **not** exempt an invocation from runtime effects.
 
-Interpretation may delay recognition; it does not alter execution.
+Interpretation may delay recognition.
+It does not alter execution.
 
 ---
 
@@ -44,36 +45,36 @@ Interpretation may delay recognition; it does not alter execution.
 
 This document does **not**:
 
-- prescribe ethical behavior,
-- assign blame or responsibility,
-- claim predictive certainty,
-- provide complete control strategies,
-- replace domain-specific models or compilers.
+* prescribe ethical behavior,
+* assign blame or responsibility,
+* claim predictive certainty,
+* provide complete control strategies,
+* replace domain-specific models or compilers.
 
 It does not assume that:
 
-- consequences are local,
-- effects are immediately visible,
-- attribution is reliable,
-- or intent can override execution.
+* consequences are local,
+* effects are immediately visible,
+* attribution is reliable,
+* intent can override execution.
 
 ---
 
-## Motivation: Why Consequences Appear Optional
+## Why Consequences Often Appear Optional
 
 In many contemporary systems, actions appear to lack consequences because:
 
-- feedback is delayed,
-- execution paths are opaque,
-- effects are distributed across nodes,
-- buffers absorb disturbance,
-- failures are socially or institutionally negotiated.
+* feedback is delayed,
+* execution paths are opaque,
+* effects are distributed across nodes,
+* buffers absorb disturbance,
+* failures are socially or institutionally negotiated.
 
 Under these conditions, **narrative evaluation temporarily substitutes for structural accounting**.
 
 This substitution remains viable only while buffers hold and horizons are short.
 
-Under scale, load, or horizon extension, topology asserts itself.
+Under load, scale, or horizon extension, topology asserts itself.
 
 ---
 
@@ -83,21 +84,21 @@ Actions inject **disturbance** into systems.
 
 At the level relevant to persistence:
 
-- disturbance does not disappear,
-- it cannot be erased by reinterpretation,
-- it cannot be nullified by denial.
+* disturbance does not disappear,
+* it cannot be erased by reinterpretation,
+* it cannot be nullified by denial.
 
 It can be:
 
-- delayed,
-- buffered,
-- transformed,
-- redistributed,
-- displaced across actors or time.
+* delayed,
+* buffered,
+* transformed,
+* redistributed,
+* displaced across actors or time.
 
 This is an **analogy to conservation principles**, not a physical law.
 
-The claim is narrow and operational:
+The operational claim is narrow:
 
 > **Disturbance deferred at one layer reappears as constraint, cost, or risk at another.**
 
@@ -109,18 +110,18 @@ The claim is narrow and operational:
 
 It includes:
 
-- interfaces traversed,
-- intermediaries involved,
-- buffers encountered,
-- feedback paths available,
-- invariants enforced at runtime.
+* interfaces traversed,
+* intermediaries involved,
+* buffers encountered,
+* feedback paths available,
+* invariants enforced at runtime.
 
 Topology—not intent—determines:
 
-- latency,
-- visibility,
-- amplification,
-- attribution error.
+* latency,
+* observability,
+* amplification,
+* attribution error.
 
 ---
 
@@ -128,55 +129,55 @@ Topology—not intent—determines:
 
 ### 1. Path Length (Latency)
 
-- Short paths: tight coupling between action and effect.
-- Long paths: effects traverse intermediaries before surfacing.
+* Short paths tightly couple action and effect.
+* Long paths interpose intermediaries.
 
 Longer paths:
 
-- reduce salience,
-- increase discounting,
-- permit narrative substitution.
+* reduce salience,
+* increase discounting,
+* enable narrative substitution.
 
 ---
 
 ### 2. Fan-Out (Distribution)
 
-- Low fan-out: effects remain localized.
-- High fan-out: effects distribute across components or agents.
+* Low fan-out localizes effects.
+* High fan-out distributes effects across components or agents.
 
 Distribution:
 
-- dilutes perceived responsibility,
-- increases aggregate system cost,
-- complicates diagnosis and correction.
+* dilutes perceived responsibility,
+* increases aggregate system cost,
+* complicates diagnosis and correction.
 
 ---
 
-### 3. Buffers (Absorbing and Storing Nodes)
+### 3. Buffers (Storage and Delay)
 
 Buffers include:
 
-- queues,
-- redundancy,
-- inventory,
-- financial reserves,
-- institutional slack,
-- other agents’ time or labor.
+* queues,
+* redundancy,
+* inventory,
+* financial reserves,
+* institutional slack,
+* other agents’ time or labor.
 
 Buffers **do not eliminate disturbance**.
 
 They:
 
-- store it,
-- delay its visibility,
-- transform its expression.
+* store it,
+* delay its visibility,
+* transform its expression.
 
 Stored disturbance reappears as:
 
-- maintenance cost,
-- carrying cost,
-- tail risk,
-- amplified failure under stress.
+* maintenance cost,
+* carrying cost,
+* tail risk,
+* amplified failure under stress.
 
 ---
 
@@ -184,16 +185,16 @@ Stored disturbance reappears as:
 
 Some effects are:
 
-- immediate and legible.
+* immediate and legible.
 
 Others are:
 
-- delayed,
-- statistical,
-- technical,
-- visible only under aggregation or stress.
+* delayed,
+* statistical,
+* technical,
+* visible only under aggregation or stress.
 
-Low observability enables interpretive narratives to persist until runtime constraints assert themselves.
+Low observability allows interpretive narratives to persist until invariants assert themselves.
 
 ---
 
@@ -203,10 +204,10 @@ Not all consequences are binary.
 
 Some effects:
 
-- shrink option space,
-- degrade controllability,
-- accumulate debt,
-- reduce future adaptability.
+* shrink option space,
+* degrade controllability,
+* accumulate debt,
+* reduce future adaptability.
 
 Irreversible effects dominate long-horizon viability.
 
@@ -218,15 +219,15 @@ An **action** is any invocation that causes the system to execute a transition.
 
 This includes:
 
-- explicit actions,
-- defaults,
-- omissions,
-- timeouts,
-- non-responses.
+* explicit actions,
+* defaults,
+* omissions,
+* timeouts,
+* non-responses.
 
 A non-action is executable **wherever the system defines a default transition**.
 
-Silence, delay, or inaction execute whatever behavior the interface specifies for those cases.
+Silence, delay, or inaction execute whatever behavior the interface specifies.
 
 Intent is not required for execution.
 
@@ -236,43 +237,44 @@ Intent is not required for execution.
 
 Agency varies by **decision dimensionality**, not by execution relevance.
 
-- **Decision space**: the set of selectable actions available to an agent.
-- **Execution space**: the set of transitions the system will execute when invoked.
+* **Decision space**: the set of selectable actions available to an agent.
+* **Execution space**: the set of transitions the system will execute when invoked.
 
 When decision space collapses to a single point, choice is minimal or absent, but execution still occurs.
 
-An **execution surface** is a locus where:
+An **execution surface** is any locus where:
 
-- invocation occurs,
-- invariants are enforced,
-- disturbance is injected,
+* invocation occurs,
+* invariants are enforced,
+* disturbance is injected,
 
-regardless of the degree of choice available.
+regardless of autonomy or intent.
 
-Systems execute *through* execution surfaces, not only through autonomous decision-makers.
+Systems execute *through* execution surfaces, not only through deliberative agents.
 
 ---
 
-## Buffer Management (Operational)
+## Buffer Management (Structural)
 
 Buffers must be:
 
-- sized,
-- monitored,
-- reclaimed,
-- and owned.
+* sized,
+* monitored,
+* reclaimed,
+* and owned.
 
 ### Buffer sizing is context-dependent
 
 It depends on:
 
-- demand variability,
-- failure cost,
-- storage cost,
-- latency tolerance,
-- evaluation horizon.
+* demand variability,
+* failure cost,
+* storage cost,
+* latency tolerance,
+* evaluation horizon.
 
-Over-buffering is not free; it creates **buffer debt**.
+Over-buffering is not free.
+It creates **buffer debt**.
 
 ---
 
@@ -280,10 +282,10 @@ Over-buffering is not free; it creates **buffer debt**.
 
 Buffers must sometimes be reduced rather than expanded:
 
-- memory freed,
-- inventory cleared,
-- queues drained,
-- reserves unwound.
+* memory freed,
+* inventory cleared,
+* queues drained,
+* reserves unwound.
 
 Unmanaged buffers become latent failure amplifiers.
 
@@ -293,15 +295,15 @@ Unmanaged buffers become latent failure amplifiers.
 
 Every buffer has an owner who bears:
 
-- storage cost,
-- maintenance cost,
-- opportunity cost,
-- risk exposure.
+* storage cost,
+* maintenance cost,
+* opportunity cost,
+* risk exposure.
 
 Ownership may be:
 
-- explicit (code, contracts),
-- implicit (institutions, individuals).
+* explicit (code, contracts),
+* implicit (institutions, individuals).
 
 Unassigned buffer debt accumulates invisibly.
 
@@ -315,17 +317,17 @@ Risk emerges when representations are **executed through constraints**.
 
 Examples:
 
-- A pose becomes risky near kinematic singularities.
-- A request becomes risky under saturation.
-- A local failure becomes systemic under coupling.
+* a pose becomes risky near kinematic singularities,
+* a request becomes risky under saturation,
+* a local failure becomes systemic under coupling.
 
 Risk signals often appear as:
 
-- rising variance,
-- queue growth,
-- latency inflation,
-- correction overhead,
-- loss of controllability margins.
+* rising variance,
+* queue growth,
+* latency inflation,
+* correction overhead,
+* loss of controllability margins.
 
 ---
 
@@ -335,12 +337,13 @@ Retries, redundancy, failover, and averaging mask local failure.
 
 At the system level, they convert disturbance into:
 
-- increased complexity,
-- resource overhead,
-- coordination cost,
-- tail risk.
+* increased complexity,
+* resource overhead,
+* coordination cost,
+* tail risk.
 
-Correction defers cost; it does not eliminate it.
+Correction defers cost.
+It does not eliminate it.
 
 ---
 
@@ -350,10 +353,10 @@ A **horizon** defines the time span over which viability is evaluated.
 
 Horizons are context-dependent:
 
-- seconds for control loops,
-- days for operations,
-- years for infrastructure,
-- decades for institutions.
+* seconds for control loops,
+* days for operations,
+* years for infrastructure,
+* decades for institutions.
 
 Without a specified horizon, viability claims are incomplete.
 
@@ -363,21 +366,22 @@ Without a specified horizon, viability claims are incomplete.
 
 Given:
 
-- a horizon *H*,
-- a topology *T*,
+* a horizon *H*,
+* a topology *T*,
 
 an action is viable if the disturbance it introduces does **not violate invariants required to persist over *H***.
 
 Examples of invariants:
 
-- solvency,
-- safety margins,
-- legal standing,
-- maintainability,
-- trust,
-- controllability.
+* solvency,
+* safety margins,
+* legal standing,
+* maintainability,
+* trust,
+* controllability.
 
-Exact prediction is unnecessary; **bounding invariant pressure is sufficient**.
+Exact prediction is unnecessary.
+**Bounding invariant pressure is sufficient.**
 
 ---
 
@@ -385,16 +389,16 @@ Exact prediction is unnecessary; **bounding invariant pressure is sufficient**.
 
 Over time:
 
-- disturbances accumulate,
-- buffers saturate,
-- correction overhead grows,
-- irreversibility increases.
+* disturbances accumulate,
+* buffers saturate,
+* correction overhead grows,
+* irreversibility increases.
 
 Dominance rules:
 
-- irreversible effects dominate reversible ones,
-- accumulated constraints dominate isolated failures,
-- latent degradation dominates visible noise.
+* irreversible effects dominate reversible ones,
+* accumulated constraints dominate isolated failures,
+* latent degradation dominates visible noise.
 
 ---
 
@@ -402,27 +406,28 @@ Dominance rules:
 
 Power is not exemption from execution.
 
-Power is the capacity to **reassign buffer ownership and disturbance across nodes and horizons**.
+Power is the capacity to **reassign disturbance and buffer ownership across nodes and horizons**.
 
 This includes shifting cost to:
 
-- downstream actors,
-- external populations,
-- future maintainers,
-- institutions with shorter evaluation horizons.
+* downstream actors,
+* external populations,
+* future maintainers,
+* institutions with shorter evaluation horizons.
 
-No disturbance disappears; it is displaced to nodes less able to resist or signal it.
+No disturbance disappears.
+It is displaced to nodes less able to resist or signal it.
 
 ---
 
-## Why Short-Term Viability Misleads
+## Why Short-Horizon Viability Misleads
 
 At short horizons:
 
-- buffers hold,
-- inconsistencies cancel,
-- heroics mask structure,
-- narratives appear sufficient.
+* buffers hold,
+* inconsistencies cancel,
+* heroics mask structure,
+* narratives appear sufficient.
 
 Scaling or horizon extension alters effective topology.
 
@@ -434,9 +439,9 @@ What appeared viable fails under persistence requirements.
 
 Human intuition evolved for:
 
-- short feedback loops,
-- visible causality,
-- local responsibility.
+* short feedback loops,
+* visible causality,
+* local responsibility.
 
 Executable systems violate these assumptions.
 
@@ -450,14 +455,14 @@ This is a structural mismatch, not a moral failure.
 
 When delayed or non-local consequences surface, observers infer:
 
-- intent,
-- blame,
-- incompetence,
-- authority failure.
+* intent,
+* blame,
+* incompetence,
+* authority failure.
 
 Often this is a category error.
 
-The system executed the action according to its topology.
+The system executed the invocation according to its topology.
 
 ---
 
@@ -465,27 +470,24 @@ The system executed the action according to its topology.
 
 This document provides:
 
-- a **structural lens**,
-- not a complete control framework.
+* a **structural lens**,
+* not a complete control framework.
 
 It explains:
 
-- why consequences occur without intent,
-- why ignorance does not exempt execution,
-- why buffers, topology, and horizon dominate outcomes.
+* why consequences occur without intent,
+* why ignorance does not exempt execution,
+* why topology, buffers, and horizon dominate outcomes.
 
 It does not replace domain-specific models or constraints.
 
 ---
 
-## Closing Note
+## Closing
 
 Actions commit to execution.
-
 Execution traverses interfaces.
-
 Interfaces enforce invariants.
-
 Consequences are runtime effects.
 
 Narratives may delay recognition.
