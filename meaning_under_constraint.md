@@ -1,15 +1,14 @@
 # Meaning Under Constraint
 
-## Field Notes on When Meaning Becomes Shared, Inspectable, and Real
+## Field Notes on When Meaning Becomes Shared, Inspectable, and Real for Coordination
 
 ---
 
 ## What This Document Is
 
-This document describes **meaning** as an *emergent, system-level property* that arises only under **coordination and execution constraints**.
+This document specifies **meaning-for-coordination** as an *emergent, system-level property* that arises only under **coordination and execution constraints**.
 
-The framework is **explicitly architectural and operational**, and isomorphic to execution models in computing and systems engineering.
-The same structural principles that govern:
+It is explicitly **architectural and operational**. The framework is isomorphic to execution models in computing and systems engineering. The same structural principles that govern:
 
 * distributed systems,
 * protocol design,
@@ -17,13 +16,13 @@ The same structural principles that govern:
 * fault tolerance,
 * coordination under partial failure,
 
-are treated here as the conditions under which meaning becomes **shared, inspectable, executable, and failure-bearing**.
+are treated here as the conditions under which meaning becomes **shared, inspectable, executable, and failure-bearing** *within a system*.
 
-Meaning is treated **neither as a mental phenomenon nor as an interpretive achievement**, but as a **structural residue**:
-what remains after internal, continuous state is forced through **discrete interfaces that must terminate, admit substitution, and support failure semantics**.
+Meaning, in this document, is **not treated as a mental phenomenon, experiential state, or interpretive achievement**. It is treated as a **structural residue**: what remains after internal, continuous state is forced through **discrete interfaces that must terminate, admit substitution, and support failure semantics**.
 
-This document is **not philosophical, rhetorical, psychological, or normative**.
-It is a classification of **when internal state becomes a system artifact**.
+The claim is not that internal meaning is unreal, invalid, or deficient. The claim is that **internal meaning is not a system artifact**.
+
+This document is therefore **not philosophical, rhetorical, psychological, or normative**. It is a classification of **when internal state becomes an externally addressable coordination artifact**.
 
 ---
 
@@ -38,20 +37,20 @@ This document does **not** attempt to:
 * argue for a preferred semantic theory,
 * replace linguistics, semiotics, or philosophy of mind.
 
-It is concerned **only** with the following boundary:
+It addresses **only one boundary**:
 
 > When internal state exits an agent and becomes a **shared, inspectable, externally executable artifact subject to coordination constraints and failure cost**.
 
-Nothing outside that boundary is addressed.
+Everything outside that boundary is intentionally out of scope.
 
 ---
 
 ## Core Claim
 
-Meaning becomes **shared** only when it is forced through the same constraints that govern **coordination and execution**.
+Meaning becomes **shared-for-coordination** only when it is forced through the same constraints that govern **execution and coordination**.
 
 Private meaning may exist without constraint.
-Shared meaning cannot.
+Shared meaning-for-coordination cannot.
 
 Until a representation is:
 
@@ -59,7 +58,7 @@ Until a representation is:
 * substitutable across agents,
 * bounded by resources,
 * admitted into a protocol,
-* and capable of failing non-trivially,
+* and capable of failing in attributable ways,
 
 it remains **internal state**, not a system-level artifact.
 
@@ -98,7 +97,9 @@ This is a **scope boundary**, not an ontological judgment.
 
 ### Shared Meaning (Executable Artifact)
 
-Shared meaning is meaning that:
+Shared meaning, in this document, means **shared meaning-for-coordination**.
+
+It is meaning that:
 
 * is expressed through an external representation,
 * becomes externally addressable,
@@ -110,13 +111,15 @@ Shared meaning is meaning that:
 Shared meaning must be **executable by substituted agents** without appeal to origin-specific intent, private context, or discretionary reinterpretation.
 
 > Meaning that cannot fail cannot coordinate.
-> Meaning that survives only by reinterpretation has already failed as an executable artifact.
+> Meaning that survives only by reinterpretation has failed *as an executable artifact*.
+
+This does not deny that humans routinely repair coordination by reinterpretation. It classifies such repair as **re-coordination**, not preservation of the original artifact.
 
 ---
 
 ## Preconditions for Shared Meaning
 
-Meaning becomes shared **only if all of the following hold**.
+Meaning becomes shared-for-coordination **only if all of the following hold**.
 
 These are not philosophical requirements.
 They are **execution constraints**.
@@ -137,7 +140,7 @@ An agent may be:
 
 If a representation cannot be executed by a substituted agent without privileged access to the originator’s internal state, it remains internal.
 
-**Agent substitution is the first and non-negotiable test of shared meaning.**
+**Agent substitution is the first and non-negotiable test of shared meaning-for-coordination.**
 
 ---
 
@@ -169,7 +172,7 @@ They produce **different failure surfaces**.
 
 ### 3. Partial Observability
 
-Shared meaning is **never fully symmetric**.
+Shared meaning-for-coordination is **never fully symmetric**.
 
 Agents differ in:
 
@@ -188,7 +191,7 @@ Examples include:
 
 Meaning must tolerate **asymmetric access to state**.
 
-Any account of meaning that assumes full mutual observability is **non-executable**.
+Any account of shared meaning that assumes full mutual observability is **non-executable**.
 
 ---
 
@@ -210,9 +213,9 @@ A representation that requires:
 * perfect recall,
 * or unbounded interpretation,
 
-cannot function as shared meaning.
+cannot function as shared meaning-for-coordination.
 
-**Compression is not loss of meaning.**
+**Compression is not loss of meaning-for-coordination.**
 It is the **price of survivability under constraint**.
 
 ---
@@ -239,7 +242,7 @@ Meaning that depends on discretionary retraction or reinterpretation is structur
 
 ### 6. Non-Trivial Failure Cost
 
-Shared meaning can fail in ways that matter.
+Shared meaning-for-coordination can fail in ways that matter.
 
 Failure includes:
 
@@ -257,7 +260,7 @@ Failure cost is defined by:
 * enforcement timing,
 * and who bears the cost.
 
-Meaning becomes *real* when failure:
+Meaning becomes *real for coordination* when failure:
 
 * cannot be silently externalized,
 * cannot be ignored without consequence,
@@ -267,12 +270,12 @@ Meaning becomes *real* when failure:
 
 ## Meaning as an Executable Artifact
 
-Once externalized, meaning behaves like any other executable artifact.
+Once externalized, meaning-for-coordination behaves like any other executable artifact.
 
 Examples:
 
 * An empty file is meaningful because it is addressable, openable, and inspectable.
-* A file with unknown encoding is meaningless regardless of originator intent.
+* A file with unknown encoding is meaningless-for-coordination regardless of originator intent.
 * Permissions define which meanings are executable.
 * Read access is an action; denial is also execution.
 
@@ -283,11 +286,11 @@ Intent does not override format.
 
 ## Executability vs Execution
 
-Execution is **not required** for meaning to be shared.
+Execution is **not required** for meaning to be shared-for-coordination.
 
 Shared meaning requires **executability under a protocol**, not historical execution.
 
-A representation qualifies as shared meaning once it:
+A representation qualifies once it:
 
 * is externally addressable,
 * is structurally legible,
@@ -300,7 +303,7 @@ Executability is a **property of the surrounding system**, not of whether execut
 
 ## Interfaces as Decidability Boundaries
 
-Interfaces do not preserve meaning.
+Interfaces do not preserve meaning-for-coordination.
 They **cut** it.
 
 An interface:
@@ -324,7 +327,7 @@ Continuous interpretation under execution is **undecidable**.
 
 ## Protocol-Relative Meaning
 
-Meaning is **protocol-relative**.
+Meaning-for-coordination is **protocol-relative**.
 
 A protocol defines:
 
@@ -335,7 +338,7 @@ A protocol defines:
 * recovery paths.
 
 Outside a protocol, meaning is not misunderstood.
-It is **undefined**.
+It is **undefined-for-coordination**.
 
 Intent does not override protocol.
 Meaning does not survive protocol violation.
@@ -356,8 +359,7 @@ They differ not in kind, but in:
 * recovery mechanisms,
 * blast radius of error.
 
-Natural language is maximally expressive but weakly enforced.
-It resembles a dynamically typed system with late failure detection.
+Natural language is maximally expressive and weakly enforced. This is a trade-off, not a defect. It resembles a dynamically typed system with late failure detection and high recovery flexibility.
 
 Legal and technical sublanguages impose **local typing and enforcement**, not different semantics.
 
@@ -365,7 +367,7 @@ Legal and technical sublanguages impose **local typing and enforcement**, not di
 
 ## Failure Deferral and Externalization
 
-Systems may preserve apparent meaning by **deferring failure** rather than preventing it.
+Systems may preserve apparent coordination by **deferring failure** rather than preventing it.
 
 Examples include:
 
@@ -380,7 +382,7 @@ Failure deferral expands admissible states but increases:
 * delayed collapse,
 * system-level failure cost.
 
-Meaning survives longer by **externalizing failure**, not by becoming more precise.
+Meaning-for-coordination persists by **externalizing failure**, not by becoming more precise.
 
 ---
 
@@ -402,7 +404,7 @@ When coordination continues only by:
 * renegotiating expectations,
 * appealing to context outside the protocol,
 
-the original shared meaning has failed.
+then the original shared meaning-for-coordination has failed.
 
 A **new coordination protocol** has begun.
 
@@ -431,7 +433,7 @@ Such meaning does not survive execution.
 
 ## Invariants and Architectural Privilege
 
-Meaning is **layer-relative**.
+Meaning-for-coordination is **layer-relative**.
 
 Higher layers are those at which **invariants are enforced**, not imagined.
 
@@ -443,10 +445,10 @@ Invariants:
 
 Lower layers execute strictly within imposed constraints.
 
-This is not moral hierarchy.
-It is **architectural necessity**.
+This is not a moral hierarchy or endorsement of legitimacy.
+It is **a descriptive property of system architecture**.
 
-Power corresponds to the ability to **anchor enforcement and externalize failure**, not to intent or legitimacy.
+Power corresponds to the ability to **anchor enforcement and externalize failure**, regardless of intent.
 
 ---
 
@@ -470,7 +472,7 @@ They are **coordination regimes with distinct failure surfaces**.
 
 ## Implications (Diagnostic, Not Normative)
 
-* Scaling coordination destroys implicit meaning.
+* Scaling coordination destroys implicit meaning-for-coordination.
 * Alignment without enforcement produces false shared meaning.
 * Human-in-the-loop is a recovery protocol, not understanding.
 * Organizational dysfunction often reflects misplaced failure cost.
@@ -483,9 +485,9 @@ They are **coordination regimes with distinct failure surfaces**.
 The distinction is categorical:
 
 * **Internal meaning** is non-addressable.
-* **Shared meaning** is addressable and executable.
+* **Shared meaning-for-coordination** is addressable and executable.
 
-Variability exists only in the **failure semantics of shared meaning**, not in the boundary itself.
+Variability exists only in the **failure semantics of shared meaning-for-coordination**, not in the boundary itself.
 
 Meaning that survives coordination constraints becomes:
 
@@ -508,13 +510,13 @@ This document is intentionally incomplete.
 
 It does not address truth, value, or experience.
 
-It specifies **the minimal architectural conditions under which meaning becomes a system property rather than private state**.
+It specifies **the minimal architectural conditions under which meaning becomes a coordination artifact rather than private state**.
 
 ---
 
 ## Closing Note
 
-Meaning does not become real when it is sincere.
+Meaning does not become real-for-coordination when it is sincere.
 
 It becomes real when it is:
 
