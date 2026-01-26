@@ -4,23 +4,23 @@
 
 ---
 
-## What This Document Is
+## Status and Intent
 
-This document describes **coordination** as the fundamental problem that social, economic, and institutional systems are attempting to solve.
+This document treats **coordination** as the fundamental problem that social, economic, and institutional systems exist to manage.
 
-It treats coordination not as:
+Coordination is not framed as:
 
 * a management concern,
-* a political phenomenon,
+* a political project,
 * a cultural preference,
-* or a moral project,
+* or a moral enterprise,
 
-but as a **structural constraint** that emerges whenever multiple agents act in shared environments under uncertainty.
+but as a **structural constraint** that arises whenever multiple agents act in shared environments under uncertainty.
 
-All other concepts—authority, legitimacy, respect, money, process, law—are treated as **specialized coordination mechanisms** optimized for different conditions.
+Concepts such as authority, legitimacy, respect, money, process, law, and protocol are treated as **specialized coordination mechanisms**, each optimized for different environmental assumptions and failure modes.
 
-This document operates at a **higher level of abstraction** than the others.
-Those documents remain valid as **zoomed-in analyses**.
+This document operates at a **higher level of abstraction** than the others in this collection.
+Those documents remain valid as *lower-resolution analyses*.
 
 ---
 
@@ -45,11 +45,14 @@ Coordination becomes necessary when **all** of the following are true:
 * multiple agents act independently,
 * actions affect shared state,
 * agents have partial information,
-* misalignment has non-trivial cost.
+* misalignment carries non-trivial cost.
 
-In such environments, **pure autonomy fails** and **constant negotiation does not scale**.
+Under these conditions:
 
-Coordination is the problem that remains after communication, incentives, and goodwill are exhausted.
+* pure autonomy fails,
+* constant negotiation does not scale.
+
+Coordination is the problem that remains **after communication, incentives, and goodwill are insufficient**.
 
 ---
 
@@ -58,7 +61,7 @@ Coordination is the problem that remains after communication, incentives, and go
 Coordination pressure is not a design flaw.
 It is not caused by incompetence or bad intent.
 
-It arises from:
+It arises from structural constraints, including:
 
 * limited attention,
 * bounded rationality,
@@ -66,49 +69,51 @@ It arises from:
 * time pressure,
 * asymmetric risk exposure.
 
-No amount of trust or intelligence removes these constraints.
-They can only be **managed or displaced**.
+No amount of trust, intelligence, or alignment removes these constraints.
+They can only be **managed, displaced, or transformed**.
 
 ---
 
 ## Coordination Cost and Failure Modes
 
-Coordination has cost along multiple dimensions:
+Coordination incurs cost along multiple dimensions:
 
 * time delay,
 * cognitive load,
 * political friction,
 * risk redistribution,
-* enforcement overhead.
+* enforcement and verification overhead.
 
-When coordination fails, systems experience:
+When coordination fails or saturates, systems exhibit:
 
 * deadlock,
 * conflict,
 * duplication,
 * blame escalation,
-* defensive behavior.
+* defensive or adversarial behavior.
 
-Most institutional structures exist to **contain these failure modes**, not to optimize outcomes.
+Most institutional structures exist primarily to **contain coordination failure**, not to optimize outcomes.
 
 ---
 
-## Coordination Media
+## Coordination Media (Operational Definition)
 
 A **coordination medium** is any mechanism that reduces the cost of aligning action across agents.
 
 Coordination media differ by:
 
 * how much trust they assume,
-* how much context they require,
-* how well they scale,
-* how brittle they are under change.
+* how much shared context they require,
+* how well they scale under churn,
+* how brittle they are under environmental change.
+
+All coordination media trade expressiveness and nuance for scalability and reliability, to varying degrees.
 
 ---
 
 ## High-Context Coordination Media
 
-These rely on **shared understanding** and **continuity**.
+High-context media rely on **shared understanding** and **continuity**.
 
 Examples include:
 
@@ -131,11 +136,13 @@ They fail when:
 * context shifts,
 * memory decays.
 
+Their efficiency depends on conditions that rarely hold at scale.
+
 ---
 
 ## Medium-Context Coordination Media
 
-These reduce reliance on shared understanding by introducing structure.
+Medium-context media reduce reliance on shared understanding by introducing structure.
 
 Examples include:
 
@@ -151,13 +158,13 @@ They trade speed and flexibility for:
 * auditability,
 * predictability.
 
-They assume **partial trust** and **partial alignment**.
+They assume **partial trust** and **partial alignment**, and incur ongoing maintenance cost.
 
 ---
 
 ## Low-Context Coordination Media
 
-These assume **minimal trust** and **minimal shared context**.
+Low-context media assume **minimal trust** and **minimal shared context**.
 
 Examples include:
 
@@ -177,13 +184,20 @@ They are also:
 
 * rigid,
 * expensive,
-* meaning-flattening.
+* meaning-flattening,
+* insensitive to local nuance.
+
+These properties are not flaws; they are what make such media viable at scale.
 
 ---
 
 ## Money as a Coordination Medium
 
-Money is not primarily a store of value or a moral signal.
+Money is not primarily:
+
+* a store of value,
+* a moral signal,
+* or a measure of worth.
 
 It is a **protocol for coordinating action among strangers** without:
 
@@ -203,7 +217,7 @@ This is why it scales—and why it feels impersonal.
 
 Authority coordinates by **constraining option space**.
 
-It answers:
+It answers the question:
 
 > Who may act, regardless of consensus?
 
@@ -213,7 +227,7 @@ Authority reduces ambiguity and delay at the cost of:
 * enforcement burden,
 * reduced adaptability.
 
-It becomes dominant when time pressure or risk exceeds what softer media can handle.
+It becomes dominant when time pressure, risk, or coordination load exceed what softer media can handle.
 
 ---
 
@@ -221,22 +235,22 @@ It becomes dominant when time pressure or risk exceeds what softer media can han
 
 Legitimacy coordinates by stabilizing expectations of acceptance.
 
-Respect coordinates by waiving verification temporarily.
+Respect coordinates by temporarily waiving verification.
 
 Both rely on:
 
-* temporal continuity,
+* continuity,
 * repeated interaction,
 * stable intent models.
 
 They are efficient but fragile.
-They do not survive high churn or volatility.
+They do not survive high churn, volatility, or scale.
 
 ---
 
 ## Substitution Under Pressure
 
-When one coordination medium fails, systems substitute another.
+When a coordination medium fails, systems substitute another.
 
 Common substitutions include:
 
@@ -245,8 +259,9 @@ Common substitutions include:
 * trust → money,
 * discretion → protocol.
 
-These substitutions are usually interpreted as moral or political shifts.
-They are more accurately **risk adaptations**.
+These substitutions are often interpreted as moral, political, or cultural shifts.
+
+They are more accurately **risk adaptations under degraded assumptions**.
 
 ---
 
@@ -256,17 +271,17 @@ When upstream conditions change—such as:
 
 * attention fragmentation,
 * increased scale,
-* faster cycles,
+* faster execution cycles,
 * higher observability,
 * greater blame sensitivity—
 
 coordination media optimized for older conditions fail silently.
 
-New media emerge not because they are better, but because they **work under degraded assumptions**.
+New media emerge not because they are superior, but because they **function under worse assumptions**.
 
 ---
 
-## Why Everything Feels Like Coordination Now
+## Why Coordination Feels Pervasive
 
 As systems scale and accelerate:
 
@@ -274,9 +289,9 @@ As systems scale and accelerate:
 * formal coordination becomes visible,
 * enforcement becomes explicit.
 
-This makes coordination feel pervasive and oppressive.
-In reality, it has always been there.
+This creates the impression that coordination has increased.
 
+In reality, coordination was always present.
 What has changed is **which layers are exposed**.
 
 ---
@@ -291,23 +306,23 @@ Scalable coordination media:
 * externalize meaning.
 
 This is not a design mistake.
-It is the price of coordinating large numbers of agents who cannot share context.
+It is the cost of coordinating large numbers of agents who cannot share context.
 
-Attempts to restore meaning without restoring context usually fail.
+Attempts to restore meaning without restoring context typically fail.
 
 ---
 
 ## Relationship to Other Documents
 
-This document provides the **top-level abstraction**.
+This document provides the **top-level abstraction** for the collection.
 
-Other documents in this set:
+Other documents:
 
-* zoom in on specific coordination media,
+* zoom in on specific coordination mechanisms,
 * analyze their failure modes,
-* examine local optimization strategies.
+* examine architectural tradeoffs under constraint.
 
-They remain correct within their scope.
+They remain correct within their respective scopes.
 
 ---
 
@@ -322,11 +337,11 @@ Its usefulness depends on:
 
 * recognizing substitution patterns,
 * resisting moral over-interpretation,
-* designing systems that match their environment.
+* designing systems matched to their operating environment.
 
 ---
 
-## Closing Note
+## Closing
 
 Coordination is not about control.
 It is not about trust.
@@ -334,8 +349,6 @@ It is not about values.
 
 It is about **reducing the cost of acting together when agreement is incomplete and risk is real**.
 
-Once that is understood, many conflicts stop being mysterious.
+Once this is understood, many conflicts stop being mysterious.
 
 They become architectural.
-
----
