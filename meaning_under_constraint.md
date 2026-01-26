@@ -8,6 +8,17 @@
 
 This document describes **meaning** as an *emergent, system-level property* that arises only under **coordination and execution constraints**.
 
+The framework is **explicitly isomorphic to execution models in computing and systems engineering**.  
+The same structural principles that govern:
+
+* distributed systems,
+* protocol design,
+* operational semantics,
+* fault tolerance,
+* and coordination under partial failure
+
+are treated here as the conditions under which meaning becomes **shared, inspectable, and real**.
+
 Meaning is treated not as:
 
 * subjective experience,
@@ -42,7 +53,7 @@ It is concerned only with **when internal state exits an agent and becomes a sha
 
 Meaning becomes **shared** only when it is forced through the same constraints that govern **coordination and execution**.
 
-Private meaning may exist without constraint.
+Private meaning may exist without constraint.  
 Shared meaning cannot.
 
 Until a representation survives:
@@ -55,7 +66,7 @@ Until a representation survives:
 
 it remains **internal state**, not a system-level artifact.
 
-This transition is not semantic.
+This transition is not semantic.  
 It is **architectural**.
 
 ---
@@ -81,7 +92,7 @@ Internal meaning:
 * cannot fail structurally,
 * has no external handle or address.
 
-Internal meaning is **real for the agent**.
+Internal meaning is **real for the agent**.  
 It is **non-addressable by systems**.
 
 This is a scope boundary, not an ontological claim.
@@ -100,7 +111,7 @@ Shared meaning is meaning that:
 
 Shared meaning must survive **execution by agents other than the originator**.
 
-Meaning that cannot fail cannot coordinate.
+Meaning that cannot fail cannot coordinate.  
 Meaning that can only be preserved by reinterpretation has already failed as an executable artifact.
 
 ---
@@ -109,7 +120,7 @@ Meaning that can only be preserved by reinterpretation has already failed as an 
 
 Meaning becomes shared only when **all** of the following hold.
 
-These are not philosophical requirements.
+These are not philosophical requirements.  
 They are **execution constraints**.
 
 ---
@@ -201,7 +212,7 @@ A representation that requires:
 
 cannot function as shared meaning.
 
-**Compression is not loss of meaning.**
+**Compression is not loss of meaning.**  
 It is the **price of survivability under constraint**.
 
 ---
@@ -219,7 +230,7 @@ Once expressed:
 * acted upon,
 * or trigger irreversible state change.
 
-Undo buffers, retries, and rollbacks are **explicitly defined recovery mechanisms**.
+Undo buffers, retries, and rollbacks are **explicitly defined recovery mechanisms**.  
 They do not eliminate irreversibility; they localize it.
 
 Meaning that depends on discretionary retraction or reinterpretation is structurally fragile.
@@ -277,7 +288,7 @@ No amount of goodwill can decode an unknown format.
 
 ## Interfaces as Decidability Boundaries
 
-Interfaces do not preserve meaning.
+Interfaces do not preserve meaning.  
 They **cut** it.
 
 An interface:
@@ -287,7 +298,7 @@ An interface:
 * enforces binary decisions,
 * terminates interpretation.
 
-This lossiness is not accidental.
+This lossiness is not accidental.  
 It is **required for execution**.
 
 Without enforced cutoffs:
@@ -312,10 +323,10 @@ A protocol defines:
 * failure semantics,
 * recovery paths.
 
-Outside a protocol, meaning is not misunderstood.
+Outside a protocol, meaning is not misunderstood.  
 It is **undefined**.
 
-Intent does not override protocol.
+Intent does not override protocol.  
 Meaning does not survive protocol violation.
 
 ---
@@ -385,7 +396,7 @@ A **new coordination protocol** has begun.
 
 ## Transitivity and False Shared Meaning
 
-Transitivity is not a heuristic.
+Transitivity is not a heuristic.  
 It is an **invariant**.
 
 Transitivity may be assumed only when:
@@ -417,7 +428,7 @@ Higher privilege layers:
 
 Lower layers operate strictly within imposed constraints.
 
-This is not moral hierarchy.
+This is not moral hierarchy.  
 It is architectural necessity.
 
 Power maps to the ability to **externalize failure**.
@@ -439,7 +450,7 @@ Asynchronous coordination:
 * increases ambiguity,
 * demands stricter artifacts.
 
-These are not communication styles.
+These are not communication styles.  
 They are **coordination regimes with distinct failure surfaces**.
 
 ---
@@ -466,7 +477,7 @@ Meaning that survives coordination constraints becomes:
 
 Meaning that does not remains internal.
 
-This is not a value judgment.
+This is not a value judgment.  
 It is a classification.
 
 ---
@@ -493,5 +504,5 @@ It becomes real when it is:
 * executable,
 * and capable of failing.
 
-Everything else remains internal—
+Everything else remains internal—  
 not by accident, but by design.
