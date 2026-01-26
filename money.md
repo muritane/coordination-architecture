@@ -2,16 +2,21 @@
 
 ## Field Notes on Scale, Optionality, and Role Collapse
 
-## What This Document Is
+---
 
-This document examines **money** as a **coordination medium**, not as value, morality, or incentive.
+## Status and Intent
+
+This document examines **money** as a **coordination medium**, not as value, morality, incentive, or virtue.
+
 It treats money as a mechanism for:
 
 * reducing coordination cost,
 * enabling large-scale interaction among strangers,
 * substituting protocol for trust and shared context.
 
-The analysis is **descriptive and architectural**, not normative or economic.
+The analysis is **descriptive and architectural**, not normative, moral, or economic.
+
+---
 
 ## What This Document Is Not
 
@@ -29,10 +34,11 @@ It focuses exclusively on **what money does to coordination structures**.
 
 ## Money Is Not Value
 
-Money is not value. Money is not the thing being exchanged.
-Money is a **tokenized coordination permission**.
+Money is not value, and it is not the thing being exchanged.
 
-It allows agents to access:
+Money is a **tokenized permission to access coordination capacity**.
+
+It allows agents to invoke:
 
 * production systems,
 * labor capacity,
@@ -47,15 +53,17 @@ without requiring:
 * respect,
 * intent alignment.
 
-Money answers only one question:
+Money answers a single question:
 
-*Is this exchange permitted by the protocol?*
+> **Is this interaction permitted by the protocol?**
+
+Everything else is deliberately excluded.
 
 ---
 
-## Money as Low-Cost Coordination Access
+## Money as Low-Context Coordination Access
 
-Money functions as **low-cost access to scalable coordination capacity**.
+Money functions as **low-cost access to scalable coordination under minimal assumptions**.
 
 Specifically, money:
 
@@ -64,7 +72,7 @@ Specifically, money:
 * externalizes trust,
 * standardizes obligation.
 
-This makes it uniquely effective in environments with:
+This makes it effective in environments with:
 
 * high churn,
 * fragmented attention,
@@ -72,13 +80,14 @@ This makes it uniquely effective in environments with:
 * adversarial assumptions,
 * large scale.
 
-Money works best where human coordination is most fragile.
+Money performs best precisely where human coordination is most fragile.
 
 ---
 
 ## Role-Agnostic by Design
 
-Money deliberately erases role context.
+Money is intentionally **role-agnostic**.
+
 It does not encode:
 
 * care,
@@ -88,10 +97,10 @@ It does not encode:
 * asymmetry,
 * long-term commitment.
 
-When money mediates an interaction, the system behaves as if:
-both parties are strangers with no shared past and no guaranteed future.
+When money mediates an interaction, the system behaves as if both parties are strangers with no shared past and no guaranteed future.
 
-This is not a failure of money. It is its defining feature.
+This is not a limitation of money.
+It is its defining design choice.
 
 ---
 
@@ -115,13 +124,14 @@ are flattened into:
 * service recipient,
 * transaction target.
 
-This collapse is emergent, not intentional. It results from using a medium that cannot carry role-specific meaning.
+This collapse is emergent, not intentional.
+It results from using a medium that cannot carry role-specific meaning.
 
 ---
 
-## The Wage as a Role-Flattening Mechanism
+## The Wage as a Role-Flattening Interface
 
-Wages coordinate labor efficiently but narrowly.
+Wages coordinate labor efficiently—but narrowly.
 
 They measure:
 
@@ -136,19 +146,19 @@ They do not measure:
 * care,
 * tacit knowledge,
 * responsibility for failure,
-* long-term value creation.
+* long-horizon value creation.
 
-As wages dominate coordination:
+As wage coordination dominates:
 
 * professions collapse into jobs,
 * vocations collapse into tasks,
 * creativity collapses into deliverables.
 
-This is a coordination effect, not a cultural one.
+This is a **coordination effect**, not a cultural one.
 
 ---
 
-## Money and Coordination Substitution
+## Money as a Substitution Medium
 
 Money typically enters when other coordination media degrade.
 
@@ -159,16 +169,17 @@ Common substitutions include:
 * respect → money,
 * informal obligation → contract.
 
-These substitutions allow systems to continue functioning under degraded conditions.
-They do not repair the underlying degradation.
+These substitutions allow systems to continue operating under degraded conditions.
 
-Money therefore acts as a **fallback protocol**, not a restorative one.
+They do **not** repair the underlying loss of coordination capacity.
+
+Money is therefore a **fallback protocol**, not a restorative one.
 
 ---
 
 ## Proxy Capture and Medium Chasing
 
-Money becomes structurally dangerous when it is mistaken for the solution to coordination rather than a workaround.
+Money becomes structurally dangerous when it is treated as a **solution to coordination**, rather than a workaround.
 
 When systems optimize for:
 
@@ -185,15 +196,16 @@ Control of the medium displaces investment in:
 * role continuity,
 * shared meaning.
 
-This pattern resembles Goodhart’s Law, but applies to **media**, not measures.
+This resembles Goodhart’s Law, but applies to **coordination media**, not metrics.
 
 ---
 
 ## Optionality and Its Loss
 
-Optionality is the availability of **multiple viable coordination pathways**.
+**Optionality** is the availability of multiple viable coordination pathways.
 
 Money increases optionality **locally** by providing a fallback when trust fails.
+
 Money decreases optionality **globally** when it crowds out all other media.
 
 When monetization dominates:
@@ -203,9 +215,11 @@ When monetization dominates:
 * respect disappears,
 * authority hardens.
 
-At that point, money is no longer optional. It is compulsory.
+At that point, money is no longer optional.
+It becomes compulsory.
 
-Optionality loss is path-dependent: once coordination collapses into a single medium, reversal is slow, costly, and politically difficult.
+Optionality loss is path-dependent.
+Once coordination collapses into a single medium, reversal is slow, costly, and politically fraught.
 
 ---
 
@@ -217,9 +231,10 @@ As monetization flattens roles and erodes legitimacy:
 * rules replace discretion,
 * compliance replaces acceptance.
 
-This is not authoritarian intent. It is structural compensation for lost coordination bandwidth.
+This is not authoritarian intent.
+It is **structural compensation** for lost coordination bandwidth.
 
-Money and authority often grow together as complementary low-context systems.
+Money and authority frequently grow together as complementary low-context systems.
 
 ---
 
@@ -227,27 +242,29 @@ Money and authority often grow together as complementary low-context systems.
 
 Coordination collapse is rarely noticed while it is occurring.
 
-Money masks degradation by keeping systems operational even after trust, legitimacy, and role continuity have failed.
+Money masks degradation by keeping systems operational after trust, legitimacy, and role continuity have failed.
 
-Early signals are subtle and misclassified:
+Early signals are subtle and often misclassified:
 
 * increased insistence on clarity or payment,
 * reduced tolerance for ambiguity,
 * withdrawal of discretionary effort,
 * formalization of previously informal interactions.
 
-These signals are often interpreted as professionalism, boundary-setting, or realism.
-In practice, they indicate **coordination hardening**—the replacement of role-based discretion with protocol.
+These are often interpreted as professionalism or boundary-setting.
+
+Structurally, they indicate **coordination hardening**:
+the replacement of role-based discretion with protocol.
 
 Each step toward monetization is locally rational and defensive.
-No single step appears to damage the relationship.
-The collapse becomes visible only after money is the sole remaining medium.
+The collapse becomes visible only when money is the sole remaining medium.
 
 ---
 
 ## Fragility and Sudden Breakage
 
-Trust does not decay smoothly; it fails discretely.
+Trust does not decay smoothly.
+It fails discretely.
 
 As long as some non-monetary coordination remains:
 
@@ -261,8 +278,7 @@ Once money becomes primary:
 * deviations become breaches,
 * repair collapses into pricing or exit.
 
-What appears as a sudden rupture is the delayed consequence of earlier role collapse.
-The relationship does not weaken gradually; it reclassifies.
+What appears as sudden rupture is delayed recognition of earlier role collapse.
 
 ---
 
@@ -275,9 +291,10 @@ Once an interaction is fully monetized:
 * generosity becomes unpaid labor.
 
 Apologies cannot repair a protocol shift.
-The injury is architectural, not moral.
 
-After role collapse, the only remaining coordination moves are:
+The injury is **architectural**, not moral.
+
+After role collapse, the remaining coordination moves are limited to:
 
 * renegotiation of price,
 * enforcement,
@@ -296,16 +313,16 @@ Money coordinates poorly in domains requiring:
 * non-priced obligation,
 * identity formation.
 
-These domains persist only if protected from total monetization.
+Such domains persist only when **partially insulated from monetization**.
 
 ---
 
 ## Money Is a Fallback, Not a Foundation
 
-Money is most effective when:
+Money is most effective when it is:
 
+* scoped narrowly,
 * used selectively,
-* scoped carefully,
 * reversible after use,
 * paired with other coordination media.
 
@@ -324,6 +341,7 @@ It explains:
 * why collapse is detected late.
 
 It does not propose remedies.
+
 Its purpose is to:
 
 * avoid category errors,
@@ -332,11 +350,14 @@ Its purpose is to:
 
 ---
 
-## Closing Note
+## Closing
 
-Money does not corrupt coordination. It **rescues** coordination under hostile conditions.
+Money does not corrupt coordination.
+It **rescues** coordination under hostile conditions.
 
 But when rescue becomes routine, systems forget how to coordinate any other way.
-That loss is not moral. It is architectural.
 
-And once money becomes the only remaining protocol, the relationship has already ended—it just has not yet exited.
+That loss is not moral.
+It is architectural.
+
+And once money is the only remaining protocol, the relationship has already ended—it simply has not exited yet.
