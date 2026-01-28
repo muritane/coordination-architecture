@@ -2,9 +2,15 @@
 
 ## Status and Scope
 
-This document specifies a **minimal, descriptive architecture** for how bounded systems execute actions, absorb consequences, harden constraints, and remain viable over time.
+This document specifies a **minimal, descriptive execution architecture** for bounded systems: how they act, absorb consequences, harden constraints, and remain viable under drift.
 
-It is **not** a theory of human psychology, intelligence, morality, legitimacy, or value.
+It is **not** a theory of:
+
+* human psychology,
+* intelligence or intent,
+* morality, legitimacy, or justice,
+* preference formation or value selection.
+
 It applies wherever:
 
 * execution is irreversible,
@@ -12,40 +18,42 @@ It applies wherever:
 * environments are non‑stationary,
 * and repeated action must remain viable.
 
-The stack does not prescribe goals or preferences. It only specifies what must already be true for claims about action, agency, responsibility, or evaluation to be **structurally coherent**.
+The stack does not prescribe goals. It specifies the **structural preconditions** that must already hold for claims about action, agency, responsibility, evaluation, or optimization to be coherent at all.
 
 ---
 
 ## Primitive Commitments (Non‑Negotiable)
 
+All subsequent structure follows from these facts:
+
 1. **Execution is irreversible.** Acting destroys information and eliminates alternatives.
-2. **Resources are bounded.** No system can sense, model, or act on everything.
+2. **Resources are bounded.** No system can sense, model, interpret, or act on everything.
 3. **Environments drift.** Invariants are provisional and regime‑dependent.
 4. **Compression is unavoidable.** Efficiency is purchased by blindness.
-5. **Viability precedes optimization.** A system must remain capable of further action and redesign.
+5. **Viability precedes optimization.** A system must remain capable of further execution and redesign.
 
-All subsequent structure follows from these facts.
+These are not assumptions. They are constraints.
 
 ---
 
 ## Structural Separations (Do Not Collapse)
 
-The stack maintains the following distinctions:
+Pathologies arise when the following distinctions are collapsed:
 
-* execution vs interpretation
-* existence vs persistence vs scale
-* exploration vs exploitation vs redesign
-* regulation vs control
-* discretion vs agency
-* evaluation vs optimization
+* execution **vs** interpretation
+* existence **vs** persistence **vs** scale
+* exploration **vs** exploitation **vs** redesign
+* regulation **vs** control
+* discretion **vs** agency
+* evaluation **vs** optimization
 
-Pathologies arise when these are collapsed or conflated.
+The stack is organized to preserve these separations under pressure.
 
 ---
 
 ## Layer 0: Existence (Emergent Coherence)
 
-A system **exists** when a coherent execution pattern emerges from interactions at a lower layer.
+A system **exists** when a coherent execution pattern emerges from lower‑layer interactions.
 
 Existence requires:
 
@@ -53,7 +61,13 @@ Existence requires:
 * internal constraint structure,
 * non‑immediate decoherence.
 
-Existence does **not** require stability, persistence, intention, optimization, or recognition.
+Existence does **not** require:
+
+* stability,
+* persistence,
+* intention,
+* optimization,
+* recognition.
 
 Existence already implies an implicit sense–model–act coupling enforced by physical or logical constraint.
 
@@ -72,27 +86,29 @@ Coordination is not chosen. It emerges when:
 
 Under these conditions, independent execution becomes unsafe.
 
-Coordination is the **minimum structure required for continued viability**.
+Coordination is the **minimum additional structure required for continued viability**.
 
 ---
 
-## Layer 2: Optionality Preservation (Exploration)
+## Layer 2: Optionality Preservation (Exploration Regime)
 
-Before coordination load binds:
+Before coordination load binds locally:
 
 * interpretation remains open,
 * deviation is cheap,
 * failure is local and largely reversible,
 * information is preserved rather than destroyed.
 
-Evaluation here is:
+Evaluation in this regime is:
 
 * heuristic,
 * context‑rich,
 * non‑comparable,
 * non‑executable.
 
-This is not a temporal stage but a **structural regime** in which execution has not yet closed over distinctions.
+This is **not a temporal stage**. It is a **structural regime** that can re‑enter mature systems locally during redesign, boundary probing, or novelty exposure.
+
+Optionality preservation disappears only where execution has already closed.
 
 ---
 
@@ -115,6 +131,12 @@ Only execution persists.
 ### Horizons
 
 A **horizon** specifies the timescale over which viability is evaluated.
+
+Horizons may be:
+
+* imposed by the environment,
+* induced by topology,
+* selected implicitly by closure.
 
 Topology and horizon jointly determine:
 
@@ -155,7 +177,7 @@ At settled closure:
 
 * distinctions cease to appear as choices,
 * constraints feel descriptive rather than imposed,
-* disagreement occurs within the representation, not about it.
+* disagreement occurs *within* the representation, not *about* it.
 
 Settled closure is always local, contingent, and revisable under drift.
 
@@ -171,12 +193,12 @@ A metric is real‑for‑execution only if it:
 
 * captures minimally sufficient degrees of freedom,
 * is finite and resource‑bounded,
-* is substitutable across evaluators,
+* is operationally substitutable **within the closure regime**,
 * yields determinate outcomes,
 * fails explicitly when saturated or misapplied.
 
 Metrics do not encode truth.
-They encode **what must be fixed for viability over a horizon**.
+They encode **what must be held fixed for viability over a horizon**.
 
 Articulated values that never bind compression remain narratively visible but execution‑inert.
 
@@ -204,7 +226,7 @@ This definition is intentionally strict to prevent false attribution.
 ## Layer 7: Responsibility as Load Attribution
 
 Responsibility is not moral blame.
-It is **load location** within an execution topology.
+It is **load location within an execution topology**.
 
 Responsibility can be coherently assigned only when:
 
@@ -279,7 +301,9 @@ Values appear through **compression decisions**:
 * where redesign authority resides.
 
 Values are not injected.
-They are the residue of irreversible abstraction that survived execution.
+They are the **residue of irreversible abstraction that survived execution**.
+
+This claim is descriptive, not normative.
 
 ---
 
