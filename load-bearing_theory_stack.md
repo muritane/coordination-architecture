@@ -1,5 +1,5 @@
 # The Load-Bearing Theory Stack  
-## A Structural Model for Exploration, Constraint, Agency, and Responsibility
+## A Structural Model for Exploration, Constraint, Metrics, Agency, and Responsibility
 
 ---
 
@@ -7,56 +7,48 @@
 
 This document defines a **layered structural model** for analyzing systems that move from exploration into load-bearing execution.
 
-It is **descriptive and architectural**, not prescriptive.
+It is **descriptive and architectural**, not normative.
 
 The model specifies:
-- when constraints become unavoidable,
+- when domains harden under load,
+- when evaluation becomes objective-for-coordination,
 - where agency can exist,
 - and when responsibility can be structurally assigned.
 
-It does **not** argue what should be valued, permitted, or justified.
+It does **not** define value, merit, justice, or legitimacy.
 
 ---
 
-## A Note on Interpretation (Read First)
+## A Note on Moral Readings (Explicit)
 
-This framework will invalidate some **common moral intuitions** about choice, consent, and responsibility.
+This framework will invalidate many **common moral intuitions** about choice, fairness, consent, and blame.
 
-That is **not its goal**.  
-It is a *consequence* of describing systems in structural rather than moral terms.
+That outcome is **not a goal**.  
+It is a consequence of describing systems in terms of execution, constraints, and observability rather than intent or virtue.
 
-Readers may feel that the framework is:
-- corrective,
-- dismissive of lived experience,
-- or hostile to resistance narratives.
-
-Those reactions are understandable, but they are **orthogonal** to the purpose of the model.
-
-This framework is intended to be **used**, not agreed with.
+Readers may disagree with the conclusions.  
+The framework is intended to be **used diagnostically**, not endorsed philosophically.
 
 ---
 
-## Why This Document Exists
+## Why a Layered Model Is Necessary
 
-In discussions of systems, people often collapse distinct questions into one:
+In real systems, people often collapse distinct questions into one:
 
 - “Why are there rules now?”
-- “Did I have a choice?”
+- “Is this evaluation fair?”
+- “Did I really have a choice?”
 - “Who is responsible?”
-- “Is this fair?”
 
-These questions do not operate at the same structural level.
+These questions belong to **different structural layers**.
 
 When they are mixed:
 - constraint is moralized,
-- agency is asserted where only execution exists,
-- responsibility is assigned without declared boundaries,
-- and disagreement becomes moral rather than diagnostic.
+- metrics are treated as opinions,
+- agency is asserted inside execution,
+- responsibility is assigned without declared boundaries.
 
-This document separates these questions into **explicit layers**, each with a single job.
-
-Each layer depends on the one below it.  
-No layer can substitute for another.
+This document separates these questions into **explicit layers**, each answering one question only, and each depending on the layers below it.
 
 ---
 
@@ -74,35 +66,29 @@ Characteristics:
 - outcomes can be repaired narratively,
 - coordination costs are low.
 
-In this phase:
+Constraints exist but are **undiscovered**.  
+Evaluation is internal, informal, and non-comparable.
 
-- constraints exist but are **undiscovered**,
-- enforcement is absent or symbolic,
-- execution does not substitute for others,
-- irreversible commitments are avoided.
-
-Exploration is **learning under uncertainty**, not rule-following.
-
-At this layer:
+At this stage:
+- metrics are heuristic,
 - agency is not yet meaningful,
-- responsibility is not assignable,
-- boundaries are soft or provisional.
+- responsibility is not assignable.
 
-This layer supports discovery, not execution.
+Exploration supports **learning**, not execution.
 
 ---
 
 ## Layer: Constraint Discovery and Becoming Load-Bearing  
 *(Question answered: what constraints become unavoidable under load?)*  
-*(Requires: exploration has already occurred)*
+*(Requires: exploration has occurred)*
 
-A domain becomes **load-bearing** when failure ceases to be local and begins to affect others.
+A domain becomes **load-bearing** when failure ceases to be local and begins to propagate.
 
 This occurs when the domain starts to:
 
 - coordinate independent actors,
 - allocate shared resources,
-- substitute operators, evaluators, or components,
+- substitute operators or evaluators,
 - propagate failure across boundaries,
 - commit action in irreversible time.
 
@@ -114,177 +100,190 @@ At this point:
 - invariants emerge,
 - enforcement enters the execution loop.
 
-Constraints are **not invented** here.  
-They are **revealed by execution under load**.
+A key operation here is **collapse of degrees of freedom**:
+some variability must be fixed or bounded for execution to remain stable.
 
-A key operation at this layer is **collapse of degrees of freedom**:
-some ways of acting must be fixed, bounded, or excluded for execution to remain stable.
+This layer explains **why constraints appear**.  
+It does not yet determine **how evaluation works** or **who is bound**.
 
-This layer explains **why flexibility ends**.  
-It does not yet explain **who is bound**.
+---
+
+## Layer: Metrics Under Constraint (Objective Evaluation)  
+*(Question answered: when does evaluation become comparable-for-coordination?)*  
+*(Requires: the system is load-bearing)*
+
+Metrics emerge as **system-level artifacts** only after a domain becomes load-bearing.
+
+A metric is not a belief or a value judgment.  
+It is an **executable evaluative artifact** that must function under constraint.
+
+A metric becomes real-for-evaluation only if it:
+
+- can be applied by substituted evaluators,
+- yields determinate outcomes under a protocol,
+- supports repeated application at scale,
+- operates under bounded resources,
+- and incurs meaningful failure cost when misapplied.
+
+Metrics that require reinterpretation to survive are **non-executable**.  
+They may still function as internal judgment.
+
+---
+
+### Internal Judgment vs Shared Metrics (Explicit Boundary)
+
+- **Internal judgment** is local, context-rich, non-comparable, and unconstrained.
+- **Shared metrics** externalize judgment, terminate interpretation, and enable coordination.
+
+Evaluation that cannot fail cannot coordinate.  
+Evaluation that survives only through reinterpretation has failed as a metric.
+
+This layer provides the **objective anchor** for later claims about fairness, agency, and responsibility.
+
+---
+
+### Metrics and Power Asymmetry
+
+Metrics implicitly encode:
+
+- resource constraints,
+- observability limits,
+- coordination cost,
+- and failure surfaces.
+
+If a metric assumes conditions that only some actors can meet,  
+that asymmetry is **structural**, not moral.
+
+Claims of “fairness” or “objectivity” without constraint-aligned metrics are undefined-for-comparison.
 
 ---
 
 ## Layer: Agency and Decidability at Boundaries  
-*(Question answered: who is legitimately bound once constraints apply?)*  
-*(Requires: the system is already load-bearing)*
+*(Question answered: who is legitimately bound?)*  
+*(Requires: load-bearing execution and executable metrics)*
 
-Agency exists **only at explicit boundaries**, at the moment of entry into a load-bearing system.
+Agency exists **only at explicit boundaries**, before entry into execution.
 
 Agency is defined as:
 
-> the capacity to make a **binding yes/no decision** to enter execution,  
-> with explicit knowledge of which constraints, interfaces, and failure semantics will apply after entry.
+> the capacity to make a **binding yes/no decision** to enter a load-bearing system,  
+> with explicit knowledge of constraints, metrics, and failure semantics that will apply after entry.
 
 This requires **decidability**:
 
-- a real option to say yes,
-- a real option to say no,
-- with known and **bounded** consequences for each.
+- refusal must be real,
+- consequences must be bounded and known,
+- metrics governing evaluation must be declared.
 
-If refusal is technically possible but practically catastrophic,  
-then decidability is invalid and agency is absent.
+If refusal is formally allowed but practically catastrophic,  
+then decisibility is invalid and agency is absent.
 
-This explicitly includes:
-- power asymmetry,
+This includes cases of:
 - economic pressure,
 - scarcity,
-- and dependency.
-
-A choice under unbounded penalty is **not agency**, regardless of formal voluntariness.
+- dependency,
+- or asymmetric exposure to metric failure.
 
 ---
 
-### Discretion vs Agency (Explicit Distinction)
+### Discretion vs Agency (Non-Ambiguous)
 
-Inside execution, systems may allow:
-- flexibility,
-- judgment,
-- local optimization,
-- or choice among methods.
+Once execution begins:
 
-This is **discretion**, not agency.
+- agents may have discretion in how they comply,
+- but discretion is **not agency**.
 
 **Agency decides whether to be bound.**  
-**Discretion decides how to comply once bound.**
+**Discretion operates within binding.**
 
-Conflating the two is a common source of confusion.
-
----
-
-### What Must Be Declared for Agency to Exist
-
-For a boundary to support agency, the system must explicitly declare:
-
-- which constraints are fixed and enforced,
-- which variations are permitted and within what bounds,
-- which constraints are deferred to future versions,
-- which factors are irrelevant,
-- and which uncertainties are excluded from responsibility.
-
-If these are not declared:
-- consent is not meaningful,
-- refusal is not real,
-- agency does not exist.
-
-Once the boundary is crossed:
-- interpretation terminates,
-- negotiation closes,
-- behavior becomes execution under constraint.
+Metrics govern discretion;  
+they do not create agency.
 
 ---
 
 ## Layer: Responsibility and Load Attribution  
-*(Question answered: where can responsibility be assigned without moralization?)*  
-*(Requires: agency-valid entry has occurred)*
+*(Question answered: where can responsibility be assigned?)*  
+*(Requires: agency-valid entry and executable metrics)*
 
-Responsibility is not blame.  
-Responsibility is **load location**.
+Responsibility is **not blame**.  
+Responsibility is **load location under declared constraints and metrics**.
 
-Responsibility can be assigned **only if**:
+Responsibility can be assigned only if:
 
 - the system is load-bearing,
+- evaluation is metric-executable,
 - entry was decidable,
-- constraints were declared at entry,
 - outcomes depend on variables the agent controlled.
 
 If harm arises from:
-- undeclared constraints,
-- misrepresented boundaries,
-- unknown failure modes,
+- undeclared metrics,
+- mis-specified constraint regimes,
+- metric failure under scale,
 - or absence of real refusal,
 
-then responsibility was **misrouted**.
+then responsibility was misrouted.
 
-Moral language often appears here,  
-but it is compensating for missing structure.
+Moral language often appears here to compensate for missing structure.
 
 ---
 
-## On Partial or Structured Agency (Clarification)
+## On Partial, Time-Limited, or Probabilistic Agency
 
-This framework treats agency as **binary by design**:
-present at the boundary or absent.
+This framework treats agency as **binary at the boundary by design**.
 
-Some systems intentionally implement structured variants, such as:
-- time-limited consent,
+Some systems intentionally engineer:
+- time-bounded consent,
 - revocable participation,
-- contingent or probabilistic entry.
+- probabilistic entry (e.g. auctions, contingent contracts).
 
 These are not counterexamples.  
-They are **explicitly engineered boundary designs**.
+They are **explicit boundary designs**.
 
-If such structures are declared, agency remains intact.  
-If they are implicit or retroactive, agency fails.
+If declared, agency is preserved.  
+If implicit or retroactive, agency fails.
 
 ---
 
-## On Who Declares Constraints (Explicitly Out of Scope)
+## On Who Declares Constraints and Metrics (Explicitly Out of Scope)
 
-This framework requires that constraints be declared,  
-but it does **not** specify:
+This framework does not specify:
 
-- who has authority to declare them,
+- who has authority to declare constraints or metrics,
 - how disputes over declarations are resolved,
 - or how legitimacy is established.
 
-Those questions belong to governance, law, or politics.
+Those questions belong to governance and politics.
 
-This model evaluates **whether agency and responsibility claims are structurally valid given a declaration**, not whether the declaration itself is justified.
+This model evaluates **whether claims of objectivity, agency, or responsibility are structurally valid given a declaration**, not whether the declaration is justified.
 
 ---
 
-## How the Layers Depend on Each Other
+## Dependency Summary (Non-Symbolic)
 
-These layers cannot be rearranged:
+- Responsibility requires agency.
+- Agency requires declared constraints and metrics.
+- Metrics require load-bearing execution.
+- Load-bearing execution emerges from exploration.
 
-- responsibility requires agency,
-- agency requires declared constraints,
-- declared constraints require load-bearing execution,
-- load-bearing execution emerges from exploration.
-
-However:
-- exploration does not guarantee constraint,
-- constraint does not guarantee agency,
-- agency does not guarantee responsibility.
-
-Most real-world failures occur when:
-- responsibility is asserted without agency,
-- agency is claimed inside execution,
-- or constraint is denied after load arrives.
+Skipping layers produces confusion:
+- fairness claims without metrics,
+- agency claims inside execution,
+- responsibility without boundaries.
 
 ---
 
 ## Closing Note
 
-This framework does not tell you what to value.
+Metrics do not make systems just.  
+Agency does not make systems fair.  
+Constraint does not imply legitimacy.
 
-It tells you **where certain claims stop making sense**.
+But without:
+- constraint discovery,
+- executable metrics,
+- decidable boundaries,
 
-Exploration ends when load arrives.  
-Agency exists at entry.  
-Execution enforces invariants.  
-Responsibility follows declared load.
+claims about fairness, choice, and responsibility are **structurally undefined**.
 
-When these distinctions are held, systems become legible.  
-When they are collapsed, moral noise fills the gaps.
+This framework exists to say **where claims stop making sense**,  
+not which claims should win.
