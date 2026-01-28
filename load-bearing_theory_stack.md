@@ -1,32 +1,36 @@
 # Load‑Bearing Stack: A Structural Account of Bounded Execution
 
-## Status
+## Status and Scope
 
-This document specifies a **minimal, descriptive architecture** for how bounded systems act, stabilize, harden constraints, and remain viable over time.
+This document specifies a **minimal, descriptive architecture** for how bounded systems execute actions, absorb consequences, harden constraints, and remain viable over time.
 
-It is **not a theory of humans**, intelligence, morality, or value.
-It is an account of **execution under constraint** that applies wherever action is irreversible, resources are bounded, and environments are non‑stationary.
+It is **not** a theory of human psychology, intelligence, morality, legitimacy, or value.
+It applies wherever:
 
-Nothing here prescribes goals, preferences, or legitimacy.
-It only states what must already be true for claims about action, agency, responsibility, or evaluation to be structurally meaningful.
+* execution is irreversible,
+* resources are bounded,
+* environments are non‑stationary,
+* and repeated action must remain viable.
+
+The stack does not prescribe goals or preferences. It only specifies what must already be true for claims about action, agency, responsibility, or evaluation to be **structurally coherent**.
 
 ---
 
 ## Primitive Commitments (Non‑Negotiable)
 
-1. **Action is irreversible.** Execution destroys information and eliminates alternatives.
+1. **Execution is irreversible.** Acting destroys information and eliminates alternatives.
 2. **Resources are bounded.** No system can sense, model, or act on everything.
 3. **Environments drift.** Invariants are provisional and regime‑dependent.
 4. **Compression is unavoidable.** Efficiency is purchased by blindness.
 5. **Viability precedes optimization.** A system must remain capable of further action and redesign.
 
-All layers follow from these facts.
+All subsequent structure follows from these facts.
 
 ---
 
-## Core Separations (Do Not Collapse)
+## Structural Separations (Do Not Collapse)
 
-The stack distinguishes:
+The stack maintains the following distinctions:
 
 * execution vs interpretation
 * existence vs persistence vs scale
@@ -35,7 +39,7 @@ The stack distinguishes:
 * discretion vs agency
 * evaluation vs optimization
 
-Confusion arises when these are collapsed.
+Pathologies arise when these are collapsed or conflated.
 
 ---
 
@@ -49,18 +53,17 @@ Existence requires:
 * internal constraint structure,
 * non‑immediate decoherence.
 
-Existence does **not** require stability, persistence, intention, or optimization.
+Existence does **not** require stability, persistence, intention, optimization, or recognition.
 
-Existence already implies **implicit sense–model–act coupling** through physical or logical constraint.
+Existence already implies an implicit sense–model–act coupling enforced by physical or logical constraint.
 
 ---
 
 ## Layer 1: Coordination Pressure
 
-Coordination is not chosen.
-It emerges when:
+Coordination is not chosen. It emerges when:
 
-* multiple independent actors or processes execute,
+* multiple independent processes execute,
 * execution affects shared or coupled state,
 * information is partial or asymmetric,
 * resources are bounded,
@@ -68,28 +71,35 @@ It emerges when:
 * failure carries non‑trivial cost.
 
 Under these conditions, independent execution becomes unsafe.
-Coordination is the **minimum structure required for viability**.
+
+Coordination is the **minimum structure required for continued viability**.
 
 ---
 
-## Layer 2: Exploration (Optionality Preservation)
+## Layer 2: Optionality Preservation (Exploration)
 
 Before coordination load binds:
 
 * interpretation remains open,
 * deviation is cheap,
-* failure is local and reversible,
+* failure is local and largely reversible,
 * information is preserved rather than destroyed.
 
-Evaluation is heuristic, context‑rich, non‑comparable, and non‑executable.
+Evaluation here is:
 
-This phase is **pre‑execution closure**.
+* heuristic,
+* context‑rich,
+* non‑comparable,
+* non‑executable.
+
+This is not a temporal stage but a **structural regime** in which execution has not yet closed over distinctions.
 
 ---
 
 ## Layer 3: Execution and Consequence Topology
 
 Action executes.
+
 Execution propagates through a **consequence topology** defined by:
 
 * path length (latency),
@@ -106,13 +116,18 @@ Only execution persists.
 
 A **horizon** specifies the timescale over which viability is evaluated.
 
-Topology and horizon jointly determine where disturbance appears, accumulates, or dissipates.
+Topology and horizon jointly determine:
+
+* where disturbance appears,
+* where it accumulates,
+* where it dissipates,
+* and where it becomes invisible.
 
 ---
 
 ## Layer 4: Execution Closure (Deliberate Compression)
 
-As coordination pressure increases and horizons extend, continued interpretation over some distinctions becomes unsafe.
+As coordination pressure increases and horizons extend, continued interpretation over all distinctions becomes unsafe.
 
 **Execution closure** is the deliberate termination of interpretation over selected distinctions so that repeated execution remains viable.
 
@@ -122,18 +137,17 @@ Closure is:
 * role‑specific,
 * horizon‑specific.
 
-Closure is not optional.
-It is the cost of acting repeatedly without collapse.
+Closure is not optional. It is the cost of acting repeatedly without collapse.
 
 ---
 
-## Layer 4b: Settled Closure
+## Transition: Closure Stabilization (Settled Closure)
 
 When execution closure:
 
 * survives repeated execution,
-* remains sufficient across horizons,
-* eliminates alternatives through failure,
+* remains sufficient across relevant horizons,
+* eliminates alternatives through failure rather than choice,
 
 it becomes **settled**.
 
@@ -143,7 +157,7 @@ At settled closure:
 * constraints feel descriptive rather than imposed,
 * disagreement occurs within the representation, not about it.
 
-Settled closure is always local and contingent.
+Settled closure is always local, contingent, and revisable under drift.
 
 ---
 
@@ -164,9 +178,11 @@ A metric is real‑for‑execution only if it:
 Metrics do not encode truth.
 They encode **what must be fixed for viability over a horizon**.
 
+Articulated values that never bind compression remain narratively visible but execution‑inert.
+
 ---
 
-## Layer 6: Decidability and Agency at Boundaries
+## Layer 6: Decidability and Agency Boundaries
 
 Agency exists only at **decidable boundaries**, prior to execution.
 
@@ -181,12 +197,14 @@ A decision is decidable only if acceptance and refusal are both real execution p
 
 Inside execution, actors exercise **discretion**, not agency.
 
+This definition is intentionally strict to prevent false attribution.
+
 ---
 
 ## Layer 7: Responsibility as Load Attribution
 
 Responsibility is not moral blame.
-It is **load location**.
+It is **load location** within an execution topology.
 
 Responsibility can be coherently assigned only when:
 
@@ -204,7 +222,7 @@ Absent these conditions, responsibility claims are structurally undefined.
 
 Viable systems separate:
 
-* **Regulation**: settled, low‑cost, background execution over closed distinctions.
+* **Regulation**: settled, low‑cost background execution over closed distinctions.
 * **Control**: costly, adaptive intervention near redesign boundaries.
 
 Regulation absorbs the known.
@@ -216,9 +234,9 @@ Control confronts the unknown.
 
 Three thresholds are independent:
 
-* **Exist**: coherent emergence.
-* **Persist**: efficient maintenance under disturbance.
-* **Scale**: recognition as a reusable building block at a higher layer.
+* **Exist** — coherent emergence.
+* **Persist** — efficient maintenance under disturbance.
+* **Scale** — recognition as a reusable building block at a higher layer.
 
 A system may cross any subset without the others.
 
@@ -237,14 +255,14 @@ It does not guarantee durability.
 
 ---
 
-## Compression and Redesign
+## Compression, Drift, and Redesign
 
 Because environments drift, all compression is provisional.
 
-Systems operate in phases:
+Systems operate in recurring regimes:
 
-1. exploration (preserve distinctions),
-2. compression (destroy safe distinctions),
+1. optionality preservation,
+2. compression (discard safe distinctions),
 3. exploitation (cheap repeated execution),
 4. redesign (reintroduce discarded distinctions).
 
@@ -254,14 +272,14 @@ Failure to redesign when error patterns violate assumed invariants is a primary 
 
 ## Where Values Appear (Descriptive)
 
-Values enter through **compression decisions**:
+Values appear through **compression decisions**:
 
 * which distinctions were discarded,
 * when they were discarded,
-* and where redesign authority resides.
+* where redesign authority resides.
 
 Values are not injected.
-They are the residue of irreversible abstraction.
+They are the residue of irreversible abstraction that survived execution.
 
 ---
 
