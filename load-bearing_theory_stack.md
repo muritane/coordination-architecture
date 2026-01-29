@@ -2,14 +2,14 @@
 
 ## Status and Scope
 
-This document specifies a **minimal, descriptive execution architecture** for bounded systems: how they act, absorb consequences, harden constraints, and remain viable under drift.
+This document specifies a **minimal, descriptive execution architecture** for bounded systems: how they act, absorb consequences, harden constraints, articulate boundaries, and remain viable under drift.
 
 It is **not** a theory of:
 
 * human psychology,
-* intelligence or intent,
+* intelligence, intent, or consciousness,
 * morality, legitimacy, or justice,
-* preference formation or value selection.
+* preference formation or value prescription.
 
 It applies wherever:
 
@@ -18,13 +18,13 @@ It applies wherever:
 * environments are non‑stationary,
 * and repeated action must remain viable.
 
-The stack does not prescribe goals. It specifies the **structural preconditions** that must already hold for claims about action, agency, responsibility, evaluation, or optimization to be coherent at all.
+The stack does **not** prescribe goals. It specifies the **structural preconditions** that must already hold for claims about action, agency, responsibility, evaluation, or optimization to be coherent at all.
 
 ---
 
-## Primitive Commitments (Non‑Negotiable)
+## Primitive Commitments (Non‑Negotiable Constraints)
 
-All subsequent structure follows from these facts:
+All subsequent structure follows from these constraints:
 
 1. **Execution is irreversible.** Acting destroys information and eliminates alternatives.
 2. **Resources are bounded.** No system can sense, model, interpret, or act on everything.
@@ -32,7 +32,7 @@ All subsequent structure follows from these facts:
 4. **Compression is unavoidable.** Efficiency is purchased by blindness.
 5. **Viability precedes optimization.** A system must remain capable of further execution and redesign.
 
-These are not assumptions. They are constraints.
+These are not assumptions. They are structural facts.
 
 ---
 
@@ -40,14 +40,14 @@ These are not assumptions. They are constraints.
 
 Pathologies arise when the following distinctions are collapsed:
 
-* execution **vs** interpretation
-* existence **vs** persistence **vs** scale
-* exploration **vs** exploitation **vs** redesign
-* regulation **vs** control
-* discretion **vs** agency
-* evaluation **vs** optimization
+* execution vs interpretation
+* existence vs persistence vs scale
+* exploration vs exploitation vs redesign
+* regulation vs control
+* discretion vs agency
+* evaluation vs optimization
 
-The stack is organized to preserve these separations under pressure.
+The stack is organized to **preserve articulation** across these separations under pressure.
 
 ---
 
@@ -86,13 +86,24 @@ Coordination is not chosen. It emerges when:
 
 Under these conditions, independent execution becomes unsafe.
 
-Coordination is the **minimum additional structure required for continued viability**.
+**Coordination pressure** is the minimum additional structure required for continued viability.
+
+### Displacement and Masking
+
+Coordination pressure may be:
+
+* **buffered** (delayed by storage, slack, or latency),
+* **subsidized** (absorbed by external systems),
+* **displaced** (exported to other actors or layers),
+* **masked** (hidden by metrics that defer failure).
+
+Apparent absence of coordination pressure is often evidence of **displacement**, not resolution.
 
 ---
 
 ## Layer 2: Optionality Preservation (Exploration Regime)
 
-Before coordination load binds locally:
+Where coordination load has not yet bound locally:
 
 * interpretation remains open,
 * deviation is cheap,
@@ -106,9 +117,11 @@ Evaluation in this regime is:
 * non‑comparable,
 * non‑executable.
 
-This is **not a temporal stage**. It is a **structural regime** that can re‑enter mature systems locally during redesign, boundary probing, or novelty exposure.
+This is **not a temporal stage**.
 
-Optionality preservation disappears only where execution has already closed.
+Optionality preservation can re‑enter locally in mature systems wherever closure has not yet hardened (e.g., sandboxes, exception paths, redesign boundaries).
+
+Optionality disappears only where execution has already closed.
 
 ---
 
@@ -132,18 +145,14 @@ Only execution persists.
 
 A **horizon** specifies the timescale over which viability is evaluated.
 
-Horizons may be:
-
-* imposed by the environment,
-* induced by topology,
-* selected implicitly by closure.
-
 Topology and horizon jointly determine:
 
 * where disturbance appears,
 * where it accumulates,
 * where it dissipates,
 * and where it becomes invisible.
+
+Systems typically operate across **multiple, partially incompatible horizons**. Selecting which horizon binds execution is itself a **closure decision**.
 
 ---
 
@@ -177,7 +186,7 @@ At settled closure:
 
 * distinctions cease to appear as choices,
 * constraints feel descriptive rather than imposed,
-* disagreement occurs *within* the representation, not *about* it.
+* disagreement occurs within the representation, not about it.
 
 Settled closure is always local, contingent, and revisable under drift.
 
@@ -187,13 +196,13 @@ Settled closure is always local, contingent, and revisable under drift.
 
 Once closure occurs, evaluation must coordinate execution.
 
-Metrics are **executable interfaces** that encode compressed distinctions.
+**Metrics** are executable interfaces that encode compressed distinctions.
 
 A metric is real‑for‑execution only if it:
 
 * captures minimally sufficient degrees of freedom,
 * is finite and resource‑bounded,
-* is operationally substitutable **within the closure regime**,
+* is operationally substitutable within the closure regime,
 * yields determinate outcomes,
 * fails explicitly when saturated or misapplied.
 
@@ -215,18 +224,17 @@ Decidability requires:
 * known failure semantics,
 * interruptibility.
 
-A decision is decidable only if acceptance and refusal are both real execution paths.
+A decision is decidable only if **acceptance and refusal are both real execution paths**.
+
+Decidability is necessarily **symmetric across coupled actors**. If one party retains refusal while another does not, agency attribution is structurally invalid.
 
 Inside execution, actors exercise **discretion**, not agency.
-
-This definition is intentionally strict to prevent false attribution.
 
 ---
 
 ## Layer 7: Responsibility as Load Attribution
 
-Responsibility is not moral blame.
-It is **load location within an execution topology**.
+Responsibility is not moral blame. It is **load location** within an execution topology.
 
 Responsibility can be coherently assigned only when:
 
@@ -272,8 +280,7 @@ Some thresholds cannot be crossed in isolation.
 
 The coupled system forms a new composite execution topology.
 
-Complementarity may enable conditional existence, partial persistence, or limited scale.
-It does not guarantee durability.
+Complementarity may enable conditional existence, partial persistence, or limited scale. It does not guarantee durability.
 
 ---
 
@@ -288,20 +295,21 @@ Systems operate in recurring regimes:
 3. exploitation (cheap repeated execution),
 4. redesign (reintroduce discarded distinctions).
 
+Redesign authority cannot be fully expressed through settled metrics, as metrics encode the closure being revised.
+
 Failure to redesign when error patterns violate assumed invariants is a primary collapse mode.
 
 ---
 
 ## Where Values Appear (Descriptive)
 
-Values appear through **compression decisions**:
+Values appear through compression decisions:
 
 * which distinctions were discarded,
 * when they were discarded,
 * where redesign authority resides.
 
-Values are not injected.
-They are the **residue of irreversible abstraction that survived execution**.
+Values are not injected. They are the residue of irreversible abstraction that survived execution.
 
 This claim is descriptive, not normative.
 
