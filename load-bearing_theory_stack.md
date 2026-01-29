@@ -57,13 +57,13 @@ The stack is organized to **preserve articulation** across these separations und
 
 ## Layer 0: Existence (Emergent Coherence)
 
-A system **exists** when a coherent execution pattern emerges from lower‑layer interactions.
+A system **exists** when a coherent execution pattern emerges from lower-layer interactions.
 
 Existence requires:
 
-* sufficient coupling to lower‑layer dynamics,
+* sufficient coupling to lower-layer dynamics,
 * internal constraint structure,
-* non‑immediate decoherence.
+* non-immediate decoherence.
 
 Existence does **not** require:
 
@@ -72,6 +72,8 @@ Existence does **not** require:
 * intention,
 * optimization,
 * recognition.
+
+A system ceases to exist when no execution pattern persists long enough to propagate consequences beyond immediate interaction.
 
 Existence already implies an implicit sense–model–act coupling enforced by physical or logical constraint.
 
@@ -107,7 +109,7 @@ Apparent absence of coordination pressure is often evidence of **displacement**,
 
 ---
 
-## Layer 2: Optionality Preservation (Exploration Regime)
+## Layer 2: Optionality Preservation (Non-Teleological Exploration Regime)
 
 Where coordination load has not yet bound locally:
 
@@ -115,6 +117,8 @@ Where coordination load has not yet bound locally:
 * deviation is cheap,
 * failure is local and largely reversible,
 * information is preserved rather than destroyed.
+
+This regime is **not search, optimization, or preference discovery**. No objective function is assumed.
 
 Evaluation in this regime is:
 
@@ -158,7 +162,9 @@ Topology and horizon jointly determine:
 * where it dissipates,
 * and where it becomes invisible.
 
-Systems typically operate across **multiple, partially incompatible horizons**. Selecting which horizon binds execution is itself a **closure decision**.
+Horizons may differ by orders of magnitude (e.g., microsecond latency, operational reporting cycles, or generational drift). Systems typically operate across **multiple, partially incompatible horizons**.
+
+Selecting which horizon binds execution is itself a **closure decision**.
 
 ---
 
@@ -285,6 +291,8 @@ A system may cross any subset without the others.
 Some thresholds cannot be crossed in isolation.
 
 **Complementarity** is structural coupling that supplies missing degrees of freedom.
+
+Complementarity is not cooperation, alignment, or mutual benefit. It is gap-filling under constraint.
 
 The coupled system forms a new composite execution topology.
 
