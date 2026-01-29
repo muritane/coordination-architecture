@@ -15,10 +15,12 @@ It applies wherever:
 
 * execution is irreversible,
 * resources are bounded,
-* environments are non‑stationary,
+* environments are non-stationary,
 * and repeated action must remain viable.
 
-The stack does **not** prescribe goals. It specifies the **structural preconditions** that must already hold for claims about action, agency, responsibility, evaluation, or optimization to be coherent at all.
+The stack does **not** prescribe goals. It performs **constraint mapping**: it specifies necessary structural conditions and impossibility boundaries, not mechanisms, procedures, sensing rules, or prescriptions.
+
+The stack specifies the **structural preconditions** that must already hold for claims about action, agency, responsibility, evaluation, or optimization to be coherent at all.
 
 ---
 
@@ -113,13 +115,13 @@ Where coordination load has not yet bound locally:
 Evaluation in this regime is:
 
 * heuristic,
-* context‑rich,
-* non‑comparable,
-* non‑executable.
+* context-rich,
+* non-comparable,
+* non-executable.
 
-This is **not a temporal stage**.
+This is **not a temporal stage**. It is a structural regime.
 
-Optionality preservation can re‑enter locally in mature systems wherever closure has not yet hardened (e.g., sandboxes, exception paths, redesign boundaries).
+Optionality preservation can re-enter locally in mature systems wherever execution closure has not yet hardened (e.g., sandboxes, exception-handling paths, redesign boundaries).
 
 Optionality disappears only where execution has already closed.
 
@@ -187,6 +189,8 @@ At settled closure:
 * distinctions cease to appear as choices,
 * constraints feel descriptive rather than imposed,
 * disagreement occurs within the representation, not about it.
+
+Apparent settlement sustained primarily by buffering, displacement, external subsidy, or load export does **not** constitute genuine local sufficiency.
 
 Settled closure is always local, contingent, and revisable under drift.
 
@@ -310,6 +314,8 @@ Values appear through compression decisions:
 * where redesign authority resides.
 
 Values are not injected. They are the residue of irreversible abstraction that survived execution.
+
+This does not deny the role of deliberation; it specifies where deliberation ceases to bind execution.
 
 This claim is descriptive, not normative.
 
