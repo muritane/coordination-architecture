@@ -49,6 +49,8 @@ Pathologies arise when the following distinctions are collapsed:
 * discretion vs agency
 * evaluation vs optimization
 
+These distinctions may be simultaneously active. The layers describe **coexisting structural regimes**, not a developmental or temporal sequence.
+
 The stack is organized to **preserve articulation** across these separations under pressure.
 
 ---
@@ -84,11 +86,13 @@ Coordination is not chosen. It emerges when:
 * information is partial or asymmetric,
 * resources are bounded,
 * actions are irreversible,
-* failure carries non‑trivial cost.
+* failure carries non-trivial cost.
 
 Under these conditions, independent execution becomes unsafe.
 
 **Coordination pressure** is the minimum additional structure required for continued viability.
+
+Coordination pressure is structural, not social. It applies equally to distributed software, biological systems, supply chains, institutions, and multi-agent environments.
 
 ### Displacement and Masking
 
@@ -301,6 +305,8 @@ Systems operate in recurring regimes:
 
 Redesign authority cannot be fully expressed through settled metrics, as metrics encode the closure being revised.
 
+Redesign authority tends to reside structurally at boundaries: exception paths, external couplings, interfaces, or regions where execution can be interrupted without global failure.
+
 Failure to redesign when error patterns violate assumed invariants is a primary collapse mode.
 
 ---
@@ -330,6 +336,8 @@ Closure hardens.
 Metrics bind.
 Agency exists only at boundaries.
 Responsibility follows load.
+
+Deliberation, ethics, and intent operate before and around execution. They do not propagate through settled closure unless they bind compression.
 
 Narratives may delay recognition.
 Execution does not negotiate.
