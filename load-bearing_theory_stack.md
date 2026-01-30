@@ -266,11 +266,13 @@ Absent these conditions, responsibility claims are structurally undefined.
 
 Viable systems separate:
 
-* **Regulation**: settled, low‑cost background execution over closed distinctions.
+* **Regulation**: settled, low-cost background execution over closed distinctions.
 * **Control**: costly, adaptive intervention near redesign boundaries.
 
 Regulation absorbs the known.
 Control confronts the unknown.
+
+Coordination artifacts (e.g., metrics, protocols, authority structures) do not resolve coordination pressure; they route, concentrate, defer, or price it, and may induce secondary closures upstream.
 
 ---
 
