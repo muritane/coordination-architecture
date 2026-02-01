@@ -1,51 +1,65 @@
-# Architectural Hygiene
-
-## Field Notes on Responsibility Routing, Buffer Ownership, and Topology-Safe Coordination
+# Architectural Hygiene  
+## Responsibility Routing, Buffer Ownership, and Topology-Safe Coordination
 
 ---
 
-## What This Document Is
+## Status
 
 This document describes **architectural hygiene** as a property of systems that:
 
-- route execution, disturbance, and responsibility explicitly,
+- route execution, disturbance, and failure explicitly,
 - operate under uncertainty and partial observability,
-- include irreversible or horizon-dominant failure modes,
+- include irreversible or horizon-dominant risk,
 - and must remain viable without relying on hidden sinks, heroics, or moral pressure.
 
-Architectural hygiene is treated as a **topological and structural condition**, not:
+Architectural hygiene is treated as a **topological and structural condition**, not as:
+
 - a personal virtue,
 - a cultural norm,
 - a leadership style,
 - or an ethical stance.
 
-The perspective is **operational and diagnostic**, not normative.
+The perspective is **operational and diagnostic**, not prescriptive or moral.
 
 ---
 
-## What This Document Is Not
+## Scope
+
+This account applies to any system that:
+
+- coordinates multiple executors,
+- allocates shared resources,
+- propagates disturbance across interfaces,
+- substitutes operators or evaluators,
+- or accumulates load under repeated execution.
+
+Examples include organizations, infrastructures, protocols, institutions, markets, governance systems, and long-running projects.
+
+---
+
+## What This Document Does Not Do
 
 This document does **not**:
 
 - prescribe generosity or restraint,
-- rank behaviors morally,
+- rank behavior morally,
 - prohibit helping or sacrifice,
 - eliminate trust or goodwill,
-- require full formalization of all responsibilities.
+- assume adversarial intent,
+- or require complete formalization of all responsibilities.
 
-It does not assume adversarial agents.
-It does not assume benevolence.
+It describes **when systems remain structurally legible under load**, not how people ought to behave.
 
 ---
 
 ## Intended Use
 
-This document is meant to function as:
+This document is intended as:
 
 - a lens for diagnosing hidden load concentration,
 - a vocabulary for discussing responsibility routing failures,
 - a way to reason about refusal without moralization,
-- a complement to epistemic hygiene and consequence topology.
+- a complement to consequence topology and epistemic hygiene.
 
 It is a **thinking aid**, not a governance framework.
 
@@ -53,11 +67,10 @@ It is a **thinking aid**, not a governance framework.
 
 ## Core Observation
 
-Unhygienic systems rely on **implicit sinks**.
-
+Unhygienic systems rely on **implicit sinks**.  
 Hygienic systems do not.
 
-An implicit sink is any agent, component, or role that absorbs disturbance, risk, or coordination load **without explicit ownership, bounds, or interfaces**.
+An **implicit sink** is any agent, component, or role that absorbs execution pressure, disturbance, or coordination load **without explicit ownership, bounds, or interfaces**.
 
 ---
 
@@ -68,35 +81,38 @@ In this document, **architectural hygiene** refers to:
 > the degree to which a system makes the routing of execution, disturbance, and failure explicit enough that no agent functions as an unbounded, unacknowledged sink.
 
 A hygienic architecture:
+
 - makes responsibility routing legible,
 - assigns buffer ownership explicitly,
 - allows disconnection without collapse,
-- and prevents capacity from being silently captured.
+- prevents capacity from being silently captured.
 
 ---
 
 ## The Implicit Sink Anti-Pattern
 
-A recurring coordination failure occurs when:
+A recurring coordination failure arises when:
 
 - disturbance is generated upstream,
 - routing is undefined or ambiguous,
 - and one agent absorbs the signal by default because they can.
 
-This agent becomes an **implicit sink**.
+That agent becomes an **implicit sink**.
 
 Implicit sinks:
+
 - reduce short-term noise,
 - improve apparent stability,
 - suppress visible failure.
 
 They also:
+
 - concentrate load,
 - hide topology,
 - accumulate buffer debt,
-- and guarantee severe transients when disconnected.
+- guarantee severe transients when disconnected.
 
-This is not resilience.
+This is not resilience.  
 It is **topological misdesign**.
 
 ---
@@ -108,16 +124,17 @@ A primary source of architectural decay is the silent rule:
 > “Signals flow to whoever can handle them.”
 
 This rule:
+
 - converts capacity into routing,
 - routing into expectation,
 - expectation into obligation.
 
 Architecturally, this is invalid.
 
-Capacity is an **agent property**.
+Capacity is an **agent property**.  
 Routing is a **system decision**.
 
-Healthy systems never infer routing rules from capacity alone.
+Healthy systems never infer routing from capacity alone.
 
 ---
 
@@ -128,28 +145,33 @@ In hygienic systems, responsibility is treated as:
 - a declared interface,
 - with defined inputs,
 - bounded outputs,
-- known failure modes,
-- and explicit horizons.
+- explicit horizons,
+- known failure semantics.
 
-Responsibility that cannot be described in routing terms
+Responsibility that cannot be expressed in routing terms  
 cannot be safely assigned.
+
+Responsibility is not virtue.  
+It is **load direction**.
 
 ---
 
 ## Buffers, Sinks, and Ownership
 
 Buffers include:
+
 - time,
 - attention,
 - labor,
-- money,
-- emotional regulation,
-- slack capacity.
+- capital,
+- slack capacity,
+- emotional or cognitive regulation.
 
-Buffers do not eliminate disturbance.
-They store or transform it.
+Buffers do not eliminate disturbance.  
+They store, delay, or transform it.
 
 Every buffer has an owner who bears:
+
 - storage cost,
 - maintenance cost,
 - opportunity cost,
@@ -163,36 +185,42 @@ Unowned buffers become implicit sinks.
 
 ## Failure Localization vs Failure Dissipation
 
-Systems survive disturbance in two ways:
+Systems respond to disturbance in two structural ways.
 
 ### Failure dissipation (via sinks)
+
 - hides origin,
 - delays visibility,
-- concentrates debt.
+- concentrates debt,
+- produces brittle stability.
 
 ### Failure localization (via routing)
+
 - exposes origin,
 - limits blast radius,
-- forces redesign.
+- forces redesign,
+- increases short-term noise.
 
-Architectural hygiene favors **localization**, even when it increases short-term noise.
+Architectural hygiene favors **localization**, even when it is uncomfortable.
 
 ---
 
-## Disconnection Is a Topological Event, Not a Moral One
+## Disconnection as a Topological Event
 
 When an implicit sink is removed:
 
 - routing changes,
 - signals reflect or re-route,
-- buffers saturate upstream,
+- upstream buffers saturate,
 - latent dependencies become visible.
 
-This is not collapse.
+This is not collapse.  
 It is **topology asserting itself**.
 
-Signals obey conservation.
+Signals obey conservation.  
 They must land somewhere.
+
+Disconnection reveals structure; it does not create disturbance.
 
 ---
 
@@ -204,7 +232,7 @@ Under irreversible or horizon-dominant risk:
 - delayed routing decisions amplify transients,
 - moral pressure substitutes for structure.
 
-In such environments, architectural hygiene is **not optional**.
+In such environments, architectural hygiene is **not optional**.  
 It is a safety requirement.
 
 ---
@@ -215,33 +243,36 @@ In hygienic systems, refusal is treated as:
 
 - an impedance mismatch,
 - a routing error indicator,
-- a signal of missing interfaces.
+- a signal of missing or overloaded interfaces.
 
-It is not treated as:
+Refusal is **not** treated as:
+
 - defiance,
 - selfishness,
-- betrayal.
+- betrayal,
+- lack of commitment.
 
-Systems that punish refusal
-force agents to absorb signals rather than correct topology.
+Systems that punish refusal  
+force agents to absorb load rather than correct topology.
 
 ---
 
 ## Renegotiation as Topological Maintenance
 
-Renegotiation is often misinterpreted as interpersonal conflict.
+Renegotiation is often framed as interpersonal conflict.
 
 Architecturally, it is:
+
 - routing table update,
 - buffer reallocation,
 - interface clarification.
 
-Discomfort during renegotiation indicates
-that previous stability relied on **implicit sinks**.
+Discomfort during renegotiation indicates  
+that prior stability relied on **implicit sinks**.
 
 ---
 
-## Moral Framing as Architectural Smell
+## Moral Framing as an Architectural Smell
 
 Unhygienic systems stabilize topology using moral language:
 
@@ -250,31 +281,35 @@ Unhygienic systems stabilize topology using moral language:
 - “not dropping the ball,”
 - “doing the right thing.”
 
-These phrases often mean:
+Operationally, these phrases often mean:
+
 > “Continue absorbing signals we have not routed.”
 
 Hygienic systems rely on:
+
 - explicit interfaces,
 - visible constraints,
 - inspectable routing,
 - renegotiable ownership.
 
-Morality may exist.
+Morality may exist.  
 It must not carry topology.
 
 ---
 
 ## Relationship to Epistemic Hygiene
 
-Architectural hygiene requires epistemic hygiene.
+Architectural hygiene depends on epistemic hygiene.
 
 Routing cannot be explicit if:
+
 - structure is opaque,
 - buffers are invisible,
-- failure paths are mystified.
+- failure paths are mystified,
+- ownership is ambiguous.
 
-Inspectable structure is what allows sinks to be removed
-without destabilizing the entire system.
+Inspectable structure is what allows sinks to be removed  
+without destabilizing the system.
 
 ---
 
@@ -283,31 +318,38 @@ without destabilizing the entire system.
 Architectural hygiene is the **preventive counterpart** to consequence topology.
 
 Where consequence topology explains:
+
 - how disturbance propagates after execution,
 
 architectural hygiene ensures:
-- that propagation paths are known,
+
+- propagation paths are known,
 - buffers are owned,
-- and horizons are respected **before execution**.
+- horizons are respected  
+**before execution**.
 
 ---
 
-## Why Hygienic Systems Feel “Less Warm”
+## Why Hygienic Systems Feel “Colder”
 
 Removing implicit sinks eliminates:
+
 - heroics,
 - silent sacrifice,
-- flattering dependence.
+- flattering dependence,
+- asymmetric obligation.
 
 This can feel:
-- colder,
+
+- less warm,
 - less personal,
 - less generous.
 
 What replaces them is:
+
 - survivability,
 - predictability,
-- and bounded cooperation under load.
+- bounded cooperation under load.
 
 ---
 
@@ -322,7 +364,8 @@ Architectural hygiene degrades when systems:
 - moralize impedance mismatches,
 - treat sinks as virtues.
 
-These failures accumulate quietly until disconnection becomes violent.
+These failures accumulate quietly  
+until disconnection becomes violent.
 
 ---
 
@@ -333,39 +376,42 @@ These failures accumulate quietly until disconnection becomes violent.
 - Responsibility must be explicit and bounded.
 - Buffers must be owned.
 - Signals obey conservation.
-- Disconnection reveals topology; it does not create disturbance.
-- Refusal is a routing signal, not a breach.
+- Disconnection reveals topology.
+- Refusal is a routing signal.
 - Trust cannot replace structure.
 
 ---
 
-## Status
+## Status Note
 
 This document is intentionally incomplete.
 
 Its usefulness depends on:
+
 - exposure to real execution,
 - willingness to revise routing,
 - resistance to moral substitution.
 
-Systems that require unbounded sinks to function
+Systems that require unbounded sinks to function  
 are not cooperative.
 
 They are **miswired**.
 
 ---
 
-## Closing Note
+## Closing
 
 Architectural hygiene is not about doing less.
 
 It is about **not letting systems run on invisible dissipation borrowed from specific agents**.
 
-When topology is honest,
-no one needs to be a sink.
+When topology is explicit:
 
-Signals route.
-Buffers fill.
-Systems adapt.
+- signals route,
+- buffers fill,
+- failures localize,
+- redesign becomes possible.
 
-That is cooperation without illusion.
+No one needs to be a sink.
+
+That is coordination without illusion.
