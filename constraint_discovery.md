@@ -1,21 +1,21 @@
-# Constraint Discovery and Load-Bearing Transitions
-
-## Field Notes on When Exploration Becomes Infrastructure
+# Constraint Discovery and Load-Bearing Transitions  
+## Notes on When Exploration Becomes Infrastructure
 
 ---
 
-## Status
+## Status and Intent
 
 This document presents a **structural account of constraint discovery**:  
-the process by which an exploratory domain becomes **load-bearing** and therefore requires explicit invariants, execution boundaries, and enforcement.
+the transition by which an exploratory domain becomes **load-bearing** and therefore requires explicit invariants, execution boundaries, and enforcement.
 
-The account is **descriptive and architectural**, not normative.
+The account is **descriptive and architectural**, not normative.  
+It describes when constraint becomes unavoidable under execution.
 
 ---
 
-## What This Document Is
+## What This Document Describes
 
-This document specifies **constraint discovery** as the phase transition by which a domain begins to:
+This document treats **constraint discovery** as the phase transition by which a domain begins to:
 
 - coordinate independent agents,
 - allocate shared resources,
@@ -23,7 +23,7 @@ This document specifies **constraint discovery** as the phase transition by whic
 - propagate failure across boundaries,
 - or commit irreversible action.
 
-At that point, the domain must support **execution under constraint**, not merely exploration.
+At this point, the domain must support **execution under constraint**, not merely exploration.
 
 Constraint discovery is treated as a **structural inevitability under load**, not as:
 
@@ -31,9 +31,9 @@ Constraint discovery is treated as a **structural inevitability under load**, no
 - moral regression,
 - political suppression,
 - loss of creativity,
-- or ideological enforcement.
+- ideological enforcement.
 
-The framework applies uniformly to:
+The account applies uniformly to:
 
 - technologies,
 - scientific paradigms,
@@ -42,24 +42,24 @@ The framework applies uniformly to:
 - regulatory regimes,
 - protocols,
 - standards,
-- and metrics-for-coordination.
+- coordination metrics.
 
 ---
 
-## What This Document Is Not
+## What This Document Does Not Claim
 
-This document does **not** attempt to:
+This document does **not**:
 
-- judge whether constraint is good or bad,
+- judge constraint as good or bad,
 - defend or criticize institutions,
 - romanticize early exploration,
 - claim ossification is inevitable everywhere,
 - equate constraint with correctness or truth,
 - prescribe optimal governance.
 
-It addresses **one boundary only**:
+It addresses one boundary only:
 
-> When a domain becomes **load-bearing**, constraint discovery is no longer optional.
+> **When a domain becomes load-bearing, constraint discovery is no longer optional.**
 
 ---
 
@@ -85,7 +85,7 @@ This transition is **structural**, not ideological.
 
 ---
 
-## Exploration vs Load-Bearing Operation
+## Exploration vs. Load-Bearing Operation
 
 ### Exploratory Phase (Pre-Invariant)
 
@@ -95,7 +95,7 @@ Exploration is characterized by:
 - tolerance for failure,
 - ambiguous standards,
 - narrative repair,
-- post hoc reinterpretation,
+- post-hoc reinterpretation,
 - localized consequences.
 
 In this phase:
@@ -106,7 +106,7 @@ In this phase:
 - failure does not propagate.
 
 Exploration is **state-space probing**, not rule-following.  
-Interpretation remains open because execution does not yet coordinate others or commit irreversible action.
+Interpretation remains open because execution does not yet bind others or commit irreversible action.
 
 ---
 
@@ -126,16 +126,16 @@ In this phase:
 - execution must be substitutable,
 - enforcement becomes structural,
 - failure becomes systemic,
-- ambiguity becomes dangerous.
+- ambiguity becomes hazardous.
 
-Load-bearing systems **cannot rely on**:
+Load-bearing systems cannot rely on:
 
 - goodwill,
 - intent,
 - private interpretation,
-- or discretionary reinterpretation.
+- discretionary reinterpretation.
 
-They must support **execution under partial observability and bounded resources**.
+They must support **execution under bounded resources and partial observability**.
 
 ---
 
@@ -149,19 +149,19 @@ Constraint discovery is the process by which:
 - substitution breaks down,
 - informal practices collapse under scale.
 
-Constraints are **not invented by institutions**.  
+Constraints are **not created by institutions**.  
 They are **revealed by execution under load**.
 
 Commonly discovered constraint classes include:
 
 - physical constraints (throughput, latency, safety),
-- informational constraints (observability, measurement),
+- informational constraints (measurement, observability),
 - coordination constraints (substitution, protocol mismatch),
 - incentive constraints (gaming, misalignment),
 - legitimacy constraints (trust collapse, attribution failure),
 - failure propagation paths.
 
-Institutions do not create these constraints.  
+Institutions do not invent these constraints.  
 They **select, encode, and enforce** them once they become unavoidable.
 
 ---
@@ -173,7 +173,7 @@ Executable tasks require an **exact set of degrees of freedom (DOFs)**.
 - Below this set, execution fails.
 - Above this set, coordination fails.
 
-### DOF Classes
+### Degree-of-Freedom Classes
 
 For any task under execution:
 
@@ -192,7 +192,7 @@ For any task under execution:
 - **Unknown DOFs**  
   Not yet characterized; explored outside load-bearing execution.
 
-Constraint discovery collapses state space by **fixing Essential DOFs**, while explicitly delegating or preserving others.
+Constraint discovery collapses state space by **fixing Essential DOFs**, while explicitly delegating, preserving, or excluding others.
 
 ---
 
@@ -200,13 +200,13 @@ Constraint discovery collapses state space by **fixing Essential DOFs**, while e
 
 Boundary hardening is not primarily about control.
 
-It is about:
+It serves to:
 
-- preventing undefined behavior,
-- stabilizing feedback loops,
-- terminating interpretation at interfaces,
-- bounding harm under failure,
-- making execution substitutable.
+- prevent undefined behavior,
+- stabilize feedback loops,
+- terminate interpretation at interfaces,
+- bound harm under failure,
+- make execution substitutable.
 
 Once a system is load-bearing:
 
@@ -223,17 +223,17 @@ Deviation cost grows **nonlinearly**.
 
 **Early exploration**:
 
-- deviation cost ≈ linear,
-- failure cost ≈ local,
-- correction cost ≈ optional,
-- reinterpretation viable.
+- deviation cost grows roughly linearly,
+- failure cost is local,
+- correction is optional,
+- reinterpretation remains viable.
 
 **Load-bearing execution**:
 
-- deviation cost ≈ exponential,
-- failure cost ≈ systemic,
-- correction cost ≈ mandatory,
-- reinterpretation becomes failure deferral.
+- deviation cost grows super-linearly,
+- failure cost is systemic,
+- correction is mandatory,
+- reinterpretation defers failure rather than resolving it.
 
 What appears as “sudden restriction” is usually **delayed accounting** of accumulated load.
 
@@ -241,7 +241,7 @@ What appears as “sudden restriction” is usually **delayed accounting** of ac
 
 ## Constraint Discovery Is Retrospective
 
-Constraints are often obvious only in hindsight.
+Constraints often become obvious only in hindsight.
 
 Early actors appear:
 
@@ -261,7 +261,7 @@ This is a temporal illusion:
 - constraint visibility precedes enforcement,
 - enforcement follows systemic failure risk.
 
-The same domain cannot remain permanently pre-invariant once it is load-bearing.
+A domain cannot remain permanently pre-invariant once it is load-bearing.
 
 ---
 
@@ -272,7 +272,7 @@ Constraint enforcement is incomplete without **explicit horizon declaration**.
 Versioning is the mechanism by which systems declare:
 
 - which invariants are frozen,
-- which DOFs are fixed,
+- which degrees of freedom are fixed,
 - which behaviors are supported,
 - and for how long.
 
@@ -286,7 +286,7 @@ Examples include:
 Versioning makes specialization **honest** by bounding its validity.  
 Backward compatibility becomes an explicit cost, not an implicit obligation.
 
-Exploration continues across versions, not within load-bearing execution.
+Exploration continues **across versions**, not inside load-bearing execution.
 
 ---
 
@@ -296,13 +296,15 @@ Evaluation follows the same structural transition.
 
 ### Pre-Load-Bearing Evaluation
 
+Evaluation is:
+
 - informal,
 - narrative,
 - context-rich,
 - tolerant of inconsistency,
-- failure-free.
+- non-binding.
 
-Evaluation influences perception, not execution.
+It influences perception, not execution.
 
 ---
 
@@ -327,19 +329,22 @@ Evaluation that cannot fail cannot coordinate.
 
 ---
 
-## The Generality–Specialization Trade-off
+## The Generality–Specialization Trade-Off
 
 Generality and specialization are not moral categories.
 
-They are **strategies across time**.
+They are **time-indexed strategies**.
 
-- **Generality** preserves latent DOFs and adaptability at ongoing cost.
-- **Specialization** collapses DOFs for efficiency under known constraints.
+- **Generality** preserves latent degrees of freedom at ongoing cost.
+- **Specialization** collapses degrees of freedom for efficiency under known constraints.
 
-Constraint discovery determines when specialization is required.  
-Versioning determines how long that specialization is valid.
+Constraint discovery determines **when** specialization is required.  
+Versioning determines **how long** that specialization remains valid.
 
-Mis-evaluation occurs when generality is treated as inefficiency, or when specialization is treated as universal.
+Mis-evaluation occurs when:
+
+- generality is treated as inefficiency, or
+- specialization is treated as universal.
 
 ---
 
@@ -347,7 +352,7 @@ Mis-evaluation occurs when generality is treated as inefficiency, or when specia
 
 Once a domain is load-bearing:
 
-- you cannot return to pure exploration without shedding load,
+- it cannot return to pure exploration without shedding load,
 - invariants cannot be dissolved without destabilization,
 - enforcement cannot be removed without relocating failure.
 
@@ -357,15 +362,15 @@ Exploration can only:
 - occur in sandboxes,
 - or emerge in adjacent domains.
 
-Attempts to dissolve invariants without reducing load result in instability, not freedom.
+Attempting to dissolve invariants without reducing load produces instability, not freedom.
 
 ---
 
-## Implications (Descriptive, Not Prescriptive)
+## Implications (Descriptive)
 
 - Early success accelerates constraint discovery.
 - Scale reveals hidden limits.
-- Enforcement follows failure risk, not ideas.
+- Enforcement follows failure risk, not ideology.
 - Complaints about rigidity often ignore load.
 - Evaluation hardens when it coordinates action.
 - Meaning hardens when it must execute.
@@ -376,10 +381,10 @@ It is a consequence of success.
 
 ---
 
-## Closing Note
+## Closing
 
 Exploration is how constraints are found.  
-Execution is where they matter.  
+Execution is where they bind.  
 Versioning is how systems remain viable across time.
 
 Any domain that becomes load-bearing will discover invariants.  
@@ -387,5 +392,5 @@ Any invariant that matters will eventually be enforced.
 
 The question is not whether boundaries harden.
 
-The question is **where exploration relocates next** —  
+The question is **where exploration relocates next**—  
 and whether the system has been honest about the load it carries.
