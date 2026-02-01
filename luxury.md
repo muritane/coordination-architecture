@@ -1,35 +1,46 @@
-# Luxury as Narrative Surplus over Invariants
-
-## Purpose
-
-This document formalizes **luxury** as a structural phenomenon in bounded execution systems. Luxury is treated neither as taste, consumption preference, nor moral excess, but as a **narrative surplus layered on top of non-negotiable executional invariants**.
-
-The goal is to:
-
-* define luxury structurally,
-* identify the invariant substrate it cannot escape,
-* explain why luxury discourse resists metric binding,
-* and clarify why invariant exposure often produces humor, skepticism, or disengagement.
-
-This document is **descriptive and diagnostic**, not normative. It maps constraints.
+# Luxury as Narrative Surplus over Invariants  
+## Symbolic Differentiation After Viability Is Secured
 
 ---
 
-## Executive Summary (Compressed)
+## Status and Intent
 
-Luxury exists only above a fixed set of minimally sufficient executional invariants. It cannot renegotiate these invariants; it can only decorate, narrativize, or symbolically differentiate them. Luxury therefore functions as narrative surplus rather than structural leverage. When invariants are made explicit, luxury collapses into a bounded degree-of-freedom problem, often producing humor or deflation. Confusing luxury with robustness, capability, or authority is a category error.
+This document provides a **structural account of luxury** in bounded execution systems.
+
+Luxury is treated neither as taste, preference, nor moral excess, but as a **narrative surplus layered on top of non-negotiable executional invariants**.
+
+The intent is to:
+
+- define luxury mechanically,
+- identify the invariant substrate it depends on,
+- explain why luxury resists metric binding,
+- clarify why invariant exposure often produces humor, deflation, or disengagement.
+
+The perspective is **descriptive and diagnostic**, not normative.
+
+---
+
+## Core Claim (Compressed)
+
+Luxury exists only **after viability is secured**.
+
+It does not relax invariants, extend horizons, or alter failure semantics.  
+It decorates, differentiates, or narrativizes execution that already works.
+
+Treating luxury as robustness, leverage, or authority is a **category error**.
 
 ---
 
 ## Position in the Load-Bearing Stack
 
-Luxury primarily occupies:
+Luxury operates **above** executional necessity:
 
-* **Regime 2 — Optionality Preservation** (interpretive play over non-binding distinctions),
-* **Regime 4 — Closure** (hard invariants already settled),
-* while explicitly avoiding **Regime 5 — Metrics** at the functional layer.
+- relies on **settled closure** (invariants already fixed),
+- occupies **non-binding degrees of freedom**,
+- avoids **metric binding** at the functional layer.
 
-Luxury does not operate at the level of executional necessity; it operates at the level of **post-viability differentiation**.
+Luxury does not participate in redesign authority or viability extension.  
+It is **post-viability differentiation**, not executional capability.
 
 ---
 
@@ -37,12 +48,12 @@ Luxury does not operate at the level of executional necessity; it operates at th
 
 **Luxury** is the allocation of resources to distinctions that:
 
-* do not increase viability,
-* do not relax binding constraints,
-* do not alter failure semantics,
-* and do not extend the survival horizon,
+- do not increase viability,
+- do not relax binding constraints,
+- do not change failure semantics,
+- do not extend survival horizons,
 
-but instead modify perception, signaling, or experience **within an already viable closure**.
+but instead modify **perception, signaling, or experience** within an already viable system.
 
 Formally:
 
@@ -50,34 +61,35 @@ Formally:
 
 ---
 
-## Minimally Sufficient Degrees of Freedom
+## Invariant Substrate (What Luxury Cannot Touch)
 
-Every functional artifact is governed by **non-negotiable invariants**.
+Every functional artifact or system rests on **minimally sufficient invariants**.
 
 Examples:
 
-* A car requires wheels, steering, propulsion, braking.
-* A home requires enclosure, load-bearing structure, sanitation, and ventilation.
-* A watch requires temporal observability.
-* Clothing requires coverage and thermal regulation.
+- Vehicles require propulsion, steering, braking, and structural integrity.
+- Buildings require load-bearing structure, enclosure, sanitation, and ventilation.
+- Tools require functional affordance.
+- Clothing requires coverage and thermal regulation.
 
-These define the **minimal viable artifact**.
+These invariants define **minimal viability**.
 
-Luxury cannot remove or replace these degrees of freedom. It can only elaborate above them.
+Luxury cannot renegotiate them.  
+It can only elaborate *after* they are satisfied.
 
 ---
 
 ## Luxury’s Degree-of-Freedom Space
 
-Once invariants are satisfied, remaining degrees of freedom are:
+Once invariants are met, remaining degrees of freedom are:
 
-* aesthetic,
-* symbolic,
-* experiential,
-* scarcity-based,
-* or narrative.
+- aesthetic,
+- symbolic,
+- experiential,
+- scarcity-based,
+- narrative.
 
-These degrees of freedom are **non-binding** with respect to viability.
+These degrees of freedom are **non-binding with respect to execution**.
 
 Luxury operates entirely within this surplus space.
 
@@ -85,14 +97,14 @@ Luxury operates entirely within this surplus space.
 
 ## Why Luxury Resists Metric Binding
 
-Luxury discourse avoids explicit metrics because:
+Luxury avoids explicit metrics because:
 
-* invariants are already fixed and boring,
-* binding metrics would expose triviality of differentiation,
-* value depends on ambiguity, taste, and status signaling,
-* explicit failure semantics would collapse prestige gradients.
+- invariants are already settled and uninteresting,
+- binding metrics would reveal triviality of differentiation,
+- value depends on ambiguity, taste, and narrative acceptance,
+- explicit failure semantics would collapse prestige gradients.
 
-Thus luxury relies on **narrative acceptance**, not executional proof.
+Luxury therefore coordinates via **interpretation**, not execution.
 
 ---
 
@@ -102,62 +114,67 @@ Luxury is often mistaken for robustness.
 
 Structurally:
 
-* Robustness increases tolerance to disturbance and drift.
-* Luxury increases narrative differentiation under stable conditions.
+- **Robustness** increases tolerance to disturbance, drift, and stress.
+- **Luxury** increases narrative differentiation under stable conditions.
 
-Under stress:
+Under constraint:
 
-* robustness matters,
-* luxury evaporates or becomes dead weight.
+- robustness dominates,
+- luxury evaporates or becomes dead weight.
 
-This distinction explains why luxury collapses first under constraint.
+This explains why luxury collapses first under stress.
 
 ---
 
-## Luxury and Authority Illusions
+## Luxury and False Authority Signals
 
-Luxury is frequently used to imply:
+Luxury artifacts are often used to imply:
 
-* competence,
-* taste superiority,
-* wisdom,
-* or authority.
+- competence,
+- discernment,
+- wisdom,
+- authority.
 
-Structurally, this is **authority insertion via artifact signaling**.
+Structurally, this is **authority signaling without redesign exposure**.
 
-The artifact does not encode redesign authority; it encodes surplus consumption.
+The artifact does not encode control, invariants, or failure handling.  
+It encodes surplus consumption.
 
-When invariants are invoked, the implied authority dissolves.
+When invariants assert, implied authority dissolves immediately.
 
 ---
 
 ## Why Invariant Exposure Produces Humor
 
-Invariant exposure creates humor because it:
+Invariant exposure often produces humor because it:
 
-* collapses inflated narrative weight into trivial constraints,
-* reveals symbolic seriousness resting on banal necessities,
-* exposes the irrelevance of surplus to execution.
+- collapses inflated narrative seriousness into banal necessities,
+- reveals symbolic weight resting on trivial constraints,
+- exposes surplus as irrelevant to execution.
 
-The laughter is a recognition of **category collapse**, not mockery.
-
----
-
-## Relationship to Topological Independence
-
-Topologically independent actors:
-
-* evaluate artifacts by invariant satisfaction first,
-* treat luxury as optional surplus,
-* are not bound by prestige narratives.
-
-From this topology, luxury appears non-binding and often unintentionally comic.
+The laughter is recognition of **category collapse**, not contempt.
 
 ---
 
-## Structural Failure Modes of Luxury
+## Topological Independence and Luxury
 
-### 1. Overweighting Surplus
+Actors with high topological independence:
+
+- evaluate artifacts by invariant satisfaction first,
+- treat luxury as optional surplus,
+- are not bound by prestige narratives.
+
+From this perspective, luxury appears:
+
+- non-binding,
+- decorative,
+- sometimes unintentionally comic.
+
+---
+
+## Structural Failure Modes
+
+### 1. Surplus Overweighting
 
 Luxury features crowd out robustness, increasing fragility.
 
@@ -165,7 +182,7 @@ Luxury features crowd out robustness, increasing fragility.
 
 ### 2. Narrative Lock-In
 
-Actors become unable to downgrade without identity loss.
+Identity becomes coupled to surplus distinctions, blocking downgrade.
 
 ---
 
@@ -175,31 +192,33 @@ Under constraint, luxury distinctions lose meaning abruptly.
 
 ---
 
-### 4. False Signaling
+### 4. False Capability Signaling
 
-Luxury is mistaken for capability or leverage.
+Luxury is mistaken for leverage, competence, or resilience.
 
 ---
 
 ## Diagnostic Tests
 
-### Test 1 — Invariant Test
+### Invariant Test
 
-Remove the luxury feature. Does viability change?
+Remove the luxury feature.  
+Does viability change?
 
 If no → surplus.
 
 ---
 
-### Test 2 — Stress Test
+### Stress Test
 
-Increase constraint or drift. Does the feature still matter?
+Increase constraint or drift.  
+Does the feature still matter?
 
 If no → narrative-only value.
 
 ---
 
-### Test 3 — Authority Test
+### Authority Test
 
 Does the artifact confer redesign authority under failure?
 
@@ -211,20 +230,20 @@ If no → symbolic only.
 
 Luxury is appropriate when:
 
-* invariants are already robustly satisfied,
-* surplus resources exist,
-* stress horizons are short,
-* and signaling has local utility.
+- invariants are already robust,
+- surplus resources exist,
+- stress horizons are short,
+- signaling has local utility.
 
-It is inappropriate when:
+Luxury is inappropriate when:
 
-* viability is marginal,
-* drift is significant,
-* or robustness is required.
+- viability is marginal,
+- drift is significant,
+- robustness is required.
 
 ---
 
-## Closing Compression
+## Closing
 
 Luxury cannot renegotiate invariants.
 
@@ -232,6 +251,6 @@ It decorates what already works.
 
 Treating luxury as leverage, robustness, or authority is a structural error.
 
-When invariants are made explicit, luxury collapses into a bounded surplus problem —
+When invariants are made explicit, luxury collapses into a bounded surplus problem—
 
-and the collapse is often funny.
+and that collapse is often funny.
