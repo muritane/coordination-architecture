@@ -1,64 +1,60 @@
-# Metrics Under Constraint
-
-## Field Notes on When Evaluation Becomes Comparable, Executable, and Fair at Scale
+# Metrics Under Constraint  
+## When Evaluation Becomes Comparable, Executable, and Load-Bearing at Scale
 
 ---
 
-## What This Document Is
+## Status and Intent
 
-This document specifies **metrics-for-evaluation** as *system-level artifacts* that arise only under **execution, coordination, and resource constraints**.
+This document provides a **structural account of metrics-for-evaluation**.
 
-It treats metrics not as neutral measurements or moral judgments, but as **operational instruments** that must:
+Metrics are treated neither as neutral measurements nor as moral judgments, but as **executable evaluative artifacts** that arise only under **coordination, execution, and resource constraints**.
 
-- be externally addressable,
-- admit substitution across heterogeneous systems,
-- operate under bounded resources,
-- survive scale,
-- and incur failure cost when misapplied.
-
-The framework is architectural and execution-oriented.  
+The framework is architectural and operational.  
 It is isomorphic to principles from:
 
 - systems engineering,
-- performance modeling,
-- information theory,
 - control theory,
-- and distributed evaluation under partial observability.
+- distributed evaluation,
+- performance modeling under partial observability.
 
-Metrics are treated as **executable evaluative artifacts**, not as reflections of intrinsic worth, intelligence, or value.
+Metrics are analyzed solely with respect to their ability to **support coordination, comparison, and allocation under constraint**.
 
 ---
 
 ## What This Document Is Not
 
-This document does **not** attempt to:
+This document does **not**:
 
 - define value, merit, or worth,
-- rank humans, systems, or institutions,
-- prescribe moral or political outcomes,
-- reduce qualitative differences to numbers,
-- argue for a single universal metric,
-- deny the legitimacy of subjective judgment.
+- rank people, systems, or institutions,
+- prescribe political or moral outcomes,
+- deny the legitimacy of subjective judgment,
+- argue for universal metrics.
 
 It addresses one boundary only:
 
-> When an evaluation claim becomes **comparable-for-coordination** rather than an internal or local judgment.
+> When an evaluative claim becomes **shared-for-coordination** rather than internal, local, or discretionary.
+
+Everything outside that boundary is out of scope.
 
 ---
 
 ## Core Claim
 
-A metric becomes *real-for-evaluation* only when it is **minimally sufficient under the constraints of execution and comparison**.
+A metric becomes **real-for-evaluation** only when it is **minimally sufficient under execution and comparison constraints**.
 
 Metrics that ignore:
+
+- constraint heterogeneity,
 - unused degrees of freedom,
 - coordination overhead,
 - failure surfaces,
-- or constraint regimes,
+- or horizon mismatch,
 
-are **not incorrect** — they are **non-executable for fair comparison**.
+are not incorrect.  
+They are **non-executable for fair comparison**.
 
-This is not a semantic failure.  
+This is not a semantic flaw.  
 It is an **architectural insufficiency**.
 
 ---
@@ -69,17 +65,18 @@ A metric is an executable artifact if it:
 
 - can be applied by substituted evaluators,
 - yields determinate outcomes under a protocol,
-- supports repeated execution,
-- and incurs meaningful failure cost when misapplied.
+- supports repeated execution at scale,
+- incurs visible failure cost when misapplied.
 
 Metrics that survive only through:
+
 - reinterpretation,
-- contextual excuses,
-- or post hoc adjustment,
+- contextual excuse,
+- post hoc adjustment,
 
-have failed as shared evaluative artifacts.
+have failed as **shared evaluative artifacts**.
 
-They may still function as **local heuristics**.
+They may still function as **internal heuristics**.
 
 ---
 
@@ -89,18 +86,19 @@ They may still function as **local heuristics**.
 
 Internal judgment includes:
 
-- personal intuition,
-- informal comparison,
-- local standards,
+- intuition,
 - tacit expertise,
-- context-rich appraisal.
+- informal comparison,
+- context-rich appraisal,
+- local standards.
 
-Internal judgment:
-- is high-dimensional,
+Internal judgment is:
+
+- high-dimensional,
 - unconstrained by substitution,
 - tolerant of inconsistency,
 - resilient through reinterpretation,
-- and incurs no systemic failure cost.
+- free of systemic failure cost.
 
 It is real for the evaluator.  
 It is **non-addressable by systems**.
@@ -113,18 +111,18 @@ Shared metrics-for-evaluation:
 
 - externalize judgment,
 - discretize criteria,
-- impose admissible states,
+- define admissible states,
 - terminate interpretation,
-- and enable coordination.
+- enable coordination.
 
-A shared metric must be executable **without access to the originator’s internal standards or intent**.
+A shared metric must be executable **without access to the originator’s internal intent, taste, or standards**.
 
 > Evaluation that cannot fail cannot coordinate.  
-> Evaluation that survives only by reinterpretation has failed *as a metric*.
+> Evaluation preserved only by reinterpretation has failed as a metric.
 
 ---
 
-## Minimal Sufficiency in Metrics
+## Minimal Sufficiency
 
 A metric is **minimally sufficient** if it captures **exactly the degrees of freedom required** to support the comparison it claims to make — and no more.
 
@@ -138,12 +136,13 @@ It is **state-space control**.
 A metric is insufficient when it:
 
 - collapses heterogeneous systems into a single axis,
-- ignores unused or latent degrees of freedom,
-- omits coordination or control costs,
+- ignores latent or unused degrees of freedom,
+- omits coordination or control cost,
 - assumes identical constraint regimes,
-- or treats generality as inefficiency.
+- treats preserved flexibility as inefficiency.
 
-Such metrics may be simple, but they are **non-executable at scale**.
+Such metrics may be simple.  
+They are **non-executable at scale**.
 
 ---
 
@@ -154,7 +153,7 @@ A metric is over-specified when it:
 - requires unbounded context,
 - depends on private interpretation,
 - cannot be measured reliably,
-- or introduces DOFs that do not affect outcomes.
+- introduces DOFs irrelevant to outcomes.
 
 Over-specification increases coordination cost and reduces portability.
 
@@ -162,16 +161,16 @@ Over-specification increases coordination cost and reduces portability.
 
 ## Preconditions for Executable Metrics
 
-A metric becomes shared-for-evaluation **only if all of the following hold**.
+A metric becomes shared-for-evaluation **only if all of the following constraints hold**.
 
-These are not moral requirements.  
-They are **execution constraints**.
+These are execution constraints, not moral criteria.
 
 ---
 
 ### 1. Bounded Resources
 
 Evaluation consumes:
+
 - time,
 - attention,
 - energy,
@@ -182,14 +181,15 @@ Metrics requiring infinite context or perfect knowledge are non-executable.
 
 ---
 
-### 2. Repeated Application (Scale)
+### 2. Repeated Application
 
 Metrics must support:
-- repeated use,
+
+- repetition,
 - aggregation,
 - comparison across instances.
 
-One-off judgments do not expose metric insufficiency.  
+One-off judgments do not surface metric failure.  
 Scale does.
 
 ---
@@ -197,23 +197,23 @@ Scale does.
 ### 3. Non-Zero Coordination Cost
 
 Metrics impose:
+
 - data collection,
 - interpretation,
 - enforcement,
 - dispute resolution.
 
-These costs must be accounted for, not externalized.
+These costs must be priced, not externalized.
 
 ---
 
 ### 4. Partial Observability
 
-Evaluators do not share full access to internal state.
+Evaluators operate under:
 
-Metrics must operate under:
 - asymmetric information,
 - delayed signals,
-- incomplete context.
+- incomplete state access.
 
 Metrics assuming full observability are non-executable.
 
@@ -221,13 +221,14 @@ Metrics assuming full observability are non-executable.
 
 ### 5. Failure Cost
 
-Misapplication of a metric must be able to:
-- cause error,
+Metric misapplication must be able to:
+
 - misallocate resources,
 - trigger correction,
-- or produce visible harm.
+- produce visible harm,
+- or force redesign.
 
-Metrics that cannot fail meaningfully do not constrain behavior.
+Metrics that cannot fail do not constrain behavior.
 
 ---
 
@@ -235,27 +236,30 @@ Metrics that cannot fail meaningfully do not constrain behavior.
 
 Different evaluators must be able to apply the metric and reach compatible outcomes.
 
-If evaluation depends on unique insight or intent, the metric is internal.
+If evaluation depends on unique insight or taste, the metric is internal.
 
 ---
 
 ## Degrees of Freedom and the Generality Tax
 
 Systems differ in:
+
 - available DOFs,
 - exercised DOFs,
 - retained latent flexibility.
 
 General-purpose systems:
-- pay ongoing cost to preserve unused DOFs,
-- retain adaptability as a reserve.
+
+- preserve unused DOFs at ongoing cost,
+- retain adaptability as reserve capacity.
 
 Specialized systems:
-- collapse state-space,
+
+- collapse state space,
 - maximize throughput along narrow axes,
 - discard flexibility.
 
-Metrics that ignore this distinction impose a **generality tax** by construction.
+Metrics that ignore this distinction impose a **generality tax by construction**.
 
 ---
 
@@ -265,50 +269,52 @@ Fair evaluation does not require identical metrics.
 It requires **constraint-aligned metrics**.
 
 Comparable systems must share:
+
 - constraint regime,
-- horizon,
+- execution horizon,
 - failure surface,
-- and resource bounds.
+- resource bounds.
 
 Valid comparative dimensions include:
 
-- effective throughput over time,
-- energy-normalized output,
-- DOF utilization efficiency,
-- lifetime-adjusted contribution,
+- throughput normalized by time and energy,
+- lifetime-adjusted output,
 - adaptability reserve,
-- recovery cost under failure.
+- recovery cost under failure,
+- coordination overhead.
 
-No single scalar metric is sufficient across heterogeneous systems.
+No single scalar metric suffices across heterogeneous systems.
 
 ---
 
 ## Metric Failure Modes
 
-Common failure modes include:
+Recurring failure patterns include:
 
 - collapsing generalists into specialist metrics,
 - treating latent flexibility as waste,
-- ignoring coordination overhead,
+- ignoring coordination cost,
 - deferring failure via reinterpretation,
 - externalizing cost to unmeasured domains.
 
-These failures produce **false comparability**, not incorrect numbers.
+These failures produce **false comparability**, not wrong numbers.
 
 ---
 
 ## Metrics as Interfaces
 
 Metrics are interfaces between:
+
 - observation and action,
 - judgment and allocation,
 - comparison and coordination.
 
 Like all interfaces, metrics:
+
 - cut continuous reality,
 - discretize state,
-- prevent illegal comparisons,
-- and terminate debate.
+- exclude illegal comparisons,
+- terminate debate.
 
 Lossiness is required.
 
@@ -318,24 +324,16 @@ Metrics that refuse to cut do not scale.
 
 ## Protocol-Relative Evaluation
 
-Metrics are **protocol-relative**.
+Metrics are protocol-relative.
 
 A metric is valid only within:
+
 - a defined task class,
 - a constraint regime,
-- an execution horizon.
+- a declared horizon.
 
-Outside that protocol, evaluation is not wrong — it is **undefined-for-comparison**.
-
----
-
-## Implications (Diagnostic, Not Normative)
-
-- Most public metrics are not minimally sufficient.
-- Metric disputes often reflect hidden DOF mismatches.
-- Generalists are systematically mis-evaluated by specialist metrics.
-- “Objectivity” often masks unacknowledged constraint assumptions.
-- Better metrics reduce conflict by making trade-offs explicit.
+Outside that protocol, evaluation is not wrong —  
+it is **undefined-for-comparison**.
 
 ---
 
@@ -343,12 +341,13 @@ Outside that protocol, evaluation is not wrong — it is **undefined-for-compari
 
 The distinction is categorical:
 
-- **Internal judgment** is unconstrained and local.
-- **Shared metrics-for-evaluation** are constrained and executable.
+- Internal judgment is unconstrained and local.
+- Shared metrics-for-evaluation are constrained and executable.
 
 Gradients exist **within** metrics, never at their boundary.
 
 A metric that survives constraint becomes:
+
 - inspectable,
 - portable,
 - enforceable,
@@ -359,7 +358,7 @@ not by accident, but by architectural necessity.
 
 ---
 
-## Closing Note
+## Closing
 
 Metrics do not become fair by being universal.
 
@@ -369,4 +368,3 @@ Everything else is preference,
 intuition,
 or power —
 not evaluation.
-
