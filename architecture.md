@@ -1,39 +1,38 @@
-# Managing Option Space Under Irreversible Commitment
-
-## Field Notes on Agents, Architecture, and Accumulated Constraint Exposure
+# Managing Option Space Under Irreversible Commitment  
+## Notes on Agents, Architecture, and Accumulated Constraint Exposure
 
 ---
 
 ## Status and Intent
 
-This document is a collection of **practical observations** drawn from repeated exposure to systems where:
+This document records **recurrent observations** from systems in which:
 
-* agents operate under finite resources,
-* some decisions are difficult or expensive to reverse,
-* coordination costs grow nonlinearly,
-* early commitments shape what remains possible later.
+- agents operate under finite time, attention, energy, or coordination capacity,
+- some decisions are costly or impractical to reverse,
+- coordination costs grow nonlinearly,
+- early commitments shape what remains feasible later.
 
-It is written from an **architectural perspective**:
-not implementation-focused, not theoretical, and not normative beyond basic cost awareness.
+It is written from an **architectural perspective**.
 
-Its purpose is to **support judgment**, especially during redesign, disruption, or uncertainty.
+It is not implementation guidance, not a formal theory, and not normative beyond basic cost awareness.  
+Its purpose is to **support judgment**, particularly during redesign, disruption, or uncertainty.
 
 ---
 
 ## What This Document Is Not
 
-This document does **not** claim to present:
+This document does **not** present:
 
-* scientific laws,
-* formal models or proofs,
-* optimal architectures,
-* universal principles,
-* privileged insight.
+- scientific laws,
+- formal models or proofs,
+- optimal architectures,
+- universal principles,
+- privileged insight.
 
-Nothing here grants authority by articulation alone.
-All observations are contingent on context, incentives, and constraints.
+Nothing here grants authority by articulation alone.  
+All observations are contingent on context, incentives, topology, and constraint.
 
-These notes describe **patterns that recur in practice**, not truths that compel agreement.
+These notes describe **patterns that recur under bounded execution**, not truths that compel agreement.
 
 ---
 
@@ -41,13 +40,13 @@ These notes describe **patterns that recur in practice**, not truths that compel
 
 This document is intended to function as:
 
-* a shared vocabulary for architectural discussion,
-* a checklist for early decision-making,
-* a way to surface hidden costs before they materialize,
-* a bridge between tacit experience and explicit coordination.
+- a shared vocabulary for architectural discussion,
+- a checklist for early decision-making,
+- a way to surface hidden costs before they bind,
+- a bridge between tacit experience and explicit coordination.
 
-It is **not** a justification engine.
-It should always be paired with domain-specific analysis.
+It is **not** a justification engine.  
+It must be paired with domain-specific analysis.
 
 ---
 
@@ -55,16 +54,16 @@ It should always be paired with domain-specific analysis.
 
 These observations apply only to systems that exhibit **all** of the following:
 
-* finite time, attention, energy, or coordination capacity,
-* agents making decisions incrementally,
-* commitments whose reversal incurs real cost,
-* multiple interacting components or teams.
+- finite operating budgets (time, energy, attention, coordination),
+- incremental decision-making by agents,
+- commitments whose reversal incurs real cost,
+- multiple interacting components or roles.
 
 If a system is:
 
-* fully reversible,
-* trivially small,
-* or unconstrained by coordination,
+- fully reversible,
+- trivially small,
+- or unconstrained by coordination,
 
 then most of what follows does not apply.
 
@@ -72,75 +71,76 @@ then most of what follows does not apply.
 
 ## Agents and Commitments
 
-An **agent** is any entity capable of making decisions that affect future system states:
+An **agent** is any entity capable of making decisions that affect future system states, including:
 
-* individuals,
-* teams,
-* organizations,
-* automated systems with fixed interfaces.
+- individuals,
+- teams,
+- organizations,
+- automated systems with fixed interfaces.
 
 A **commitment** is a decision whose reversal requires:
 
-* redesign,
-* migration,
-* coordination across boundaries,
-* loss of accumulated state,
-* or exceptional intervention.
+- redesign,
+- migration,
+- coordination across boundaries,
+- loss of accumulated state,
+- or exceptional intervention.
 
-Commitments are *relative*, not absolute.
-They become effectively irreversible when reversal exceeds the agent’s normal operating budget.
+Commitments are **relative**, not absolute.
+
+A commitment becomes effectively irreversible when reversal exceeds the agent’s normal operating budget.
 
 ---
 
-## Option Space (Operational, Informal)
+## Option Space (Operational)
 
 An agent’s **option space** is the set of actions or adaptations that remain feasible **without extraordinary cost**.
 
 Key properties:
 
-* option space is time-dependent,
-* it shrinks unevenly,
-* it is consumed silently,
-* it is expensive to recreate.
+- option space is time-dependent,
+- it shrinks unevenly,
+- it is often consumed silently,
+- it is expensive to recreate once lost.
 
-Most systems lose options gradually through locally reasonable decisions whose global effects are not immediately legible.
+Most systems lose options through locally reasonable decisions whose global effects are not immediately visible.
 
 ---
 
 ## Accumulated Constraint Exposure
 
-**Accumulated constraint exposure** refers to experience gained by repeatedly encountering:
+**Accumulated constraint exposure** arises from repeated contact with:
 
-* irreversible decisions,
-* delayed consequences,
-* coordination bottlenecks,
-* failed or aborted redesigns.
+- irreversible decisions,
+- delayed consequences,
+- coordination bottlenecks,
+- failed or aborted redesigns.
 
 This exposure cannot be replaced by abstraction alone.
 
-It manifests as:
+It typically manifests as:
 
-* early detection of lock-in,
-* sensitivity to downstream cost,
-* restraint in premature commitment,
-* preference for reversible seams.
+- early detection of lock-in,
+- sensitivity to downstream cost,
+- reluctance to collapse distinctions prematurely,
+- preference for reversible seams and bounded commitments.
 
 This is the primary source of architectural clarity.
 
 ---
 
-## Why Hierarchy Appears (Observed, Not Derived)
+## Why Hierarchy Appears (Observed)
 
-In practice, decisions are not made all at once.
+In practice, decisions are not evaluated simultaneously.
 
 Instead:
 
-* some decisions constrain others,
-* some distinctions are collapsed early,
-* lower-level choices operate within higher-level bounds.
+- some decisions constrain others,
+- some distinctions are collapsed early,
+- lower-level choices operate within higher-level bounds.
 
-This staged structure is not ideological.
-It emerges because **agents cannot evaluate all possibilities simultaneously under constraint**.
+This staged structure is not ideological.  
+It emerges because **agents cannot evaluate all possibilities at once under bounded resources**.
 
 Hierarchy is therefore an observed coping mechanism, not a design ideal.
 
@@ -150,20 +150,22 @@ Hierarchy is therefore an observed coping mechanism, not a design ideal.
 
 When an agent commits, certain distinctions cease to matter operationally.
 
-Examples:
+Examples include:
 
-* parameterizing vs. hard-coding,
-* modular vs. entangled interfaces,
-* local vs. global coordination.
+- parameterized vs. hard-coded behavior,
+- modular vs. entangled interfaces,
+- local vs. global coordination choices.
 
-Once collapsed, distinctions are not truly recoverable without cost.
-Approximation is sometimes possible; restoration rarely is.
+Once collapsed, distinctions are not freely recoverable.
 
-This is an instance of architectural irreversibility, not error.
+Approximation may be possible.  
+Restoration almost never is.
+
+This is architectural irreversibility, not error.
 
 ---
 
-## Reachability (Practical Sense)
+## Reachability (Practical)
 
 In this document, **reachability** refers to:
 
@@ -171,33 +173,33 @@ In this document, **reachability** refers to:
 
 Clarifications:
 
-* reachability is relative to the agent,
-* it varies across organizational levels,
-* it is graded, not binary,
-* it degrades silently.
+- reachability is relative to the agent,
+- it varies across organizational layers,
+- it is graded rather than binary,
+- it degrades quietly.
 
-Learning and optimization operate *within* current reachability.
+Learning and optimization operate **within** current reachability.  
 They do not restore lost options by themselves.
 
 ---
 
 ## Learning, Adaptation, and Redesign
 
-Learning typically reallocates capacity **within existing commitments**.
+Learning reallocates capacity **within existing commitments**.
 
 It can:
 
-* refine performance,
-* exploit remaining degrees of freedom,
-* improve local efficiency.
+- refine performance,
+- exploit remaining degrees of freedom,
+- improve local efficiency.
 
 It cannot:
 
-* undo architectural lock-in,
-* recover collapsed distinctions,
-* bypass coordination limits.
+- undo architectural lock-in,
+- recover collapsed distinctions,
+- bypass coordination limits.
 
-Redesign operates at a higher cost tier and should be treated explicitly as such.
+Redesign operates at a higher cost tier and must be treated explicitly as such.
 
 ---
 
@@ -205,12 +207,16 @@ Redesign operates at a higher cost tier and should be treated explicitly as such
 
 In practice, architects function as:
 
-* stewards of option space,
-* early detectors of irreversible cost,
-* translators between local incentives and global impact,
-* manual “garbage collectors” for commitments.
+- stewards of option space,
+- early detectors of irreversible cost,
+- translators between local incentives and global impact,
+- manual “garbage collectors” for accumulated commitments.
 
-Their most valuable contributions are preventative and counterfactual, which makes them difficult to observe and easy to discount.
+Their most valuable contributions are preventative and counterfactual, which makes them:
+
+- difficult to observe,
+- easy to discount,
+- poorly captured by output-based metrics.
 
 ---
 
@@ -218,72 +224,72 @@ Their most valuable contributions are preventative and counterfactual, which mak
 
 Architectural clarity:
 
-* removes visible struggle,
-* prevents failures that never occur,
-* reduces future pain rather than present effort.
+- removes visible struggle,
+- prevents failures that never occur,
+- reduces future pain rather than present effort.
 
 As a result:
 
-* it appears obvious in hindsight,
-* it is mistaken for temperament or caution,
-* it is undervalued by output- or throughput-based metrics.
+- it appears obvious in hindsight,
+- it is mistaken for temperament or caution,
+- it is undervalued by throughput-oriented measurement.
 
 This is a measurement failure, not a competence failure.
 
 ---
 
-## On Measuring Option Space (Indirectly)
+## Indirect Signals of Option Loss
 
 Option space cannot be measured directly, but it leaves traces:
 
-* rising cost of small changes,
-* shrinking reversibility windows,
-* expanding coordination scope,
-* slower response to novel constraints.
+- rising cost of small changes,
+- shrinking reversibility windows,
+- expanding coordination scope,
+- slower response to novel constraints.
 
-Tooling that tracks these proxies can make architectural effects legible without mystique.
+Tools that track these signals can make architectural effects legible.
 
-Such tools are aids, not substitutes, for judgment.
+They are aids, not substitutes, for judgment.
 
 ---
 
-## Why Early Strictness Exists
+## Why Early Strictness Appears
 
-Architects are often strict early because:
+Early strictness often reflects cost asymmetry:
 
-* preserving options is cheap early,
-* recreating them later is expensive,
-* and costs are usually paid by someone else.
+- preserving options is cheap early,
+- recreating them later is expensive,
+- costs are usually paid by someone else.
 
-Late flexibility is not kindness.
+Late flexibility is not generosity.  
 It is deferred billing.
 
 ---
 
-## Failure Modes
+## Recurring Failure Patterns
 
-Recurring structural failure patterns include:
+Common structural failures include:
 
-* option destruction without cost ownership,
-* authority without accountability,
-* accountability without authority,
-* replacing architectural judgment with process,
-* mistaking articulation for insight.
+- option destruction without cost ownership,
+- authority without accountability,
+- accountability without authority,
+- substituting process for judgment,
+- mistaking articulation for insight.
 
-These failures repeat across domains because the underlying constraints repeat.
+These patterns recur because the underlying constraints recur.
 
 ---
 
-## Status
+## Status Note
 
 This document is intentionally incomplete.
 
 It is a snapshot of accumulated observations, meant to be:
 
-* challenged,
-* extended,
-* refined,
-* grounded further in execution.
+- challenged,
+- extended,
+- refined,
+- grounded in further execution.
 
 If it ever feels “finished,” it has likely drifted into abstraction.
 
@@ -291,9 +297,9 @@ If it ever feels “finished,” it has likely drifted into abstraction.
 
 ## Closing
 
-Clarity is not cheap.
-It is not mystical.
-It is the residue of repeated contact with irreversible consequences.
+Clarity is not mystical.
 
-The goal of making it explicit is not elevation.
-It is **coordination without illusion**.
+It is the residue of repeated contact with irreversible consequence.
+
+Making it explicit is not about elevation or authority.  
+It is about **coordination without illusion**.
