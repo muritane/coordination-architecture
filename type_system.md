@@ -1,369 +1,277 @@
-# Load-Bearing Stack as a Type System
+# The Load-Bearing Stack as a Type System  
 ## A Structural Typing Discipline for Bounded Execution Under Drift
 
-> **Purpose:** provide a *type system* that makes claims about action, evaluation, agency, responsibility, optimization, and governance **well-formed (or ill-formed)** for **bounded executors** in **irreversible, drifting** environments.  
-> This is a **static checker** for discourse about execution.
+---
 
-This document is **not** a theory of:
-- human cognition, consciousness, intent, or preference formation
-- morality, legitimacy, justice, fairness
-- what goals *should* be
-- any specific optimization method
+## Status and Intent
 
-It is a typing discipline that:
-- **rejects ill-typed claims** (category errors)
-- **forces explicit horizons, resources, and causal assumptions**
-- **marks “under-typed” claims** when current observations are insufficient
+This document defines the **Load-Bearing Stack** as a **type system** for reasoning about action, evaluation, agency, responsibility, optimization, and governance in **bounded, irreversible, drifting systems**.
+
+It functions as a **static checker** for discourse about execution.
+
+It does not determine what is true, good, optimal, or legitimate.
+It determines whether a claim is **well-formed** with respect to executional constraint.
+
+The system:
+
+- rejects **ill-typed claims** (category errors),
+- marks **under-typed claims** where executional witnesses are missing,
+- forces explicit horizons, resources, and causal assumptions,
+- preserves reinterpretation without allowing it to masquerade as execution.
 
 ---
 
-## 0. Core stance: all claims are conditional on an epistemic context
+## Core Stance
 
-Every judgment is relative to an **epistemic context** and a **provisional causal model**.
+All claims are **conditional on an epistemic context**.
 
-- **Epistemic context** `E` = what is currently observed/known, measurement quality, and what is *not* observed.
-- **Topology model** `T̂` = the *current best* model of consequence propagation (latency, fan-out, buffers, observability, irreversibility gradients, dissipation/recovery).
-- **Horizon set** `H` = one or more time horizons under which viability is assessed.
-- **Resource budget** `R` = bounded time/energy/attention/bandwidth/material capacity.
+No statement about action, responsibility, or optimization is meaningful
+without specifying the constraints under which it is supposed to hold.
 
-**Key rule:** if a claim does not specify (or imply) `(E, T̂, H, R)`, it is usually **under-typed** (not rejectable as false, but not executable as a statement about bounded execution).
+Every claim is typed relative to:
 
----
-
-## 1. Objects (terms) and types
-
-### 1.1 Terms (what we talk about)
-
-- `x ∈ State` : world/system state
-- `a ∈ Act` : an action (state-changing)
-- `π ∈ Policy` : action selection rule
-- `C ∈ Closure` : a compression/termination of interpretation (discarded distinctions)
-- `M ∈ Metric` : executable evaluation interface inside a closure
-- `b ∈ Boundary` : a pre-execution decision boundary
-- `refuse(b)` / `accept(b)` : boundary options
-- `F ∈ FailureMode` : failure semantics (how it fails, where load lands)
-
-### 1.2 Primitive types (structural, not moral)
-
-- `Exec` : an execution event (irreversible state change)
-- `Interp` : interpretation / narrative / justification (does not execute by itself)
-- `Topo` : consequence topology (propagation structure)
-- `Horiz` : horizon specification
-- `Res` : bounded resources (time/energy/attention/etc.)
-- `Viable` : continued execution remains possible over specified horizons
-- `ClosureOK` : closure is currently sufficient (relative to E, T̂, H, R)
-- `MetricOK` : metric is valid within its envelope and fails explicitly when violated
-- `Decidable` : boundary where acceptance and refusal are executable paths
-- `AgencyOK` : agency attribution is coherent (at a specific boundary)
-- `RespOK` : responsibility/load attribution is coherent (within a closure + metrics + decidability)
-
-### 1.3 Claim types (what sort of statement is this?)
-
-We type *claims* as one of:
-
-- `⟦…⟧ : ExecClaim`  
-  “X executes / caused Y” (about state changes)
-- `⟦…⟧ : InterpClaim`  
-  “X intended / meant / justified …” (about interpretation)
-- `⟦…⟧ : EvalClaim`  
-  “X is good/bad by criterion …” (judgment signal)
-- `⟦…⟧ : OptClaim`  
-  “Optimizing objective O improves …” (requires viability + metric validity)
-- `⟦…⟧ : AgencyClaim`  
-  “Actor A chose freely at boundary b …” (requires decidability + refusal symmetry)
-- `⟦…⟧ : RespClaim`  
-  “Actor A is responsible for outcome Y …” (requires settled closure + bounded metrics + decidable entry + controllables)
-
-### 1.4 Judgment outcomes (three-valued)
-
-For bounded execution we need a third category besides true/false:
-
-- `Well-Typed` : claim is structurally coherent under current `(E, T̂, H, R)`
-- `Ill-Typed` : claim violates structural constraints (category error)
-- `Under-Typed` : not enough information in `E` / `T̂` / `H` to type-check (epistemic insufficiency)
+- what is observed,
+- how consequences propagate,
+- which horizons matter,
+- and which resources are finite.
 
 ---
 
-## 2. Contexts (what the type checker requires)
+## Epistemic Context (Typing Environment)
 
-A typing context bundles what must be explicit:
+A typing environment bundles the minimum structure required to type-check executional claims.
 
-`Γ = (E, T̂, H, R, C?, M?, B?, K)`
+Let:
 
-Where:
-- `E` current observations and measurement quality
-- `T̂` current causal/topology hypothesis (explicitly provisional)
-- `H` horizons in scope (often multiple)
-- `R` resource bounds and margin estimate
-- `C?` optional: the closure currently governing execution
-- `M?` optional: metric(s) currently used for coordination
-- `B?` optional: boundary definition(s)
-- `K` known failure semantics (what happens on refusal, overload, saturation, drift)
+- **E** — current observations and measurement quality (including blind spots),
+- **T̂** — a provisional topology model of consequence propagation  
+  (latency, fan-out, buffers, observability, irreversibility gradients),
+- **H** — one or more horizons over which viability is evaluated,
+- **R** — bounded resources and remaining margin.
 
----
+**Typing rule (global):**  
+If a claim does not specify or imply `(E, T̂, H, R)`, it is usually **under-typed**.
 
-## 3. Structural axioms (invariants)
-
-These are not optional assumptions; they are constraints for bounded executors.
-
-**A1 Irreversibility:** `Exec` destroys information and eliminates alternatives.  
-**A2 Boundedness:** `Res` is finite; full sensing/modeling is impossible.  
-**A3 Drift:** `T̂` is regime-dependent and can break; invariants are horizon-bound.  
-**A4 Unavoidable compression:** any executable representation is lossy.  
-**A5 Viability precedes optimization:** “improvement” is undefined if continued execution is not secured.
-
-**Ill-typed trigger:** any framework that presumes reversibility, infinite resources, stationary environments, or lossless abstraction.
+Under-typed does not mean false.  
+It means **non-executable as a statement about bounded systems**.
 
 ---
 
-## 4. Typing rules (the checker)
+## Terms and Objects
 
-Below, “`Γ ⊢ claim : Type`” reads: “under context `Γ`, this claim type-checks as `Type`”.
+The type system reasons over the following objects:
 
-### 4.1 Execution vs interpretation (non-collapse rule)
+- **State** — world or system configurations.
+- **Act** — actions that induce state transitions.
+- **Policy** — rules for action selection.
+- **Closure** — lossy compression that terminates interpretation.
+- **Metric** — executable evaluative interface inside a closure.
+- **Boundary** — a pre-execution decision point.
+- **FailureMode** — how breakdown occurs and where load lands.
 
-**Rule EX/IN:**  
-If a statement does not refer to state change in `T̂`, it cannot be typed as execution.
-
-- If `claim` references *only* intent/meaning/justification without binding to state transitions:  
-  `Γ ⊬ claim : ExecClaim` (Ill-Typed as execution)  
-  `Γ ⊢ claim : InterpClaim` (at best)
-
-**Consequence:** “We decided / we value / we intend” is execution-inert unless it binds closures/metrics/boundaries.
-
----
-
-### 4.2 Viability gate (optimization is not typeable without it)
-
-**Rule V-GATE:**  
-`Γ ⊢ OptClaim` only if `Γ ⊢ Viable` over the declared horizons.
-
-Formally (schematic):
-
-- If `Γ ⊢ Viable(H)` and `Γ ⊢ MetricOK(M, C, H)` then `Γ ⊢ OptClaim`
-- Else:
-  - If viability is violated: `Ill-Typed` (optimization talk is undefined)
-  - If viability unknown: `Under-Typed`
+These are structural terms, not moral ones.
 
 ---
 
-### 4.3 Closure typing (compression for repetition)
+## Primitive Types
 
-Closure is a mapping that discards degrees of freedom:
+Primitive types describe **executional roles**, not human qualities.
 
-`C : State → State_C` (lossy)
-
-**Rule C-OK:**  
-`Γ ⊢ ClosureOK(C)` only if:
-1) closure extent is bounded by `R` (executable representation)  
-2) closure is sufficient for viability across declared `H` *under current `T̂`*  
-3) there exists a redesign/exception path with bounded failure semantics (some interruptible region)
-
-If (2) fails due to drift evidence, closure becomes **type-unstable**: it may have been well-typed historically, but is now `Ill-Typed` for the updated `E`.
-
----
-
-### 4.4 Settlement typing (closure hardening)
-
-Settlement is closure that persists through repetition and depletion.
-
-**Rule SETTLE:**  
-`Γ ⊢ Settled(C)` only if:
-- closure survives repeated execution under depletion,
-- alternatives are eliminated by failure not preference,
-- viability holds locally without hidden subsidy **or** the subsidy is explicit in `E` and included in `R`.
-
-If subsidy/buffering exists but is unmodeled: claims of stability are `Under-Typed` (epistemically incomplete).
+- **Exec** — irreversible execution.
+- **Interp** — interpretation, narrative, justification.
+- **Topo** — consequence topology.
+- **Horiz** — horizon specification.
+- **Res** — bounded resources.
+- **Viable** — continued execution remains possible.
+- **ClosureOK** — closure sufficient under current context.
+- **MetricOK** — metric valid and explicitly failing.
+- **Decidable** — refusal and acceptance are both executable.
+- **AgencyOK** — agency attribution is coherent.
+- **RespOK** — responsibility attribution is coherent.
 
 ---
 
-### 4.5 Metric typing (executable interface with explicit failure)
+## Claim Kinds (What Is Being Asserted)
 
-A metric is a finite interface inside a closure:
+Claims are typed by *what they are trying to be*:
 
-`M : State_C → ℝ^k` (or comparable finite outputs)
+- **Execution claims** — “X caused Y.”
+- **Interpretive claims** — “X intended / meant / justified.”
+- **Evaluation claims** — “X is good/bad by criterion C.”
+- **Optimization claims** — “Optimizing O improves the system.”
+- **Agency claims** — “Actor A chose freely.”
+- **Responsibility claims** — “Actor A is responsible for outcome Y.”
 
-**Rule M-OK:**  
-`Γ ⊢ MetricOK(M, C, H)` only if:
-1) **Envelope:** validity conditions `Env(M)` are specified (what must be true for substitutability)  
-2) **Sufficiency:** metric encodes the minimal DOFs needed for viability in `C` over `H`  
-3) **Boundedness:** metric is computable within `R`  
-4) **Determinacy:** metric yields determinate outcomes under the closure  
-5) **Explicit failure:** outside `Env(M)`, metric *fails loudly* (alarms, saturation, refusal, handoff to redesign)
-
-**If (5) fails**: you get silent saturation → proxy capture.  
-In this type system, silent metrics are **ill-typed** as coordination interfaces for optimization.
+Typing errors arise primarily from **claim-kind confusion**.
 
 ---
 
-### 4.6 Decidability typing (where choice is coherent)
+## Judgment Outcomes (Three-Valued)
 
-A boundary is decidable only if refusal is executable.
+Every claim type-checks as one of:
 
-**Rule D-OK:**  
-`Γ ⊢ Decidable(b)` only if:
-1) `accept(b)` and `refuse(b)` are both real execution paths in `T̂`  
-2) consequences are bounded relative to `H` (containment exists)  
-3) failure semantics are characterized in `K` (not omniscient—just actionable)  
-4) interruptibility exists with sufficient margin in `R`
+- **Well-Typed** — structurally coherent under `(E, T̂, H, R)`,
+- **Ill-Typed** — violates executional constraints (category error),
+- **Under-Typed** — insufficient structure to evaluate.
 
-If refusal exists “on paper” but triggers catastrophic non-viability under `T̂`, then:
-- `Γ ⊬ Decidable(b)` (Ill-Typed)
+This third category is essential: most discourse fails by **missing witnesses**, not by being wrong.
 
 ---
 
-### 4.7 Agency typing (agency exists only at decidable boundaries)
+## Structural Axioms (Non-Negotiable)
 
-Agency attribution requires a boundary witness.
+These are invariants for bounded executors:
 
-**Rule AGENCY:**  
-`Γ ⊢ AgencyOK(actor, b)` only if:
-- `Γ ⊢ Decidable(b)` and
-- **refusal symmetry** holds *at that boundary*, under the declared horizon(s)
+1. **Irreversibility** — execution destroys information and eliminates alternatives.
+2. **Boundedness** — resources are finite; full sensing is impossible.
+3. **Drift** — causal structure changes; invariants are horizon-bound.
+4. **Unavoidable compression** — executable representations are lossy.
+5. **Viability precedes optimization** — improvement is undefined without survival.
 
-**Refusal symmetry (structural):**  
-If actor X can refuse without catastrophic loss but actor Y cannot (under `T̂`, `H`), then attributing agency to Y for accepting is **ill-typed** *for that boundary*.
-
-Inside execution (post-boundary), only `Discretion` is typeable, not `Agency`.
+Any framework that assumes reversibility, infinite resources, or lossless abstraction is **ill-typed by construction**.
 
 ---
 
-### 4.8 Responsibility typing (load attribution, not moral blame)
+## Typing Rules (Selected)
 
-Responsibility is typeable only after closure + metric binding + decidable entry.
+### Execution vs Interpretation
 
-**Rule RESP:**  
-`Γ ⊢ RespOK(actor, outcome)` only if:
-1) `Γ ⊢ Settled(C)` (or at least `ClosureOK(C)` with explicit coupling)  
-2) `Γ ⊢ MetricOK(M, C, H)` (bounded, valid, explicit failure)  
-3) entry into the relevant execution path was decidable: `Γ ⊢ Decidable(b_entry)`  
-4) the outcome depends on variables controllable by actor within the closure (not merely affected by them)  
-5) load routing is characterized in `T̂` (where cost lands: latency/fan-out/buffers/observability)
+A claim that references only intent, meaning, or justification cannot be typed as execution.
 
-If (3) fails, “they are responsible” is generally **ill-typed** as structural responsibility for that boundary (though you can still talk about load location).
+Interpretation does not execute.
+
+Statements like “we decided” or “we value” are **execution-inert** unless they bind closures, metrics, or boundaries.
 
 ---
 
-## 5. The “type checker” workflow (how to use this)
+### Viability Gate for Optimization
 
-Given a claim `q`, do:
+Optimization claims are typeable **only if viability is established** over the declared horizons.
 
-### Step 1 — Classify the claim (what type is it trying to be?)
-- Exec / Interp / Eval / Opt / Agency / Responsibility
+If survival is failing or undefined, optimization talk is ill-typed.
 
-### Step 2 — Require witnesses (attach the missing structure)
-Ask (or specify yourself):
-- What horizons `H`?
-- What resource bounds `R` and margin estimate?
-- What topology model `T̂` (even if provisional)?
-- What closure `C` is assumed?
-- What metric `M` is binding execution?
-- What boundary `b` is the decision point?
-
-If you can’t supply these from current `E`, the claim is usually **Under-Typed**.
-
-### Step 3 — Run the relevant rules
-- Opt → V-GATE + M-OK
-- Agency → D-OK + refusal symmetry
-- Responsibility → settlement + metric validity + decidable entry + controllables
-
-### Step 4 — Output one of:
-- **Well-Typed** (coherent under current context)
-- **Ill-Typed** (structural violation)
-- **Under-Typed** (insufficient observation/model to type-check)
+Optimization without a viability witness is not wrong — it is **undefined**.
 
 ---
 
-## 6. Runtime semantics (what happens when the world changes)
+### Closure Typing
 
-Because drift exists, types are not permanent.
+A closure is acceptable only if:
 
-### 6.1 Type instability under drift
-When `E` updates or `T̂` changes, previously well-typed claims can become ill-typed.
+- it is executable within resource bounds,
+- it preserves viability across horizons under current topology,
+- it has a bounded redesign or escape path.
 
-- Example: metric `M` remains determinate but drift introduces a previously discarded variable `z` that now drives outcomes.
-  - `MetricOK(M, C, H)` may fail its envelope or sufficiency checks.
-  - If `M` doesn’t fail explicitly → proxy capture (a runtime type error that doesn’t throw).
-
-### 6.2 Redesign as retyping
-Redesign is “reopening distinctions”:
-- expand or alter closure `C`
-- adjust horizons `H`
-- replace metrics `M`
-- move boundaries `b` to restore decidability
-- change topology (buffers, observability, interruptibility)
-
-Redesign authority cannot be fully expressed through the settled metrics that encode the closure being revised. In type terms: **you cannot use a type to fully specify its own retyping rules** without an outer meta-context.
+Closures that once worked may become ill-typed under drift.
 
 ---
 
-## 7. Common ill-typed patterns (diagnostics)
+### Metric Typing
 
-### 7.1 Agency laundering
-Claim: “They chose it”  
-But refusal was non-executable under `T̂` and `H`.  
-→ `Ill-Typed AgencyClaim` (boundary witness fails)
+A metric is valid only if it:
 
-### 7.2 Optimization without viability
-Claim: “We should optimize metric M to improve system”  
-But viability is failing or undefined on the relevant horizon.  
-→ `Ill-Typed OptClaim` (fails V-GATE)
+- encodes the minimal necessary degrees of freedom,
+- is computable under resource bounds,
+- yields determinate outcomes,
+- and **fails explicitly** outside its envelope.
 
-### 7.3 Silent metric saturation
-Metric never fails explicitly; drift manifests as gaming.  
-→ `Ill-Typed Metric` for coordination under bounded execution
-
-### 7.4 Horizon mismatch
-Short-horizon metric binds execution while long-horizon viability fails.  
-→ `Under-Typed` until horizons are declared; often becomes `Ill-Typed` once declared
-
-### 7.5 Stability by hidden subsidy
-Settlement claimed but buffering/subsidy is unmodeled in `E`/`R`.  
-→ `Under-Typed` (epistemic incompleteness); may become `Ill-Typed` if subsidy removal breaks viability
+Metrics that never fail loudly are **ill-typed as coordination interfaces**.
+They silently accumulate error.
 
 ---
 
-## 8. Minimal worked typings (schematic)
+### Decidability
 
-### Vignette A — “We can keep adapting freely”
-- Requires margin `R` and containment topology `T̂` that keeps failures local.
-- If margin is not specified or is near zero, the claim is **Under-Typed**.
-- If failures are non-local and costly (fan-out, high irreversibility), then “free adaptation” is **Ill-Typed** unless closure/coordination artifacts are introduced.
+A boundary is decidable only if refusal is an executable path with bounded consequences.
 
-### Vignette B — Metric as interface under drift
-- Closure tracks `{x,y}`, discards `z`.
-- Drift makes `z` causal for outcomes.
-- If `M(x,y)` does not have an explicit envelope/alarm for this regime change → `Ill-Typed Metric` (silent saturation).
-- The well-typed move is retyping: reopen closure to include `z` or change horizon/topology.
-
-### Vignette C — Agency claim with refusal asymmetry
-- Boundary offers “accept P or refuse.”
-- Refusal triggers catastrophic loss for B but not for A.
-- `Decidable(b)` fails for B.  
-→ “B chose P” is **Ill-Typed** as `AgencyClaim` at that boundary.
+If refusal exists only narratively, agency claims at that boundary are ill-typed.
 
 ---
 
-## 9. Where “values” live (descriptive, not normative)
+### Agency Attribution
 
-In this type system, “values” become execution-relevant only when they:
-- constrain closure selection (`C`)
-- constrain metric envelopes (`Env(M)`)
-- allocate redesign authority (who can retype the system)
-- preserve refusal executability (decidability)
+Agency is typeable only at **decidable boundaries** with refusal symmetry.
 
-Otherwise values remain `InterpClaim`—not false, but execution-inert.
+If one party can refuse without catastrophe and another cannot, attributing agency symmetrically is ill-typed.
+
+Post-execution, only discretion exists — not agency.
 
 ---
 
-## 10. Compressed summary (type-level)
+### Responsibility Attribution
 
-- Execution is irreversible; resources are bounded; drift breaks invariants.
-- Compression is mandatory; closure enables repetition; settlement hardens closure.
-- Metrics coordinate inside closures but must have explicit envelopes and failure.
-- Optimization is only typeable after viability and metric validity are established.
-- Agency is only typeable at decidable boundaries with executable refusal.
-- Responsibility is only typeable after closure + metrics + decidable entry + controllables.
-- Every claim is conditional on current observations `E` and a provisional topology model `T̂`.
+Responsibility is typeable only when:
 
-Only what **executes**—and survives depletion—persists.
+- a closure is settled or explicitly binding,
+- metrics are valid and failure-bearing,
+- entry into execution was decidable,
+- outcomes depend on controllable variables,
+- and load routing is legible in the topology.
+
+Responsibility follows **load-bearing paths**, not narrative involvement.
+
+---
+
+## Drift and Retyping
+
+Types are not permanent.
+
+As observations update or topology shifts:
+
+- previously well-typed claims may become ill-typed,
+- metrics may silently saturate,
+- closures may lose sufficiency.
+
+Redesign is **retyping**:
+reopening distinctions, adjusting horizons, changing metrics, or relocating boundaries.
+
+No type can fully specify its own retyping rules from inside itself.
+
+---
+
+## Common Ill-Typed Patterns
+
+- **Agency laundering** — attributing choice where refusal was non-executable.
+- **Optimization without viability** — improving metrics while survival erodes.
+- **Silent metric saturation** — metrics that never fail, only drift.
+- **Horizon mismatch** — short-horizon evaluation destroying long-horizon viability.
+- **Hidden subsidy stability** — apparent robustness dependent on unmodeled buffers.
+
+These are structural errors, not moral ones.
+
+---
+
+## Where Values Appear (Descriptively)
+
+Values become execution-relevant only when they:
+
+- constrain closure selection,
+- define metric envelopes,
+- allocate redesign authority,
+- preserve refusal executability.
+
+Otherwise, values remain interpretive claims — real, but execution-inert.
+
+---
+
+## Closing Compression
+
+The Load-Bearing Stack is a type system for execution.
+
+It does not tell you what to want.
+It tells you when what you are saying **could possibly be true** for a bounded executor.
+
+Only claims that survive:
+
+- irreversibility,
+- bounded resources,
+- drift,
+- explicit closure,
+- executable metrics,
+- decidable boundaries,
+
+are well-typed as statements about action.
+
+Everything else remains interpretation —
+not invalid,
+but unbound.
