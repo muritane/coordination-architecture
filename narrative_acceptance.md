@@ -1,23 +1,50 @@
-# Narrative Acceptance as the Only Constraint
-
-## Purpose
-
-This document formalizes **narrative acceptance** as a structural regime in bounded execution systems where **interpretive agreement replaces executable constraint**. Narrative acceptance is treated neither as persuasion nor belief formation, but as a **coordination mechanism** that constrains behavior only insofar as participants continue to accept a shared story.
-
-The goal is to:
-
-* define narrative acceptance precisely,
-* distinguish it from executional constraint,
-* explain why it scales socially but collapses under metric binding,
-* and diagnose its characteristic failure modes.
-
-This document is **descriptive and diagnostic**, not normative. It maps constraints.
+# Narrative Acceptance as a Coordination Regime  
+## When Interpretation Substitutes for Executable Constraint
 
 ---
 
-## Executive Summary (Compressed)
+## Status and Intent
 
-Narrative acceptance is a regime in which coordination is constrained solely by continued agreement on an interpretive story. No invariant violations are specified, no metrics bind execution, no failure semantics exist, and no exposure is borne by narrators. Constraint persists only while the narrative remains socially accepted. This regime is cheap, flexible, and scalable, but structurally unstable under irreversibility, drift, or forced settlement. When narrative acceptance is mistaken for executional constraint, authority insertion, agency laundering, and abrupt collapse follow.
+This document formalizes **narrative acceptance** as a **coordination regime** in which
+interpretive agreement substitutes for executable constraint.
+
+Narrative acceptance is treated neither as persuasion, belief formation, nor deception,
+but as a **structural mode of coordination** whose binding force derives solely from
+continued social endorsement of a shared story.
+
+The perspective is **descriptive and diagnostic**, not normative.
+It maps constraints and failure modes.
+
+---
+
+## What This Document Is Not
+
+This document does **not**:
+
+- evaluate truth or falsity of narratives,
+- critique storytelling or meaning-making,
+- prescribe epistemic norms,
+- argue against culture, identity, or discourse,
+- deny the usefulness of narrative in exploration.
+
+It addresses one question only:
+
+> What happens when **narrative acceptance is the only binding constraint** in a system that eventually must execute?
+
+---
+
+## Core Claim
+
+Narrative acceptance is a coordination regime in which:
+
+- no invariants are specified,
+- no metrics bind execution,
+- no failure semantics exist,
+- no exposure is borne by narrators,
+- and constraint persists only while the story remains socially accepted.
+
+Coordination fails when acceptance fails.
+Nothing else enforces continuity.
 
 ---
 
@@ -25,14 +52,14 @@ Narrative acceptance is a regime in which coordination is constrained solely by 
 
 Narrative acceptance primarily occupies:
 
-* **Regime 2 — Optionality Preservation** (interpretation remains open),
-* with spillover into **Regime 4 — Closure** when narratives harden without explicit declaration.
+- **Regime 2 — Optionality Preservation** (interpretation remains open),
+- with spillover into **Regime 4 — Closure** when narratives harden implicitly.
 
 It explicitly avoids:
 
-* Regime 5 (Metrics),
-* Regime 6 (Decidability and Agency),
-* Regime 7 (Responsibility as load attribution).
+- Regime 5 (Metrics),
+- Regime 6 (Decidable agency),
+- Regime 7 (Responsibility as load attribution).
 
 Narrative acceptance is therefore a **pre-execution coordination regime**.
 
@@ -42,14 +69,14 @@ Narrative acceptance is therefore a **pre-execution coordination regime**.
 
 **Narrative acceptance** is a coordination condition where:
 
-* behavior is guided by shared interpretation,
-* constraint is enforced through social coherence rather than execution,
-* disagreement is managed by reinterpretation rather than redesign,
-* and failure is addressed narratively rather than structurally.
+- behavior is guided by shared interpretation,
+- constraint is enforced through social coherence rather than execution,
+- disagreement is resolved by reinterpretation rather than redesign,
+- and breakdown is managed narratively rather than structurally.
 
 Formally:
 
-> Narrative acceptance constrains action only through the willingness of participants to continue endorsing a shared story; it imposes no executable limits on action or consequence.
+> Narrative acceptance constrains action only through continued endorsement of a shared interpretive frame; it imposes no executable limits and bears no irreversible cost.
 
 ---
 
@@ -59,13 +86,13 @@ Formally:
 
 Executional constraint exists when:
 
-* invariants are explicit,
-* metrics bind evaluation,
-* failure semantics are known,
-* refusal paths are executable,
-* and cost is borne irreversibly.
+- invariants are explicit,
+- metrics bind evaluation,
+- failure semantics are defined,
+- refusal paths are executable,
+- cost is borne irreversibly.
 
-Constraint persists regardless of interpretation.
+Constraint persists regardless of belief or agreement.
 
 ---
 
@@ -73,66 +100,67 @@ Constraint persists regardless of interpretation.
 
 Narrative acceptance exists when:
 
-* success and failure are interpretive,
-* criteria shift with explanation,
-* consequences are deferred or re-described,
-* refusal is morally discouraged but structurally possible,
-* and cost is displaced or obscured.
+- success and failure are interpretive,
+- criteria shift post hoc,
+- consequences are deferred or re-described,
+- refusal is socially discouraged but structurally available,
+- cost is displaced or obscured.
 
 Constraint dissolves when acceptance ends.
 
 ---
 
-## How Narrative Acceptance Functions
+## How Narrative Acceptance Coordinates
 
 Narrative acceptance coordinates by:
 
-* aligning expectations without specifying metrics,
-* enabling cooperation without binding commitment,
-* preserving optionality by deferring settlement,
-* smoothing over drift through reinterpretation.
+- aligning expectations without specifying metrics,
+- enabling cooperation without binding commitment,
+- preserving optionality by deferring settlement,
+- smoothing drift through reinterpretation.
 
-It is effective where:
+It functions best when:
 
-* stakes are low,
-* horizons are short,
-* failure is recoverable,
-* and ambiguity is tolerable.
+- stakes are low,
+- horizons are short,
+- failure is recoverable,
+- ambiguity is tolerable.
 
 ---
 
 ## Why Narrative Acceptance Scales
 
-Narrative acceptance is powerful because it is:
+Narrative acceptance scales because it is:
 
-* low-cost (no formal infrastructure),
-* fast (no negotiation of metrics),
-* flexible (reinterpretation absorbs shocks),
-* socially transmissible (stories propagate easily).
+- cheap (no infrastructure),
+- fast (no metric negotiation),
+- flexible (reinterpretation absorbs shocks),
+- transmissible (stories propagate easily).
 
-This makes it the default coordination regime in:
+It is therefore common in:
 
-* early-stage groups,
-* social signaling environments,
-* identity-based communities,
-* informal leadership contexts.
+- early-stage groups,
+- informal leadership contexts,
+- identity-based coordination,
+- exploratory or pre-commitment phases.
 
 ---
 
 ## Absence of Failure Semantics
 
-Narrative acceptance has no built-in failure condition.
+Narrative acceptance contains **no intrinsic failure condition**.
 
 When outcomes diverge:
 
-* narratives are revised,
-* blame is reassigned,
-* meaning is reinterpreted,
-* or the story fragments.
+- narratives are revised,
+- blame is reassigned,
+- meaning is reframed,
+- or the story fragments.
 
-Because nothing *fails*, nothing signals redesign necessity.
+Because nothing fails structurally,
+nothing forces redesign.
 
-This enables prolonged drift.
+Drift accumulates silently.
 
 ---
 
@@ -140,12 +168,14 @@ This enables prolonged drift.
 
 Narrative acceptance requires:
 
-* ambiguity in goals,
-* vagueness in evaluation,
-* flexible horizons,
-* tolerance for inconsistency.
+- ambiguous goals,
+- vague evaluation,
+- flexible horizons,
+- tolerance for inconsistency.
 
-Precision, metrics, or forced commitment reduce interpretive slack and destabilize the regime.
+Precision destabilizes the regime.
+
+Metrics, invariants, or forced commitment collapse interpretive slack and expose the absence of executional constraint.
 
 ---
 
@@ -153,23 +183,24 @@ Precision, metrics, or forced commitment reduce interpretive slack and destabili
 
 Expectation is the primary binding mechanism within narrative acceptance.
 
-* Expectations act as implicit evaluators.
-* Violations trigger judgment, not system alarms.
-* Enforcement occurs socially, not structurally.
+- Expectations act as implicit evaluators.
+- Violations trigger judgment, not system alarms.
+- Enforcement occurs socially, not structurally.
 
-Narrative acceptance supplies the environment in which expectation can bind invisibly.
+Narrative acceptance is the environment in which expectations bind invisibly.
 
 ---
 
 ## Relationship to Authority Insertion
 
-Narrative acceptance is the enabling substrate for authority insertion.
+Narrative acceptance enables **authority insertion**.
 
-* Authority claims succeed if the narrative is accepted.
-* No executional exposure is required.
-* Retroactive evaluation is normalized.
+- Authority claims succeed if the story is accepted.
+- No invariant specification is required.
+- No executional exposure is borne.
+- Retroactive evaluation is normalized.
 
-Authority insertion fails immediately when narrative acceptance is withdrawn.
+Authority insertion collapses immediately when narrative acceptance is withdrawn.
 
 ---
 
@@ -177,25 +208,25 @@ Authority insertion fails immediately when narrative acceptance is withdrawn.
 
 ### 1. Drift Accumulation
 
-Because reinterpretation absorbs inconsistency, misalignment grows silently.
+Reinterpretation absorbs inconsistency, allowing misalignment to grow unnoticed.
 
 ---
 
 ### 2. Agency Laundering
 
-Responsibility is assigned narratively after execution, without prior control.
+Responsibility is assigned narratively after execution without prior control.
 
 ---
 
 ### 3. Sudden Collapse
 
-When acceptance breaks, coordination fails abruptly with no gradual degradation.
+Coordination fails abruptly when acceptance ends, with no gradual degradation signal.
 
 ---
 
 ### 4. Metric Shock
 
-Introduction of metrics produces disproportionate disruption.
+Introduction of explicit metrics produces disproportionate disruption.
 
 ---
 
@@ -209,7 +240,7 @@ As execution fails, narratives intensify instead of redesign occurring.
 
 ### Test 1 — What enforces compliance?
 
-If the answer is "shared understanding," narrative acceptance is the constraint.
+If enforcement depends on shared understanding, the constraint is narrative.
 
 ---
 
@@ -221,7 +252,7 @@ If stories change instead of systems, narrative acceptance dominates.
 
 ### Test 3 — What breaks coordination?
 
-If coordination ends when belief ends, not when invariants break, constraint is narrative.
+If coordination ends when belief ends—not when invariants break—the regime is narrative.
 
 ---
 
@@ -229,17 +260,17 @@ If coordination ends when belief ends, not when invariants break, constraint is 
 
 Narrative acceptance is appropriate when:
 
-* exploration is primary,
-* commitment must remain cheap,
-* redesign is frequent,
-* and failure is non-catastrophic.
+- exploration dominates,
+- commitment must remain cheap,
+- redesign is frequent,
+- failure is non-catastrophic.
 
-It is inappropriate where:
+It is inappropriate when:
 
-* execution is irreversible,
-* stakes are high,
-* horizons are long,
-* or responsibility must be allocated.
+- execution is irreversible,
+- stakes are high,
+- horizons are long,
+- responsibility must be allocated.
 
 ---
 
@@ -247,11 +278,11 @@ It is inappropriate where:
 
 Transition requires:
 
-* explicit closure declaration,
-* metric introduction with failure semantics,
-* horizon specification,
-* restoration of refusal symmetry,
-* exposure alignment.
+- explicit closure declaration,
+- metric introduction with failure semantics,
+- horizon specification,
+- executable refusal paths,
+- exposure alignment.
 
 Absent these, narrative acceptance hardens into illusion.
 
@@ -259,7 +290,7 @@ Absent these, narrative acceptance hardens into illusion.
 
 ## Closing Compression
 
-Narrative acceptance constrains only as long as the story holds.
+Narrative acceptance constrains only while the story holds.
 
 It is not executional constraint.
 
