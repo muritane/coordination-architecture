@@ -1,277 +1,246 @@
-# Legitimacy, Authority, and Respect as Coordination Constraints
-
-## Field Notes on Permission, Risk, and Action Under Multi-Agent Pressure
+# Legitimacy, Authority, and Respect as Coordination Constraints  
+## Permission, Acceptance, and Risk Pricing in Multi-Agent Execution
 
 ---
 
 ## Status and Intent
 
-This document presents a collection of **practical observations** drawn from systems where:
+This document provides a **structural account** of authority, legitimacy, and respect in systems where:
 
-* multiple agents act with partial autonomy,
-* decisions affect shared state,
-* actions can trigger defensive or counter-coordination,
-* failure carries political, social, or systemic cost.
+- multiple agents act with partial autonomy,
+- actions affect shared state,
+- miscoordination produces defensive responses,
+- and failure carries political, social, or systemic cost.
 
-It treats **authority**, **legitimacy**, and **respect** not as moral claims or political ideals, but as **operational coordination constraints** that determine *who can act, when, and at what cost*.
+These concepts are treated **neither morally nor ideologically**, but as **operational coordination constraints** that determine:
 
-The perspective is **architectural and descriptive**, not normative or ideological.
+- who can act,
+- which actions are acceptable,
+- and how much coordination cost is incurred when action is taken.
 
----
-
-## What This Document Is Not
-
-This document does **not** attempt to:
-
-* define legitimate power philosophically,
-* argue how authority *should* be distributed,
-* justify governance models,
-* moralize obedience, respect, or dissent,
-* replace legal, ethical, or political theory.
-
-It addresses authority, legitimacy, and respect **only insofar as they shape coordination load, option space, and failure modes**.
+The perspective is **architectural and descriptive**, not normative.
 
 ---
 
-## Intended Use
+## Core Claim (Compressed)
 
-This document is intended to function as:
+Authority, legitimacy, and respect are **distinct coordination constraints** that regulate action under multi-agent pressure.
 
-* a shared vocabulary for diagnosing blocked action,
-* a lens for understanding coordination friction,
-* a bridge between formal power and informal constraint,
-* a way to reason about “why nothing can move” despite apparent capability.
+- **Authority** grants permission.
+- **Legitimacy** determines whether action is accepted without resistance.
+- **Respect** temporarily discounts verification and coordination overhead.
 
-It is **not** a justification for inaction.
-It is a **tool for understanding constraint**.
+Systems fail when these constraints are conflated, substituted for one another, or exhausted without accounting for their different dynamics.
 
 ---
 
 ## Scope and Applicability
 
-These observations apply to systems with **all** of the following:
+This account applies only to systems with:
 
-* multiple agents with overlapping influence,
-* shared resources or shared state,
-* non-trivial cost of miscoordination,
-* partial observability of intent and impact.
+- multiple agents with overlapping influence,
+- shared resources or shared state,
+- partial observability of intent and effect,
+- non-trivial cost of miscoordination.
 
-If a system is:
-
-* single-agent,
-* fully centralized,
-* consequence-free,
-* or mechanically enforced,
-
-then most of what follows does not apply.
+In single-agent, mechanically enforced, or consequence-free systems, these constraints are irrelevant.
 
 ---
 
-## Authority (Operational Definition)
+## Authority (Structural Definition)
 
-In this document, **authority** refers to:
+**Authority** is **explicit permission** to take specific actions or make specific changes.
 
-> formally or structurally granted permission to make specific decisions or changes.
+Authority may be grounded in:
 
-Authority may derive from:
+- role assignment,
+- legal mandate,
+- ownership,
+- hierarchy,
+- contract,
+- protocol.
 
-* role assignment,
-* legal mandate,
-* ownership,
-* hierarchy,
-* contract,
-* protocol.
+Authority answers one question only:
 
-Authority answers the question:
-
-> **Who is allowed to act?**
+> **Who is formally allowed to act?**
 
 Authority is:
 
-* enumerable,
-* assignable,
-* externally visible.
+- enumerable,
+- assignable,
+- externally visible,
+- largely static across short horizons.
 
-Authority constrains *what may be done*, not whether it will be accepted.
+Authority constrains *what may be attempted*, not whether it will be accepted.
 
 ---
 
-## Legitimacy (Operational Definition)
+## Legitimacy (Structural Definition)
 
-In this document, **legitimacy** refers to:
-
-> the expectation that an agent’s actions will be accepted without triggering defensive coordination or resistance.
-
-Legitimacy is granted by others; it is not self-issued.
-
-It answers the question:
-
-> **Who can act without causing the system to push back?**
+**Legitimacy** is the **expectation of acceptance**:  
+the degree to which an agent’s actions are expected to proceed **without triggering defensive coordination**.
 
 Legitimacy is:
 
-* contextual,
-* fragile,
-* path-dependent,
-* often implicit.
+- granted by others,
+- contextual and path-dependent,
+- often implicit,
+- destroyed faster than it is rebuilt.
 
-Legitimacy constrains *what can be done without escalating coordination cost*.
+Legitimacy answers:
+
+> **Who can act without causing the system to push back?**
+
+Legitimacy constrains *what can be done without repricing risk*.
 
 ---
 
-## Respect (Operational Definition)
+## Respect (Structural Definition)
 
-In this document, **respect** refers to:
+**Respect** is a **temporary suspension of verification** applied to an agent whose legitimacy is presumed intact.
 
-> a temporary suspension of verification applied to an agent whose legitimacy is presumed intact.
-
-Respect is not power and is not enforceable.
-
-It answers the question:
+Respect answers:
 
 > **Will others waive coordination safeguards in this instance?**
 
 Respect is:
 
-* situational,
-* revocable,
-* unspoken,
-* non-transferable.
+- situational,
+- unspoken,
+- revocable,
+- non-transferable.
 
-Respect is legitimacy being **spent silently**.
+Respect is **legitimacy being spent silently**.
 
 ---
 
-## Distinct Roles of Authority, Legitimacy, and Respect
+## Separation of Roles
 
-These concepts are frequently conflated.
-They operate at different layers.
+Authority, legitimacy, and respect operate at different layers and cannot substitute for one another.
 
-* Authority without legitimacy → resistance, slowdown, escalation.
-* Legitimacy without authority → informal influence, workaround behavior.
-* Respect without authority → deference without permission.
-* Authority without respect → compliance with high coordination cost.
-* All three aligned → low-friction action.
-* None aligned → paralysis or subversion.
+- Authority without legitimacy → resistance, slowdown, escalation.
+- Legitimacy without authority → informal influence, workaround behavior.
+- Respect without authority → deference without permission.
+- Authority without respect → compliance with high coordination cost.
+- All aligned → low-friction execution.
+- None aligned → paralysis or subversion.
 
-Systems fail when they assume one implies the others.
+Failure occurs when systems assume alignment by default.
 
 ---
 
 ## Legitimacy as a Coordination Budget
 
-Legitimacy behaves like a **finite budget**:
+Legitimacy behaves like a **finite coordination budget**:
 
-* actions consume it,
-* overreach depletes it,
-* recovery is slow and asymmetric.
+- actions spend it,
+- surprises deplete it,
+- overreach exhausts it,
+- recovery is slow and asymmetric.
 
 Agents spend legitimacy when they:
 
-* act unilaterally,
-* violate expectations,
-* surprise stakeholders,
-* expose others to unpriced risk.
+- act unilaterally,
+- expose others to unpriced risk,
+- invalidate assumptions,
+- force responsibility redistribution.
 
-Once legitimacy is depleted, even correct actions become expensive or impossible.
+Once legitimacy is depleted, even correct actions become expensive or infeasible.
 
 ---
 
 ## Respect as a Coordination Discount
 
-Respect functions as a **temporary coordination discount** applied to legitimacy.
+Respect functions as a **temporary discount** applied to legitimacy.
 
 When respect is present:
 
-* justification is abbreviated,
-* verification is deferred,
-* process is bypassed without objection,
-* intent is assumed rather than demonstrated.
+- justification is abbreviated,
+- verification is deferred,
+- process is bypassed without objection,
+- intent is assumed rather than demonstrated.
 
-Respect does not accumulate or store.
-It disappears under stress.
+Respect does not accumulate.
+It evaporates under stress.
 
-When respect vanishes, legitimacy may remain—but must be **actively proven**.
+When respect disappears, legitimacy may remain—but must be **actively demonstrated**.
 
 ---
 
 ## Defensive Coordination as Risk Repricing
 
-When legitimacy or respect is low, other agents respond by:
+When legitimacy or respect weakens, other agents respond by:
 
-* demanding justification,
-* adding review layers,
-* invoking process,
-* escalating oversight,
-* withholding cooperation.
+- demanding justification,
+- adding review layers,
+- invoking process,
+- escalating oversight,
+- withholding cooperation.
 
 This is not necessarily hostility.
 
 It is **risk repricing** in response to perceived exposure.
 
-Loss of respect converts implicit trust into explicit verification.
+Loss of respect converts implicit trust into explicit verification.  
 Loss of legitimacy converts discretion into consensus.
 
 ---
 
-## Why Legitimacy Often Binds Harder Than Authority
+## Why Authority Often Fails to Move Systems
 
 An agent may possess full authority and still be unable to act because:
 
-* the action destabilizes coordination,
-* it triggers political or social backlash,
-* it invalidates others’ assumptions,
-* it forces responsibility redistribution.
+- the action destabilizes coordination,
+- it triggers backlash or counter-coordination,
+- it forces hidden load to surface,
+- it reallocates responsibility without consent.
 
 At that point, **coordination reaction cost exceeds technical cost**.
 
-The binding constraint is not permission, but **acceptability**.
+The binding constraint is not permission, but **acceptability under load**.
 
 ---
 
 ## Temporal Asymmetry
 
-Legitimacy and respect behave asymmetrically over time:
+Authority, legitimacy, and respect evolve differently over time:
 
-* legitimacy accumulates slowly through consistent behavior,
-* respect appears quickly but disappears under pressure,
-* both are destroyed faster than they are rebuilt,
-* both decay when contexts shift.
+- authority is often static or periodically reassigned,
+- legitimacy accumulates slowly and decays quickly,
+- respect appears quickly and disappears instantly under pressure.
 
-Authority, by contrast, is often static or periodically reassigned.
-
-This asymmetry explains why formally powerful agents frequently self-restrict.
+This asymmetry explains why experienced agents self-limit despite formal power.
 
 ---
 
-## Local vs. Global Constraints
+## Locality and Scaling Limits
 
-Neither legitimacy nor respect is uniform.
+Legitimacy and respect do not scale automatically.
 
 An agent may be:
 
-* legitimate locally but not globally,
-* respected by one group and scrutinized by another,
-* empowered at one layer and blocked at another.
+- legitimate locally but not globally,
+- respected in one domain and scrutinized in another,
+- empowered at one layer and blocked at another.
 
-Actions that cross boundaries often fail because **legitimacy and respect do not scale with scope**.
+Actions that cross boundaries often fail because **coordination constraints do not scale with scope**.
 
 ---
 
-## The Substitution Pattern
+## The Substitution Cascade
 
-When legitimacy erodes, systems exhibit a common progression:
+When legitimacy erodes, systems exhibit a predictable sequence:
 
-1. **Respect**
+1. **Respect**  
    Coordination is implicit; intent is assumed.
 
-2. **Process**
+2. **Process**  
    Coordination is formalized; intent must be demonstrated.
 
-3. **Demand**
+3. **Demand**  
    Authority is invoked; compliance replaces acceptance.
 
-This sequence increases safety and auditability at the cost of speed and flexibility.
+Each step increases safety and auditability at the cost of speed and flexibility.
 
 What appears as a tone shift is usually a **risk threshold being crossed**.
 
@@ -283,9 +252,9 @@ Authority can override legitimacy temporarily.
 
 However, doing so:
 
-* consumes remaining respect,
-* increases future enforcement cost,
-* provokes compensatory constraints.
+- consumes remaining respect,
+- increases future enforcement cost,
+- provokes compensatory constraints.
 
 Experienced agents treat authority as **last-resort leverage**, not routine control.
 
@@ -293,93 +262,84 @@ Experienced agents treat authority as **last-resort leverage**, not routine cont
 
 ## Informal Authority and Shadow Legitimacy
 
-In many systems, effective action flows through:
+In practice, coordination often flows through:
 
-* reputational authority,
-* historical credibility,
-* demonstrated competence,
-* perceived alignment with group interest.
+- reputational authority,
+- historical credibility,
+- demonstrated competence,
+- perceived alignment with group interest.
 
-This “shadow” legitimacy often sustains coordination even when formal authority is weak.
+This “shadow legitimacy” sustains execution even when formal authority is weak.
 
 Ignoring it produces brittle reorganizations and symbolic control.
 
 ---
 
-## Failure Modes
+## Structural Failure Modes
 
 Recurring failure patterns include:
 
-* assuming authority guarantees acceptance,
-* mistaking silence for consent,
-* confusing deference with respect,
-* overusing authority to bypass coordination,
-* delegating authority without transferring legitimacy,
-* demanding respect instead of rebuilding legitimacy,
-* moralizing resistance instead of pricing risk.
+- assuming authority guarantees acceptance,
+- mistaking silence for consent,
+- confusing deference with respect,
+- overusing authority to bypass coordination,
+- delegating authority without transferring legitimacy,
+- demanding respect instead of rebuilding legitimacy,
+- moralizing resistance instead of pricing risk.
 
-These failures are **structural**, not personal.
+These are **structural failures**, not personal ones.
 
 ---
 
-## Relationship to Architecture and Option Space
+## Architectural Perspective
 
-From an architectural perspective:
+From an architectural standpoint:
 
-* authority defines *what may be changed*,
-* legitimacy defines *what can be changed without backlash*,
-* respect defines *what can be changed without triggering verification*.
+- authority defines *what may be changed*,
+- legitimacy defines *what can be changed without backlash*,
+- respect defines *what can be changed without triggering verification*.
 
-Architectural judgment therefore includes:
-
-* conserving legitimacy,
-* spending respect sparingly,
-* sequencing actions to rebuild both,
-* avoiding moves that force legitimacy tests prematurely.
-
-This is **option-space management at the social layer**.
+Managing these constraints is **option-space management at the social layer**.
 
 ---
 
 ## Indirect Indicators
 
-Legitimacy and respect cannot be measured directly, but indicators include:
+Legitimacy and respect cannot be measured directly, but early signals include:
 
-* increasing demand for justification,
-* replacement of discretion with process,
-* rising coordination overhead for small changes,
-* expanded visibility or reporting requirements,
-* defensive interpretation of benign actions.
+- increased demand for justification,
+- replacement of discretion with process,
+- rising coordination overhead for small changes,
+- expanded visibility or reporting requirements,
+- defensive interpretation of benign actions.
 
-These signals usually appear **before** outright blockage.
+These signals usually appear **before** overt blockage.
 
 ---
 
 ## Status
 
-This document is intentionally incomplete.
-
-It reflects recurring patterns, not settled theory.
+This document captures recurring patterns, not settled theory.
 
 Its usefulness depends on:
 
-* exposure to real coordination failure,
-* willingness to revise assumptions,
-* resistance to turning it into doctrine.
+- exposure to real coordination failure,
+- willingness to revise assumptions,
+- resistance to moral substitution.
 
-If it feels obvious or comfortable, it is likely missing context.
+If it feels obvious, it is likely incomplete.
 
 ---
 
 ## Closing
 
-Respect is not politeness.
-Legitimacy is not being right.
+Respect is not politeness.  
+Legitimacy is not being right.  
 Authority is not strength.
 
 All three are mechanisms for **containing risk in systems that cannot tolerate constant negotiation**.
 
-Understanding them does not grant control.
+Understanding them does not grant control.  
 It reduces surprise.
 
 That reduction is often the difference between motion and deadlock.
