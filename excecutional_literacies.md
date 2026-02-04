@@ -1,34 +1,30 @@
 # Executional Literacies  
-## A Structural Taxonomy for Reasoning Under Bounded, Irreversible Execution
+## A Structural Taxonomy for Reasoning, Meaning, Evaluation, and Authority Under Bounded, Irreversible Execution
 
 ---
 
 ## Status and Intent
 
-This document defines a set of **executional literacies** required for coherent
-reasoning, coordination, and action in systems that:
+This document defines a set of **executional literacies** required for coherent reasoning, coordination, and action in systems that:
 
 - execute under **bounded resources** (time, energy, attention, bandwidth),
 - produce **irreversible consequences**,
-- operate with **partial observability**,
-- evolve under **environmental drift**,
+- operate under **partial observability**,
+- evolve under **environmental and institutional drift**,
 - and must preserve **viability over time**, not merely achieve local success.
 
 These literacies are **not**:
 
-- moral virtues,
-- intelligence measures,
-- personality traits,
-- motivational states,
-- rhetorical or social skills,
-- indicators of merit or worth.
+- moral virtues or ethical claims,
+- intelligence measures or talent indicators,
+- personality traits or motivational states,
+- social skills, rhetorical ability, or status signals,
+- judgments of worth, merit, or legitimacy.
 
-They are **structural competencies**:  
-the ability to maintain specific distinctions **while execution is underway**
-and constraints are asserting themselves.
+They are **structural competencies**:
+the ability to maintain specific distinctions **while execution is underway**, constraints are binding, and option space is collapsing.
 
-The perspective is **architectural and execution-oriented**, not psychological,
-pedagogical, or normative.
+The perspective throughout is **architectural and execution-oriented**, not psychological, pedagogical, or normative.
 
 ---
 
@@ -36,36 +32,36 @@ pedagogical, or normative.
 
 All claims in this document assume the following invariants:
 
-- **Actions execute**, regardless of intent, belief, or justification.
-- Execution consumes finite capacity and **collapses option space**.
-- Consequences propagate according to **system topology**, not narrative.
+- **Actions execute** regardless of intent, belief, justification, or sincerity.
+- Execution consumes finite capacity and **irreversibly collapses option space**.
+- Consequences propagate according to **system topology**, not narrative framing.
 - Feedback may be delayed, distributed, buffered, displaced, or invisible.
-- All abstractions, models, and metrics **expire under drift**.
+- All abstractions, models, meanings, and metrics **expire under drift**.
 
-Reasoning that ignores these conditions may be internally coherent,  
+Reasoning that ignores these conditions may be internally coherent,
 but it is **not reasoning about executable systems**.
 
 ---
 
 ## The Load-Bearing Execution Loop
 
-All bounded executors—across scales—operate through a minimal loop:
+All bounded executors—human, institutional, or technical—operate through a minimal loop:
 
 **sense → model → act**
 
 This loop is **structural**, not cognitive.
 
-- **Sensing** is bounded by observability, latency, and topology.
+- **Sensing** is bounded by observability, latency, noise, and topology.
 - **Modeling** is unavoidable compression that discards distinctions to remain executable.
-- **Action** is irreversible execution whose consequences propagate beyond interpretation.
+- **Action** is irreversible execution whose effects propagate beyond interpretation.
 
-Models are **not upstream beliefs**.  
+Models are **not upstream beliefs**.
 They are **closures inside the loop** that trade fidelity for executability.
 
-Failure of a model appears not as epistemic error, but as **executional breakdown**.
+Model failure appears not as epistemic error, but as **executional breakdown**.
 
-Executional literacy is the ability to reason correctly about **where the loop is load-bearing**.  
-Model literacy is the ability to recognize **when the compression inside the loop has expired**.
+Executional literacy is the ability to reason correctly about
+**where the loop is load-bearing** and **which compressions are no longer safe**.
 
 ---
 
@@ -83,9 +79,10 @@ A literacy is absent when a distinction:
 - collapses under execution pressure,
 - is acknowledged abstractly but ignored at runtime,
 - is replaced by narrative, intent, or moral explanation,
-- or relies on **non-executable infinities** (of time, information, reversibility, or redesign).
+- or relies on **non-executable infinities**
+  (of time, information, reversibility, interpretation, or redesign).
 
-Executional competence is not recognized by declared belief.  
+Executional competence is not recognized by declared belief.
 It is recognized by **which structural errors no longer occur**.
 
 ---
@@ -132,7 +129,7 @@ In such systems, **reachability replaces existence** as the relevant category.
 ### Definition
 
 **Constraint literacy** is the ability to distinguish
-**non-negotiable constraints** from preferences, tradeoffs, or discomfort.
+**non-negotiable constraints** from preferences, tradeoffs, discomfort, or disagreement.
 
 Constraints are not arguments.
 They are invariants enforced at runtime.
@@ -194,7 +191,8 @@ A claim without a horizon is incomplete.
 what kind of claim is being made,
 and to refuse **executionally invalid frames**.
 
-Frames determine what must be supplied for a claim to guide action.
+Frames determine what must be supplied
+for a claim to guide action.
 
 ---
 
@@ -213,6 +211,45 @@ Frames determine what must be supplied for a claim to guide action.
 - supplying correct information to false premises
 - mistaking refusal to execute as bad faith
 - allowing narrative substitution for structural accounting
+
+---
+
+## Meaning Literacy (Shared Meaning Under Constraint)
+
+### Definition
+
+**Meaning literacy** is the ability to distinguish
+**internal meaning** from **shared meaning-for-coordination**.
+
+Internal meaning may be rich, continuous, and unconstrained.
+Shared meaning-for-coordination exists only when meaning is:
+
+- externally addressable,
+- substitutable across agents,
+- discretized by interfaces,
+- admitted into a protocol,
+- bounded by finite resources,
+- capable of failing with attributable cost.
+
+Meaning that cannot fail cannot coordinate.
+
+---
+
+### Core Distinctions
+
+- internal meaning vs executable meaning
+- interpretation vs protocol admission
+- intent vs structural legibility
+- expressiveness vs substitutability
+
+---
+
+### Failure Modes
+
+- assuming shared understanding without executability
+- relying on reinterpretation to preserve coordination
+- appealing to intent where protocol has cut meaning
+- treating sincerity as a substitute for structure
 
 ---
 
@@ -262,6 +299,45 @@ Remove any one, and coordination pressure relaxes.
 
 ---
 
+## Metrics Literacy (Evaluation Under Constraint)
+
+### Definition
+
+**Metrics literacy** is the ability to distinguish
+**internal judgment** from **shared metrics-for-evaluation**.
+
+A metric becomes real-for-coordination only when it is:
+
+- substitutable across evaluators,
+- executable under a protocol,
+- minimally sufficient for the comparison it claims to make,
+- bounded by finite evaluation resources,
+- capable of failing with visible cost.
+
+Metrics that survive only through reinterpretation
+have failed as shared evaluative artifacts.
+
+---
+
+### Core Distinctions
+
+- judgment vs metric
+- sufficiency vs simplicity
+- comparability vs false equivalence
+- latent flexibility vs inefficiency
+
+---
+
+### Failure Modes
+
+- collapsing heterogeneous systems into a single axis
+- ignoring coordination or control cost
+- treating preserved degrees of freedom as waste
+- assuming universal metrics across constraint regimes
+- externalizing cost to unmeasured domains
+
+---
+
 ## Risk and Uncertainty Literacy
 
 ### Definition
@@ -290,35 +366,57 @@ and some losses dominate the evaluation horizon.
 
 ---
 
-## Governance Literacy
+## Authority, Legitimacy, and Respect Literacy
 
 ### Definition
 
-**Governance literacy** is the ability to reason about
-rules, enforcement, authority, and redesign
-under incomplete foresight and drift.
+**Authority literacy** is the ability to distinguish
+permission, acceptance, and coordination discount
+as separate structural constraints.
 
-Governance is a response to execution,
-not a substitute for it.
+They are not interchangeable.
+
+---
+
+### Structural Roles
+
+- **Authority** — explicit permission to act or change state.
+- **Legitimacy** — expectation of acceptance without defensive coordination.
+- **Respect** — temporary suspension of verification.
 
 ---
 
 ### Core Distinctions
 
-- rules vs implementations
-- compliance vs legitimacy
-- enforcement vs consent
-- reform vs patching
-- closure sufficiency vs symbolic consistency
+- permission vs acceptability
+- enforcement vs coordination cost
+- deference vs trust
+- authority vs redesign authority
 
 ---
 
 ### Failure Modes
 
-- moralizing governance breakdowns
-- treating rule violations as character flaws
-- defending structures past their validity horizon
-- resisting redesign to preserve narrative coherence
+- assuming authority guarantees acceptance
+- mistaking silence for consent
+- confusing deference with respect
+- overusing authority to bypass coordination
+- moralizing resistance instead of pricing risk
+
+---
+
+## Authority Insertion (Structural Pathology)
+
+Authority insertion occurs when an actor asserts
+evaluative or directive control over another executor’s path
+**without invariant specification, horizon declaration,
+executional exposure, or redesign boundary**.
+
+It operates via reinterpretation rather than execution
+and collapses under metric binding.
+
+Authority insertion is not leadership.
+It is **control without exposure**.
 
 ---
 
@@ -330,7 +428,7 @@ not a substitute for it.
 the limits, scope, and failure modes of representations
 used inside executable systems.
 
-All execution requires compression.  
+All execution requires compression.
 All compression eventually fails under drift.
 
 ---
@@ -362,18 +460,20 @@ Lower-layer collapse destabilizes higher layers,
 which then become moralized, performative,
 or narrative-driven.
 
-A typical structural dependency ordering:
+A typical dependency ordering:
 
 1. Executional literacy  
 2. Constraint literacy  
 3. Horizon literacy  
 4. Frame literacy  
-5. Coordination literacy  
-6. Risk literacy  
-7. Governance literacy  
-8. Model literacy (recursive, cross-cutting)
+5. Meaning literacy  
+6. Coordination literacy  
+7. Metrics literacy  
+8. Risk literacy  
+9. Authority literacy  
+10. Model literacy (recursive, cross-cutting)
 
-Model literacy is **meta-level and recursive**:
+Model literacy is meta-level and recursive:
 failure can corrupt lower layers early
 by laundering non-executable assumptions.
 
@@ -389,15 +489,13 @@ They are assessed by:
 - stability of distinctions under pressure,
 - resistance to narrative substitution,
 - willingness to incur **real cost deliberately**,
-- and consistent refusal to rely on
-  **non-executable infinities**
-  (of time, information, reversibility, or redesign).
+- refusal to rely on **non-executable infinities**.
 
 Literacy includes knowing **when not to act**,
 when to refuse ill-posed execution,
 and when redesign is required rather than justification.
 
-Correctness does not guarantee safety.  
+Correctness does not guarantee safety.
 Survival requires structural coherence under load.
 
 ---
