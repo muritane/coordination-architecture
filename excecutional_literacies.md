@@ -1,75 +1,104 @@
 # Executional Literacies  
-## A Structural Taxonomy of Stable, Internalized Distinctions
+## A Structural Taxonomy for Reasoning Under Bounded, Irreversible Execution
 
 ---
 
 ## Status and Intent
 
 This document defines a set of **executional literacies** required for coherent
-reasoning, coordination, and action in systems operating under:
+reasoning, coordination, and action in systems that:
 
-- bounded resources,
-- irreversible execution,
-- partial observability,
-- environmental drift,
-- and non-negotiable constraints.
+- execute under **bounded resources**,
+- produce **irreversible consequences**,
+- operate with **partial observability**,
+- evolve under **environment drift**,
+- and must preserve **viability over time**, not merely achieve local success.
 
 These literacies are **not**:
+
 - moral virtues,
 - intelligence measures,
 - personality traits,
-- rhetorical skills,
-- or indicators of worth.
+- rhetorical or social skills,
+- indicators of merit or worth.
 
 They are **structural competencies**:  
-the ability to maintain specific distinctions *under executional pressure*.
+the ability to maintain specific distinctions **while action is executing** and
+constraints are asserting themselves.
 
 The perspective is **architectural and execution-oriented**, not psychological,
 pedagogical, or normative.
 
 ---
 
-## Core Principle
+## Core Premise: Execution Is Real
 
-A literacy is present when a distinction is:
+All claims in this document assume the following invariants:
 
-- available without prompting,
-- stable under inconvenience or social pressure,
-- action-guiding rather than performative,
-- and violated only at explicit cost.
+- **Actions execute**, regardless of intent or interpretation.
+- Execution consumes finite capacity and collapses option space.
+- Consequences propagate according to **system topology**, not narrative.
+- Feedback may be delayed, distributed, buffered, or partially invisible.
+- Models, metrics, and abstractions **expire under drift**.
 
-A literacy is absent when a distinction:
-- collapses under pressure,
-- is acknowledged abstractly but ignored in action,
-- or is replaced by narrative, argument, or blame.
-
-Expert judgment recognizes literacy not by declared belief,
-but by **which errors no longer occur**.
+Reasoning that ignores these conditions may be internally coherent,  
+but it is **not reasoning about executable systems**.
 
 ---
 
-## Executional Literacy (Foundational)
+## What an Executional Literacy Is
+
+A literacy is present when a distinction is:
+
+- available **without prompting**,
+- stable under inconvenience, uncertainty, or social pressure,
+- **action-guiding** rather than merely interpretable,
+- violated only with **explicitly acknowledged cost**.
+
+A literacy is absent when a distinction:
+
+- collapses under time pressure or coordination stress,
+- is acknowledged abstractly but ignored at execution time,
+- is replaced by narrative, intent, or moral explanation.
+
+Executional competence is not recognized by declared belief.  
+It is recognized by **which structural errors no longer occur**.
+
+---
+
+## Foundational Executional Literacy
 
 ### Definition
 
 **Executional literacy** is the ability to reason correctly about action
-under bounded, irreversible execution in effectively infinite spaces.
+in systems where:
 
-It is the base layer on which all other literacies depend.
+- execution is **irreversible**,
+- resources are **finite**,
+- state spaces are **effectively infinite relative to traversal capacity**,
+- and halting occurs before global evaluation is possible.
+
+In such systems, **reachability replaces existence** as the relevant category.
+
+---
 
 ### Core Distinctions
 
-- existence vs reachability
-- evaluation vs traversal
-- optimization vs discovery
-- halting vs completion
-- reversibility in principle vs irreversibility in practice
+- existence vs **reachability before halting**
+- evaluation vs **traversal under constraint**
+- optimization vs **discovery**
+- local success vs **horizon-constrained viability**
+- reversibility in theory vs **irreversibility in execution**
+
+---
 
 ### Failure Modes
 
 - treating open-world systems as closed-world optimization problems
 - demanding global optimality where traversal dominates
 - interpreting non-discovery as non-existence or failure
+- assuming equal access implies equal reachability
+- assigning responsibility based on outcomes alone
 
 ---
 
@@ -78,20 +107,28 @@ It is the base layer on which all other literacies depend.
 ### Definition
 
 **Constraint literacy** is the ability to distinguish
-non-negotiable constraints from preferences, tradeoffs, or inconveniences.
+**non-negotiable constraints** from preferences, tradeoffs, or discomfort.
+
+Constraints are not arguments.
+They are invariants enforced at runtime.
+
+---
 
 ### Core Distinctions
 
 - hard constraints vs soft tradeoffs
 - infeasible vs undesirable
-- scarcity vs discomfort
-- non-negotiable limits vs costly choices
+- scarcity vs inconvenience
+- bounded capacity vs lack of motivation
+
+---
 
 ### Failure Modes
 
 - attempting to negotiate with constraints
 - moralizing infeasibility
-- treating limits as motivation problems
+- treating limits as attitude problems
+- escalating pressure where redesign is required
 
 ---
 
@@ -100,20 +137,27 @@ non-negotiable constraints from preferences, tradeoffs, or inconveniences.
 ### Definition
 
 **Horizon literacy** is the ability to reason about
-time-indexed validity under drift and irreversible execution.
+time-indexed validity under accumulation, irreversibility, and drift.
+
+A claim that lacks a horizon is incomplete.
+
+---
 
 ### Core Distinctions
 
 - short-horizon sufficiency vs long-horizon viability
-- stability vs drift
+- transient stability vs persistent invariants
 - expiration vs failure
 - redesign vs justification
+
+---
 
 ### Failure Modes
 
 - horizon collapse (“works now → works indefinitely”)
-- horizon laundering via tradition, identity, or legitimacy
-- punishing redesign as inconsistency or betrayal
+- defending expired solutions due to identity or precedent
+- punishing redesign as inconsistency
+- optimizing short-term metrics while degrading long-term survivability
 
 ---
 
@@ -121,21 +165,29 @@ time-indexed validity under drift and irreversible execution.
 
 ### Definition
 
-**Frame literacy** is the ability to identify, enter, exit,
-or invalidate interaction frames deliberately.
+**Frame literacy** is the ability to recognize
+what kind of claim is being made,
+and to refuse executionally invalid frames.
+
+Frames determine **what must be supplied** for a claim to guide action.
+
+---
 
 ### Core Distinctions
 
-- frame vs argument
-- premise vs position
-- compliance vs invalidation
-- refusal vs premise collapse
+- execution claims vs interpretive claims
+- premises vs positions
+- argument vs executability
+- compliance vs premise invalidation
+
+---
 
 ### Failure Modes
 
-- arguing inside invalid frames
+- arguing inside ill-typed frames
 - supplying correct information to false premises
-- interpreting premise invalidation as bad faith
+- mistaking refusal to execute as bad faith
+- allowing narrative substitution for structural accounting
 
 ---
 
@@ -144,19 +196,43 @@ or invalidate interaction frames deliberately.
 ### Definition
 
 **Coordination literacy** is the ability to reason about
-multi-agent systems under shared constraints and misaligned incentives.
+multi-agent systems where independent actions
+impose costs, risks, or constraints on one another.
+
+Coordination is not chosen.
+It is **imposed by executional conditions**.
+
+---
+
+### Structural Preconditions for Coordination
+
+Coordination pressure emerges only when **all** of the following hold:
+
+- multiple independent agents,
+- shared or coupled state,
+- partial observability,
+- bounded resources,
+- irreversible action,
+- non-trivial failure cost.
+
+Remove any one, and coordination pressure relaxes.
+
+---
 
 ### Core Distinctions
 
 - shared goals vs shared incentives
 - local rationality vs global failure
-- authority vs responsibility
 - alignment vs coupling
+- authority vs responsibility
+
+---
 
 ### Failure Modes
 
-- attributing coordination failure to intent
+- attributing coordination failure to intent or character
 - assuming cooperation without mechanisms
+- moralizing misalignment
 - optimizing individuals at the expense of system viability
 
 ---
@@ -165,21 +241,27 @@ multi-agent systems under shared constraints and misaligned incentives.
 
 ### Definition
 
-**Risk literacy** is the ability to reason about uncertainty,
-variance, and irreversibility in outcomes.
+**Risk literacy** is the ability to reason about uncertainty
+where outcomes are variable, feedback is delayed,
+and some losses dominate the evaluation horizon.
+
+---
 
 ### Core Distinctions
 
 - expected value vs ruin
 - mean outcomes vs tail risk
-- recoverable vs terminal loss
-- known uncertainty vs unknown structure
+- recoverable loss vs terminal loss
+- uncertainty vs ignorance
+
+---
 
 ### Failure Modes
 
 - optimizing averages while ignoring extinction
 - dismissing tail events as noise
-- confusing uncertainty with ignorance
+- relying on probabilistic correction without accounting for accumulation
+- mistaking lack of feedback for lack of risk
 
 ---
 
@@ -188,7 +270,13 @@ variance, and irreversibility in outcomes.
 ### Definition
 
 **Governance literacy** is the ability to reason about
-rules, enforcement, and redesign under incomplete foresight.
+rules, enforcement, authority, and redesign
+under incomplete foresight and drifting conditions.
+
+Governance is a response to execution,
+not a substitute for it.
+
+---
 
 ### Core Distinctions
 
@@ -196,12 +284,16 @@ rules, enforcement, and redesign under incomplete foresight.
 - compliance vs legitimacy
 - enforcement vs consent
 - reform vs patching
+- closure sufficiency vs symbolic consistency
+
+---
 
 ### Failure Modes
 
 - moralizing governance breakdowns
 - treating rule violations as character flaws
-- resisting redesign to preserve symbolic consistency
+- defending structures past their validity horizon
+- resisting redesign to preserve narrative coherence
 
 ---
 
@@ -212,20 +304,26 @@ rules, enforcement, and redesign under incomplete foresight.
 **Model literacy** is the ability to reason about
 the limits, scope, and failure modes of representations.
 
-It is a reflective literacy that operates on all others.
+All executable systems rely on compression.
+All compression eventually fails under drift.
+
+---
 
 ### Core Distinctions
 
 - model vs world
-- scope vs generality
+- internal coherence vs external validity
 - signal vs artifact
 - critique vs hostility
 
+---
+
 ### Failure Modes
 
-- defending models past their validity horizon
-- confusing abstraction failure with personal attack
-- mistaking internal coherence for external truth
+- defending models past their validity envelope
+- mistaking abstraction failure for personal attack
+- confusing interpretability with executability
+- assuming correctness persists without revalidation
 
 ---
 
@@ -233,19 +331,19 @@ It is a reflective literacy that operates on all others.
 
 These literacies are not independent.
 
-A typical dependency ordering is:
+Lower-layer collapse destabilizes higher layers,
+which then become moralized, performative, or narrative-driven.
 
-1. Executional literacy
-2. Constraint literacy
-3. Horizon literacy
-4. Frame literacy
-5. Coordination literacy
-6. Risk literacy
-7. Governance literacy
-8. Model literacy
+A typical dependency ordering:
 
-Absence at lower layers destabilizes higher ones,
-which then become performative or moralized.
+1. Executional literacy  
+2. Constraint literacy  
+3. Horizon literacy  
+4. Frame literacy  
+5. Coordination literacy  
+6. Risk literacy  
+7. Governance literacy  
+8. Model literacy  
 
 ---
 
@@ -254,13 +352,14 @@ which then become performative or moralized.
 Executional literacies are not assessed by outcomes alone.
 
 They are assessed by:
-- error avoidance,
-- distinction stability,
-- resistance to collapse under pressure,
-- and the ability to incur cost deliberately.
 
-Correctness does not guarantee safety.
-Literacy includes knowing when not to exercise it.
+- avoidance of structural error,
+- stability of distinctions under pressure,
+- resistance to narrative substitution,
+- and the ability to **incur cost deliberately**.
+
+Correctness does not guarantee safety.  
+Literacy includes knowing **when not to act**.
 
 ---
 
@@ -270,8 +369,11 @@ These literacies do not make systems fair, optimal, or humane.
 
 They make systems **legible to themselves under execution**.
 
-As environments grow more coupled, dynamic, and constrained,
+As environments grow more coupled, constrained, and unstable,
 these literacies become less optional.
 
-Systems that lack them do not fail immediately.
-They fail late, expensively, and with misattributed blame.
+Systems that lack them rarely fail immediately.
+They fail **late**, **expensively**, and
+with blame assigned where architecture was missing.
+
+Only what executes persists.
