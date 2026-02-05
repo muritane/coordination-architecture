@@ -3,7 +3,7 @@
 
 ---
 
-## Status and Intent
+## Status, Scope, and Jurisdiction
 
 This document defines a set of **executional literacies**:  
 structural competencies required to reason, coordinate, and act coherently in systems where:
@@ -12,43 +12,71 @@ structural competencies required to reason, coordinate, and act coherently in sy
 - resources are **finite**,
 - observability is **partial**,
 - environments **drift**,
-- and halting occurs **before global evaluation is possible**.
+- and systems halt **before global evaluation or optimization is possible**.
 
-These literacies are **not**:
-- moral virtues,
-- intelligence measures,
-- personality traits,
-- motivational states,
-- cultural markers,
-- or indicators of merit, worth, or legitimacy.
+These literacies define a **reasoning admissibility envelope**.
 
-They describe **structural failure surfaces**, not internal mental states.
-
-They are **execution-facing distinctions**:  
-the ability to preserve specific constraints and categories **while execution is underway** and option space is collapsing.
-
-The perspective is **architectural and execution-oriented**, not psychological, pedagogical, or normative.
+They specify the conditions under which reasoning can safely guide execution,  
+not which beliefs are correct, desirable, or justified.
 
 ---
 
-## The Executional Regime (Not a Literacy)
+### What This Is Not
 
-Before any literacy is possible, a system must be correctly situated in the **executional regime** it inhabits.
+Executional literacies are **not**:
+
+- moral virtues or ethical claims,
+- intelligence measures or cognitive styles,
+- personality traits or motivational states,
+- cultural markers or status indicators,
+- assessments of merit, worth, or legitimacy.
+
+They do not describe *why* agents think as they do,  
+nor how they *should* think in general.
+
+They describe **where reasoning fails structurally**  
+when embedded in irreversible, resource-bounded execution.
+
+---
+
+### What This Is
+
+Executional literacies are **execution-facing distinctions**.
+
+They concern the ability to:
+
+- preserve necessary constraints,
+- maintain category integrity,
+- and refuse non-executable assumptions
+
+**while execution is underway** and option space is collapsing.
+
+The perspective is **architectural**, not psychological.  
+The unit of analysis is **executional validity**, not internal mental state.
+
+---
+
+## The Executional Regime (Precondition, Not a Literacy)
+
+Before any executional literacy is possible,  
+a system must already be situated within an **executional regime**.
 
 This regime is defined by the following invariants:
 
-- Actions **execute regardless of intent or justification**.
-- Execution **irreversibly collapses option space**.
-- Resources (time, energy, attention, bandwidth) are **bounded**.
-- Feedback may be delayed, displaced, partial, or invisible.
+- Actions execute **regardless of intent or justification**.
+- Each action **irreversibly collapses option space**.
+- Time, energy, attention, bandwidth, and trust are **bounded**.
+- Feedback may be delayed, displaced, partial, or absent.
 - Models, abstractions, meanings, and metrics **expire under drift**.
-- Systems halt **before** full evaluation or global optimization is possible.
+- Systems halt **before** full evaluation or global optimality is achievable.
 
-This regime is **not a skill** and **not optional**.  
-It is the world in which execution occurs.
+This regime is **not optional** and **not skill-dependent**.  
+It is the environment in which execution occurs.
 
-Reasoning that ignores these conditions may be internally coherent,  
-but it is **non-isomorphic to executable systems**.
+Reasoning that ignores these invariants may be internally coherent,  
+but is **non-isomorphic to executable systems**.
+
+Such reasoning cannot safely guide action.
 
 ---
 
@@ -64,7 +92,8 @@ This loop is **structural**, not cognitive.
 - **Modeling** exists only because raw data is not executable.
 - **Action** is the reason sensing and modeling exist at all.
 
-Remove the pressure to act, and sensing and modeling collapse into optional interpretation  
+Absent pressure to act,  
+sensing and modeling collapse into optional interpretation  
 and lose any obligation to preserve executional validity.
 
 Models are not upstream beliefs.  
@@ -82,14 +111,16 @@ but as **executional breakdown**.
 **Foundational executional literacy** is the ability to keep the **executional regime load-bearing while reasoning**.
 
 It is the capacity to reason **as if execution were real**,  
-even when that invalidates preferred narratives, explanations, or optimizations.
+even when doing so invalidates preferred narratives, explanations, optimizations, or moral appeals.
 
-This literacy does **not** optimize outcomes.  
+This literacy does not optimize outcomes.  
 It prevents reasoning that is **invalid under execution**.
+
+All other executional literacies depend on it.
 
 ---
 
-### Core Distinctions Maintained
+### Core Distinctions Preserved
 
 - reachability vs existence  
 - irreversibility vs theoretical reversibility  
@@ -100,7 +131,7 @@ It prevents reasoning that is **invalid under execution**.
 
 ---
 
-### Strategy-Level Comparison
+### Strategy-Level Contrast
 
 - **Optimizing as if rollback exists**  
   vs  
@@ -108,19 +139,19 @@ It prevents reasoning that is **invalid under execution**.
 
 ---
 
-### Characteristic Failure Question
+### Diagnostic Failure Question
 
 > **“Am I reasoning as if time, reversibility, or access were infinite?”**
 
-If the answer is yes, foundational executional literacy is absent.
+If yes, foundational executional literacy is absent.
 
-All other literacies depend on this one.  
-If it collapses, higher distinctions become narrative-driven, moralized, or performative.
+When this literacy collapses,  
+all higher distinctions degrade into narrative, moralization, or performance.
 
 ---
 
 ## Derived Executional Literacies  
-*(Each protects a specific failure surface inside the loop)*
+*(Each protects a specific structural failure surface inside the loop)*
 
 ---
 
@@ -128,12 +159,13 @@ If it collapses, higher distinctions become narrative-driven, moralized, or perf
 
 ### Definition
 
-**Constraint literacy** is the ability to distinguish **non-negotiable constraints** from preferences, tradeoffs, discomfort, or disagreement.
+**Constraint literacy** is the ability to distinguish **non-negotiable constraints**  
+from preferences, tradeoffs, discomfort, or disagreement.
 
 Constraints are not arguments.  
 They are invariants enforced at runtime.
 
-They do not become softer because many agents dislike them.
+They do not soften under protest, consensus, or moral appeal.
 
 ---
 
@@ -146,7 +178,7 @@ They do not become softer because many agents dislike them.
 
 ---
 
-### Strategy-Level Comparison
+### Strategy-Level Contrast
 
 - **Reallocating within limits**  
   vs  
@@ -154,9 +186,9 @@ They do not become softer because many agents dislike them.
 
 ---
 
-### Characteristic Failure Question
+### Diagnostic Failure Question
 
-> **“Am I treating an invariant as if it could be negotiated, overridden, or morally appealed to?”**
+> **“Am I treating an invariant as if it could be negotiated, overridden, or appealed away?”**
 
 ---
 
@@ -164,9 +196,10 @@ They do not become softer because many agents dislike them.
 
 ### Definition
 
-**Horizon literacy** is the ability to reason about **time-indexed validity** under accumulation, irreversibility, and drift.
+**Horizon literacy** is the ability to reason about **time-indexed validity**  
+under accumulation, irreversibility, and drift.
 
-A claim without a horizon is incomplete.
+A claim without an explicit horizon is incomplete.
 
 ---
 
@@ -176,11 +209,11 @@ A claim without a horizon is incomplete.
 - transient stability vs persistent invariants  
 - expiration vs failure  
 - redesign vs justification  
-- local horizon optimization vs system horizon collapse  
+- local optimization vs system horizon collapse  
 
 ---
 
-### Strategy-Level Comparison
+### Strategy-Level Contrast
 
 - **Maximizing near-term performance**  
   vs  
@@ -188,7 +221,7 @@ A claim without a horizon is incomplete.
 
 ---
 
-### Characteristic Failure Question
+### Diagnostic Failure Question
 
 > **“Am I defending something that has expired simply because it once worked?”**
 
@@ -201,7 +234,11 @@ A claim without a horizon is incomplete.
 **Frame literacy** is the ability to recognize **what kind of claim is being made**,  
 and to refuse **executionally invalid frames**.
 
-Frames determine what must be supplied for a claim to guide action.
+Frames determine what must be supplied  
+for a claim to guide action.
+
+Some frames cannot guide action at all,  
+even if their internal arguments are correct.
 
 ---
 
@@ -214,17 +251,17 @@ Frames determine what must be supplied for a claim to guide action.
 
 ---
 
-### Strategy-Level Comparison
+### Strategy-Level Contrast
 
 - **Winning an argument inside a frame**  
   vs  
-- **Rejecting a frame that cannot guide action**
+- **Rejecting a frame that cannot produce executable action**
 
 ---
 
-### Characteristic Failure Question
+### Diagnostic Failure Question
 
-> **“Am I answering a question that cannot produce executable action even if answered correctly?”**
+> **“Am I answering a question that cannot guide execution even if answered correctly?”**
 
 ---
 
@@ -233,7 +270,8 @@ Frames determine what must be supplied for a claim to guide action.
 
 ### Definition
 
-**Meaning literacy** is the ability to distinguish **internal meaning** from **shared meaning-for-coordination**.
+**Meaning literacy** is the ability to distinguish **internal meaning**  
+from **shared meaning-for-coordination**.
 
 Shared meaning exists only when it is:
 
@@ -260,7 +298,7 @@ but **coordination sufficiency under cost**.
 
 ---
 
-### Strategy-Level Comparison
+### Strategy-Level Contrast
 
 - **Expressing understanding**  
   vs  
@@ -268,7 +306,7 @@ but **coordination sufficiency under cost**.
 
 ---
 
-### Characteristic Failure Question
+### Diagnostic Failure Question
 
 > **“Am I assuming shared understanding where no executable protocol exists?”**
 
@@ -309,7 +347,7 @@ Coordination pressure exists only when **all** of the following hold:
 
 ---
 
-### Strategy-Level Comparison
+### Strategy-Level Contrast
 
 - **Optimizing locally correct actions**  
   vs  
@@ -317,7 +355,7 @@ Coordination pressure exists only when **all** of the following hold:
 
 ---
 
-### Characteristic Failure Question
+### Diagnostic Failure Question
 
 > **“Am I attributing a structural coordination failure to individual intent or character?”**
 
@@ -328,7 +366,8 @@ Coordination pressure exists only when **all** of the following hold:
 
 ### Definition
 
-**Metrics literacy** is the ability to distinguish **internal judgment** from **shared metrics-for-evaluation**.
+**Metrics literacy** is the ability to distinguish **internal judgment**  
+from **shared metrics-for-evaluation**.
 
 A metric becomes real-for-coordination only when it is:
 
@@ -350,7 +389,7 @@ A metric becomes real-for-coordination only when it is:
 
 ---
 
-### Strategy-Level Comparison
+### Strategy-Level Contrast
 
 - **Measuring what is easy to count**  
   vs  
@@ -358,7 +397,7 @@ A metric becomes real-for-coordination only when it is:
 
 ---
 
-### Characteristic Failure Question
+### Diagnostic Failure Question
 
 > **“Is this metric collapsing important distinctions or externalizing costs I am not pricing?”**
 
@@ -368,7 +407,7 @@ A metric becomes real-for-coordination only when it is:
 
 ### Definition
 
-**Risk literacy** is the ability to reason about uncertainty where:
+**Risk literacy** is the ability to reason under uncertainty where:
 
 - outcomes vary,
 - feedback is delayed,
@@ -387,7 +426,7 @@ Some losses invalidate the evaluation frame itself.
 
 ---
 
-### Strategy-Level Comparison
+### Strategy-Level Contrast
 
 - **Optimizing average outcomes**  
   vs  
@@ -395,7 +434,7 @@ Some losses invalidate the evaluation frame itself.
 
 ---
 
-### Characteristic Failure Question
+### Diagnostic Failure Question
 
 > **“Am I optimizing averages in a system where some failures are unrecoverable?”**
 
@@ -431,7 +470,7 @@ Respect decays unless renewed by executional reliability.
 
 ---
 
-### Strategy-Level Comparison
+### Strategy-Level Contrast
 
 - **Acting because it is allowed**  
   vs  
@@ -439,7 +478,7 @@ Respect decays unless renewed by executional reliability.
 
 ---
 
-### Characteristic Failure Question
+### Diagnostic Failure Question
 
 > **“Am I substituting permission or status for exposure to executional consequences?”**
 
@@ -449,12 +488,14 @@ Respect decays unless renewed by executional reliability.
 
 ### Definition
 
-**Model literacy** is the ability to reason about the **scope, limits, and failure modes of representations** used inside executable systems.
+**Model literacy** is the ability to reason about the **scope, limits, and failure modes of representations**  
+used inside executable systems.
 
 All execution requires compression.  
-All compression eventually fails under drift.
+All compression fails under drift.
 
-Model failure is often laundered by translating **narrative comfort into apparent coherence**.
+Model failure is often laundered  
+by translating narrative comfort into apparent coherence.
 
 ---
 
@@ -468,7 +509,7 @@ Model failure is often laundered by translating **narrative comfort into apparen
 
 ---
 
-### Strategy-Level Comparison
+### Strategy-Level Contrast
 
 - **Defending a model’s elegance**  
   vs  
@@ -476,7 +517,7 @@ Model failure is often laundered by translating **narrative comfort into apparen
 
 ---
 
-### Characteristic Failure Question
+### Diagnostic Failure Question
 
 > **“Am I defending a model past the point where it can safely guide action?”**
 
@@ -484,12 +525,12 @@ Model failure is often laundered by translating **narrative comfort into apparen
 
 ## Dependency Structure
 
-These literacies are **not independent**.
+Executional literacies are **not independent**.
 
 Lower-layer collapse destabilizes higher layers,  
 which then become narrative-driven, moralized, or performative.
 
-A typical dependency ordering:
+A typical collapse sequence under pressure:
 
 1. Foundational executional literacy  
 2. Constraint literacy  
@@ -504,6 +545,9 @@ A typical dependency ordering:
 
 Model literacy is meta-level and recursive:  
 failure can corrupt lower layers early by laundering non-executable assumptions.
+
+This ordering reflects **common failure patterns**,  
+not logical necessity.
 
 ---
 
