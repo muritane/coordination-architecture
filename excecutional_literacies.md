@@ -19,7 +19,10 @@ These literacies are **not**:
 - intelligence measures,
 - personality traits,
 - motivational states,
-- or indicators of merit or legitimacy.
+- cultural markers,
+- or indicators of merit, worth, or legitimacy.
+
+They describe **structural failure surfaces**, not internal mental states.
 
 They are **execution-facing distinctions**:  
 the ability to preserve specific constraints and categories **while execution is underway** and option space is collapsing.
@@ -45,7 +48,7 @@ This regime is **not a skill** and **not optional**.
 It is the world in which execution occurs.
 
 Reasoning that ignores these conditions may be internally coherent,  
-but it is **not reasoning about executable systems**.
+but it is **non-isomorphic to executable systems**.
 
 ---
 
@@ -61,7 +64,8 @@ This loop is **structural**, not cognitive.
 - **Modeling** exists only because raw data is not executable.
 - **Action** is the reason sensing and modeling exist at all.
 
-Remove the pressure to act, and sensing and modeling collapse into optional interpretation.
+Remove the pressure to act, and sensing and modeling collapse into optional interpretation  
+and lose any obligation to preserve executional validity.
 
 Models are not upstream beliefs.  
 They are **compressions inside the loop** that trade fidelity for executability.
@@ -77,7 +81,8 @@ but as **executional breakdown**.
 
 **Foundational executional literacy** is the ability to keep the **executional regime load-bearing while reasoning**.
 
-It is the capacity to reason **as if execution were real**, even when that invalidates preferred narratives, explanations, or optimizations.
+It is the capacity to reason **as if execution were real**,  
+even when that invalidates preferred narratives, explanations, or optimizations.
 
 This literacy does **not** optimize outcomes.  
 It prevents reasoning that is **invalid under execution**.
@@ -86,11 +91,20 @@ It prevents reasoning that is **invalid under execution**.
 
 ### Core Distinctions Maintained
 
-- reachability vs existence
-- irreversibility vs theoretical reversibility
-- traversal vs evaluation
-- bounded redesign vs infinite correction
-- halting vs global optimality
+- reachability vs existence  
+- irreversibility vs theoretical reversibility  
+- traversal vs evaluation  
+- bounded redesign vs infinite correction  
+- halting vs global optimality  
+- simulation vs execution  
+
+---
+
+### Strategy-Level Comparison
+
+- **Optimizing as if rollback exists**  
+  vs  
+- **Designing as if every step commits state**
 
 ---
 
@@ -101,7 +115,7 @@ It prevents reasoning that is **invalid under execution**.
 If the answer is yes, foundational executional literacy is absent.
 
 All other literacies depend on this one.  
-If it collapses, higher distinctions become moralized, narrative-driven, or performative.
+If it collapses, higher distinctions become narrative-driven, moralized, or performative.
 
 ---
 
@@ -119,14 +133,24 @@ If it collapses, higher distinctions become moralized, narrative-driven, or perf
 Constraints are not arguments.  
 They are invariants enforced at runtime.
 
+They do not become softer because many agents dislike them.
+
 ---
 
 ### Core Distinctions
 
-- hard constraints vs soft tradeoffs
-- infeasible vs undesirable
-- scarcity vs inconvenience
-- bounded capacity vs lack of motivation
+- hard constraints vs soft tradeoffs  
+- infeasible vs undesirable  
+- scarcity vs inconvenience  
+- bounded capacity vs lack of motivation  
+
+---
+
+### Strategy-Level Comparison
+
+- **Reallocating within limits**  
+  vs  
+- **Arguing with limits**
 
 ---
 
@@ -148,10 +172,19 @@ A claim without a horizon is incomplete.
 
 ### Core Distinctions
 
-- short-horizon sufficiency vs long-horizon viability
-- transient stability vs persistent invariants
-- expiration vs failure
-- redesign vs justification
+- short-horizon sufficiency vs long-horizon viability  
+- transient stability vs persistent invariants  
+- expiration vs failure  
+- redesign vs justification  
+- local horizon optimization vs system horizon collapse  
+
+---
+
+### Strategy-Level Comparison
+
+- **Maximizing near-term performance**  
+  vs  
+- **Preserving long-term executability**
 
 ---
 
@@ -165,7 +198,8 @@ A claim without a horizon is incomplete.
 
 ### Definition
 
-**Frame literacy** is the ability to recognize **what kind of claim is being made**, and to refuse **executionally invalid frames**.
+**Frame literacy** is the ability to recognize **what kind of claim is being made**,  
+and to refuse **executionally invalid frames**.
 
 Frames determine what must be supplied for a claim to guide action.
 
@@ -173,10 +207,18 @@ Frames determine what must be supplied for a claim to guide action.
 
 ### Core Distinctions
 
-- execution claims vs interpretive claims
-- premises vs positions
-- argument vs executability
-- compliance vs premise invalidation
+- execution claims vs interpretive claims  
+- premises vs positions  
+- argument vs executability  
+- compliance vs premise invalidation  
+
+---
+
+### Strategy-Level Comparison
+
+- **Winning an argument inside a frame**  
+  vs  
+- **Rejecting a frame that cannot guide action**
 
 ---
 
@@ -204,14 +246,25 @@ Shared meaning exists only when it is:
 
 Meaning that cannot fail cannot coordinate.
 
+Meaning here is not semantic richness,  
+but **coordination sufficiency under cost**.
+
 ---
 
 ### Core Distinctions
 
-- internal meaning vs executable meaning
-- interpretation vs protocol admission
-- intent vs structural legibility
-- expressiveness vs substitutability
+- internal meaning vs executable meaning  
+- interpretation vs protocol admission  
+- intent vs structural legibility  
+- expressiveness vs substitutability  
+
+---
+
+### Strategy-Level Comparison
+
+- **Expressing understanding**  
+  vs  
+- **Making understanding executable by others**
 
 ---
 
@@ -225,7 +278,8 @@ Meaning that cannot fail cannot coordinate.
 
 ### Definition
 
-**Coordination literacy** is the ability to reason about **multi-agent execution** where independent actions impose costs, risks, or constraints on one another.
+**Coordination literacy** is the ability to reason about **multi-agent execution**  
+where independent actions impose costs, risks, or constraints on one another.
 
 Coordination is not chosen.  
 It is **imposed by executional conditions**.
@@ -241,16 +295,25 @@ Coordination pressure exists only when **all** of the following hold:
 - partial observability,
 - bounded resources,
 - irreversible action,
-- non-trivial failure cost.
+- non-trivial failure cost,
+- irreversible externalities.
 
 ---
 
 ### Core Distinctions
 
-- shared goals vs shared incentives
-- local rationality vs global failure
-- alignment vs coupling
-- authority vs responsibility
+- shared goals vs shared incentives  
+- local rationality vs global failure  
+- alignment vs coupling  
+- authority vs responsibility  
+
+---
+
+### Strategy-Level Comparison
+
+- **Optimizing locally correct actions**  
+  vs  
+- **Preventing globally irreversible failure**
 
 ---
 
@@ -279,10 +342,19 @@ A metric becomes real-for-coordination only when it is:
 
 ### Core Distinctions
 
-- judgment vs metric
-- sufficiency vs simplicity
-- comparability vs false equivalence
-- latent flexibility vs inefficiency
+- judgment vs metric  
+- sufficiency vs simplicity  
+- comparability vs false equivalence  
+- legibility vs manipulability  
+- latent flexibility vs inefficiency  
+
+---
+
+### Strategy-Level Comparison
+
+- **Measuring what is easy to count**  
+  vs  
+- **Measuring what is necessary to preserve execution**
 
 ---
 
@@ -302,14 +374,24 @@ A metric becomes real-for-coordination only when it is:
 - feedback is delayed,
 - and some losses dominate the evaluation horizon.
 
+Some losses invalidate the evaluation frame itself.
+
 ---
 
 ### Core Distinctions
 
-- expected value vs ruin
-- mean outcomes vs tail risk
-- recoverable loss vs terminal loss
-- uncertainty vs ignorance
+- expected value vs ruin  
+- mean outcomes vs tail risk  
+- recoverable loss vs terminal loss  
+- uncertainty vs ignorance  
+
+---
+
+### Strategy-Level Comparison
+
+- **Optimizing average outcomes**  
+  vs  
+- **Avoiding unrecoverable states**
 
 ---
 
@@ -323,7 +405,8 @@ A metric becomes real-for-coordination only when it is:
 
 ### Definition
 
-**Authority literacy** is the ability to distinguish **permission**, **acceptance**, and **coordination discount** as separate structural constraints.
+**Authority literacy** is the ability to distinguish **permission**, **acceptance**,  
+and **coordination discount** as separate structural constraints.
 
 They are not interchangeable.
 
@@ -331,18 +414,28 @@ They are not interchangeable.
 
 ### Structural Roles
 
-- **Authority** — explicit permission to act or change state.
-- **Legitimacy** — expectation of acceptance without defensive coordination.
+- **Authority** — explicit permission to act or change state.  
+- **Legitimacy** — expectation of acceptance without defensive coordination.  
 - **Respect** — temporary suspension of verification.
+
+Respect decays unless renewed by executional reliability.
 
 ---
 
 ### Core Distinctions
 
-- permission vs acceptability
-- enforcement vs coordination cost
-- deference vs trust
-- authority vs redesign authority
+- permission vs acceptability  
+- enforcement vs coordination cost  
+- deference vs trust  
+- authority vs redesign authority  
+
+---
+
+### Strategy-Level Comparison
+
+- **Acting because it is allowed**  
+  vs  
+- **Acting without triggering defensive coordination**
 
 ---
 
@@ -361,15 +454,25 @@ They are not interchangeable.
 All execution requires compression.  
 All compression eventually fails under drift.
 
+Model failure is often laundered by translating **narrative comfort into apparent coherence**.
+
 ---
 
 ### Core Distinctions
 
-- model vs world
-- internal coherence vs external validity
-- signal vs artifact
-- critique vs hostility
-- interpretability vs executability
+- model vs world  
+- internal coherence vs external validity  
+- signal vs artifact  
+- critique vs hostility  
+- interpretability vs executability  
+
+---
+
+### Strategy-Level Comparison
+
+- **Defending a model’s elegance**  
+  vs  
+- **Retiring a model before it causes irreversible error**
 
 ---
 
@@ -383,7 +486,8 @@ All compression eventually fails under drift.
 
 These literacies are **not independent**.
 
-Lower-layer collapse destabilizes higher layers, which then become narrative-driven, moralized, or performative.
+Lower-layer collapse destabilizes higher layers,  
+which then become narrative-driven, moralized, or performative.
 
 A typical dependency ordering:
 
@@ -416,6 +520,7 @@ They are assessed by:
 - refusal to rely on **non-executable infinities**.
 
 Literacy includes knowing:
+
 - when not to act,
 - when to refuse ill-posed execution,
 - and when redesign is required rather than justification.
@@ -428,7 +533,7 @@ Executional literacies do not make systems fair, optimal, or humane.
 
 They make systems **legible to themselves under execution**.
 
-As environments grow more coupled, constrained, and unstable,
+As environments grow more coupled, constrained, and unstable,  
 these literacies become less optional.
 
 Systems that lack them rarely fail immediately.  
