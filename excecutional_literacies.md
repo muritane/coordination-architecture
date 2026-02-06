@@ -709,6 +709,82 @@ by laundering non-executable assumptions into apparent coherence.
 
 ---
 
+## Derived Executional Invariant
+
+### Load-Bearing Assumption Under Coordination Pressure
+
+---
+
+### Status
+
+This section specifies a **fundamental executional invariant**.
+
+It is **not** an additional literacy.
+It is a **mandatory structural prior** that becomes unavoidable once multiple executional literacies are simultaneously preserved.
+
+---
+
+### The Invariant
+
+> **Assume any executing node is load-bearing until proven otherwise.**
+
+This is not an ethical claim.
+It is a **risk-dominant executional prior** required for system survivability under coordination pressure.
+
+---
+
+### Why the Invariant Exists
+
+Under irreversible execution and partial observability:
+
+* **False removal errors dominate tolerated inefficiency errors**.
+* Keeping a non-critical node creates bounded drag.
+* Removing a critical-but-unseen node can cause cascading failure.
+
+Because coupling is non-local and inspection is bounded, systems must default to conservatism.
+
+---
+
+### Literacy Contributions
+
+The invariant emerges only when **multiple literacies are active at once**:
+
+* Foundational executional literacy → irreversibility is real.
+* Constraint literacy → exhaustive analysis is infeasible.
+* Coordination literacy → removal is never local.
+* Risk literacy → tail failure dominates averages.
+* Model literacy → unseen dependencies are normal.
+
+No single literacy produces the invariant.
+Their **intersection** forces it.
+
+---
+
+### Why This Is Not a Separate Literacy
+
+Literacies are **capabilities of distinction**.
+This invariant is **not a distinction**.
+
+It is a **forced assumption** required once distinctions are preserved.
+
+It functions as an **axiom**, not a skill.
+
+---
+
+### Consequences of Violation
+
+Systems that ignore this invariant tend to:
+
+* prune aggressively,
+* overfit local metrics,
+* underestimate hidden coupling,
+* centralize brittle authority,
+* experience sudden, cascading collapse.
+
+Failure is usually attributed post-hoc to people or intent rather than missing architecture.
+
+---
+
 ## Assessment Principle
 
 Executional literacies are **not assessed by outcomes alone**.
