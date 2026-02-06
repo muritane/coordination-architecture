@@ -178,6 +178,18 @@ All other executional literacies depend on it.
 
 ---
 
+**This gives you:**
+- recognition of irreversibility,
+- awareness that every action commits state,
+- resistance to simulation-only reasoning.
+
+**It forces the recognition that:**
+- redesign assumptions do not apply mid-execution,
+- justification cannot substitute for feasibility,
+- reasoning must preserve executability, not elegance.
+
+---
+
 ### Diagnostic Failure Question
 
 > **“Am I reasoning as if time, reversibility, or access were infinite?”**
@@ -225,6 +237,18 @@ They do not soften under protest, consensus, or moral appeal.
 
 ---
 
+**This gives you:**
+- awareness of finite resources and hard limits,
+- separation of infeasible from merely undesirable,
+- resistance to arguing with invariants.
+
+**It forces the recognition that:**
+- some options never existed,
+- motivation cannot override capacity,
+- negotiation does not move hard bounds.
+
+---
+
 ### Diagnostic Failure Question
 
 > **“Am I treating an invariant as if it could be negotiated away?”**
@@ -257,6 +281,18 @@ A claim without an explicit horizon is incomplete.
 - **Maximizing near-term performance**  
   vs  
 - **Preserving long-term executability**
+
+---
+
+**This gives you:**
+- distinction between transient and persistent viability,
+- awareness of expiration vs failure,
+- sensitivity to accumulation effects.
+
+**It forces the recognition that:**
+- past success does not guarantee future executability,
+- delay can convert solvable problems into terminal ones,
+- timing is a structural variable, not a detail.
 
 ---
 
@@ -293,6 +329,18 @@ yet structurally incapable of guiding execution.
 - **Winning inside a frame**  
   vs  
 - **Rejecting a non-executable frame**
+
+---
+
+**This gives you:**
+- separation of execution claims from interpretive claims,
+- resistance to frame traps,
+- ability to refuse ill-posed questions.
+
+**It forces the recognition that:**
+- winning an argument can still fail execution,
+- some disagreements are category errors,
+- compliance with a frame may be more dangerous than refusal.
 
 ---
 
@@ -337,6 +385,18 @@ Meaning that cannot fail cannot coordinate.
 - **Expressing understanding**  
   vs  
 - **Making understanding executable by others**
+
+---
+
+**This gives you:**
+- awareness of protocol-bound meaning,
+- distinction between expression and executability,
+- sensitivity to interface requirements.
+
+**It forces the recognition that:**
+- understanding does not imply coordination,
+- intent is not externally legible by default,
+- shared meaning must be discretized and substitutable.
 
 ---
 
@@ -390,6 +450,18 @@ Coordination pressure exists only when **all** of the following hold:
 
 ---
 
+**This gives you:**
+- awareness of non-local effects,
+- distinction between local rationality and global failure,
+- sensitivity to coupling density.
+
+**It forces the recognition that:**
+- actions propagate beyond intent,
+- blame is often misassigned,
+- safe local optimization may still destroy the system.
+
+---
+
 ### Diagnostic Failure Question
 
 > **“Am I blaming intent where structure is load-bearing?”**
@@ -432,6 +504,18 @@ A metric becomes real-for-coordination only when it is:
 
 ---
 
+**This gives you:**
+- awareness of metric-induced distortion,
+- distinction between comparability and accuracy,
+- resistance to proxy collapse.
+
+**It forces the recognition that:**
+- what is easy to measure is rarely what preserves execution,
+- metrics externalize costs when misaligned,
+- evaluation itself consumes scarce resources.
+
+---
+
 ### Diagnostic Failure Question
 
 > **“Is this metric collapsing distinctions or externalizing cost?”**
@@ -466,6 +550,18 @@ Some losses invalidate the evaluation frame itself.
 - **Optimizing averages**  
   vs  
 - **Avoiding unrecoverable states**
+
+---
+
+**This gives you:**
+- dominance of tail risk over averages,
+- separation of ruin from recoverable loss,
+- awareness of asymmetric error costs.
+
+**It forces the recognition that:**
+- false positives and false negatives are not equivalent,
+- expected value is unsafe near constraints,
+- survival precedes optimization.
 
 ---
 
@@ -515,6 +611,18 @@ All map to **access control**, not virtue.
 
 ---
 
+**This gives you:**
+- clarity about who can write shared state,
+- awareness of trust as delegated structure,
+- resistance to status substitution.
+
+**It forces the recognition that:**
+- permission does not prevent backlash,
+- legitimacy decays under failure,
+- respect is cached trust, not entitlement.
+
+---
+
 ### Diagnostic Failure Question
 
 > **“Am I substituting permission or status for exposure to consequences?”**
@@ -552,6 +660,18 @@ by narrative comfort and internal coherence.
 - **Defending elegance**  
   vs  
 - **Retiring a model before it causes irreversible error**
+
+---
+
+**This gives you:**
+- awareness of compression tradeoffs,
+- sensitivity to drift and abstraction leakage,
+- resistance to model overcommitment.
+
+**It forces the recognition that:**
+- no model is safe indefinitely,
+- coherence does not guarantee validity,
+- retiring a model can be less costly than defending it.
 
 ---
 
