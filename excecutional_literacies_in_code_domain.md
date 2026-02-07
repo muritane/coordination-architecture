@@ -1,50 +1,117 @@
 # Executional Literacies — Code Domain Instantiation
+## Structural Alphabets for Reasoning Under Bounded, Irreversible Software Execution
 
-## Scope and Jurisdiction
+---
+
+## Purpose
 
 This document is a **domain instantiation** of *Executional Literacies* for the **software/code execution domain**.
 
-It does **not** redefine the literacies.
-It maps them explicitly onto:
+It does not redefine the literacies.  
+It maps them onto software reality by making explicit:
 
-* what **executes**,
-* what **flows into execution**, and
-* what is **structurally inert** at runtime.
+- what **executes**,
+- what **constrains execution**,
+- what **gates execution** (what reaches runtime),
+- and what is **structurally inert at runtime**.
 
-The governing distinction throughout is:
+The governing partition throughout is:
 
-> **Executable vs Non‑Executable Artifacts**
+> **Runtime-Load-Bearing vs Runtime-Inert**
 
-This is not about usefulness in general. It is about **load‑bearing participation in execution**.
-
----
-
-## Core Executional Regime (Code)
-
-A code execution environment satisfies the executional regime if:
-
-* Code executes deterministically or probabilistically regardless of author intent
-* State mutates irreversibly (memory, disk, network, external systems)
-* Resources are finite (time, memory, IO, bandwidth)
-* Failures may be partial, delayed, or silent
-* Rollback is bounded, costly, or unavailable
-* Execution halts before global optimality can be proven
-
-Any reasoning that ignores these facts may be coherent but is **non‑isomorphic to runtime behavior**.
+“Runtime-inert” does not mean “useless.”  
+It means **it does not directly participate in, constrain, or gate execution**.
 
 ---
 
-## Load‑Bearing Execution Loop (Code)
+## Scope and Jurisdiction
 
-```
-input → computation → side effects
-```
+This instantiation applies when software exists in an **executional regime**:
 
-* **Input**: data, signals, user actions, network messages
-* **Computation**: executable instructions, control flow, algorithms
-* **Side effects**: memory mutation, IO, persistence, external calls
+- code runs regardless of author intent,
+- state mutates (memory/disk/network/external systems),
+- resources are finite (CPU, memory, IO, bandwidth, money),
+- failures can be partial, delayed, silent, or cascading,
+- rollback is bounded, costly, or unavailable,
+- environments drift (dependencies, traffic, data, infra, attacker behavior),
+- systems halt before global correctness/optimality is proven.
 
-Only artifacts that **participate in this loop** are execution‑relevant.
+Reasoning that ignores these invariants may be coherent but is **non-isomorphic** to runtime behavior.
+
+---
+
+## Definitions (Stabilized for Code)
+
+- **Runtime-load-bearing artifact**: participates in, constrains, or gates execution.
+  - Examples: executable code, configuration that affects behavior, schemas, ACLs, deploy gates, tests that fail the pipeline.
+- **Runtime-inert artifact**: does not directly affect runtime behavior.
+  - Examples: comments, most prose documentation, intent statements without enforcement.
+- **Executional validity (code)**: whether reasoning remains correct when compiled into:
+  - actual runtime constraints,
+  - real failure modes,
+  - and real deployment/ops coupling.
+
+---
+
+## Quick Map (Code)
+### Literacies and Their Software Failure Surfaces
+
+- **Foundational**: guards against reasoning as if rollback/retries are free and production is a simulator.
+- **Constraint**: guards against ignoring complexity/resource ceilings and runtime contracts.
+- **Horizon**: guards against drift/accumulation (leaks, queues, logs, dependency decay).
+- **Frame**: guards against “winning” style/architecture debates that don’t survive runtime.
+- **Meaning**: guards against “shared understanding” without interfaces/schemas/tests.
+- **Coordination**: guards against multi-author shared state failures (merge/deploy, coupling, externalities).
+- **Metrics**: guards against proxy collapse (optimizing dashboards while users suffer).
+- **Risk**: guards against tail failures (data corruption, security incidents, cascading outages).
+- **Access Control**: guards against confusing status/seniority with actual gating (permissions, credentials, approvals).
+- **Representation**: guards against misusing models (complexity, concurrency, capacity) past their regime.
+
+---
+
+## The Execution Loop (Code)
+
+A minimal execution loop in software:
+
+**input → computation → side effects**
+
+- **Input**: requests, events, messages, user actions, files, clocks, network, entropy sources.
+- **Computation**: control flow, algorithms, scheduling, concurrency, resource allocation.
+- **Side effects**: memory mutation, IO, persistence, external calls, billing, queue publishes, cache invalidation.
+
+Only artifacts that participate in or constrain this loop are runtime-load-bearing.
+
+---
+
+## Execution Surfaces
+
+Software execution couples to multiple surfaces; “it runs” is not one thing.
+
+### 1) Runtime Surface (Production)
+- the process, container, VM, serverless runtime
+- memory/CPU/IO scheduling
+- network behavior, retries, timeouts
+
+### 2) Persistence Surface
+- databases, object stores, caches, filesystems
+- schema/constraints/indexing
+- migration and backfill behavior
+
+### 3) Integration Surface
+- upstream/downstream services
+- API contracts, rate limits, auth, compatibility
+
+### 4) Deployment Surface (Gating)
+- CI/CD pipelines, build steps, tests
+- feature flags, canaries, progressive delivery
+- approval gates, environment promotion
+
+### 5) Security Surface (Gating + Runtime)
+- secrets, credentials, ACLs, IAM roles
+- supply chain dependencies
+- audit logs and incident response
+
+Executional validity must survive **all** relevant surfaces.
 
 ---
 
@@ -52,216 +119,402 @@ Only artifacts that **participate in this loop** are execution‑relevant.
 
 ### Definition
 
-The ability to reason about software **as if runtime is real**, even when this invalidates:
+The capacity to reason about software **as if production runtime is real**—even when this invalidates:
 
-* elegant abstractions
-* explanatory narratives
-* authorial intent
-* design purity
+- elegant abstractions,
+- design purity,
+- authorial intent,
+- local reasoning divorced from ops reality.
 
-### Preserved Distinctions
+It prevents **non-executable reasoning** from governing changes that will run.
 
-* compiles vs does not compile
-* executes vs annotates
-* state mutation vs description
-* rollback illusion vs commit reality
-* simulation vs production runtime
+### Core Alphabet (Distinctions Preserved)
 
-### Non‑Executable (Out of Scope)
+- **compiles/builds** vs **does not**
+- **executes** vs **annotates**
+- **side effects** vs **descriptions**
+- **bounded rollback** vs **rollback illusion**
+- **staging/simulation** vs **production**
+- **local correctness** vs **system correctness under coupling**
 
-* comments asserting importance
-* comments asserting authority
-* comments asserting intent
-* README claims unreflected in code
+### Failure Signature
 
-These may influence humans, but **they do not run**.
+Reasoning that assumes invisible rollback or free retries, such as:
 
----
+- “We can revert if it breaks” (while data/schema side effects persist)
+- “We’ll just retry” (while retries amplify load or duplicate effects)
+- “It’s fine; tests passed” (while production differs in scale, latency, data shape)
+- “It worked on my machine” (environment non-isomorphism)
 
-## Constraint Literacy (Code)
+### Diagnostic Question
 
-### Executable Constraints
-
-* time complexity (e.g. **O(n)** vs **O(n²)**)
-* space complexity
-* stack depth limits
-* memory ceilings
-* rate limits
-* API contracts enforced at runtime
-
-### Non‑Executable Substitutes
-
-* "should be fast"
-* "don’t use this in production"
-* "this won’t be called often"
-
-Runtime enforces constraints. Comments do not.
+> *Am I reasoning as if production is a simulator with infinite retries, perfect observability, and cheap rollback?*
 
 ---
 
-## Horizon Literacy (Code)
+## 1) Constraint Literacy (Code)
 
-### Executable Horizons
+### Definition
 
-* algorithmic scaling behavior
-* memory growth over time
-* log accumulation
-* data drift
-* dependency version decay
+The ability to distinguish **runtime constraints** (enforced) from preferences and intentions.
 
-### Non‑Executable Horizons
+Constraints are invariants: runtime enforces them without negotiation.
 
-* "future refactor"
-* "temporary workaround" (without enforcement)
-* "will fix later"
+### Runtime-Load-Bearing Constraints
 
-A claim without a time horizon is incomplete.
+- time/space complexity and scaling regimes
+- memory ceilings, GC pressure, allocator behavior
+- CPU saturation, IO wait, bandwidth ceilings
+- concurrency limits, queue depth, thread pools
+- rate limits and quota enforcement
+- API contracts enforced at runtime (schemas, validation, auth)
+- timeout budgets and retry policies
 
----
+### Runtime-Inert Substitutes
 
-## Frame Literacy (Code)
+- “should be fast”
+- “don’t call this often”
+- “won’t happen in production”
+- “we’ll optimize later” (without gates/budgets)
 
-### Execution‑Capable Frames
+### Failure Signature
 
-* performance analysis
-* safety analysis
-* correctness under input variance
-* failure‑mode analysis
+- Designs that require the system not to reach real scale.
+- “Optimization” that never touches the bottleneck.
+- Breaking runtime contracts while preserving narrative correctness.
 
-### Non‑Executing Frames
+### Diagnostic Question
 
-* stylistic purity
-* moral ownership ("don’t touch my code")
-* narrative justification
-
-A correct argument in a non‑executing frame still fails at runtime.
+> *Am I treating an enforced constraint as if it were a negotiable preference?*
 
 ---
 
-## Meaning Literacy (Code)
+## 2) Horizon Literacy (Code)
 
-### Shared Meaning (Executable)
+### Definition
 
-* function signatures
-* type systems
-* interfaces
-* schemas
-* protocols
-* tests that fail
+The ability to reason about **time-indexed validity** under accumulation and drift.
 
-### Internal Meaning (Non‑Executable)
+A claim without a horizon (“safe now” vs “safe at scale over time”) is incomplete.
 
-* informal intent descriptions
-* implicit conventions
-* tribal knowledge
+### Executional Horizons (Load-Bearing)
 
-Meaning that cannot fail cannot coordinate.
+- algorithmic scaling as input grows
+- memory growth over time (leaks, caches, fragmentation)
+- log/trace accumulation and storage costs
+- queue/backpressure behavior under spikes
+- dependency version drift and deprecation
+- data shape drift (new fields, nulls, distributions)
+- infra drift (autoscaling, instance types, kernel/runtime changes)
 
----
+### Runtime-Inert Horizons
 
-## Coordination Literacy (Code)
+- “temporary workaround” (without expiry enforcement)
+- “future refactor”
+- “we’ll fix it next sprint”
 
-### Executable Coordination Mechanisms
+### Failure Signature
 
-* version control rules
-* CI/CD pipelines
-* automated tests
-* access permissions
-* deployment gates
+- “Temporary” code ossifies; the horizon was never enforced.
+- Slow leaks and creep failures that appear weeks later.
+- A change is correct at t=0 and wrong at t=90 days.
 
-### Non‑Executable Coordination Claims
+### Diagnostic Question
 
-* "everyone knows"
-* "please be careful"
-* "this is obvious"
-
-Coordination is imposed by shared state, not goodwill.
+> *What is the validity horizon of this change, and what will drift or accumulate past it?*
 
 ---
 
-## Metrics Literacy (Code)
+## 3) Frame Literacy (Code)
 
-### Runtime‑Real Metrics
+### Definition
 
-* latency
-* throughput
-* memory usage
-* error rates
-* saturation
+A **frame** maps claims to actions.  
+Frame literacy is the ability to choose frames that remain **execution-capable** at runtime.
 
-### Non‑Executing Metrics
+### Execution-Capable Frames
 
-* aesthetic cleanliness
-* perceived elegance
-* author confidence
+- performance and capacity analysis
+- failure-mode and effects analysis (FMEA)
+- safety/correctness under input variance
+- concurrency and memory-model reasoning
+- observability and operability analysis
 
-Metrics that collapse distinctions externalize cost.
+### Non-Executing Frames (Often Useful, Not Runtime-Decisive)
 
----
+- style purity and aesthetic cleanliness
+- “ownership” narratives (“don’t touch my code”)
+- intent justifications disconnected from constraints
 
-## Risk and Uncertainty Literacy (Code)
+### Failure Signature
 
-### Execution‑Relevant Risk
+- Winning architecture debates while shipping regressions.
+- Mistaking readability arguments for correctness/operability.
+- Treating elegance as a substitute for failure analysis.
 
-* crashes
-* data corruption
-* security vulnerabilities
-* cascading failures
+### Diagnostic Question
 
-### Non‑Executing Risk Talk
-
-* "unlikely"
-* "hasn’t happened yet"
-* "probably safe"
-
-Some failures invalidate the system, not just the result.
+> *If I’m “right” inside this frame, does that still produce code that survives production execution?*
 
 ---
 
-## Authority Literacy (Code)
+## 4) Meaning Literacy (Code)
+### Shared Meaning-for-Coordination
 
-### Executable Authority
+### Definition
 
-* merge permissions
-* deployment rights
-* runtime credentials
-* production access
+Meaning in software coordinates only when it is **externally addressable** and **failure-capable**.
 
-### Non‑Executable Authority
+In execution-coupled software, shared meaning exists when it is expressed as:
 
-* seniority claims
-* authorship pride
-* social intimidation
+- interfaces and type contracts,
+- schemas and protocol definitions,
+- invariants enforced by code,
+- tests that fail,
+- tools that block or gate execution.
 
-Authority that does not gate execution is commentary.
+### Runtime-Load-Bearing Shared Meaning
+
+- function signatures, types, effect annotations (where enforced)
+- schemas (DB, JSON, protobuf), migrations
+- API contracts, versioning rules
+- tests, linters, static analysis that block merges/releases
+- feature flag semantics and rollout rules
+
+### Runtime-Inert Internal Meaning
+
+- informal prose intent
+- “tribal knowledge”
+- conventions without enforcement
+- comments asserting meaning without checks
+
+### Failure Signature
+
+- “Everyone knows how this works” until a new contributor breaks it.
+- “It’s obvious” until the interface changes and consumers silently misinterpret.
+- Production incidents caused by assumptions not encoded as contracts.
+
+### Diagnostic Question
+
+> *Where does this meaning live in an interface, schema, or test that can fail and stop unsafe execution?*
 
 ---
 
-## Model Literacy (Code)
+## 5) Coordination Literacy (Code)
 
-### Executable Models
+### Definition
 
-* complexity models
-* memory models
-* concurrency models
-* failure models
+The ability to reason about **multi-author execution** under shared state and externalities.
 
-### Model Failure
+Coordination is imposed by shared repositories, shared deploy pipelines, shared production, and shared on-call reality.
 
-All models compress.
-All compression fails under drift.
+### Load-Bearing Coordination Mechanisms
 
-Defending a model past its execution horizon causes latent failure.
+- version control workflows (branch protection, required reviews)
+- CI/CD pipelines, quality gates
+- automated tests, integration tests, contract tests
+- deployment strategies (canary, blue/green, progressive delivery)
+- incident protocols, runbooks, SLO/SLA practices
+
+### Runtime-Inert Coordination Claims
+
+- “be careful”
+- “don’t break prod”
+- “everyone knows the rules”
+- “please remember to…”
+
+### Failure Signature
+
+- Coordination relies on memory and good intentions.
+- Merge conflicts and deploy collisions become production outages.
+- Local wins produce global failures due to coupling.
+
+### Diagnostic Question
+
+> *What mechanism prevents the bad version from shipping when people are tired, rushed, or unaware?*
 
 ---
 
-## Summary Invariant (Code Domain)
+## 6) Metrics Literacy (Code)
+### Measurement Under Load and Incentives
 
-> **Only what executes—or constrains execution—can govern system behavior.**
+### Definition
+
+Metrics literacy is the ability to distinguish:
+
+- metrics as **instruments that allocate attention and incentives**,
+- from metrics as **truth**.
+
+Metrics are load-bearing when they are used to gate or steer action. Misalignment externalizes cost.
+
+### Runtime-Real Metrics
+
+- latency, tail latency (p95/p99), jitter
+- throughput, saturation, queue depth
+- memory usage, GC time, error rates
+- availability, success rate, burn rate, SLO error budget
+- cost metrics (per request, per tenant), resource efficiency
+
+### Failure Signature
+
+- Dashboard green while users suffer (wrong slices, wrong percentiles).
+- Metric improves because behavior changed, not because system improved.
+- Cost pushed outside the measured boundary (e.g., downstream pain).
+
+### Diagnostic Question
+
+> *Is this metric collapsing distinctions, incentivizing gaming, or externalizing cost to an unmeasured surface?*
+
+---
+
+## 7) Risk & Uncertainty Literacy (Code)
+
+### Definition
+
+The ability to reason under uncertainty where some failure modes are **ruinous**—they invalidate the evaluation frame rather than merely degrading performance.
+
+### Execution-Relevant Tail Risks
+
+- data corruption and irrecoverable writes
+- security vulnerabilities and credential compromise
+- cascading failures and retry storms
+- partial outages with silent wrongness
+- inconsistent states across services (split-brain, idempotency failure)
+
+### Failure Signature
+
+- “Unlikely” is treated as “acceptable” despite catastrophic impact.
+- Rare concurrency bugs shipped without containment.
+- Safety properties assumed without proving or gating them.
+
+### Diagnostic Question
+
+> *What are the tail failures here, and which ones are terminal (data loss, security breach, systemic outage)?*
+
+---
+
+## 8) Access Control Literacy (Code)
+### Gating, Credentials, and Real Authority
+
+### Definition
+
+Access control literacy distinguishes:
+
+- **permission** (what credentials allow),
+- **legitimacy** (what process accepts without enforcement),
+- **coordination discount** (trust/latency tax imposed on actions).
+
+In software, “authority” is load-bearing only when it **gates** execution or access to shared state.
+
+### Runtime-Load-Bearing Authority
+
+- merge permissions, branch protection
+- deploy rights and environment promotion
+- runtime credentials (IAM roles, secrets, service accounts)
+- database permissions and key management
+- feature flag control and kill-switch access
+
+### Runtime-Inert Authority
+
+- seniority claims
+- authorship pride
+- social intimidation
+- “this is my subsystem” without gating power
+
+### Failure Signature
+
+- A high-status person can’t actually stop unsafe deploys (no gate).
+- A low-status account can exfiltrate secrets (bad IAM).
+- “Approval” exists socially but not technically.
+
+### Diagnostic Question
+
+> *What actually gates the action (merge, deploy, credential use), and who bears consequences when it goes wrong?*
+
+---
+
+## 9) Representation Literacy (Code)
+### Compression, Scope, and Drift in Technical Models
+
+### Definition
+
+Software engineering relies on representations (models) that compress reality: complexity models, memory models, concurrency models, capacity plans, threat models.
+
+Representation literacy is the ability to use these compressions within their regime—and to detect when drift breaks them.
+
+### Load-Bearing Representations
+
+- big-O and scaling models (with constants and practical ceilings)
+- memory and allocation models
+- concurrency and happens-before models
+- reliability models (timeouts, retries, circuit breakers)
+- threat models and trust boundaries
+- capacity and queuing models
+
+### Failure Signature
+
+- Defending a model beyond its regime (e.g., big-O ignores IO or constant factors dominate).
+- Applying single-node reasoning to distributed systems.
+- Treating test environment performance as production truth.
+
+### Diagnostic Question
+
+> *What does this model compress away, and under what conditions will that hidden mass dominate execution?*
+
+---
+
+## Dependency Structure (Code)
+
+These literacies are not independent.  
+In high-coupling software environments, a typical cascade (not universal):
+
+1. Foundational collapses (production treated as simulator)
+2. Constraint collapses (runtime ceilings ignored)
+3. Horizon collapses (drift/accumulation ignored)
+4. Frame collapses (style debates replace runtime reasoning)
+5. Meaning collapses (assumptions not encoded)
+6. Coordination collapses (process relies on goodwill)
+7. Metrics collapses (proxy dominates experience)
+8. Risk collapses (tail failures dismissed)
+9. Access control collapses (status replaces gating)
+10. Representation collapses (models treated as sovereign)
+
+---
+
+## Derived Invariant (Code) — Not a Literacy
+
+> **Only what executes, constrains execution, or gates execution can govern runtime behavior.**
 
 Everything else is annotation.
 
-Annotations may be useful.
-They are not load‑bearing.
+Annotations can be valuable for humans, but they are not runtime-load-bearing unless they are coupled to enforcement (tests, gates, contracts, tooling).
 
-Execution ignores commentary.
+---
+
+## Assessment Principle (Code)
+
+Executional literacies in software are assessed by:
+
+- avoidance of structural failure modes (not just passing tests),
+- stability of distinctions under incident pressure,
+- refusal to ship reasoning that depends on rollback illusion,
+- deliberate, bounded cost to preserve invariants (gates, idempotency, containment),
+- resistance to narrative substitution (“should,” “unlikely,” “everyone knows”).
+
+---
+
+## Closing
+
+Software does not care what the author meant.
+
+Runtime executes:
+
+- the code,
+- the constraints,
+- the gates,
+- the drift,
+- and the failure modes.
+
+Executional literacies make systems **legible to themselves under execution** by forcing reasoning to remain isomorphic to runtime.
+
+Only what survives production depletion persists.
