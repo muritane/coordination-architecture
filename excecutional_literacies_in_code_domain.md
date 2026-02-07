@@ -43,13 +43,14 @@ Reasoning that ignores these invariants may be coherent but is **non-isomorphic*
 ## Definitions (Stabilized for Code)
 
 - **Runtime-load-bearing artifact**: participates in, constrains, or gates execution.
-  - Examples: executable code, configuration that affects behavior, schemas, ACLs, deploy gates, tests that fail the pipeline.
+  - Examples: executable code, configuration that affects behavior, schemas, ACLs/IAM, deploy gates, tests that fail the pipeline, feature-flag semantics.
 - **Runtime-inert artifact**: does not directly affect runtime behavior.
-  - Examples: comments, most prose documentation, intent statements without enforcement.
+  - Examples: comments, most prose documentation, intent statements without enforcement, style guidelines without gates.
 - **Executional validity (code)**: whether reasoning remains correct when compiled into:
   - actual runtime constraints,
   - real failure modes,
-  - and real deployment/ops coupling.
+  - real deployment/ops coupling,
+  - and adversarial pressure where applicable.
 
 ---
 
@@ -59,13 +60,17 @@ Reasoning that ignores these invariants may be coherent but is **non-isomorphic*
 - **Foundational**: guards against reasoning as if rollback/retries are free and production is a simulator.
 - **Constraint**: guards against ignoring complexity/resource ceilings and runtime contracts.
 - **Horizon**: guards against drift/accumulation (leaks, queues, logs, dependency decay).
-- **Frame**: guards against “winning” style/architecture debates that don’t survive runtime.
-- **Meaning**: guards against “shared understanding” without interfaces/schemas/tests.
-- **Coordination**: guards against multi-author shared state failures (merge/deploy, coupling, externalities).
+- **Frame**: guards against “winning” design debates that don’t survive runtime.
+- **Meaning**: guards against “shared understanding” without interfaces/schemas/tests that can fail.
+- **Coordination**: guards against multi-author shared state failures (merge/deploy coupling, externalities).
 - **Metrics**: guards against proxy collapse (optimizing dashboards while users suffer).
 - **Risk**: guards against tail failures (data corruption, security incidents, cascading outages).
 - **Access Control**: guards against confusing status/seniority with actual gating (permissions, credentials, approvals).
-- **Representation**: guards against misusing models (complexity, concurrency, capacity) past their regime.
+- **Forbearance**: guards against mistaking unexercised paths / low load / delayed detection for safety.
+- **Consequence Topology**: guards against propagation blindness across degrading execution nodes (including humans).
+- **Liveness & Orchestration**: guards against deadlock/livelock/starvation and over-constrained execution spaces under contention and jitter.
+- **Adversarial Dynamics**: guards against hostile optimization through interfaces and trust boundaries.
+- **Representation**: guards against misusing models (complexity, concurrency, capacity, threat) past their regime.
 
 ---
 
@@ -88,28 +93,29 @@ Only artifacts that participate in or constrain this loop are runtime-load-beari
 Software execution couples to multiple surfaces; “it runs” is not one thing.
 
 ### 1) Runtime Surface (Production)
-- the process, container, VM, serverless runtime
-- memory/CPU/IO scheduling
-- network behavior, retries, timeouts
+- the process/container/VM/serverless runtime
+- memory/CPU/IO scheduling and contention
+- network behavior, retries, timeouts, partial failures
 
 ### 2) Persistence Surface
 - databases, object stores, caches, filesystems
 - schema/constraints/indexing
-- migration and backfill behavior
+- migrations, backfills, irreversible writes
 
 ### 3) Integration Surface
 - upstream/downstream services
 - API contracts, rate limits, auth, compatibility
+- dependency behavior and failure propagation
 
 ### 4) Deployment Surface (Gating)
 - CI/CD pipelines, build steps, tests
 - feature flags, canaries, progressive delivery
-- approval gates, environment promotion
+- approvals, environment promotion, change management
 
 ### 5) Security Surface (Gating + Runtime)
 - secrets, credentials, ACLs, IAM roles
 - supply chain dependencies
-- audit logs and incident response
+- audit logs, detection, incident response paths
 
 Executional validity must survive **all** relevant surfaces.
 
@@ -130,7 +136,7 @@ It prevents **non-executable reasoning** from governing changes that will run.
 
 ### Core Alphabet (Distinctions Preserved)
 
-- **compiles/builds** vs **does not**
+- **builds/compiles** vs **does not**
 - **executes** vs **annotates**
 - **side effects** vs **descriptions**
 - **bounded rollback** vs **rollback illusion**
@@ -143,8 +149,8 @@ Reasoning that assumes invisible rollback or free retries, such as:
 
 - “We can revert if it breaks” (while data/schema side effects persist)
 - “We’ll just retry” (while retries amplify load or duplicate effects)
-- “It’s fine; tests passed” (while production differs in scale, latency, data shape)
-- “It worked on my machine” (environment non-isomorphism)
+- “Tests passed” treated as sufficient proof (while production differs in scale/data/latency)
+- “Worked on my machine” (environment non-isomorphism)
 
 ### Diagnostic Question
 
@@ -162,20 +168,21 @@ Constraints are invariants: runtime enforces them without negotiation.
 
 ### Runtime-Load-Bearing Constraints
 
-- time/space complexity and scaling regimes
+- time/space complexity and scaling regimes (with real constants)
 - memory ceilings, GC pressure, allocator behavior
 - CPU saturation, IO wait, bandwidth ceilings
 - concurrency limits, queue depth, thread pools
 - rate limits and quota enforcement
 - API contracts enforced at runtime (schemas, validation, auth)
 - timeout budgets and retry policies
+- persistence constraints (schema, uniqueness, foreign keys, write amplification)
 
 ### Runtime-Inert Substitutes
 
 - “should be fast”
 - “don’t call this often”
 - “won’t happen in production”
-- “we’ll optimize later” (without gates/budgets)
+- “we’ll optimize later” (without budgets/gates)
 
 ### Failure Signature
 
@@ -206,12 +213,13 @@ A claim without a horizon (“safe now” vs “safe at scale over time”) is i
 - dependency version drift and deprecation
 - data shape drift (new fields, nulls, distributions)
 - infra drift (autoscaling, instance types, kernel/runtime changes)
+- security drift (new exploits, changing threat actor behavior)
 
 ### Runtime-Inert Horizons
 
 - “temporary workaround” (without expiry enforcement)
 - “future refactor”
-- “we’ll fix it next sprint”
+- “we’ll fix it next sprint” (without gates)
 
 ### Failure Signature
 
@@ -239,6 +247,7 @@ Frame literacy is the ability to choose frames that remain **execution-capable**
 - safety/correctness under input variance
 - concurrency and memory-model reasoning
 - observability and operability analysis
+- threat-modeling and trust-boundary analysis (where applicable)
 
 ### Non-Executing Frames (Often Useful, Not Runtime-Decisive)
 
@@ -292,7 +301,7 @@ In execution-coupled software, shared meaning exists when it is expressed as:
 
 - “Everyone knows how this works” until a new contributor breaks it.
 - “It’s obvious” until the interface changes and consumers silently misinterpret.
-- Production incidents caused by assumptions not encoded as contracts.
+- Incidents caused by assumptions not encoded as contracts.
 
 ### Diagnostic Question
 
@@ -315,6 +324,7 @@ Coordination is imposed by shared repositories, shared deploy pipelines, shared 
 - automated tests, integration tests, contract tests
 - deployment strategies (canary, blue/green, progressive delivery)
 - incident protocols, runbooks, SLO/SLA practices
+- ownership *with enforcement* (on-call rotation, escalation paths, paging policies)
 
 ### Runtime-Inert Coordination Claims
 
@@ -349,17 +359,18 @@ Metrics are load-bearing when they are used to gate or steer action. Misalignmen
 
 ### Runtime-Real Metrics
 
-- latency, tail latency (p95/p99), jitter
+- latency (including p95/p99), jitter
 - throughput, saturation, queue depth
 - memory usage, GC time, error rates
 - availability, success rate, burn rate, SLO error budget
 - cost metrics (per request, per tenant), resource efficiency
+- correctness proxies (data validation failure rates, reconciliation diffs)
 
 ### Failure Signature
 
 - Dashboard green while users suffer (wrong slices, wrong percentiles).
 - Metric improves because behavior changed, not because system improved.
-- Cost pushed outside the measured boundary (e.g., downstream pain).
+- Cost pushed outside the measured boundary (downstream pain, user toil).
 
 ### Diagnostic Question
 
@@ -380,10 +391,12 @@ The ability to reason under uncertainty where some failure modes are **ruinous**
 - cascading failures and retry storms
 - partial outages with silent wrongness
 - inconsistent states across services (split-brain, idempotency failure)
+- supply-chain compromise and dependency substitution
+- privilege escalation through mis-scoped IAM/ACLs
 
 ### Failure Signature
 
-- “Unlikely” is treated as “acceptable” despite catastrophic impact.
+- “Unlikely” treated as “acceptable” despite catastrophic impact.
 - Rare concurrency bugs shipped without containment.
 - Safety properties assumed without proving or gating them.
 
@@ -413,6 +426,7 @@ In software, “authority” is load-bearing only when it **gates** execution or
 - runtime credentials (IAM roles, secrets, service accounts)
 - database permissions and key management
 - feature flag control and kill-switch access
+- production data access (PII gates, break-glass processes)
 
 ### Runtime-Inert Authority
 
@@ -434,55 +448,47 @@ In software, “authority” is load-bearing only when it **gates** execution or
 ---
 
 ## 9) Forbearance Literacy (Code)
-
-### Temporary Non-Enforcement at Runtime and in Process
+### Temporary Non-Enforcement and Unexercised Paths
 
 ### Definition
 
 **Forbearance literacy (code)** is the ability to distinguish **runtime or process safety** from **temporary non-enforcement** caused by:
 
-* low load,
-* unused code paths,
-* partial rollout,
-* discretionary human intervention,
-* or delayed detection.
+- low load,
+- unexercised code paths,
+- partial rollout,
+- discretionary human intervention,
+- delayed detection,
+- or adversaries not yet acting.
 
 Lack of failure is not evidence of correctness.
 
----
-
 ### Runtime Sources of Forbearance
 
-* Code paths not yet exercised in production.
-* Feature flags shielding behavior from real traffic.
-* Low traffic masking performance or concurrency bugs.
-* On-call engineers manually mitigating effects.
-* Silent data corruption not yet queried.
-* Security exposure not yet exploited.
+- Code paths not yet exercised in production.
+- Feature flags shielding behavior from real traffic.
+- Low traffic masking performance or concurrency bugs.
+- On-call engineers manually mitigating effects.
+- Silent data corruption not yet queried.
+- Security exposure not yet exploited.
 
 These are **buffers**, not invariants.
 
----
-
 ### Core Alphabet (Code)
 
-* **correct execution** vs **untriggered failure**
-* **safety** vs **lack of observation**
-* **invariant enforcement** vs **human patching**
-* **tested under load** vs **not yet exercised**
-* **rollback available** vs **damage not yet surfaced**
-
----
+- **correct execution** vs **untriggered failure**
+- **safety** vs **lack of observation**
+- **invariant enforcement** vs **human patching**
+- **tested under load** vs **not yet exercised**
+- **rollback available** vs **damage not yet surfaced**
 
 ### Failure Signature
 
-* “It’s been fine so far” used as correctness evidence.
-* Shipping unsafe code because incidents haven’t occurred.
-* Treating feature flags as safety mechanisms rather than delay mechanisms.
-* Confusing manual intervention with system resilience.
-* Catastrophic failure when traffic, scale, or adversarial input arrives.
-
----
+- “It’s been fine so far” used as correctness evidence.
+- Shipping unsafe code because incidents haven’t occurred.
+- Treating feature flags as safety mechanisms rather than delay mechanisms.
+- Confusing manual intervention with system resilience.
+- Catastrophic failure when traffic, scale, or adversarial input arrives.
 
 ### Diagnostic Question
 
@@ -490,16 +496,107 @@ These are **buffers**, not invariants.
 
 ---
 
-### Interaction With Other Literacies (Code)
+## 10) Consequence Topology Literacy (Code)
+### Propagation, Degradation, and Off-Ledger Nodes
 
-* **Foundational**: production is not a simulator; silence is not success.
-* **Horizon**: forbearance expires as load, data, or attackers arrive.
-* **Risk**: tail failures are masked until they are terminal.
-* **Access Control**: human mitigation is not a gate.
+### Definition
+
+**Consequence topology literacy (code)** is the ability to model software execution as **propagating consequences** across a directed topology: services, queues, databases, humans, vendors, and institutions.
+
+Nodes have **operational regimes** and **degradation curves**.  
+Humans are execution nodes too: on-call, incident response, and manual mitigation are capacities that degrade under sustained load.
+
+### Core Alphabet
+
+- **local side effect** vs **downstream consequence**
+- **service boundary** vs **blast radius boundary**
+- **buffer** vs **capacity**
+- **single-point failure** vs **common-mode failure**
+- **nominal regime** vs **off-nominal regime**
+- **load** vs **degradation**
+- **recovery time** vs **failure time**
+
+### Failure Signature
+
+- Pushing failure onto downstream systems or humans until they collapse.
+- Confusing “we can page someone” with resilience.
+- Repeated off-nominal operation degrades correctness (incident fatigue, slower response, riskier changes).
+- Treating downstream cost as irrelevant because it’s off-dashboard.
+
+### Diagnostic Question
+
+> *Where does this change send consequences, and which nodes (including humans) degrade first under sustained load or off-nominal operation?*
 
 ---
 
-## 10) Representation Literacy (Code)
+## 11) Liveness & Orchestration Literacy (Code)
+### Progress Under Contention, Jitter, and Partial Failure
+
+### Definition
+
+**Liveness & orchestration literacy (code)** is the ability to reason about **progress** under constraints: the system must not merely preserve invariants, it must reliably **make forward progress** under contention, jitter, and partial failure.
+
+In software, feasibility is not enough: changes must be **schedulable**, tolerant to variance, and robust to coordination costs.  
+Over-constrained designs collapse the executable region to near-zero.
+
+### Core Alphabet
+
+- **feasible** vs **schedulable**
+- **safety** vs **liveness** (invariants vs progress)
+- **deadlock** vs **livelock** vs **starvation**
+- **synchronization** vs **parallelism**
+- **throughput** vs **latency** vs **jitter**
+- **hard realtime** vs **soft realtime** (tolerance bands)
+- **backpressure** vs **overrun**
+- **idempotency** vs **duplicate effects** (progress under retries)
+
+### Failure Signature
+
+- Throughput collapses due to contention (lock convoys, thundering herds).
+- Systems require unrealistic timing precision (brittle protocols).
+- Retry policies create self-amplifying load (liveness death spirals).
+- Queues grow without bound; consumers starve; producers stall.
+
+### Diagnostic Question
+
+> *Under contention and variance, do we still guarantee progress—and is the feasible operating region large enough with tolerance?*
+
+---
+
+## 12) Adversarial Dynamics Literacy (Code)
+### Hostile Optimization Through Interfaces and Supply Chains
+
+### Definition
+
+**Adversarial dynamics literacy (code)** is the ability to reason about software in environments containing **intentional harm**: attackers optimize against your constraints, metrics, interfaces, and trust boundaries.
+
+As protocols become more symmetric (APIs, cryptography, identity systems), **stakes remain asymmetric**: your private keys must be protected because others’ keys are not practically breachable; your service must resist abuse because an abuser needs only one cheap exploit path.
+
+### Core Alphabet
+
+- **bug** vs **vulnerability**
+- **accidental misuse** vs **adversarial abuse**
+- **interface boundary** vs **trust boundary**
+- **feature surface** vs **attack surface**
+- **capability** vs **authorization**
+- **deterrence** vs **prevention** vs **detection/response**
+- **symmetric protocol** vs **asymmetric cost/power**
+
+### Failure Signature
+
+- “No one would do that” used as a security argument.
+- Auth is treated as a UX detail; trust boundaries are implicit.
+- Supply chain and dependencies are assumed benign by default.
+- Rate limits, quotas, and abuse controls missing or non-enforced.
+- Incident response is social, not coupled to controls.
+
+### Diagnostic Question
+
+> *If an attacker wanted the cheapest path to extract value or cause harm, what interface or dependency gives it to them?*
+
+---
+
+## 13) Representation Literacy (Code)
 ### Compression, Scope, and Drift in Technical Models
 
 ### Definition
@@ -519,9 +616,10 @@ Representation literacy is the ability to use these compressions within their re
 
 ### Failure Signature
 
-- Defending a model beyond its regime (e.g., big-O ignores IO or constant factors dominate).
+- Defending a model beyond its regime (big-O ignores IO; constants dominate).
 - Applying single-node reasoning to distributed systems.
 - Treating test environment performance as production truth.
+- Treating a threat model as static while attackers and surfaces drift.
 
 ### Diagnostic Question
 
@@ -537,24 +635,38 @@ In high-coupling software environments, a typical cascade (not universal):
 1. Foundational collapses (production treated as simulator)
 2. Constraint collapses (runtime ceilings ignored)
 3. Horizon collapses (drift/accumulation ignored)
-4. Frame collapses (style debates replace runtime reasoning)
-5. Meaning collapses (assumptions not encoded)
+4. Frame collapses (aesthetics replace runtime reasoning)
+5. Meaning collapses (assumptions not encoded as contracts)
 6. Coordination collapses (process relies on goodwill)
 7. Metrics collapses (proxy dominates experience)
 8. Risk collapses (tail failures dismissed)
 9. Access control collapses (status replaces gating)
 10. Forbearance collapses (silence mistaken for safety)
-11. Representation collapses (models treated as sovereign)
+11. Consequence topology collapses (propagation/degradation ignored)
+12. Liveness & orchestration collapses (deadlock/over-constraint)
+13. Adversarial dynamics collapses (hostile optimization ignored)
+14. Representation collapses (models treated as sovereign)
 
 ---
 
-## Derived Invariant (Code) — Not a Literacy
+## Derived Invariants (Code) — Not Literacies
 
+### Invariant A
 > **Only what executes, constrains execution, or gates execution can govern runtime behavior.**
 
 Everything else is annotation.
 
 Annotations can be valuable for humans, but they are not runtime-load-bearing unless they are coupled to enforcement (tests, gates, contracts, tooling).
+
+### Invariant B (Model Error Prior)
+> **Assume the model is wrong in some way you did not enumerate.**
+
+Execution-safe reasoning therefore prefers:
+
+- **bounded probes** (canaries, staged rollout) over irreversible commits,
+- **containment** (blast-radius limits, circuit breakers) over pure optimization,
+- **instrumentation for surprise** (unknown failure classes, anomaly detection),
+- **kill-switches and escape hatches** where tail impact is discontinuous.
 
 ---
 
@@ -580,6 +692,7 @@ Runtime executes:
 - the constraints,
 - the gates,
 - the drift,
+- the adversaries,
 - and the failure modes.
 
 Executional literacies make systems **legible to themselves under execution** by forcing reasoning to remain isomorphic to runtime.
