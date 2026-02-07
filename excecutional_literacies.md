@@ -353,7 +353,58 @@ These are access-control mechanisms in shared-state systems, not virtues.
 
 ---
 
-## 9) Representation Literacy
+## 9) Forbearance Literacy
+
+### Temporary Non-Enforcement Under Execution
+
+### Definition
+
+**Forbearance literacy** is the ability to distinguish **structural safety** from **temporary tolerance produced by discretionary non-enforcement**.
+
+Forbearance (“grace”) is not rollback, permission, or legitimacy.
+It is **borrowed executional slack** granted by surplus, asymmetry, or discretion—and it **decays silently**.
+
+Reasoning that treats forbearance as invariant produces late, irreversible failure.
+
+---
+
+### Core Alphabet
+
+* **enforced constraint** vs **tolerated violation**
+* **structural permission** vs **discretionary non-enforcement**
+* **safe execution** vs **buffered execution**
+* **explicit acceptance** vs **withheld enforcement**
+* **invariant rule** vs **revocable tolerance**
+* **expiry signaled** vs **expiry silent**
+
+---
+
+### Failure Signature
+
+* Interpreting lack of rejection or enforcement as acceptance.
+* Escalating behavior because early violations were tolerated.
+* Treating identity, status, or demand surplus as immunity.
+* Experiencing enforcement as “sudden” or “unfair” when buffers deplete.
+* Narrative shock when tolerance flips to absolute exclusion.
+
+---
+
+### Diagnostic Question
+
+> *Am I treating delayed or discretionary enforcement as evidence that enforcement does not apply?*
+
+---
+
+### Notes on Interaction With Other Literacies
+
+* **Foundational**: forbearance is *not* rollback; assuming reversibility collapses executional validity.
+* **Horizon**: forbearance is time-indexed and silently decays.
+* **Risk**: forbearance suppresses feedback and amplifies tail failure.
+* **Access Control**: forbearance exists *outside* gates; it is discretionary, not load-bearing.
+
+---
+
+## 10) Representation Literacy
 ### Compression Limits and Drift
 
 ### Definition
@@ -400,7 +451,8 @@ A typical cascade in **high-coupling execution environments** (not a universal l
 7. Metrics literacy collapses (proxy dominates target)
 8. Risk literacy collapses (ruin blindness)
 9. Access control literacy collapses (status replaces gating)
-10. Representation literacy collapses (maps become sovereign)
+10. Forbearance literacy collapses (tolerance mistaken for safety)
+11. Representation literacy collapses (maps become sovereign)
 
 ---
 
