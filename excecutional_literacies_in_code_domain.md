@@ -433,7 +433,73 @@ In software, “authority” is load-bearing only when it **gates** execution or
 
 ---
 
-## 9) Representation Literacy (Code)
+## 9) Forbearance Literacy (Code)
+
+### Temporary Non-Enforcement at Runtime and in Process
+
+### Definition
+
+**Forbearance literacy (code)** is the ability to distinguish **runtime or process safety** from **temporary non-enforcement** caused by:
+
+* low load,
+* unused code paths,
+* partial rollout,
+* discretionary human intervention,
+* or delayed detection.
+
+Lack of failure is not evidence of correctness.
+
+---
+
+### Runtime Sources of Forbearance
+
+* Code paths not yet exercised in production.
+* Feature flags shielding behavior from real traffic.
+* Low traffic masking performance or concurrency bugs.
+* On-call engineers manually mitigating effects.
+* Silent data corruption not yet queried.
+* Security exposure not yet exploited.
+
+These are **buffers**, not invariants.
+
+---
+
+### Core Alphabet (Code)
+
+* **correct execution** vs **untriggered failure**
+* **safety** vs **lack of observation**
+* **invariant enforcement** vs **human patching**
+* **tested under load** vs **not yet exercised**
+* **rollback available** vs **damage not yet surfaced**
+
+---
+
+### Failure Signature
+
+* “It’s been fine so far” used as correctness evidence.
+* Shipping unsafe code because incidents haven’t occurred.
+* Treating feature flags as safety mechanisms rather than delay mechanisms.
+* Confusing manual intervention with system resilience.
+* Catastrophic failure when traffic, scale, or adversarial input arrives.
+
+---
+
+### Diagnostic Question
+
+> *Is this behavior safe, or merely unexercised or temporarily mitigated?*
+
+---
+
+### Interaction With Other Literacies (Code)
+
+* **Foundational**: production is not a simulator; silence is not success.
+* **Horizon**: forbearance expires as load, data, or attackers arrive.
+* **Risk**: tail failures are masked until they are terminal.
+* **Access Control**: human mitigation is not a gate.
+
+---
+
+## 10) Representation Literacy (Code)
 ### Compression, Scope, and Drift in Technical Models
 
 ### Definition
@@ -477,7 +543,8 @@ In high-coupling software environments, a typical cascade (not universal):
 7. Metrics collapses (proxy dominates experience)
 8. Risk collapses (tail failures dismissed)
 9. Access control collapses (status replaces gating)
-10. Representation collapses (models treated as sovereign)
+10. Forbearance collapses (silence mistaken for safety)
+11. Representation collapses (models treated as sovereign)
 
 ---
 
