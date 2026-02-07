@@ -54,15 +54,19 @@ They identify which distinctions are required for safe execution in specific env
 ## Quick Map
 ### Literacies and the Failure Surfaces They Guard
 
-- **Foundational Executional Literacy**: guards against **rollback illusions** and **non-executable reasoning** guiding action.
+- **Foundational Executional Literacy**: guards against **rollback illusions** and **non-executable reasoning** governing action.
 - **Constraint Literacy**: guards against **negotiating invariants** and mistaking scarcity for preference.
 - **Horizon Literacy**: guards against **time-index errors** (drift, accumulation, expiration).
-- **Frame Literacy**: guards against **action-mapping failure** (correct inside frame, useless in execution).
+- **Frame Literacy**: guards against **action-mapping failure** (correct inside frame, inert in execution).
 - **Meaning Literacy**: guards against **coordination-reference failure** (meaning that cannot fail cannot coordinate in execution-coupled settings).
 - **Coordination Literacy**: guards against **multi-agent externality blindness** and intent-attribution where structure governs.
 - **Metrics Literacy**: guards against **proxy collapse**, gaming, and cost externalization via measurement.
 - **Risk & Uncertainty Literacy**: guards against **ruin blindness** (tail risks that invalidate the evaluation frame).
 - **Access Control Literacy**: guards against confusing **permission/legitimacy/status** with runtime gating and consequences.
+- **Forbearance Literacy**: guards against mistaking **temporary non-enforcement / unexercised paths** for structural safety.
+- **Consequence Topology Literacy**: guards against **propagation blindness** across degrading execution nodes (including humans).
+- **Liveness & Orchestration Literacy**: guards against **deadlock / livelock / starvation** and over-constrained execution spaces.
+- **Adversarial Dynamics Literacy**: guards against **hostile optimization** (intentional harm) through interfaces and trust boundaries.
 - **Representation Literacy**: guards against **compression misuse** and **scope drift** in representations.
 
 ---
@@ -354,57 +358,168 @@ These are access-control mechanisms in shared-state systems, not virtues.
 ---
 
 ## 9) Forbearance Literacy
-
 ### Temporary Non-Enforcement Under Execution
 
 ### Definition
 
-**Forbearance literacy** is the ability to distinguish **structural safety** from **temporary tolerance produced by discretionary non-enforcement**.
+**Forbearance literacy** is the ability to distinguish **structural safety** from **temporary tolerance produced by discretionary non-enforcement** or unexercised execution paths.
 
-Forbearance (“grace”) is not rollback, permission, or legitimacy.
-It is **borrowed executional slack** granted by surplus, asymmetry, or discretion—and it **decays silently**.
+Forbearance (“grace”) is not rollback, permission, or legitimacy.  
+It is **borrowed executional slack** granted by surplus, asymmetry, discretion, low load, or delayed detection—and it **decays silently**.
 
 Reasoning that treats forbearance as invariant produces late, irreversible failure.
 
----
-
 ### Core Alphabet
 
-* **enforced constraint** vs **tolerated violation**
-* **structural permission** vs **discretionary non-enforcement**
-* **safe execution** vs **buffered execution**
-* **explicit acceptance** vs **withheld enforcement**
-* **invariant rule** vs **revocable tolerance**
-* **expiry signaled** vs **expiry silent**
-
----
+- **enforced constraint** vs **tolerated violation**
+- **structural permission** vs **discretionary non-enforcement**
+- **safe execution** vs **buffered execution**
+- **explicit acceptance** vs **withheld enforcement**
+- **invariant rule** vs **revocable tolerance**
+- **expiry signaled** vs **expiry silent**
+- **correctness** vs **untriggered failure**
 
 ### Failure Signature
 
-* Interpreting lack of rejection or enforcement as acceptance.
-* Escalating behavior because early violations were tolerated.
-* Treating identity, status, or demand surplus as immunity.
-* Experiencing enforcement as “sudden” or “unfair” when buffers deplete.
-* Narrative shock when tolerance flips to absolute exclusion.
-
----
+- Interpreting lack of rejection/enforcement as acceptance.
+- Escalating behavior because early violations were tolerated.
+- Treating demand surplus, identity, or status as immunity.
+- Experiencing enforcement as “sudden” when buffers deplete.
+- Treating “no incidents yet” as evidence of safety.
 
 ### Diagnostic Question
 
-> *Am I treating delayed or discretionary enforcement as evidence that enforcement does not apply?*
+> *Am I treating delayed or discretionary enforcement (or lack of observed failure) as evidence that enforcement does not apply?*
+
+### Notes on Interaction
+
+- **Foundational**: forbearance is *not* rollback.
+- **Horizon**: forbearance is time-indexed and silently decays.
+- **Risk**: forbearance suppresses feedback and amplifies tail failure.
+- **Access Control**: forbearance exists outside gates; it is discretionary, not load-bearing.
 
 ---
 
-### Notes on Interaction With Other Literacies
+## 10) Consequence Topology Literacy
+### Execution as Propagation Across Degrading Nodes
 
-* **Foundational**: forbearance is *not* rollback; assuming reversibility collapses executional validity.
-* **Horizon**: forbearance is time-indexed and silently decays.
-* **Risk**: forbearance suppresses feedback and amplifies tail failure.
-* **Access Control**: forbearance exists *outside* gates; it is discretionary, not load-bearing.
+### Definition
+
+**Consequence topology literacy** is the ability to model execution as a **directed topology of consequences**: actions propagate through nodes and interfaces, producing downstream effects, coupling, and externalities.
+
+Execution nodes include **machines, institutions, markets, and humans**.  
+Nodes have **operational regimes** and **degradation curves**: sustained load, off-nominal conditions, or repeated interventions degrade capacity and correctness in predictable ways.
+
+### Core Alphabet
+
+- **local side effect** vs **downstream consequence**
+- **component correctness** vs **system propagation**
+- **buffer** vs **capacity**
+- **single-point failure** vs **common-mode failure**
+- **nominal regime** vs **off-nominal regime**
+- **load** vs **degradation**
+- **recovery time** vs **failure time**
+
+### Failure Signature
+
+- Treating downstream harm as “someone else’s problem” because it’s off-ledger.
+- Relying on humans as invisible buffers until they fail catastrophically.
+- Confusing manual mitigation with structural resilience.
+- Repeated off-nominal operation produces predictable degradation (“sudden” failure that was actually accumulated).
+
+### Diagnostic Question
+
+> *Where do consequences propagate, and which nodes degrade first under sustained load or off-nominal operation?*
+
+### Notes on Interaction
+
+- **Coordination**: externalities become visible as edges in the topology.
+- **Metrics**: measurement boundaries often hide propagation.
+- **Forbearance**: humans and slack are frequent hidden buffers.
+- **Risk**: cascades are topology-shaped tail failures.
 
 ---
 
-## 10) Representation Literacy
+## 11) Liveness & Orchestration Literacy
+### Progress Under Constraints (Deadlock, Contention, Tolerance)
+
+### Definition
+
+**Liveness & orchestration literacy** is the ability to reason about **progress** under multiple constraints, where satisfying invariants locally is insufficient unless the system can still **move forward** under contention, jitter, and partial failure.
+
+Execution must occupy a **non-trivial feasible region**: not merely “possible in principle,” but possible with **tolerance**.  
+Over-constrained systems collapse into near-zero executable space and fail despite “correct” rules.
+
+### Core Alphabet
+
+- **feasibility** vs **schedulability**
+- **safety** vs **liveness** (invariants vs progress)
+- **deadlock** vs **livelock** vs **starvation**
+- **synchronization** vs **parallelism**
+- **throughput** vs **latency** vs **jitter**
+- **hard timing** vs **tolerance bands**
+- **backpressure** vs **overrun**
+
+### Failure Signature
+
+- The system is “right” but stalls (no progress) under load.
+- Timing requirements are too precise to be reliable (brittle sync).
+- Contention creates cascading stalls (queueing collapse, resource thrash).
+- Incentive- or rule-design yields policy deadlock (institutional liveness failure).
+
+### Diagnostic Question
+
+> *Does the system guarantee progress under contention, and is the feasible execution region large enough with tolerance?*
+
+### Notes on Interaction
+
+- **Constraint**: constraints without liveness reasoning produce brittle designs.
+- **Coordination**: multi-agent coupling often manifests as contention.
+- **Representation**: queueing/throughput models compress orchestration reality.
+- **Risk**: liveness collapse can become a tail failure (cascades, panics).
+
+---
+
+## 12) Adversarial Dynamics Literacy
+### Hostile Optimization Through Interfaces and Trust Boundaries
+
+### Definition
+
+**Adversarial dynamics literacy** is the ability to reason about execution in environments containing **intentional harm**—agents who actively optimize against your constraints, metrics, and interfaces.
+
+As protocols and interfaces become more symmetric, **power and stake asymmetries** persist: what must be protected (e.g., private keys, credentials, reputations, decision rights) is not protected by “good faith” assumptions.
+
+### Core Alphabet
+
+- **incentive-driven failure** vs **intentional targeted harm**
+- **accident** vs **exploitability**
+- **interface boundary** vs **trust boundary**
+- **feature surface** vs **attack surface**
+- **symmetric protocol** vs **asymmetric stakes/power**
+- **deterrence** vs **prevention** vs **detection/response**
+- **capability** vs **authorization** (what can be done vs what is allowed)
+
+### Failure Signature
+
+- “No one would do that” treated as a safety argument.
+- Controls assume honest-but-fallible behavior; adversaries route around them.
+- Metrics and incentives become targets for manipulation.
+- Legitimacy substitutes for enforcement in adversarial settings.
+
+### Diagnostic Question
+
+> *If an adversary wanted this to fail (or to extract value), what is the cheapest path through the interfaces and trust boundaries?*
+
+### Notes on Interaction
+
+- **Risk**: attacks are tail risks with discontinuous impact.
+- **Access control**: gates are contested; credentials are targets.
+- **Metrics**: adversaries game proxies aggressively.
+- **Forbearance**: absence of attack is not evidence of safety.
+
+---
+
+## 13) Representation Literacy
 ### Compression Limits and Drift
 
 ### Definition
@@ -421,16 +536,18 @@ All compression fails under drift.
 - **scope** vs **spillover**
 - **assumption stability** vs **drift**
 - **map usefulness** vs **map authority**
+- **known risk** vs **model error**
 
 ### Failure Signature
 
 - Defending a representation beyond its safe horizon.
 - Treating a model or narrative as ground truth.
 - Ignoring mismatch signals because the representation is elegant or institutionalized.
+- Confusing “unmodeled” with “unlikely.”
 
 ### Diagnostic Question
 
-> *Am I defending a representation past its safe execution horizon?*
+> *Am I defending a representation past its safe execution horizon, and what does it compress away that could dominate later?*
 
 ---
 
@@ -452,12 +569,18 @@ A typical cascade in **high-coupling execution environments** (not a universal l
 8. Risk literacy collapses (ruin blindness)
 9. Access control literacy collapses (status replaces gating)
 10. Forbearance literacy collapses (tolerance mistaken for safety)
-11. Representation literacy collapses (maps become sovereign)
+11. Consequence topology literacy collapses (propagation/degradation ignored)
+12. Liveness & orchestration literacy collapses (deadlock/over-constraint)
+13. Adversarial dynamics literacy collapses (hostile optimization ignored)
+14. Representation literacy collapses (maps become sovereign)
+
+(Sequence varies by domain; the point is that collapse propagates.)
 
 ---
 
-## Derived Executional Invariant (Not a Literacy)
+## Derived Executional Invariants (Not Literacies)
 
+### Invariant A
 > **Assume any executing node is load-bearing until proven otherwise.**
 
 This is not ethical.  
@@ -466,6 +589,19 @@ It is a risk-dominant structural prior under partial observability and irreversi
 - False removal errors (breaking a load-bearing node) dominate
 - tolerated inefficiency errors (keeping a redundant node)  
 when you cannot see the whole system.
+
+### Invariant B (Model Error Prior)
+> **Assume the model is wrong in some way you did not enumerate.**
+
+This is not humility.  
+It is a structural prior under drift, novelty, and incomplete observability.
+
+Execution-safe reasoning therefore prefers:
+
+- **bounded probes** over irreversible commits,
+- **containment** over optimization when uncertainty is unmodeled,
+- **instrumentation for surprise** (not just metrics for performance),
+- **kill-switches and escape hatches** where tail impact is discontinuous.
 
 ---
 
