@@ -1,15 +1,15 @@
-# Load-Bearing Stack  
-## A Constraint-Mapping Account of Bounded Execution
+# Load-Bearing Stack
+## A constraint-mapping account of bounded execution
 
 > **Purpose**  
 > Specify the **structural preconditions** under which claims about action, evaluation, agency, responsibility, optimization, and governance are *well-formed* for bounded executors operating in irreversible, drifting environments.
 
-This document describes a **minimal execution architecture** for systems where:
+This document is a **constraint map** for systems where:
 
 - execution is **irreversible**,
 - resources (including **energy**) are **bounded**,
 - environments are **non-stationary** (drift),
-- and repeated action must remain **viable** across time.
+- repeated action must remain **viable** across time.
 
 It is **not** a theory of:
 
@@ -18,20 +18,20 @@ It is **not** a theory of:
 - morality, legitimacy, justice, or fairness,
 - goal selection or optimization procedures.
 
-It does not prescribe what *should* be done.  
-It performs **constraint mapping**:
-
-- identifying when claims about execution are **coherent**,
-- marking **impossibility boundaries** where common claims become undefined,
-- preserving **separations** that must not collapse under pressure.
+It does not tell you what *should* be done.  
+It tells you when a claim is **coherent**, and when it is structurally ill-posed.
 
 ---
 
-## How to read this document
+## How to use this document
 
+Use the stack as a **validator**:
+
+- If a claim violates a primitive constraint, it is undefined (not “wrong,” but structurally incoherent).
+- If a claim collapses a critical separation, it will systematically produce failure under pressure.
 - Treat “regimes” as **coexisting interfaces**, not a maturity ladder.
-- Use the stack as a **validator**:  
-  if a claim violates a constraint or collapses a separation, it is structurally ill-posed regardless of rhetoric or intent.
+
+The stack is a *type system* for action: it rules out ill-typed statements about execution.
 
 ---
 
@@ -42,15 +42,15 @@ It performs **constraint mapping**:
 - **Irreversibility** — acting eliminates alternatives and destroys information; reversal requires additional execution and cost.
 - **Drift** — regime change over time; invariants are provisional and horizon-bound.
 - **Compression** — discarding distinctions to remain executable under bounds; always lossy.
-- **Margin** — slack in time, energy, attention, or bandwidth that permits buffering, deviation, or redesign.
+- **Margin** — slack in time, energy, attention, bandwidth, or capacity that permits buffering, deviation, or redesign.
 - **Closure** — deliberate termination of interpretation over selected distinctions to enable repeated execution.
 - **Settlement** — closure that persists through repetition and depletion and becomes enforced by failure, not preference.
-- **Metric** — a finite executable interface encoding the degrees of freedom retained within a closure.
-- **Topology** — how execution consequences propagate: latency, fan-out, buffers, observability, irreversibility gradients, energy dissipation/recovery.
+- **Metric** — a finite executable interface encoding degrees of freedom retained within a closure.
+- **Topology** — how execution consequences propagate (latency, fan-out, buffers, observability, irreversibility gradients, energy dissipation/recovery).
 - **Horizon** — the timescale over which viability is evaluated.
 - **Decidable boundary** — a pre-execution region where both acceptance and refusal are executable paths with known failure semantics.
 - **Discretion** — in-execution adjustment within a closure.
-- **Agency (structural)** — attribution that is coherent only at decidable boundaries.
+- **Agency (structural)** — attribution coherent only at decidable boundaries.
 - **Responsibility (structural)** — attribution of **load location** within topology, not moral blame.
 
 ---
@@ -60,20 +60,20 @@ It performs **constraint mapping**:
 These are not values or design preferences.  
 They are invariants of **bounded execution**.
 
-1. **Execution is irreversible**  
-   Acting commits resources, destroys information, and eliminates alternatives.
+1) **Execution is irreversible**  
+Acting commits resources, destroys information, and eliminates alternatives.
 
-2. **Resources are bounded**  
-   Time, energy, attention, sensing, and modeling capacity are finite.
+2) **Resources are bounded**  
+Time, energy, attention, sensing, and modeling capacity are finite.
 
-3. **Environments drift**  
-   Apparent invariants are conditional, regime-dependent, and horizon-specific.
+3) **Environments drift**  
+Apparent invariants are conditional, regime-dependent, and horizon-specific.
 
-4. **Compression is unavoidable**  
-   Feasible execution requires discarding distinctions; lossless abstraction is impossible.
+4) **Compression is unavoidable**  
+Feasible execution requires discarding distinctions; lossless abstraction is impossible.
 
-5. **Viability precedes optimization**  
-   “Improvement” is undefined unless continued execution remains possible.
+5) **Viability precedes optimization**  
+“Improvement” is undefined unless continued execution remains possible.
 
 Any framework that presumes reversibility, infinite resources, stationary environments, or lossless abstraction is **not describing bounded execution**.
 
@@ -83,23 +83,22 @@ Any framework that presumes reversibility, infinite resources, stationary enviro
 
 Persistent failure arises when these distinctions are conflated:
 
-- **Execution vs interpretation** — what changes state vs what explains or justifies it  
-- **Existence vs persistence vs scale** — emergence vs endurance vs reuse  
-- **Exploration vs exploitation vs redesign** — option generation vs cheap repetition vs reopening distinctions  
-- **Regulation vs control** — low-cost background closure vs costly adaptive intervention  
-- **Discretion vs agency** — adjustment under execution vs boundary-level choice  
-- **Evaluation vs optimization** — judgment signals vs executable objective pursuit  
+- **Execution vs interpretation** — what changes state vs what explains/justifies it
+- **Existence vs persistence vs scale** — emergence vs endurance vs reuse
+- **Exploration vs exploitation vs redesign** — option generation vs cheap repetition vs reopening distinctions
+- **Regulation vs control** — low-cost background closure vs costly adaptive intervention
+- **Discretion vs agency** — adjustment under execution vs boundary-level choice
+- **Evaluation vs optimization** — judgment signals vs executable objective pursuit
 
 These regimes may coexist in different subsystems.  
 The stack exists to keep them articulated under constraint.
 
 ---
 
-# The Stack as Constraint Map
+# The stack (constraint map)
 
-## Regime 0 — Existence (coherent execution pattern)
-
-A system **exists** when a coherent execution pattern persists long enough for its consequences to propagate beyond immediate interaction.
+## Regime 0 — Existence
+**Existence** means a coherent execution pattern persists long enough for its consequences to propagate beyond immediate interaction.
 
 Existence requires:
 
@@ -113,9 +112,8 @@ Evidence of existence is **causal propagation**, not narrative description.
 
 ---
 
-## Regime 1 — Coordination pressure (coupled execution under cost)
-
-Coordination pressure arises whenever:
+## Regime 1 — Coordination pressure
+**Coordination pressure** arises whenever:
 
 - multiple executors affect shared or coupled state,
 - execution is irreversible and bounded,
@@ -127,7 +125,6 @@ Under these conditions, independent execution becomes unsafe.
 Coordination pressure is not chosen; it is an emergent consequence of coupling.
 
 ### Displacement and masking
-
 Coordination pressure may be:
 
 - buffered (slack, storage, latency),
@@ -139,8 +136,7 @@ Apparent absence of pressure often indicates **displacement**, not resolution.
 
 ---
 
-## Regime 2 — Optionality preservation (exploration under margin)
-
+## Regime 2 — Optionality preservation
 Where coordination pressure has not yet bound locally **and margin remains sufficient**:
 
 - interpretation remains open,
@@ -148,7 +144,7 @@ Where coordination pressure has not yet bound locally **and margin remains suffi
 - failures are local and mostly reversible,
 - information is preserved rather than destroyed.
 
-This regime is **not** optimization.  
+This regime is **not optimization**.  
 Evaluation here is heuristic, context-rich, and non-comparable.
 
 Optionality is conditional: it disappears when margin collapses and can reappear only where margin is restored (sandboxes, exception paths, redesign zones).
@@ -156,7 +152,6 @@ Optionality is conditional: it disappears when margin collapses and can reappear
 ---
 
 ## Regime 3 — Consequence topology and horizons
-
 Execution propagates through topology defined by:
 
 - latency,
@@ -171,22 +166,21 @@ Intent does not propagate.
 Only execution persists.
 
 ### Horizons
-
 A horizon specifies the timescale over which viability is assessed.
 
 Topology + horizon determine:
 
 - where disturbance appears,
 - where it accumulates or dissipates,
-- where it becomes invisible.
+- where it becomes invisible,
+- which failures become dominant.
 
 Most systems operate across **multiple incompatible horizons**.  
 Which horizon binds execution is itself a **closure decision**, explicit or implicit.
 
 ---
 
-## Regime 4 — Execution closure (compression for repetition)
-
+## Regime 4 — Execution closure
 As coordination pressure increases or margin shrinks, maintaining open interpretation becomes unsafe.
 
 **Closure** is the deliberate discarding of distinctions so that repeated execution remains viable.
@@ -201,7 +195,6 @@ Closure is:
 Distinctions are discarded not because they are false, but because they are no longer executable.
 
 ### Closure surface area
-
 Closures vary by:
 
 - **extent** — how many degrees of freedom are collapsed,
@@ -213,7 +206,6 @@ Large-extent, high-coupling, high-cost closures are primary sources of brittlene
 ---
 
 ## Regime 4.1 — Settlement
-
 A closure becomes **settled** when it:
 
 - survives repeated execution,
@@ -232,7 +224,6 @@ Stability sustained mainly by buffering or subsidy is **not** genuine local suff
 ---
 
 ## Regime 5 — Metrics as executable interfaces
-
 After closure, evaluation must coordinate execution.
 
 **Metrics** are finite executable interfaces that encode compressed distinctions.
@@ -253,7 +244,6 @@ Values that do not bind compression remain interpretive and execution-inert.
 ---
 
 ## Regime 6 — Decidable boundaries and agency
-
 Agency is coherent only at **decidable boundaries**, prior to execution.
 
 A boundary is decidable when:
@@ -264,9 +254,9 @@ A boundary is decidable when:
 - interruptibility exists,
 - margin makes refusal executable.
 
-### Structural symmetry
+### Structural symmetry (refusal symmetry)
+Agency attribution requires **symmetry of refusal** at the boundary.
 
-Agency attribution requires **symmetry of refusal** at the boundary.  
 If one party can refuse without catastrophic loss and another cannot, attributing agency to the constrained party for the coupled outcome is structurally invalid **for that boundary**.
 
 Inside execution, actors exercise **discretion**, not agency.
@@ -274,7 +264,6 @@ Inside execution, actors exercise **discretion**, not agency.
 ---
 
 ## Regime 7 — Responsibility as load attribution
-
 Responsibility here means **where load lands** in the topology.
 
 Responsibility can be coherently assigned only when:
@@ -290,7 +279,6 @@ Absent these conditions, responsibility claims are rhetorical rather than struct
 ---
 
 ## Regulation vs control
-
 Viable systems separate:
 
 - **Regulation** — settled, low-cost background execution over closed distinctions.
@@ -304,7 +292,6 @@ Coordination artifacts route pressure; they do not eliminate it.
 ---
 
 ## Threshold independence
-
 Three thresholds are independent:
 
 - **Exist** — coherent execution emerges.
@@ -316,7 +303,6 @@ A system may cross any subset without the others.
 ---
 
 ## Complementarity
-
 Complementarity is structural gap-filling under constraint.
 
 It is not automatically cooperation or alignment.  
@@ -325,15 +311,14 @@ It produces a new composite topology that may enable existence or persistence wh
 ---
 
 ## Compression, drift, redesign
-
 Because environments drift, all compression is provisional.
 
 Systems cycle through:
 
-1. optionality preservation,
-2. closure,
-3. exploitation,
-4. redesign.
+1) optionality preservation,  
+2) closure,  
+3) exploitation,  
+4) redesign.
 
 Redesign reopens discarded distinctions.
 
@@ -346,7 +331,6 @@ Failure to redesign when invariants break is a primary collapse mode.
 ---
 
 ## Where values appear
-
 Values appear through irreversible compression:
 
 - which distinctions were discarded,
@@ -360,7 +344,6 @@ They are residues of abstraction that survived execution.
 ---
 
 ## Closing (compressed)
-
 Execution destroys information.  
 Topology routes consequence.  
 Energy bounds optionality.  
