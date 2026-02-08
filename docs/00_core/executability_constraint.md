@@ -1,35 +1,34 @@
-# The Executability Constraint  
-## Structural Accountability Under Execution, Topology, and Horizon
+# The Executability Constraint
+## Structural accountability under execution, topology, and horizon
 
 ---
 
-## Status and Intent
+## Status and intent
 
-This document specifies the **executability constraint** and its implications for **structural accountability** in constrained systems.
+This document specifies the **executability constraint**: a descriptive boundary condition on when representations become **structurally accountable** inside constrained systems.
 
-It provides a **descriptive and diagnostic framework** for determining when representations—once executed—become exposed to:
+It is a framework for diagnosing when a representation—once invoked—becomes exposed to:
 
 - enforced invariants,
 - finite capacity,
 - irreversible state transitions,
-- horizon-bounded viability conditions.
+- horizon-bounded viability conditions,
+- consequence propagation through real interfaces.
 
 Consequences are treated as **runtime effects of execution**, not as moral feedback, social judgment, or interpretive response.
 
 ---
 
-## What This Document Does Not Do
+## What this document does not do
 
 This document does **not**:
 
-- evaluate moral correctness,
-- adjudicate ideological disputes,
-- assign interpersonal blame or virtue,
+- adjudicate morality, ideology, or interpersonal virtue,
+- assign blame as character assessment,
 - claim predictive certainty,
-- prescribe optimal strategies,
-- privilege technical systems over human ones.
-
-It does not argue that non-executable representations are false, illegitimate, or meaningless.
+- prescribe optimal strategy,
+- privilege technical systems over human ones,
+- argue that non-executable representations are false or illegitimate.
 
 It makes one claim only:
 
@@ -37,34 +36,32 @@ It makes one claim only:
 
 ---
 
-## Scope of the Constraint
+## Scope
 
-The executability constraint is **not universal**.
-
-It applies only to representations that aspire to one or more of the following:
+The executability constraint is not universal. It applies only to representations that aspire to one or more of:
 
 - sustained action,
 - coordination across time,
 - persistence under disturbance,
 - survival within enforced constraints.
 
-Representations that do not seek persistence—expressive, symbolic, speculative, interpretive, or meaning-oriented systems—may remain non-executable without defect.
+Expressive, symbolic, speculative, interpretive, or meaning-oriented representations may remain non-executable without defect.
 
-Executability is **not a requirement for meaning**.  
+Executability is **not** a requirement for meaning.  
 It is a requirement for **running**.
 
 ---
 
-## Core Claim
+## Core claim
 
 A representation becomes **structurally accountable** only when it is **executed** through a constrained system over a specified horizon.
 
-Prior to execution, representations are:
+Prior to execution, representations are structurally cheap:
 
-- costless,
 - invariant-free,
 - buffer-unbound,
-- horizon-indeterminate.
+- horizon-indeterminate,
+- consequence-unexposed.
 
 Execution is the transition point at which **system topology replaces interpretation**.
 
@@ -72,14 +69,10 @@ Execution is the transition point at which **system topology replaces interpreta
 
 ## Definitions
 
-### Representation
-
+### Representation (R)
 Any model, belief, plan, theory, narrative, or description that purports to explain, justify, guide, or coordinate action.
 
----
-
-### Executable System
-
+### Executable system (S)
 A system in which invocations:
 
 - cause state transitions,
@@ -90,84 +83,149 @@ A system in which invocations:
 
 Executable systems include technical systems, institutions, markets, legal regimes, organizations, and organisms.
 
----
+### Horizon (H)
+The time span over which viability is evaluated.
+
+Without a specified horizon, persistence claims are incomplete.
 
 ### Execution
-
-Execution is the **actualization of a representation** as a sequence of state transitions governed by system topology and constraints.
+Execution is the **actualization of a representation** as a sequence of state transitions governed by system topology and enforced constraints.
 
 Execution is indifferent to:
 
 - intent,
 - belief,
 - justification,
-- interpretation.
-
-Within a fixed system *S* and horizon *H*, execution is **discrete**:  
-a representation either commits or does not commit.
+- narrative coherence.
 
 ---
 
-## Structural Accountability
+## Structural accountability
 
-Structural accountability is **exposure to non-negotiable consequences** produced by execution.
+**Structural accountability** is exposure to non-negotiable consequences produced by execution.
 
-A representation is structurally accountable if and only if:
+A representation is structurally accountable (with respect to persistence over H in S) iff:
 
 - its execution injects disturbance into constrained systems,
 - that disturbance encounters enforced invariants,
-- degradation or failure becomes legible within a horizon.
+- degradation or failure becomes legible within the relevant horizon.
 
-Accountability here is **systemic**, not moral or interpersonal.
+Accountability here is systemic, not moral or interpersonal.
 
 ---
 
-## The Executability Constraint (Formal)
+## The executability constraint (formal)
 
-For a representation to be **diagnostic or action-guiding with respect to persistence**, it must:
+For a representation to be diagnostic or action-guiding **with respect to persistence**, it must:
 
 - commit to execution through constrained systems,
 - accept the consequences produced by that execution.
 
-Absent such commitment, representations remain **structurally untested**, regardless of coherence, plausibility, or rhetorical strength.
+Absent such commitment, representations remain **structurally untested**, regardless of plausibility, coherence, or rhetorical strength.
 
 ---
 
-## The Executability Boundary
+## Two-layer model: reasoner vs system
+
+Most misreadings come from collapsing two distinct layers.
+
+### Cognitive layer (reasoner discipline)
+What distinctions a reasoner must preserve to avoid hallucinating:
+
+- rollback where none exists,
+- permission where none is enforced,
+- harmlessness where buffers are merely masking cost,
+- local success where topology is exporting failure.
+
+This layer is about **distinction preservation** under pressure.
+
+### Control layer (system enforcement)
+What mechanisms make distinctions **load-bearing**:
+
+- gates,
+- invariants,
+- defaults,
+- refusal paths,
+- interface contracts,
+- enforcement surfaces and audit surfaces.
+
+This layer is about **runtime enforcement**, not belief.
+
+A reasoner can preserve distinctions perfectly and still fail if the system lacks enforcement.  
+A system can enforce constraints perfectly even when the reasoner is confused.
+
+---
+
+## The executability boundary
 
 Executability defines a boundary in the reasoning stack.
 
 **Above the boundary**
-
-- semantics,
 - meaning,
 - values,
 - narrative,
 - ideology,
-- justification.
+- justification,
+- interpretation.
 
 **At the boundary**
-
-- compilation,
+- compilation into action,
 - invocation,
-- defaults,
-- omission,
-- interface crossing.
+- interface crossing,
+- defaults and omission semantics,
+- scope selection (which system, which horizon).
 
 **Below the boundary**
-
 - invariants,
 - capacity limits,
-- buffering,
-- latency,
-- irreversibility,
-- failure.
+- buffering and queues,
+- latency and propagation,
+- irreversibility and debt,
+- failure modes.
 
 Crossing the boundary converts explanation into exposure.
 
 ---
 
-## Execution, Partiality, and Horizon Slicing
+## Commitment semantics: binary per interface, vector across interfaces
+
+Within a fixed system interface and horizon, execution is **discrete**:
+
+> a representation either **commits** or it does not.
+
+Confusions arise when people treat “whole-system readiness” as a scalar commitment.
+
+### Interface commitment (binary)
+At any single execution interface, there is a commit point:
+- an event after which the system’s state transition is no longer retractable by the actor at that interface.
+
+Examples (interface-relative):
+- “message accepted by remote server”,
+- “funds settled”,
+- “access revoked in production IAM”,
+- “contract executed under jurisdictional formalities”.
+
+### System readiness (predicate over a commit vector)
+Real systems often have multiple interfaces whose commits are not globally atomic.
+
+Represent the world-state as a **commit vector**:
+- Legal_commit ∈ {0,1}
+- Settlement_commit ∈ {0,1}
+- Operational_commit ∈ {0,1}
+- Enforcement_commit ∈ {0,1}
+- Access_commit ∈ {0,1}
+- Public_commit ∈ {0,1}
+(etc.)
+
+“Ready” is not “graded commitment.”  
+“Ready” is a **predicate**: which components must be 1 for the claim to be load-bearing.
+
+Mistake class:
+- treating one component’s commit (announcement, signature, demo) as equivalent to whole-stack readiness.
+
+---
+
+## Apparent partiality: staging, substitution, horizon slicing
 
 Execution does not occur partially **within a fixed system and horizon**.
 
@@ -175,97 +233,82 @@ What appear as partial executions—simulations, pilots, rehearsals, proofs of c
 
 - substituted systems,
 - relaxed invariant enforcement,
-- truncated horizons.
+- truncated horizons,
+- isolated topology (reduced fan-out),
+- borrowed buffers (forbearance).
 
-Gradual exposure arises from:
+“Gradual exposure” is typically one of:
+- **horizon slicing** (short run looks stable; long run violates invariants),
+- **system substitution** (demo system ≠ target system),
+- **staged interface commits** (some interfaces committed; others not).
 
-- horizon slicing,
-- system substitution,
-- staged commitment across interfaces.
-
-Structural accountability begins only where execution is **irretractable in the target system over the target horizon**.
+Structural accountability begins where execution is **irretractable in the target system over the target horizon**.
 
 ---
 
-## Consequence Topology (Interface)
+## Consequence topology
 
 **Consequence topology** describes how disturbance introduced by execution propagates through a system.
 
 It includes:
-
 - interfaces traversed,
 - intermediaries involved,
 - buffers encountered,
 - feedback paths available,
-- invariants enforced.
+- invariants enforced,
+- coupling structure and fan-out.
 
 Topology—not intent—determines:
-
 - latency,
 - observability,
 - amplification,
-- attribution error.
+- where costs land,
+- why attribution errors persist.
 
 ---
 
-## Disturbance Conservation (Operational Analogy)
+## Disturbance conservation (operational analogy)
 
 Execution injects **disturbance**.
 
 At the level relevant to persistence:
-
 - disturbance does not disappear,
 - it cannot be erased by reinterpretation,
 - it cannot be nullified by denial.
 
-It can be delayed, buffered, transformed, or displaced.
+It can be delayed, buffered, transformed, redirected, or displaced.
 
-This is an **operational analogy**, not a physical law:
+This is an operational analogy, not a physical law:
 
 > Disturbance deferred at one layer reappears as constraint, cost, or risk at another.
 
 ---
 
-## Key Topological Dimensions
+## Key topological dimensions
 
-### Path Length (Latency)
-
+### Path length (latency)
 Longer paths reduce salience and increase discounting.  
 Latency alters perception, not execution.
 
----
-
-### Fan-Out (Distribution)
-
+### Fan-out (distribution)
 High fan-out dilutes perceived responsibility and increases aggregate system cost.
 
----
-
 ### Buffers
-
-Buffers store disturbance, delay consequences, and transform expression.  
+Buffers store disturbance and delay legibility.  
 They do not eliminate cost.
 
----
-
 ### Observability
-
 Low observability allows interpretive narratives to persist until invariants assert themselves.
 
----
-
-### Irreversibility Gradients
-
+### Irreversibility gradients
 Some effects shrink option space, degrade controllability, or accumulate debt.  
-Irreversible effects dominate long-horizon outcomes.
+Irreversibility dominates long-horizon outcomes.
 
 ---
 
-## Action, Non-Action, and Defaults
+## Action, non-action, and defaults
 
-An action is any invocation that causes a system transition.
-
-This includes:
+An action is any invocation that causes a system transition. This includes:
 
 - explicit acts,
 - defaults,
@@ -279,29 +322,26 @@ Intent is not required for execution.
 
 ---
 
-## Agency and Execution Surfaces
+## Agency and execution surfaces
 
 Agency varies by **decision dimensionality**, not by execution relevance.
 
-- **Decision space**: selectable options.
-- **Execution space**: transitions the system enforces.
+- **Decision space:** selectable options.
+- **Execution space:** transitions the system enforces.
 
 An **execution surface** is any locus where:
-
 - invocation occurs,
 - invariants are enforced,
 - disturbance is injected,
-
 regardless of the agent’s degree of choice.
 
 Systems execute through surfaces, not through intent.
 
 ---
 
-## Buffer Ownership and Buffer Debt
+## Buffer ownership and buffer debt
 
 Every buffer has an owner who bears:
-
 - storage cost,
 - maintenance cost,
 - opportunity cost,
@@ -315,28 +355,27 @@ Over-buffering is not free.
 
 ---
 
-## Risk Emergence
+## Risk emergence
 
 Risk does not reside in representations.
 
 Risk emerges when representations are **executed through constraints**.
 
-Risk signals include:
-
+Common signals:
 - rising variance,
 - queue growth,
 - latency inflation,
 - correction overhead,
-- loss of controllability margins.
+- shrinking controllability margins,
+- increased coupling sensitivity.
 
 ---
 
-## Correction Is Not Elimination
+## Correction redistributes cost
 
 Retries, redundancy, failover, and averaging defer failure locally.
 
 At the system level, they convert disturbance into:
-
 - complexity,
 - coordination cost,
 - resource overhead,
@@ -347,40 +386,37 @@ It does not eliminate it.
 
 ---
 
-## Horizon as a First-Class Constraint
+## Horizon as a first-class constraint
 
-A **horizon** defines the time span over which viability is evaluated.
-
-Without a specified horizon, persistence claims are incomplete.
+A horizon defines the time span over which viability is evaluated.
 
 Horizons vary by system:
-
 - milliseconds (control),
 - days (operations),
 - years (infrastructure),
 - decades (institutions).
 
+Without a specified horizon, persistence claims are incomplete.
+
 ---
 
-## Horizon-Constrained Viability
+## Horizon-constrained viability
 
 Given:
+- a representation R,
+- a system S,
+- a horizon H,
 
-- a representation *R*,
-- a system *S*,
-- a horizon *H*,
-
-*R* is viable if its execution does **not violate invariants required to persist over *H***.
+R is viable iff its execution does **not violate invariants required to persist over H**.
 
 Exact prediction is unnecessary.  
-**Bounding invariant pressure is sufficient.**
+Bounding invariant pressure is sufficient.
 
 ---
 
-## Accumulation and Dominance
+## Accumulation and dominance
 
 Over time:
-
 - disturbances accumulate,
 - buffers saturate,
 - correction overhead grows,
@@ -390,7 +426,7 @@ Latent degradation outcompetes visible noise.
 
 ---
 
-## Power as Topological Asymmetry
+## Power as topological asymmetry
 
 Power is not exemption from execution.
 
@@ -401,12 +437,11 @@ It is displaced to nodes less able to resist or signal it.
 
 ---
 
-## Failure Without Execution
+## Non-executable failure modes
 
-Non-executable systems do not fail structurally.
+Non-executable representations do not fail structurally.
 
-They fail only via:
-
+They fail via:
 - loss of belief,
 - reputational decay,
 - narrative replacement.
@@ -415,7 +450,7 @@ These are not runtime failures.
 
 ---
 
-## Executability as an Epistemic Filter
+## Executability as an epistemic filter
 
 Executability does not guarantee correctness.
 
